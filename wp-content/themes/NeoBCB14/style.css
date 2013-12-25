@@ -1,0 +1,1608 @@
+/* 
+        Theme Name: Neo Barcamp Bangalore Theme 14
+        Theme URL: http://www.barcampbangalore.org/barcampbangalore-theme.htm
+        Description: Neo BarcampBangalore theme created for WordPress for the site of Barcamp Bangalore.
+        Author: Aman Manglik
+        Author URI: http://www.amanmanglik.com
+        Version: 1.1
+                
+        The CSS, XHTML and design is released under GPL:
+        http://www.opensource.org/licenses/gpl-license.php
+        
+        Changelog:
+                v1.0 - 09.08.2013
+                First Release of BarcampBangalore
+*/
+
+
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+ 
+/**** Isotope Filtering ****/
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+/**** Isotope CSS3 transitions ****/
+
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+      -ms-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+      -ms-transition-property:     -ms-transform, opacity;
+       -o-transition-property:      -o-transform, opacity;
+          transition-property:         transform, opacity;
+}
+
+/**** disabling Isotope CSS3 transitions ****/
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+      -ms-transition-duration: 0s;
+       -o-transition-duration: 0s;
+          transition-duration: 0s;
+}
+
+root { 
+    display: block;
+}
+
+body {
+    
+    margin: 0px;
+    font-family: /* 'Pontano Sans', */sans-serif;
+    font-size: 13px;
+    
+    
+    background-image: url(images/background_pattern.jpg);
+    background-color: #4D4926;
+    
+    
+}
+
+h1, h2, h3, h4, h5, h6  {
+    color: #000000;
+    margin: 0px;
+    font-family: sans-serif;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+
+textarea:focus, input:focus{
+    outline: 0;
+}
+
+#header
+{
+    /* background-color: #8A1A1A; */
+    
+    text-align: center;
+}
+
+#logo
+{
+    padding-bottom: 15px;
+    
+    height: 150px;
+    
+}
+
+
+#user_login_div
+{
+    background-color: #000000;
+    padding: 10px;
+    display: inline-block;
+    margin-left: 600px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#user_login_div a
+{
+    color: #D8CF91;
+    font-size: 14px;
+}
+
+
+
+
+#navbar
+{
+    background-color: #BD3636;
+    background-image: url(images/navbar.jpg);
+    background-repeat: repeat-x;
+    background-size: 5px 100%;
+    text-align: center;
+    box-shadow: 0px 1px 5px #000000;
+    padding: 12px 0px;
+}
+
+#navbar ul
+{
+    margin: 0px;
+    list-style-type: none;
+}
+
+#navbar ul li
+{
+    display: inline-block;
+    padding: 5px 20px;
+}
+
+#navbar ul a
+{
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+
+#navbar .current_page_item 
+{
+    background-color: #800E0E;
+    border-bottom: 1px solid #DA5A5A;
+    box-shadow: 1px 1px 1px #530000 inset;
+    border-radius: 10px;
+}
+
+#navbar .current_page_item a
+{
+    
+}
+
+#navbar div
+{
+    display: inline-block;
+}
+
+#searchform
+{
+    display: inline-block;
+    
+}
+
+#searchform label
+{
+    display: none;
+}
+
+#searchform #s
+{
+    width: 130px;
+    height: 23px;
+    
+    border-radius: 15px;
+    background-color: #972424;
+    border: 0px;
+    border-bottom: 1px solid #DA5A5A;
+    box-shadow: 1px 1px 1px #530000 inset;
+    padding: 0px 15px;
+    margin-left: 50px;
+    color: #FFFFFF;
+}
+
+#searchform #searchsubmit
+{
+    height: 24px;
+    border: 1px solid #BBBBBB;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: #EEEEEE;
+    
+}
+
+#searchform #searchsubmit:hover
+{
+    background-color: #DDDDDD;
+}
+
+#searchform #searchbuttonimage
+{
+    height: 16px;
+}
+
+
+#page_content
+{
+    width: 95%;
+    padding-top: 20px;
+    margin: 0px auto;
+}
+
+
+
+#plaza
+{
+    margin: 0px auto 25px auto;
+    width: 80%;
+    
+    
+    border-radius: 13px;
+    border-top: 1px solid #999459;
+    border-bottom: 1px solid #252400;
+    background-image: url(images/backdrop.jpg);
+    background-position: center;
+    background-size: cover;
+    
+    box-shadow: 1px 1px 5px #020101;
+    position: relative; 
+    overflow: auto;
+    
+    
+}
+
+#plaza ul
+{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#plaza li
+{
+    display: inline-block;
+    float: left;
+}
+
+.plaza_slide
+{
+    text-align: center;
+    color: #FFFFFF;
+    
+    display: inline-block;
+    height: 200px;
+    width: 100%;
+}
+
+
+.plaza_slide h1
+{
+    padding-top: 50px;
+    font-size: 50px;
+    text-shadow: 3px 3px 3px #000000;
+    color: #FFFFFF;
+}
+
+.plaza_slide h2
+{
+    font-size: 30px;
+}
+
+.plaza_slide a
+{
+    color: #FFFFFF;
+}
+
+#plaza_slide_ideas  h1
+{
+    color: #FFFFFF;
+    text-shadow: 0px 0px 40px #FFFFFF, 2px 2px 2px #000000;
+}
+
+#plaza_slide_unconference h1
+{
+    color: #FED904;
+    text-shadow: 0px 0px 40px #FED904, 2px 2px 2px #000000;
+}
+
+#plaza_slide_unconference h2
+{
+    color: #FFFFFF;
+    text-shadow: 0px 0px 20px #FFFFFF, 2px 2px 2px #000000;
+    
+}
+
+#plaza_slide_android h1
+{
+    color: #35DFFF;
+    text-shadow: 0px 0px 20px #35DFFF, 2px 2px 2px #000000;
+}
+
+
+
+
+
+#cards_parent
+{
+    padding: 10px;
+    margin: 0 auto;
+    
+}
+
+
+
+/*
+
+Color classes
+
+*/
+
+.yellowbg
+{
+    background-color: #FED904;
+}
+
+.redbg
+{
+    background-color: #fe2f04;
+}
+
+
+
+
+.homecard
+{
+    width: 395px;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 3px #000000;
+    border-radius: 3px;
+    
+}
+
+.homecard_head
+{
+    
+    
+    margin: 12px  12px 12px 0px;
+    box-shadow: 1px 1px 2px #CCCCCC;
+    font-size: 22px;
+    padding: 14px;
+    border-top-right-radius: 150px;
+    border-bottom-right-radius: 150px;
+    border-top: 1px solid #FFF7CB;
+    border-bottom: 1px solid #C4A700;
+}
+
+.homecard_content
+{
+    margin: 35px 25px;
+    text-align: justify;
+    color: #666666;
+}
+
+.homecard_content li
+{
+    padding: 5px 0px;
+}
+
+
+.homecard_content .highlight
+{
+    font-size: 20px;
+}
+
+
+#venue_card
+{
+    background-image: url(images/map_card_bg.png);
+}
+
+#map_div
+{
+    margin: 20px 0px;
+}
+
+#venue_card_text
+{
+    text-align: right;
+    margin: 35px 25px;
+}
+
+.venue_text_small
+{
+    font-size: 20px;
+    color: #AAAAAA;
+}
+
+.venue_text_mid
+{
+    font-size: 15px;
+    color: #AAAAAA;
+}
+
+.venue_text_big
+{
+    font-size: 35px;
+    color: #BD3636;
+    text-shadow: 1px 1px 0px #CCCCCC;
+}
+
+
+#contact_card ul
+{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#contact_card li
+{
+    display: inline-block;
+    text-align: center;
+    padding: 3px;
+}
+
+
+
+
+.homecard_content a
+{
+    color: #BD3636;
+    font-weight: bold;
+}
+
+
+#teamlist
+{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#teamlist li
+{
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+}
+
+.teammember
+{
+    width: 40px;
+    height: 40px;
+    margin: 0px;
+    padding: 0px;
+}
+
+#teamlink
+{
+    background-color: #EEEEEE;
+    padding: 10px;
+    margin: 30px 0px;
+    border-radius: 5px;
+    
+}
+
+
+
+
+
+
+/*==================================================
+SPECIAL CARDS
+==================================================*/
+
+
+#serverbluescard
+{
+    background-color: #d7df20;
+    color: #000000;
+    
+    
+}
+
+#serverbluescard h2
+{
+    font-size: 20px;
+    padding: 20px;
+    color: #000000;
+}
+
+#serverbluescard p
+{
+    padding: 0px 20px 20px 20px;
+}
+
+
+#tagcard
+{
+    background-color: #BD3636;
+    text-align: center;
+}
+
+#tagcard h2
+{
+    font-size: 50px;
+    padding: 20px;
+    color: #FFFFFF;
+}
+
+#tagcard p
+{
+    padding: 0px 20px 20px 20px;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#categorypage_catname
+{
+    background-color: #2BBD1E;
+    border-radius: 30px;
+    padding: 15px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 500px;
+    margin: 0px auto 15px auto;
+    font-size: 24px;
+    box-shadow: 2px 2px 3px #000000;
+    border-top: 1px solid #3DF52D;
+    border-bottom: 1px solid #22A116;
+}
+
+
+.sessioncard
+{
+    width: 295px;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    
+    
+    box-shadow: 2px 2px 4px #000000;
+    border-radius: 3px;
+    display: inline-block;
+    
+}
+
+.sessioncard_head
+{
+    background-color: #FED904;
+    
+    
+    position: relative;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-top: 1px solid #FFF09B;
+}
+
+.sessioncard_head .techlash_flag
+{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 50px;
+}
+
+.sessioncard_head .newicon_flag
+{
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    
+}
+
+.sessioncard_title
+{
+    padding: 18px;
+    font-size: 22px;
+}
+
+
+.sessioncard_title a
+{
+    color: #000000;
+    text-decoration: none;
+}
+
+.sessioncard_title:hover
+{
+    background-color: #FFDF2A;
+}
+
+.sessioncard_user
+{
+   
+   background-color: rgba(0,0,0, 0.1);
+   color: #FFFFFF;
+   text-align: right;
+   padding: 3px 110px 3px 3px;
+   font-size: 18px;
+   font-weight: bold;
+   
+}
+
+.sessioncard_user:hover
+{
+    background-color: rgba(0,0,0, 0.15);
+}
+
+
+.sessioncard_user a
+{
+    color: #FFFFFF;
+}
+
+
+.sessioncard_useravatar 
+{
+    position: absolute;
+    right: 40px;
+    bottom: -12px;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0px 0px 0px 3px #FFFFFF, 0px 0px 0px 6px #FED904;
+    width: 48px;
+    height: 48px;
+}
+
+.sessioncard_useravatar img
+{
+    border-radius: 24px;
+}
+
+.sessioncard_excerpt
+{
+    padding: 0px 15px;
+    color: #888888;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.sessioncard_morelink
+{
+    text-decoration: none;
+}
+
+.sessioncard_morelink div
+{
+    text-align: center;
+    background-color: #EEEEEE;
+    padding: 7px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #888888;
+    
+    
+}
+
+.sessioncard_morelink div:hover
+{
+    background-color: #DDDDDD;
+}
+
+
+
+.sessioncard_user_comments
+{
+    border-bottom: 1px solid #D3D3D3;
+}
+
+.sessioncard_users
+{
+    border-right: 1px solid #D3D3D3;
+}
+
+.sessioncard_meta
+{
+    float: left;
+    padding: 14px 0px;
+    width: 49%;
+    position: relative;
+    
+}
+
+.sessioncard_meta_image
+{
+    margin: 0px 5px ;
+    width: 35px;
+    
+}
+
+.sessioncard_meta_text
+{
+    position: relative;
+    top: -5px;
+    color: #AAAAAA;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.sessioncard_meta_text a
+{
+    color: #AAAAAA;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.sessioncard_tags .sessioncard_meta_image
+{
+    padding: 10px 0px;
+}
+
+.sessioncard_tags a
+{
+    display: inline-block;
+    background-color: #EEEEEE;
+    border: 1px solid #DDDDDD;
+    border-radius: 2px;
+    padding: 0px 5px;
+    color: #888888;
+    margin: 2px;
+    text-decoration: none;
+    
+    
+}
+
+.sessioncard_tags a:hover
+{
+    background-color: #D9D9D9;
+    cursor: pointer;
+}
+
+
+.sessioncard_tagsimage
+{
+    float: left;
+}
+
+.sessioncard_tagscontent
+{
+    padding: 10px 0px;
+    float: left;
+    width: 235px;
+}
+
+.sessioncard .neo_attend_button
+{
+    text-align: center;
+    padding: 5px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+
+.sessioncard .neo_button_attending
+{
+    background-color: #60B615;
+    color: #FFFFFF;
+}
+
+.sessioncard .neo_button_attending:hover
+{
+    background-color: #6DCF18;
+}
+
+.sessioncard .neo_button_wanna_attend
+{
+    background-color: #DDDDDD;
+    color: #888888;
+}
+
+.sessioncard .neo_button_wanna_attend:hover
+{
+    background-color: #D2D2D2;
+}
+
+
+#sessionpage_content
+{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #F8F8F8;
+    padding-top: 50px;
+    
+}
+
+
+.centered_background
+{
+    
+}
+
+#sessionpage_header
+{
+    float: left;
+    width: 60%;
+    padding-top: 10px;
+    position: relative;
+    
+}
+
+#sessionpage_title
+{
+    padding: 30px 60px 30px 40px;
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 200px;
+    font-size: 28px;
+    
+    text-transform: capitalize;
+    box-shadow: 2px 2px 2px 0px #BBBBBB;
+}
+
+#sessionpage_user
+{
+    /* background-color: #1EBD51; */
+    background-color: #2BBD1E;
+    margin-top: 10px;
+    margin-right: 130px;
+    text-align: right;
+    padding: 4px 70px 4px 0px;
+    font-size: 16px;
+    position: relative;
+    font-weight: bold;
+    color: #FFFFFF;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    
+}
+
+#sessionpage_user a
+{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#sessionpage_useravatar
+{
+    border-radius: 48px;
+    position: absolute;
+    bottom: -35px;
+    right: 80px;
+    box-shadow: 0px 0px 0px 4px #FFFFFF;
+    width: 96px;
+    height: 96px;
+    
+}
+
+#sessionpage_useravatar img
+{
+    border-radius: 48px;
+}
+
+#sessionpage_midsection
+{
+    padding: 50px 0px;
+}
+
+#sessionppage_posttext
+{
+    float: left;
+    width: 500px;
+    text-align: justify;
+    
+    color: #666666;
+    padding: 0px 40px 0px 50px;
+    
+    
+}
+
+#sessionpage_rightmeta
+{
+    float: left;
+    
+    width: 330px;
+    padding: 13px 30px 30px 30px;
+    border-left: 1px solid #DDDDDD;
+}
+
+
+#sessionpage_rightmeta .post-edit-link
+{
+    display: block;
+    text-align: center;
+    color: #999999;
+    padding: 15px;
+    background-color: #EEEEEE;
+    border: 1px solid #CCCCCC;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 3px;
+    margin-top: 30px;
+}
+
+
+#sessionpage_rightmeta .neo_attend_button
+{
+    text-align: center;
+    padding: 15px;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 3px;
+    cursor: pointer;
+    
+    
+}
+
+#sessionpage_rightmeta .neo_button_attending
+{
+    background-color: #60B615;
+    color: #FFFFFF;
+    
+    border: 1px solid #86F129;
+}
+
+#sessionpage_rightmeta .neo_button_attending:hover
+{
+    background-color: #6DCF18;
+    
+
+}
+
+#sessionpage_rightmeta .neo_button_wanna_attend
+{
+    background-color: #DDDDDD;
+    color: #888888;
+    
+    border: 1px solid #B3B3B3;
+}
+
+#sessionpage_rightmeta .neo_button_wanna_attend:hover
+{
+    background-color: #D2D2D2;
+}
+
+#sessionpage_users
+{
+    margin: 40px 0px;
+}
+
+.sessionpage_metaimage
+{
+    width: 50px;
+    border-radius: 3px;
+    border: 1px solid #BBBBBB;
+    vertical-align: bottom;
+}
+
+.sessionpage_metaheading
+{
+    color: #888888;
+    font-size: 22px;
+    padding-left: 20px;
+    
+}
+
+#sessionpage_userlist
+{
+    background-color: #EEEEEE;
+    border: 1px solid #CCCCCC;
+    padding: 10px;
+    margin: 15px 0px 15px 30px;
+    border-radius: 3px;
+    color: #AAAAAA;
+}
+
+
+.attending_user
+{
+    color: #888888;
+    display: inline-block;
+    padding: 1px 5px;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+
+.attending_user:hover
+{
+    text-decoration: underline;
+}
+
+#sessionpage_tagsarea
+{
+    margin-top: 40px;
+}
+
+
+#sessionpage_taglist
+{
+    background-color: #EEEEEE;
+    border: 1px solid #CCCCCC;
+    padding: 10px;
+    margin: 15px 0px 15px 30px;
+    border-radius: 3px;
+    color: #AAAAAA;
+}
+
+#sessionpage_taglist a
+{
+    display: inline-block;
+    color: #777777;
+    background-color: #E3E3E3;
+    padding: 1px 5px;
+    margin: 4px;
+    border-radius: 3px;
+    border: 1px solid #BBBBBB;
+    text-decoration: none;
+}
+
+#sessionpage_taglist a:hover
+{
+    background-color: #CCCCCC;
+}
+
+.social_container
+{
+    display: inline-block;
+    padding: 10px;
+    width: 70px;
+}
+
+#sessionpage_commentsarea
+{
+    position: relative;
+    margin-top: 60px;
+}
+
+
+#sessionpage_commentshead
+{
+    
+    font-size: 24px;
+    color: #888888;
+    text-decoration: underline;
+}
+
+#sessionpage_commentsarea ul
+{
+    list-style: none;
+    padding: 10px 0px 10px 25px;
+}
+
+#sessionpage_commentsarea .comment-body
+{
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#sessionpage_commentsarea .comment-body:hover
+{
+    background-color: #EEEEEE;
+}
+
+#sessionpage_commentsarea img
+{
+    float: left;
+    border-radius: 24px;
+}
+
+#sessionpage_commentsarea .comment-body-inner
+{
+    padding-left: 60px;
+}
+
+
+#sessionpage_commentsarea a
+{
+    color: #888888;
+    
+    font-style: normal;
+}
+
+#sessionpage_commentsarea .comment-author a
+{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#sessionpage_commentsarea .comment-author a:hover
+{
+    text-decoration: underline;
+}
+
+#sessionpage_commentsarea .comment-body-inner p
+{
+    margin: 5px 0px;
+    text-align: justify;
+}
+
+#sessionpage_commentsarea .comment_footer
+{
+    font-size: 11px;
+    
+}
+
+#sessionpage_commentsarea .comment_footer a
+{
+    color: #AAAAAA;
+    
+}
+
+#sessionpage_commentsarea #respond
+{
+    margin-top: 30px;
+}
+
+#sessionpage_commentsarea #reply-title
+{
+    font-size: 18px;
+    color: #888888;
+}
+
+#sessionpage_commentsarea #submit
+{
+    width: 160px;
+    height: 30px;
+}
+
+#sessionpage_commentsarea #comment
+{
+    border: 1px solid #AAAAAA;
+    border-radius: 5px;
+}
+
+
+#authorpage_content
+{
+    padding: 20px 0px;;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#authorpage_profilearea
+{
+    background-color: #FFFFFF;
+    float: left;
+    width: 300px;
+    border-radius: 3px;
+    border: 1px solid #FFFFFF;
+    
+}
+
+
+#authorpage_profileheader
+{
+    background-color: #FED904;
+    color: #FFFFFF;
+    position: relative;
+    
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    
+    
+}
+
+
+
+#authorpage_profileheader h2
+{
+    text-align: right;
+    color: #FFFFFF;
+    font-size: 36px;
+    padding: 30px 80px 15px 0px;
+}
+
+#authorpage_username
+{
+    color: #000000;
+    font-size: 30px;
+    word-break: break-all;
+}
+
+#authorpage_profileheader .avatar
+{
+    position: absolute;
+    right: -62px;
+    top: 10px;
+    border-radius: 48px;
+    border: 3px solid #FFFFFF;
+    height: 96px;
+    width: 96px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 0px 3px #FED904;
+    
+}
+
+#authorpage_profiledesc
+{
+    padding: 20px 20px 40px 20px;
+    color: #777777;
+    
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+#authorpage_sincedate
+{
+    font-size: 30px;
+    text-align: center;
+    padding: 30px;
+    font-style: italic;
+    color: #AAAAAA;
+    
+}
+
+#authorpage_sessions
+{
+    background-color: #FFFFFF;
+    float: left;
+    width: 670px;
+    border-radius: 3px;
+    margin-left: 20px;
+    padding-bottom: 40px;
+    
+}
+
+#authorpage_sessions .authorpage_sessiontype
+{
+    display: block;
+    background-color: #2BBD1E;
+    color: #FFFFFF;
+    padding: 20px 40px;
+    font-size: 26px;
+    margin-top: 30px;
+    margin-right: 30px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 2px 2px 3px #AAAAAA;
+    border-top: 1px solid #3DF52D;
+    border-bottom: 1px solid #22A116;
+    
+}
+
+#authorpage_sessions .authorpage_bcbheading
+{
+    font-size: 20px;
+    color: #888888;
+}
+
+#authorpage_sessions .session_list_item
+{
+    list-style: none;
+    padding: 10px;
+    margin: 5px 0px;
+    background-color: #EEEEEE;
+}
+
+#authorpage_sessions .session_list_item a
+{
+    color: #888888;
+    font-size: 18px;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+#authorpage_sessions .session_list_item a:hover
+{
+    color: #666666;
+}
+
+
+#tagpage_content
+{
+    padding: 20px 0px;;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#tagpage_tagmetaarea
+{
+    width: 300px;
+    float: right;
+    background-color: #2BBD1E;
+    border-radius: 3px;
+    padding: 30px 10px;
+    text-align: center;
+    font-size: 30px;
+    margin-left: 20px;
+    word-break: break-all;
+}
+
+#tagpage_metaheading
+{
+    font-size: 36px;
+    color: #FFFFFF;
+}
+
+#tagpage_sessionlist
+{
+    float: right;
+    width: 660px;
+    
+}
+
+#tagpage_sessionlist ul
+{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#tagpage_sessionlist ul li
+{
+    margin: 0px 0px 20px 0px;
+    background-color: #FFFFFF;
+    border-radius: 3px;
+    box-shadow: 2px 2px 4px #000000;
+    
+}
+
+.tagpage_sessiontitle
+{
+    display: block;
+    background-color: #FED904;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    padding: 15px;
+    color: #000000;
+    font-size: 20px;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.tagppage_sessiondetails
+{
+    padding: 10px 20px;
+}
+
+.tagppage_sessiondetails a
+{
+    color: #888888;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #EEEEEE;
+    border-radius: 3px;
+    border: 1px solid #DDDDDD;
+    padding: 2px;
+}
+
+#tagpage_noresultmsg
+{
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+#generalpage_posttext
+{
+    
+    
+    text-align: justify;
+    
+    color: #666666;
+    padding: 0px 50px;
+}
+
+#generalpage_posttext h2
+{
+    font-size: 20px;
+}
+
+#generalpage_posttext label
+{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#generalpage_posttext form
+{
+    padding: 50px 0px;
+    
+}
+
+
+#generalpage_posttext form textarea
+{
+    font-family: sans-serif;
+    border: 1px solid #999999;
+    border-radius: 3px;
+    padding: 5px;
+    box-shadow: 1px 1px 2px 0px #CCCCCC inset;
+    
+}
+
+#generalpage_posttext form input
+{
+    font-family: sans-serif;
+    border: 1px solid #999999;
+    border-radius: 3px;
+    padding: 5px;
+    box-shadow: 1px 1px 2px 0px #CCCCCC inset;
+}
+
+
+#techlash_cardswrapper
+{
+    margin-top: 50px;
+    background-color: #4D4926;
+    padding: 20px 0px;
+    
+}
+
+#techlash_sessionheading
+{
+    color: #FFFFFF;
+    font-size: 20px;
+    margin: 20px 0px 20px 30px;
+}
+
+#archivelinks
+{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+#archivelinks li
+{
+    display: inline-block;
+    background-color: #DDDDDD;
+    border-radius: 3px;
+    margin: 5px;
+    padding: 10px 20px;
+}
+
+#archivelinks li:hover
+{
+    background-color: #AAAAAA;
+}
+
+#archivelinks a
+{
+    color: #333333;
+    cursor: pointer;
+}
+
+
+#archivelinks .archive_selected
+{
+    background-color: #2BBD1E;
+}
+
+
+
+
+.archive_sponsors_wrapper
+{
+    padding: 30px;
+    background-color: #FFFFFF;
+    border-radius: 3px;
+    margin: 0px 20px;
+    
+}
+
+.archive_sponsors_wrapper h2
+{
+    font-size: 20px;
+    padding-bottom: 20px;
+    
+}
+
+
+.archive_sponsor
+{
+    margin: 0px 10px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
+.archive_sponsor_title
+{
+    color: #666666;
+    font-size: 16px;
+    padding-bottom: 10px;
+    
+}
+
+.archive_sponsor_logo
+{
+    width: 100px;
+}
+
+
+#footer
+{
+    background-color: #333333;
+    color: #FFFFFF;
+    text-align: center;
+    
+}
+
+#footer a
+{
+    color: #BBBBBB;
+}
+
+
+#sponsors_div
+{
+    background-color: #000000;
+    padding: 30px 0px;
+    border-top: 1px solid #555555;
+    border-bottom: 1px solid #555555;
+}
+
+#sponsors_div h2
+{
+    color: #FFFFFF;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#sponsors_div .sponsor_wrapper
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+#sponsors_div .sponsor_logo_wrapper
+{
+    padding: 20px;
+}
+
+#sponsors_div .sponsor_logo
+{
+    height: 70px;
+    
+}
+
+
+#sponsors_div .sponsor_heading
+{
+    margin: 10px;
+    color: #AAAAAA;
+    font-size: 16px;
+}
+
+#sponsors_div .event_partner_logo
+{
+    height: 80px;
+}
+
+
+
+
+#footer_copyright
+{
+    padding: 20px;
+}
+
+
+#neverland
+{
+    color: #FFFFFF;
+    font-size: 26px;
+    text-align: center;
+    margin: 200px;
+}

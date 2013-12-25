@@ -1,0 +1,627 @@
+/* 
+        Theme Name: Neo Barcamp Bangalore Theme
+        Theme URL: http://www.barcampbangalore.org/barcampbangalore-theme.htm
+        Description: Neo BarcampBangalore theme created for WordPress for the site of Barcamp Bangalore.
+        Author: Aman Manglik
+        Author URI: http://www.amanmanglik.com
+        Version: 1.1
+                
+        The CSS, XHTML and design is released under GPL:
+        http://www.opensource.org/licenses/gpl-license.php
+        
+        Changelog:
+                v1.0 - 05.14.07
+                First Release of BarcampBangalore
+*/
+
+
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+ 
+
+
+root { 
+    display: block;
+}
+
+body
+{
+    background-color: #373737;
+    background-image: url("images/webtreats_wood-pattern1-512_2.jpg");
+    background-attachment: fixed;
+    
+    margin: 0px;
+    font-family: sans-serif;
+    
+    font-size: 13px;
+    color: #cccccc;
+}
+
+h1, h2, h3, h4, h5, h6 
+{
+    color: #ffffff;
+    text-shadow: 2px 2px 4px #000000;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-decoration: underline;
+    font-family: 'Dosis', sans-serif;
+    
+    
+}
+
+
+
+a 
+{
+    color: #eeeeee;
+    text-decoration: none;
+    
+}
+
+a:hover
+{
+    color:#83793D;
+}
+
+
+#main_wrapper
+{
+    
+    width: 1040px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+}
+
+#main_area
+{
+    background-color: rgba(0,0,0,0.6);
+    padding: 0px 40px 40px 40px;
+    border-radius: 10px;
+}
+
+#header
+{
+    text-align: center;
+    
+    
+}
+
+#user_login_div
+{
+    padding: 10px;
+    text-align: right;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 0px 0px 10px 10px;
+    float: right;
+}
+
+#barcamp_logo
+{
+
+    
+    
+    margin: 30px 0px;
+
+}
+
+#navigation
+{
+    height: 68px;
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    
+}
+
+.current_page_item a
+{
+    color: #83793D;
+}
+
+
+.menu
+{
+    padding-top: 20px;
+}
+
+.menu ul
+{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    display: inline-block;
+    
+}
+
+.menu ul li
+{
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    
+    text-shadow: 2px 2px 2px #000000;
+    
+}
+
+
+#plaza_wrapper
+{
+    background-color: #83793D;
+    background-size: 100px 100px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    box-shadow: 0px 0px 15px 0px #000000, 0px 0px 5px #000000 inset;
+    border-radius: 10px;
+    width: 100%;
+}
+
+#plaza
+{
+    width: 960px;
+    margin-left: auto;
+    margin-right : auto;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 2px 2px 2px #000000;
+    color: #ffffff;
+    font-size: 1.25em;
+    
+    
+}
+
+
+#plaza h1, #plaza h3
+{
+    text-decoration: none;
+}
+
+#plaza_left
+{
+    float: left;
+    width: 500px;
+    padding: 0px 30px;
+    text-align: right;
+    
+    
+}
+
+
+#tweets_deck_wrapper
+{
+    background-color: rgba(0,0,0,0.5);
+    padding: 10px;
+    border-radius: 10px;
+    min-height: 100px;
+}
+
+#tweets_deck i
+{
+    color: #999999;
+}
+
+#plaza_right
+{
+    float: left;
+    width: 400px;
+}
+
+.plaza_cool_border
+{
+    background-color: #ffffff;
+    border: 5px #ffffff solid;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px 0px #000000;
+}
+
+.plaza_wrapper_general
+{
+    height: 269px;
+}
+
+.contextual_plaza
+{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#plaza_author
+{
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#plaza_author .avatar
+{
+    background-color: #ffffff;
+    border: 5px #ffffff solid;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px 0px #000000;
+    
+    
+}
+
+
+
+#someimage
+{
+    margin: 0px;
+    padding: 0px;
+    
+    
+}
+
+#content_outer_wrapper
+{
+    width: 100%;
+}
+
+
+#content_inner_wrapper
+{
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+}
+
+#content
+{
+    float: left;
+    width: 600px;
+    padding-right: 50px;
+    text-align: justify;
+}
+
+#content ul
+{
+    list-style: none;
+    padding: 0px;
+}
+
+.post_user
+{
+    text-align: center;
+    float: right;
+    background-color: #444444;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    width: 96px;
+}
+
+.post_meta
+{
+    background-color: #444444;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+#neo_attend_button
+{
+    
+    cursor: pointer;
+}
+
+.attending_session
+{
+    background-color: #83793D;
+    padding: 10px;
+    border-radius: 5px;
+    color: #ffffff;
+    box-shadow: -2px -2px 2px 0px #222222 inset, 2px 2px 2px #888888 inset;
+    
+}
+
+.not_attending_session
+{
+    background-color: #555555;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: -2px -2px 2px 0px #222222 inset, 2px 2px 2px #888888 inset;
+}
+
+#attendees_list
+{
+    clear: both;
+}
+
+
+.session_list_item
+{
+    background-color: rgba(50, 50, 50, 0.5);
+    border-radius: 10px;
+    padding: 1px 10px 10px 10px;
+    margin-bottom: 10px;
+}
+
+.session_list_item>h2
+{
+    text-decoration: none;
+    border-bottom: 1px #83793D solid;
+    font-size: 1.8em;
+    
+    
+}
+
+
+
+
+.social_container
+{
+    display: inline-block;
+    height: 65px;
+    padding: 10px;
+    width: 50px;
+}
+
+
+
+#sidebar
+{
+    float: left;
+    width: 310px;
+    text-align: right;
+    
+}
+
+
+#sidebar ul
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+#sidebar li
+{
+    
+    display: block;
+    
+}
+
+#sidebar h3
+{
+    width: 100%;
+    background-color: rgba(85,85,85,0.6);
+    border-radius: 5px;
+    padding: 5px 10px 8px 10px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+#sidebar .sponsor_div
+{
+    display: inline-block;
+    padding: 10px;
+    width: 110px;
+    text-align: center;
+}
+
+#sidebar .sponsor_div img
+{
+    padding-bottom: 10px;
+}
+
+.widget_search label
+{
+    display: none;
+}
+
+.widget_search #s
+{
+    background-color: #222222;
+    border: 1px #555555 solid;
+    height: 35px;
+    box-shadow: 0px 0px 4px 0px #000000 inset;
+    border-radius: 5px;
+    color: #bbbbbb;
+    width: 100%;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+}
+
+
+.widget_search #s:focus
+{
+    border: 1px #83793D solid;
+}
+
+.widget_search #searchsubmit
+{
+    background-color: #555555;
+    border: 0px;
+    border-radius: 5px;
+    color: #ffffff;
+    height: 30px;
+    cursor: pointer;
+}
+
+.widget_search #searchsubmit:hover
+{
+    background-color: #83793D;
+}
+
+.social_icon
+{
+    border: 0px;
+}
+
+.depth-1
+{
+    background-color: #333333;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.comment-body
+{
+    background-color: #444444;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.comment-body-inner
+{
+    
+    
+    padding-left: 60px;
+}
+
+.comment-body-inner p
+{
+    color: #dddddd;
+}
+
+.comment-author
+{
+    text-decoration: underline;
+    
+}
+
+.comment-body .avatar
+{
+    float: left;
+}
+
+.comment_footer
+{
+    width: 100%;
+    text-align: right;
+    font-size: 12px;
+}
+
+.comment_footer a
+{
+    color: #999999;
+    
+}
+
+.commentlist ul
+{
+    margin: 5px 0px 5px 20px;
+    
+    
+    
+}
+
+.bypostauthor>.comment-body
+{
+    background-color: #555555;
+}
+
+#respond #reply-title small a
+{
+    font-size: 10px;
+    text-decoration: none;
+}
+
+#respond textarea
+{
+    width: 100%;
+    background-color: #222222;
+    color: #dddddd;
+    border: 1px solid #666666;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 4px 0px #000000 inset;
+    
+}
+
+#respond .form-submit
+{
+    text-align: right;
+}
+
+#respond #submit
+{
+    height: 30px;
+}
+
+#respond small
+{
+    padding-left: 15px;
+}
+
+#footer
+{
+    
+    min-height: 60px;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/*  
+
+TDO FORM
+
+*/
+
+#content-title-tf
+{
+    background-color: #222222;
+    border: 1px #555555 solid;
+    height: 35px;
+    box-shadow: 0px 0px 4px 0px #000000 inset;
+    border-radius: 5px;
+    color: #bbbbbb;
+    width: 100%;
+    margin-bottom: 8px;
+    box-sizing: border-box; 
+}
+
+#content-text-ta
+{
+    background-color: #222222;
+    border: 1px #555555 solid;
+    
+    box-shadow: 0px 0px 4px 0px #000000 inset;
+    border-radius: 5px;
+    color: #bbbbbb;
+    width: 100%;
+    margin-bottom: 8px;
+    box-sizing: border-box; 
+}
+
+#tags
+{
+    background-color: #222222;
+    border: 1px #555555 solid;
+    height: 35px;
+    box-shadow: 0px 0px 4px 0px #000000 inset;
+    border-radius: 5px;
+    color: #bbbbbb;
+    width: 100%;
+    margin-bottom: 8px;
+    box-sizing: border-box; 
+}
+
+#customfields-ta-1-ta
+{
+    background-color: #222222;
+    border: 1px #555555 solid;
+    
+    box-shadow: 0px 0px 4px 0px #000000 inset;
+    border-radius: 5px;
+    color: #bbbbbb;
+    width: 100%;
+    margin-bottom: 8px;
+    box-sizing: border-box; 
+}
+
+
+
+

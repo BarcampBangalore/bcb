@@ -1,0 +1,2 @@
+[06-Jul-2012 19:03:11 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/barcampb/public_html/bcb/wp-content/themes/NeoBCB12/author.php on line 1
+[11-Feb-2013 18:28:18 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/barcampb/public_html/bcb/wp-content/themes/NeoBCB12dot2/index.php on line 1

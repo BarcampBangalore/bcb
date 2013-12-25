@@ -1,0 +1,4 @@
+[10-Jan-2009 08:43:03] PHP Fatal error:  Call to undefined function  get_header() in /home/techbang/public_html/bcb/wp-content/themes/barcampbangalore/index.php on line 1
+[21-Jan-2009 09:25:30] PHP Fatal error:  Call to undefined function  get_header() in /home/techbang/public_html/bcb/wp-content/themes/barcampbangalore/index.php on line 1
+[21-Jan-2009 09:25:45] PHP Fatal error:  Call to undefined function  get_header() in /home/techbang/public_html/bcb/wp-content/themes/barcampbangalore/index.php on line 1
+[21-Jan-2009 09:26:12] PHP Fatal error:  Call to undefined function  get_header() in /home/techbang/public_html/bcb/wp-content/themes/barcampbangalore/index.php on line 1
