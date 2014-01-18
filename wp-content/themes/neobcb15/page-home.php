@@ -110,7 +110,7 @@
                         <img alt="Get it on Google Play"
                              src="https://developer.android.com/images/brand/en_generic_rgb_wo_60.png" />
                     </a><br>
-                    (App will be refreshed for BCB Monsoon 2013 soon)
+                    (App will be refreshed for BCB Spring 2014 soon)
                 </div>
             </li>
             <li>
@@ -155,13 +155,13 @@
         
         <div class="homecard" id="venue_card">
             <div class="homecard_head yellowbg">
-                When & where
+                When & where?
             </div>
             <div id="venue_card_text">
-                <span class="venue_text_small">Its Happening <br>at</span> 
+                <span class="venue_text_small">It's Happening <br>at</span> 
                 <span class="venue_text_big">SAP Labs</span><br><span class="venue_text_mid">Whitefield, Bangalore</span> <br>
                 <span class="venue_text_small">at</span> <span class="venue_text_big">8:00 AM</span><br>
-                <span class="venue_text_small">on</span> <span class="venue_text_big">14th Sep, 2013</span>
+                <span class="venue_text_small">on</span> <span class="venue_text_big">29th March, 2014</span>
             </div>
             <div id="map_div" >
 
@@ -170,7 +170,7 @@
             </div>
         </div>
         
-        
+        <!-- no Ola yet..
         <div id="serverbluescard" class="homecard">
             <h2>Come to BCB in style with Ola Cabs</h2>
             <p>Ola Cabs is collaborating with Barcamp Bangalore to provide you convenient rides for the event. Contact Ola support for more info.</p>
@@ -179,10 +179,10 @@
             </p>
             
         </div>
-
+        --> 
         <div class="homecard">
             <div class="homecard_head yellowbg">
-                Who should attend Barcamp
+                Who should attend Barcamp?
             </div>
             <div class="homecard_content">
                 <p><span class="highlight" >Everyone!</span> Barcamp is about sharing your passions 
@@ -212,7 +212,10 @@
             </div>
             <div class="homecard_content">
                 
-            Registrations are now closed. However, if you are eager to attend, please enter your details <a href="https://docs.google.com/a/sathyasays.com/spreadsheet/viewform?formkey=dGlkSEN3QnlBbUQyM243MTVYQU5FbFE6MQ#gid=0">in the waitlist form</a> and we'll keep you informed if you can make it.
+            Registrations are now closed. We will open registrations at a later point in time. Check our <a href="http://twitter.com/barcampbng">Twitter</a> account or <a href="http://groups.yahoo.com/neo/groups/bangalore_barcamp/conversations/topics">Mailing List</a>
+            to keep track of changes.
+            <!-- However, if you are eager to attend, please enter your details <a href="https://docs.google.com/a/sathyasays.com/spreadsheet/viewform?formkey=dGlkSEN3QnlBbUQyM243MTVYQU5FbFE6MQ#gid=0">in the waitlist form</a> and we'll keep you informed if you can make it.
+             -->
             </div>
         </div>
 
@@ -224,7 +227,7 @@
         
         <div class="homecard">
             <div class="homecard_head yellowbg">
-                Who presents the sessions
+                Who presents the sessions?
             </div>
             <div class="homecard_content">
                 
@@ -252,15 +255,15 @@
 
         <div class="homecard">
             <div class="homecard_head yellowbg">
-                What to bring
+                What to bring?
             </div>
             <div class="homecard_content">
                 <ul>
                     
                     <li>Your enthusiasm to share and learn :) </li>
-                    <li>Your friends--old and new !! </li>
+                    <li>Your friends — old and new!! </li>
                     <li>Notebook and pen or something digitally similar for tips, point and doodles</li>
-                    <li>Cameras, phones, audio-recorders, video-recorders---we are an open-unconference </li>
+                    <li>Cameras, phones, audio-recorders, video-recorder — we are an open-unconference </li>
                     <li>Random stuff to share with your friends. Business cards? Ideas? Cookies? Chocolates?</li>
                     <li>We encourage creative non-slide-deck talks but If you really insist or need then bring a laptop with slides</li>
                 </ul>
@@ -270,7 +273,7 @@
         
         <div class="homecard">
             <div class="homecard_head yellowbg">
-                What will be there
+                What will be there?
             </div>
             <div class="homecard_content">
                 <ul>
@@ -334,7 +337,7 @@
                 <ul id="teamlist">
                     <li><img class="teammember" src="<?php bloginfo('template_url')  ?>/images/team/saurabh.jpg" alt="Saurabh Minni" title="Saurabh Minni" /></li>
                     <li><img class="teammember" src="<?php bloginfo('template_url')  ?>/images/team/aman.jpg" alt="Aman Manglik" title="Aman Manglik"  /></li>
-                    <li><img class="teammember" src="<?php bloginfo('template_url')  ?>/images/team/sathya.jpg" alt="Sathyajith Bhat" title="Sathyajit Bhat"  /></li>
+                    <li><img class="teammember" src="<?php bloginfo('template_url')  ?>/images/team/sathya.jpg" alt="Sathyajith Bhat" title="Sathyajith Bhat"  /></li>
                     <li><img class="teammember" src="<?php bloginfo('template_url')  ?>/images/team/rahul.jpg" alt="Rahul Aurora" title="Rahul Aurora"  /></li>
                     <li><img class="teammember" src="<?php bloginfo('template_url')  ?>/images/team/arun.jpg" alt="Arun Vijayan" title="Arun Vijayan"  /></li>
                     <li><img class="teammember" src="<?php bloginfo('template_url')  ?>/images/team/daaku.jpg" alt="Amit Khare" title="Amit Khare"  /></li>

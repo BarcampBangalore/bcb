@@ -76,6 +76,7 @@ function mytheme_comment($comment, $args, $depth)
     }
 
     function get_plaza()
+    // Note: this doesn't seem to be used anywhere. Should be removed.
     {
         ?>
         <div id="plaza" class="plaza">
@@ -148,8 +149,8 @@ function mytheme_comment($comment, $args, $depth)
         global $current_user;
         $result = array();
 //        if ( !wp_verify_nonce( $_REQUEST['nonce'], "neo_attend_nonce")) {
-//	      exit("No naughty business please");
-//	   }
+//        exit("No naughty business please");
+//     }
         
         
         if (is_user_logged_in())

@@ -8,6 +8,7 @@
                         <div class="sponsor_logo_wrapper" ><a href="http://www.sap.com/india/index.epx"><img class="sponsor_logo event_partner_logo" src="<?php bloginfo('template_url')  ?>/images/sap_logo.png" /></a></div>
 
                     </div>
+                    <!--  TODO: update with new sponsors
                     <div id="event_partner_wrapper" class="sponsor_wrapper">
                         <h3 class="sponsor_heading">Silver Sponsor</h3>
                         <div class="sponsor_logo_wrapper" ><a href="http://www.intuit.com/"><img class="sponsor_logo event_partner_logo" src="<?php bloginfo('template_url')  ?>/images/sponz_logos/intuit_blue.gif" /></a></div>
@@ -28,9 +29,11 @@
                         <div class="sponsor_logo_wrapper" ><a href="http://janastu.org/main.html"><img class="sponsor_logo" src="<?php bloginfo('template_url')  ?>/images/sponz_logos/janastu_logo.gif" /></a></div>
 
                     </div>
+                      -->
                 </div>
-            </div>
 
+            </div>
+        
             <div id="footer_copyright">
             <!--[if lte IE 8]><span style="filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2); display: inline-block;"><![endif]-->
             <span style="-webkit-transform: rotate(180deg); -moz-transform: rotate(180deg); -o-transform: rotate(180deg); -khtml-transform: rotate(180deg); -ms-transform: rotate(180deg); transform: rotate(180deg); display: inline-block;">
