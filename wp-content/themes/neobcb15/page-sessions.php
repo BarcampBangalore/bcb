@@ -1,1 +1,1 @@
-<?php wp_safe_redirect( get_category_link(785) );  ?>
+<?php wp_safe_redirect( get_category_link(931) );  ?>

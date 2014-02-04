@@ -2,7 +2,7 @@
 <?php the_post(); ?>
 
 <?php 
-$latest_bcb_category = 785;
+$latest_bcb_category = 931;
 $is_latest_bcb_session = false;
 $post_categories = wp_get_post_categories( get_the_ID() );
 
