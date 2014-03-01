@@ -218,6 +218,7 @@ if(preg_match('#' . basename(__FILE__) . '#', $_SERVER['PHP_SELF'])) { die('TDOM
                           "post_content"            => $post_content,
                           );
                       $post_ID = wp_update_post($post);
+                      wp_set_post_tags($post_ID, strip_tags($value),true);
                   }
                   if($options['type'] == 'checkbox' ){ tdomf_log_message('TDOMF_WidgetCustomFields::append:checkbox:format='.$fmt); }
           } 
