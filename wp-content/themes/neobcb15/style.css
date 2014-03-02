@@ -19,43 +19,43 @@
  * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
  * http://cssreset.com
  */
- 
+
 /**** Isotope Filtering ****/
 
 .isotope-item {
-  z-index: 2;
+    z-index: 2;
 }
 
 .isotope-hidden.isotope-item {
-  pointer-events: none;
-  z-index: 1;
+    pointer-events: none;
+    z-index: 1;
 }
 
 /**** Isotope CSS3 transitions ****/
 
 .isotope,
 .isotope .isotope-item {
-  -webkit-transition-duration: 0.8s;
-     -moz-transition-duration: 0.8s;
-      -ms-transition-duration: 0.8s;
-       -o-transition-duration: 0.8s;
-          transition-duration: 0.8s;
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -ms-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
 }
 
 .isotope {
-  -webkit-transition-property: height, width;
-     -moz-transition-property: height, width;
-      -ms-transition-property: height, width;
-       -o-transition-property: height, width;
-          transition-property: height, width;
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    -ms-transition-property: height, width;
+    -o-transition-property: height, width;
+    transition-property: height, width;
 }
 
 .isotope .isotope-item {
-  -webkit-transition-property: -webkit-transform, opacity;
-     -moz-transition-property:    -moz-transform, opacity;
-      -ms-transition-property:     -ms-transform, opacity;
-       -o-transition-property:      -o-transform, opacity;
-          transition-property:         transform, opacity;
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property:    -moz-transform, opacity;
+    -ms-transition-property:     -ms-transform, opacity;
+    -o-transition-property:      -o-transform, opacity;
+    transition-property:         transform, opacity;
 }
 
 /**** disabling Isotope CSS3 transitions ****/
@@ -63,11 +63,11 @@
 .isotope.no-transition,
 .isotope.no-transition .isotope-item,
 .isotope .isotope-item.no-transition {
-  -webkit-transition-duration: 0s;
-     -moz-transition-duration: 0s;
-      -ms-transition-duration: 0s;
-       -o-transition-duration: 0s;
-          transition-duration: 0s;
+    -webkit-transition-duration: 0s;
+    -moz-transition-duration: 0s;
+    -ms-transition-duration: 0s;
+    -o-transition-duration: 0s;
+    transition-duration: 0s;
 }
 
 root { 
@@ -75,20 +75,20 @@ root {
 }
 
 body {
-    
+
     margin: 0px;
     font-family: /* 'Pontano Sans', */sans-serif;
     font-size: 13px;
-    
-    
-    background-image: url(images/background_pattern.jpg);
-    background-color: #4D4926;
-    
-    
+
+
+    /*background-image: url(images/background_pattern.jpg); */
+    background-color: #e4e4e4;
+
+
 }
 
 h1, h2, h3, h4, h5, h6  {
-    color: #000000;
+    
     margin: 0px;
     font-family: sans-serif;
     font-size: 1em;
@@ -102,23 +102,23 @@ textarea:focus, input:focus{
 
 #header
 {
-    /* background-color: #8A1A1A; */
-    
+    background-color: #3F392A; 
+
     text-align: center;
 }
 
 #logo
 {
     padding-bottom: 15px;
-    
-    height: 150px;
-    
+
+    height: 120px;
+
 }
 
 
 #user_login_div
 {
-    background-color: #000000;
+    background-color: #75694D;
     padding: 10px;
     display: inline-block;
     margin-left: 600px;
@@ -128,7 +128,7 @@ textarea:focus, input:focus{
 
 #user_login_div a
 {
-    color: #D8CF91;
+    color: #D8BE86;
     font-size: 14px;
 }
 
@@ -137,13 +137,14 @@ textarea:focus, input:focus{
 
 #navbar
 {
-    background-color: #BD3636;
-    background-image: url(images/navbar.jpg);
+    /*background-color: #F78342;*/
+    background-color: #D8BE86;
+    /*background-image: url(images/navbar.jpg);*/
     background-repeat: repeat-x;
     background-size: 5px 100%;
     text-align: center;
-    box-shadow: 0px 1px 5px #000000;
-    padding: 12px 0px;
+
+    padding: 9px 0px;
 }
 
 #navbar ul
@@ -160,25 +161,26 @@ textarea:focus, input:focus{
 
 #navbar ul a
 {
-    color: #FFFFFF;
-    font-size: 16px;
+    color: #3F392A;
+    font-size: 20px;
     font-weight: bold;
     text-decoration: none;
-    text-shadow: 1px 1px 2px #000000;
+
 }
 
 
 #navbar .current_page_item 
 {
-    background-color: #800E0E;
-    border-bottom: 1px solid #DA5A5A;
-    box-shadow: 1px 1px 1px #530000 inset;
-    border-radius: 10px;
+    background-color: #3F392A;
+    /*    border-bottom: 1px solid #DA5A5A;
+        box-shadow: 1px 1px 1px #530000 inset;*/
+    border-radius: 4px;
 }
 
 #navbar .current_page_item a
 {
-    
+    color: #D8BE86;
+
 }
 
 #navbar div
@@ -189,7 +191,7 @@ textarea:focus, input:focus{
 #searchform
 {
     display: inline-block;
-    
+
 }
 
 #searchform label
@@ -201,12 +203,11 @@ textarea:focus, input:focus{
 {
     width: 130px;
     height: 23px;
-    
-    border-radius: 15px;
-    background-color: #972424;
+
+    border-radius: 4px;
+    background-color: #E4C88C;
     border: 0px;
-    border-bottom: 1px solid #DA5A5A;
-    box-shadow: 1px 1px 1px #530000 inset;
+    box-shadow: 0px 1px 0px #978356 inset;
     padding: 0px 15px;
     margin-left: 50px;
     color: #FFFFFF;
@@ -215,16 +216,16 @@ textarea:focus, input:focus{
 #searchform #searchsubmit
 {
     height: 24px;
-    border: 1px solid #BBBBBB;
-    border-radius: 15px;
+    border: 0px solid #BBBBBB;
+    border-radius: 4px;
     cursor: pointer;
-    background-color: #EEEEEE;
-    
+    background-color: #978356;
+
 }
 
 #searchform #searchsubmit:hover
 {
-    background-color: #DDDDDD;
+    background-color: #FFB28E;
 }
 
 #searchform #searchbuttonimage
@@ -246,20 +247,20 @@ textarea:focus, input:focus{
 {
     margin: 0px auto 25px auto;
     width: 80%;
-    
-    
+
+
     border-radius: 13px;
     border-top: 1px solid #999459;
     border-bottom: 1px solid #252400;
     background-image: url(images/backdrop.jpg);
     background-position: center;
     background-size: cover;
-    
+
     box-shadow: 1px 1px 5px #020101;
     position: relative; 
     overflow: auto;
-    
-    
+
+
 }
 
 #plaza ul
@@ -279,7 +280,7 @@ textarea:focus, input:focus{
 {
     text-align: center;
     color: #FFFFFF;
-    
+
     display: inline-block;
     height: 200px;
     width: 100%;
@@ -320,7 +321,7 @@ textarea:focus, input:focus{
 {
     color: #FFFFFF;
     text-shadow: 0px 0px 20px #FFFFFF, 2px 2px 2px #000000;
-    
+
 }
 
 #plaza_slide_android h1
@@ -335,9 +336,9 @@ textarea:focus, input:focus{
 
 #cards_parent
 {
-    padding: 10px;
+    padding: 10px 15px;
     margin: 0 auto;
-    
+
 }
 
 
@@ -350,7 +351,7 @@ Color classes
 
 .yellowbg
 {
-    background-color: #FED904;
+    /*background-color: #FED904; */
 }
 
 .redbg
@@ -366,23 +367,22 @@ Color classes
     width: 395px;
     background-color: #ffffff;
     margin-bottom: 20px;
-    box-shadow: 2px 2px 3px #000000;
-    border-radius: 3px;
-    
+    box-shadow: 0px 1px 1px #666666;
+    border-radius: 2px;
+
 }
 
 .homecard_head
 {
-    
-    
-    margin: 12px  12px 12px 0px;
-    box-shadow: 1px 1px 2px #CCCCCC;
-    font-size: 22px;
+
+
+
+
+    font-size: 28px;
     padding: 14px;
-    border-top-right-radius: 150px;
-    border-bottom-right-radius: 150px;
-    border-top: 1px solid #FFF7CB;
-    border-bottom: 1px solid #C4A700;
+    color: #3F8300;
+
+    border-bottom: 2px solid #3F8300;
 }
 
 .homecard_content
@@ -492,7 +492,7 @@ Color classes
     padding: 10px;
     margin: 30px 0px;
     border-radius: 5px;
-    
+
 }
 
 
@@ -509,8 +509,8 @@ SPECIAL CARDS
 {
     background-color: #d7df20;
     color: #000000;
-    
-    
+
+
 }
 
 #serverbluescard h2
@@ -572,29 +572,66 @@ SPECIAL CARDS
     border-bottom: 1px solid #22A116;
 }
 
+#sessionspage_heading
+{
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+    color: #666666;
+
+    /*background-color: #CCCCCC;*/
+}
+
+.cards_track
+{
+    background: #f4f4f4;
+    padding: 15px;
+    width: 350px;
+    margin: 0px auto 15px auto;
+    /*box-shadow: 0px 1px 2px #AAAAAA inset;*/
+}
+
+
+.track_header
+{
+    color: #FFFFFF;
+    font-size: 22px;
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: 0px 1px 1px #CCCCCC;
+}
+
+
+.sessioncard_no_session_message
+{
+    font-size: 18px;
+    text-align: center;
+    font-style: italic;
+    color: #AAAAAA;
+    margin: 20px auto;
+}
 
 .sessioncard
 {
-    width: 295px;
-    background-color: #ffffff;
+    width: 335px;
+    position: relative;
     margin-bottom: 20px;
-    
-    
-    box-shadow: 2px 2px 4px #000000;
+    margin-top: 50px;
+
+    box-shadow: 0px 1px 1px #CCCCCC;
     border-radius: 3px;
-    display: inline-block;
-    
+    /*    display: inline-block;*/
+
 }
 
 .sessioncard_head
 {
-    background-color: #FED904;
-    
-    
+    background-color: #FFFFFF;
+
+
     position: relative;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    border-top: 1px solid #FFF09B;
+
+
 }
 
 .sessioncard_head .techlash_flag
@@ -610,66 +647,93 @@ SPECIAL CARDS
     position: absolute;
     top: -15px;
     right: -15px;
-    
+
 }
 
 .sessioncard_title
 {
-    padding: 18px;
-    font-size: 22px;
+    padding: 18px 18px 15px 18px;
+    font-size: 18px;
+    box-shadow: 0px 2px 2px #F6F6F6;
 }
 
 
 .sessioncard_title a
 {
-    color: #000000;
+
     text-decoration: none;
 }
 
 .sessioncard_title:hover
 {
-    background-color: #FFDF2A;
+
+    /*background-color: #FFDF2A;*/
+    text-decoration: underline;
 }
 
 .sessioncard_user
 {
-   
-   background-color: rgba(0,0,0, 0.1);
-   color: #FFFFFF;
-   text-align: right;
-   padding: 3px 110px 3px 3px;
-   font-size: 18px;
-   font-weight: bold;
-   
+    position: absolute;
+    top: -28px;
+    left: 12px;
+    display: inline-block;
+
+    color: #FFFFFF;
+    opacity: 0.7;
+    text-align: left;
+    padding: 5px 20px 7px 40px;
+    font-size: 14px;
+    border-top-right-radius: 8px;
+    text-decoration: none;
+
+
 }
 
 .sessioncard_user:hover
 {
-    background-color: rgba(0,0,0, 0.15);
+    text-decoration: underline;
 }
 
 
 .sessioncard_user a
 {
     color: #FFFFFF;
+    text-decoration: none;
 }
 
 
 .sessioncard_useravatar 
 {
     position: absolute;
-    right: 40px;
-    bottom: -12px;
+    left: -12px;
+    top: -35px;
     border-radius: 24px;
     overflow: hidden;
-    box-shadow: 0px 0px 0px 3px #FFFFFF, 0px 0px 0px 6px #FED904;
+    /*box-shadow: 0px 0px 0px 3px #FFFFFF, 0px 0px 0px 6px #FED904;*/
     width: 48px;
     height: 48px;
+    z-index: 5;
 }
 
 .sessioncard_useravatar img
 {
     border-radius: 24px;
+}
+
+
+.sessioncard_newtag
+{
+    position: absolute;
+    right: 0px;
+    color: #FFFFFF;
+    height: 17px;
+    width: 50px;
+    background-color: #616161;
+    top: 0px;
+    text-align: center;
+    border-bottom-left-radius: 3px;
+    
+    z-index: 2;
 }
 
 .sessioncard_excerpt
@@ -685,28 +749,27 @@ SPECIAL CARDS
     text-decoration: none;
 }
 
-.sessioncard_morelink div
+
+
+.sessioncard_footer
 {
-    text-align: center;
-    background-color: #EEEEEE;
-    padding: 7px;
-    font-size: 15px;
-    font-weight: bold;
-    color: #888888;
-    
+    background-color: #FFFFFF;
+    border-top: 1px solid #EEEEEE;
     
 }
-
-.sessioncard_morelink div:hover
-{
-    background-color: #DDDDDD;
-}
-
 
 
 .sessioncard_user_comments
 {
-    border-bottom: 1px solid #D3D3D3;
+    /*    border-bottom: 1px solid #D3D3D3;*/
+    text-align: center;
+    opacity: 0.6;
+    float: left;
+    padding-top: 3px;
+    width: 166px;
+    border-right: 1px solid #EEEEEE;
+    
+    
 }
 
 .sessioncard_users
@@ -720,31 +783,40 @@ SPECIAL CARDS
     padding: 14px 0px;
     width: 49%;
     position: relative;
-    
+
 }
 
 .sessioncard_meta_image
 {
-    margin: 0px 5px ;
+    margin: 0px;
     width: 35px;
-    
+
 }
 
 .sessioncard_meta_text
 {
     position: relative;
-    top: -5px;
+    top:  -5px;
     color: #AAAAAA;
-    font-weight: bold;
+    font-size: 14px;
     text-decoration: none;
 }
 
-.sessioncard_meta_text a
+.sessioncard_user_comments a
 {
+    position: relative;
     color: #AAAAAA;
     font-weight: normal;
     text-decoration: none;
+
 }
+
+
+.sessioncard_attend
+{
+    float: left;
+}
+
 
 .sessioncard_tags .sessioncard_meta_image
 {
@@ -761,8 +833,8 @@ SPECIAL CARDS
     color: #888888;
     margin: 2px;
     text-decoration: none;
-    
-    
+
+
 }
 
 .sessioncard_tags a:hover
@@ -791,7 +863,8 @@ SPECIAL CARDS
     font-size: 17px;
     font-weight: bold;
     cursor: pointer;
-    
+    width: 158px;
+
 }
 
 .sessioncard .neo_button_attending
@@ -807,13 +880,14 @@ SPECIAL CARDS
 
 .sessioncard .neo_button_wanna_attend
 {
-    background-color: #DDDDDD;
-    color: #888888;
+    background-color: #FFFFFF;
+    color: #BBBBBB;
 }
 
 .sessioncard .neo_button_wanna_attend:hover
 {
-    background-color: #D2D2D2;
+    background-color: #A9EC6F;
+    color: #FFFFFF;
 }
 
 
@@ -824,50 +898,47 @@ SPECIAL CARDS
     margin-right: auto;
     background-color: #F8F8F8;
     padding-top: 50px;
-    
+
 }
 
 
 .centered_background
 {
-    
+
 }
 
 #sessionpage_header
 {
-    float: left;
-    width: 60%;
     padding-top: 10px;
     position: relative;
-    
+
 }
 
 #sessionpage_title
 {
-    padding: 30px 60px 30px 40px;
-    border-top-right-radius: 200px;
-    border-bottom-right-radius: 200px;
+    padding: 25px 60px 25px 150px;
+    background-color: #FFFFFF;
     font-size: 28px;
-    
+
     text-transform: capitalize;
-    box-shadow: 2px 2px 2px 0px #BBBBBB;
+    box-shadow: 0px 2px 2px #BBBBBB;
 }
 
 #sessionpage_user
 {
     /* background-color: #1EBD51; */
-    background-color: #2BBD1E;
-    margin-top: 10px;
-    margin-right: 130px;
-    text-align: right;
-    padding: 4px 70px 4px 0px;
+    
+    margin: 10px 410px 10px 50px;
+    
+    text-align: left;
+    padding: 4px 10px 4px 110px;
     font-size: 16px;
     position: relative;
     font-weight: bold;
     color: #FFFFFF;
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
-    
+
 }
 
 #sessionpage_user a
@@ -880,12 +951,13 @@ SPECIAL CARDS
 {
     border-radius: 48px;
     position: absolute;
-    bottom: -35px;
-    right: 80px;
-    box-shadow: 0px 0px 0px 4px #FFFFFF;
+    bottom: -15px;
+    left: 35px;
+    
     width: 96px;
     height: 96px;
     
+
 }
 
 #sessionpage_useravatar img
@@ -906,14 +978,20 @@ SPECIAL CARDS
     
     color: #666666;
     padding: 0px 40px 0px 50px;
-    
-    
+
+
+}
+
+#sessionpage_description
+{
+    background-color: #EEEEEE;
+    padding: 15px;
 }
 
 #sessionpage_rightmeta
 {
     float: left;
-    
+
     width: 330px;
     padding: 13px 30px 30px 30px;
     border-left: 1px solid #DDDDDD;
@@ -945,22 +1023,22 @@ SPECIAL CARDS
     font-weight: bold;
     border-radius: 3px;
     cursor: pointer;
-    
-    
+
+
 }
 
 #sessionpage_rightmeta .neo_button_attending
 {
     background-color: #60B615;
     color: #FFFFFF;
-    
+
     border: 1px solid #86F129;
 }
 
 #sessionpage_rightmeta .neo_button_attending:hover
 {
     background-color: #6DCF18;
-    
+
 
 }
 
@@ -968,7 +1046,7 @@ SPECIAL CARDS
 {
     background-color: #DDDDDD;
     color: #888888;
-    
+
     border: 1px solid #B3B3B3;
 }
 
@@ -995,7 +1073,7 @@ SPECIAL CARDS
     color: #888888;
     font-size: 22px;
     padding-left: 20px;
-    
+
 }
 
 #sessionpage_userlist
@@ -1016,7 +1094,7 @@ SPECIAL CARDS
     padding: 1px 5px;
     cursor: pointer;
     text-decoration: none;
-    
+
 }
 
 .attending_user:hover
@@ -1073,7 +1151,7 @@ SPECIAL CARDS
 
 #sessionpage_commentshead
 {
-    
+
     font-size: 24px;
     color: #888888;
     text-decoration: underline;
@@ -1111,7 +1189,7 @@ SPECIAL CARDS
 #sessionpage_commentsarea a
 {
     color: #888888;
-    
+
     font-style: normal;
 }
 
@@ -1135,13 +1213,13 @@ SPECIAL CARDS
 #sessionpage_commentsarea .comment_footer
 {
     font-size: 11px;
-    
+
 }
 
 #sessionpage_commentsarea .comment_footer a
 {
     color: #AAAAAA;
-    
+
 }
 
 #sessionpage_commentsarea #respond
@@ -1184,20 +1262,20 @@ SPECIAL CARDS
     width: 300px;
     border-radius: 3px;
     border: 1px solid #FFFFFF;
-    
+
 }
 
 
 #authorpage_profileheader
 {
-    background-color: #FED904;
-    color: #FFFFFF;
-    position: relative;
     
+    color: #888888;
+    position: relative;
+
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
-    
-    
+
+
 }
 
 
@@ -1205,14 +1283,14 @@ SPECIAL CARDS
 #authorpage_profileheader h2
 {
     text-align: right;
-    color: #FFFFFF;
+    color: #888888;
     font-size: 36px;
     padding: 30px 80px 15px 0px;
 }
 
 #authorpage_username
 {
-    color: #000000;
+    color: #DA6833;
     font-size: 30px;
     word-break: break-all;
 }
@@ -1220,22 +1298,21 @@ SPECIAL CARDS
 #authorpage_profileheader .avatar
 {
     position: absolute;
-    right: -62px;
+    right: -58px;
     top: 10px;
     border-radius: 48px;
-    border: 3px solid #FFFFFF;
     height: 96px;
     width: 96px;
     background-color: #FFFFFF;
-    box-shadow: 0px 0px 0px 3px #FED904;
-    
+
 }
 
 #authorpage_profiledesc
 {
-    padding: 20px 20px 40px 20px;
+    padding: 15px 15px 35px 15px;
+    margin: 5px;
     color: #777777;
-    
+    background-color: #EEEEEE;
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
 }
@@ -1247,7 +1324,7 @@ SPECIAL CARDS
     padding: 30px;
     font-style: italic;
     color: #AAAAAA;
-    
+
 }
 
 #authorpage_sessions
@@ -1258,24 +1335,20 @@ SPECIAL CARDS
     border-radius: 3px;
     margin-left: 20px;
     padding-bottom: 40px;
-    
+
 }
 
 #authorpage_sessions .authorpage_sessiontype
 {
     display: block;
-    background-color: #2BBD1E;
+    background-color: #DA6833;
     color: #FFFFFF;
     padding: 20px 40px;
     font-size: 26px;
     margin-top: 30px;
     margin-right: 30px;
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
     box-shadow: 2px 2px 3px #AAAAAA;
-    border-top: 1px solid #3DF52D;
-    border-bottom: 1px solid #22A116;
-    
+
 }
 
 #authorpage_sessions .authorpage_bcbheading
@@ -1312,7 +1385,7 @@ SPECIAL CARDS
     width: 1000px;
     margin-left: auto;
     margin-right: auto;
-    
+
 }
 
 #tagpage_tagmetaarea
@@ -1338,7 +1411,7 @@ SPECIAL CARDS
 {
     float: right;
     width: 660px;
-    
+
 }
 
 #tagpage_sessionlist ul
@@ -1351,16 +1424,16 @@ SPECIAL CARDS
 #tagpage_sessionlist ul li
 {
     margin: 0px 0px 20px 0px;
-    background-color: #FFFFFF;
+    background-color: #F2F2F2;
     border-radius: 3px;
-    box-shadow: 2px 2px 4px #000000;
-    
+    box-shadow: 0px 1px 2px #AAAAAA;
+
 }
 
 .tagpage_sessiontitle
 {
     display: block;
-    background-color: #FED904;
+    background-color: #FFFFFF;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     padding: 15px;
@@ -1368,6 +1441,7 @@ SPECIAL CARDS
     font-size: 20px;
     font-weight: normal;
     text-decoration: none;
+    box-shadow: 0px 1px 3px #AAAAAA;
 }
 
 .tagppage_sessiondetails
@@ -1394,10 +1468,10 @@ SPECIAL CARDS
 
 #generalpage_posttext
 {
-    
-    
+
+
     text-align: justify;
-    
+
     color: #666666;
     padding: 0px 50px;
 }
@@ -1416,7 +1490,7 @@ SPECIAL CARDS
 #generalpage_posttext form
 {
     padding: 50px 0px;
-    
+
 }
 
 
@@ -1427,7 +1501,7 @@ SPECIAL CARDS
     border-radius: 3px;
     padding: 5px;
     box-shadow: 1px 1px 2px 0px #CCCCCC inset;
-    
+
 }
 
 #generalpage_posttext form input
@@ -1440,12 +1514,19 @@ SPECIAL CARDS
 }
 
 
+.techlash_heading
+{
+    
+    font-size: 30px;
+    color: #777777;
+}
+
 #techlash_cardswrapper
 {
     margin-top: 50px;
-    background-color: #4D4926;
+    background-color: #041B35;
     padding: 20px 0px;
-    
+
 }
 
 #techlash_sessionheading
@@ -1498,14 +1579,14 @@ SPECIAL CARDS
     background-color: #FFFFFF;
     border-radius: 3px;
     margin: 0px 20px;
-    
+
 }
 
 .archive_sponsors_wrapper h2
 {
     font-size: 20px;
     padding-bottom: 20px;
-    
+
 }
 
 
@@ -1522,7 +1603,7 @@ SPECIAL CARDS
     color: #666666;
     font-size: 16px;
     padding-bottom: 10px;
-    
+
 }
 
 .archive_sponsor_logo
@@ -1536,7 +1617,7 @@ SPECIAL CARDS
     background-color: #333333;
     color: #FFFFFF;
     text-align: center;
-    
+
 }
 
 #footer a
@@ -1547,8 +1628,8 @@ SPECIAL CARDS
 
 #sponsors_div
 {
-    background-color: #000000;
-    padding: 30px 0px;
+    background-color: #172736;
+    padding: 15px 0px;
     border-top: 1px solid #555555;
     border-bottom: 1px solid #555555;
 }
@@ -1557,7 +1638,7 @@ SPECIAL CARDS
 {
     color: #FFFFFF;
     font-size: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 #sponsors_div .sponsor_wrapper
@@ -1568,19 +1649,19 @@ SPECIAL CARDS
 
 #sponsors_div .sponsor_logo_wrapper
 {
-    padding: 20px;
+    padding: 10px;
 }
 
 #sponsors_div .sponsor_logo
 {
     height: 70px;
-    
+
 }
 
 
 #sponsors_div .sponsor_heading
 {
-    margin: 10px;
+    margin: 5px;
     color: #AAAAAA;
     font-size: 16px;
 }
@@ -1606,3 +1687,88 @@ SPECIAL CARDS
     text-align: center;
     margin: 200px;
 }
+
+
+
+.track_color_934
+{
+    color: #f52727;
+}
+
+.track_color_935
+{
+    color: #f527de;
+}
+
+.track_color_936
+{
+    color: #8e27f5;
+}
+
+.track_color_937
+{
+    color: #2771f5;
+}
+
+.track_color_938
+{
+    color: #27f59d;
+}
+
+.track_color_939
+{
+    color: #f6db18;
+}
+
+
+.track_color_tl
+{
+    color: #0067C7;
+}
+
+
+
+
+.track_color_bg_934
+{
+    background-color: #f52727;
+}
+
+.track_color_bg_935
+{
+    background-color: #f527de;
+}
+
+.track_color_bg_936
+{
+    background-color: #8e27f5;
+}
+
+.track_color_bg_937
+{
+    background-color: #2771f5;
+}
+
+.track_color_bg_938
+{
+    background-color: #27f59d;
+}
+
+.track_color_bg_939
+{
+    background-color: #f6db18;
+}
+
+
+.track_color_bg_tl
+{
+    background-color: #0067C7;
+}
+
+
+
+
+
+
+
+

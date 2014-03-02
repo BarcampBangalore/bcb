@@ -133,7 +133,7 @@ $cat_names = array(
                     ?>
                     <div id="card_author_attending">
                         <div >
-                            <h2 class="authorpage_sessiontype">Sessions attending</h2>
+                            <h2 class="authorpage_sessiontype">Sessions attended</h2>
 
                             <?php
                             $lastcat = "";

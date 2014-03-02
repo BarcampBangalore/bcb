@@ -5,6 +5,22 @@ function insertSponsors($bcbname)
 {
     switch ($bcbname)
     {
+        
+        case "bcb14":
+            ?>
+                            
+            <div class="archive_sponsors_wrapper">
+                <h2>Sponsors for <?php echo$bcbname  ?></h2>
+                <div class="archive_sponsor">
+                    <h3 class="archive_sponsor_title">Event Partner</h3>
+                    <div><img class="archive_sponsor_logo" src="<?php bloginfo('template_url')  ?>/images/sap_logo.png" /></div>
+                </div>
+                
+            </div>
+
+            <?php
+            break;
+        
         case "bcb13":
             ?>
                             
@@ -208,7 +224,7 @@ get_header(); ?>
                     //columnWidth: 400,
                     itemSelector: '.sessioncard',
                     masonry : {
-                        columnWidth : 300,
+                        columnWidth : 380,
                         gutterWidth: 20
                         
                     }
@@ -252,7 +268,7 @@ get_header(); ?>
 
         <div id="sessionpage_header">
             <div id="sessionpage_title" class="yellowbg">
-                <h1><?php the_title(); ?></h1>
+                <h1 class="techlash_heading"><?php the_title(); ?></h1>
             </div>
 
         </div>
@@ -261,7 +277,8 @@ get_header(); ?>
         <div id="sessionpage_midsection">
             <div id="generalpage_posttext">
                 <ul id="archivelinks">
-                    <li class="archive_selected"><a data-contentdiv="archive_bcb13">BCB13</a></li>
+                    <li class="archive_selected"><a data-contentdiv="archive_bcb14">BCB14</a></li>
+                    <li><a  data-contentdiv="archive_bcb13">BCB13</a></li>
                     <li><a  data-contentdiv="archive_bcb12">BCB12</a></li>
                     <li><a  data-contentdiv="archive_bcb11">BCB11</a></li>
                     <li><a  data-contentdiv="archive_bcb10">BCB10</a></li>
@@ -277,10 +294,10 @@ get_header(); ?>
         </div>
         <?php
         $techlash_categories = array(787, 639);
-        $archive_categories = array(636 => 'bcb13', 479 => 'bcb12', 399 => 'bcb11', 324 => 'bcb10', 220 => 'bcb9', 3 => 'bcb8' );
+        $archive_categories = array(785 => 'bcb14', 636 => 'bcb13', 479 => 'bcb12', 399 => 'bcb11', 324 => 'bcb10', 220 => 'bcb9', 3 => 'bcb8' );
         foreach ($archive_categories as $archive_cat => $archive_catname):
             ?>
-        <div id="archive_<?php echo $archive_catname; ?>" class="archive_parent" <?php if ($archive_catname != "bcb13")  echo 'style="display: none;"';  ?> >
+        <div id="archive_<?php echo $archive_catname; ?>" class="archive_parent" <?php if ($archive_catname != "bcb14")  echo 'style="display: none;"';  ?> >
             <a id="archivepage_<?php echo $archive_catname;?>" ></a>
             
             
@@ -310,7 +327,56 @@ get_header(); ?>
                         ?>
 
                         <div class="sessioncard" id="sessioncard<?php the_ID(); ?>">
-                            <div class="sessioncard_head">
+                            
+                            
+                            
+
+                        <div class="sessioncard_user track_color_bg_tl">
+        <?php echo '<a href="' . get_author_posts_url(get_the_author_meta('ID')) . '">' . get_the_author_meta('user_nicename') . '</a>'; ?>
+
+                        </div>
+                        <div class="sessioncard_useravatar"><?php echo '<a href="' . get_author_posts_url(get_the_author_meta('ID')) . '">' . get_avatar(get_the_author_meta('ID'), 48) . '</a>'; ?><?php //echo '<img src="http://placeimg.com/48/48/any" />';     ?></div>
+                        <?php if (isset($_COOKIE['bcb_last_visit']) && (get_the_time('U') > ($_COOKIE['bcb_last_visit'] > strtotime("-2 days") ? strtotime("-2 days") : $_COOKIE['bcb_last_visit'] ))) : ?>
+                            <div class="sessioncard_newtag">new</div>     
+                            <?php endif; ?>
+                        <div class="sessioncard_head">
+
+
+                            <div class="sessioncard_title">
+                                <a href="<?php echo get_permalink(); ?>" class="track_color_tl">
+        <?php the_title(); ?>
+                                </a>
+                            </div>
+
+                            
+                            <?php if ($is_techlash_session) : ?>
+                                <img class="techlash_flag" src="<?php bloginfo('template_url') ?>/images/techlash_flag.png" />
+        <?php endif; ?>
+
+                            
+                        </div>
+                        <div class="sessioncard_footer">
+                            <div class="sessioncard_user_comments">
+
+                                <a class="sessioncard_attendees_link" href="<?php echo get_permalink(); ?>#attendees"><img class="sessioncard_meta_image" src="<?php bloginfo('template_url') ?>/images/users_icon.jpg" />
+                                    <span class="sessioncard_meta_text"><?php echo attending_users_count(get_the_ID()) ?></span></a>
+
+                                <a href="<?php echo get_permalink(); ?>#comments"><img class="sessioncard_meta_image" src="<?php bloginfo('template_url') ?>/images/comments_icon.jpg" />
+                                    <span class="sessioncard_meta_text"><?php comments_number('0', '1', '%'); ?></span></a>
+
+
+                            </div>
+
+                            
+                            <div style="clear: both"></div>
+                        </div>
+
+
+                    
+                            
+                            
+                            
+<!--                            <div class="sessioncard_head">
 
                                 <div class="sessioncard_title">
                                     <a href="<?php echo get_permalink(); ?>">
@@ -325,7 +391,7 @@ get_header(); ?>
                                 <img class="techlash_flag" src="<?php bloginfo('template_url')  ?>/images/techlash_flag.png" />
                                                                 
                                 <?php  endif; ?>
-                            </div>
+                            </div>-->
                         </div>
 
 
