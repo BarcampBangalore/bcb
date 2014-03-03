@@ -4,6 +4,8 @@
 <?php 
 $latest_bcb_category = 931;
 $is_latest_bcb_session = false;
+$track_category_list = get_categories(array('child_of' => 932));
+$track_category = 931;
 $post_categories = wp_get_post_categories( get_the_ID() );
 
 foreach($post_categories as $c)
@@ -14,6 +16,15 @@ foreach($post_categories as $c)
     {
         $is_latest_bcb_session = true;
     }
+
+    foreach ($track_category_list as $tc)
+    {
+        if ($tc->term_id == $c)
+        {
+            $track_category = $tc->term_id;
+        }
+    }
+    
 
 }
 
@@ -30,7 +41,7 @@ foreach($post_categories as $c)
     <script type="text/javascript">
         $(function(){
             
-            $(".neo_attend_button").live("click", function(){
+            $("#sessionpage_rightmeta").on("click", ".neo_attend_button", function(){
                 
                 var card = $(this);
                 card.html('<img src="<?php bloginfo('template_url') ?>/images/ajaxloader.gif" />');
@@ -66,10 +77,10 @@ foreach($post_categories as $c)
     <div id="sessionpage_content">
 
         <div id="sessionpage_header">
-            <div id="sessionpage_title" class="yellowbg">
+            <div id="sessionpage_title" class="track_color_<?php echo $track_category; ?>">
                 <h1><?php the_title(); ?></h1>
             </div>
-            <div id="sessionpage_user">
+            <div id="sessionpage_user" class="track_color_bg_<?php  echo $track_category; ?>">
                 <?php echo '<a href="'.get_author_posts_url(get_the_author_meta('ID')).'">'.get_the_author_meta('user_nicename').'</a>'; ?> 
             </div>
             <div id="sessionpage_useravatar"><?php echo get_avatar( get_the_author_meta('ID'), 96 ); ?></div>
@@ -78,7 +89,9 @@ foreach($post_categories as $c)
         
         <div id="sessionpage_midsection">
             <div id="sessionppage_posttext">
+                <div id="sessionpage_description">
                 <?php the_content(); ?>
+                </div>
                 
                 
                 <div class="social_container">

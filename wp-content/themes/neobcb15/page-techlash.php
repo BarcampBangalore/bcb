@@ -62,7 +62,7 @@
                         //columnWidth: 400,
                         itemSelector: '.sessioncard',
                         masonry : {
-                            columnWidth : 300,
+                            columnWidth : 380,
                             gutterWidth: 20
                         
                         }
@@ -74,7 +74,31 @@
                         $container.isotope('reLayout');
                     });
                     
-                    
+                    $(".sessioncard_footer").on("click", ".neo_attend_button", function() {
+                
+
+                        var card = $(this);
+                        card.html('<img src="<?php bloginfo('template_url') ?>/images/ajaxloader.gif" />');
+
+                        $.post("<?php echo admin_url('admin-ajax.php?' . http_build_query(array("action" => "toggle_attend"))); ?>", {post_id: $(this).data("postid")}, function(data) {
+
+                            if (data.status != 'OK')
+                            {
+                                var r = confirm(data.status);
+                                if (r == true)
+                                {
+                                    window.location.href = "<?php echo wp_login_url(get_permalink()); ?>";
+                                }
+                                card.parent().html(data.button_text);
+                            }
+                            else
+                            {
+
+                                $("#sessioncard" + card.data("postid") + " .sessioncard_attendees_link .sessioncard_meta_text").html(data.attendees_count );
+                                card.parent().html(data.button_text);
+                            }
+                        }, 'json');
+                    });
                     
                     
                 });
@@ -86,9 +110,11 @@
     <div id="sessionpage_content">
 
         <div id="sessionpage_header">
+            
             <div id="sessionpage_title" class="yellowbg">
-                <h1><?php the_title(); ?></h1>
+                <h1 class="techlash_heading"><?php the_title(); ?></h1>
             </div>
+            
             
         </div>
         <div style="clear: both"></div>
@@ -111,7 +137,7 @@
             <div id="cards_parent">
         <?php 
         
-        $args = 'cat=787';
+        $args = 'cat=933';
         
         
         query_posts($args);
@@ -119,43 +145,59 @@
         while (have_posts()) : the_post();
         
         ?>
-        
-                        <div class="sessioncard" id="sessioncard<?php the_ID(); ?>">
-                            <div class="sessioncard_head">
-                                        
-                                <div class="sessioncard_title">
-                                    <a href="<?php echo get_permalink(); ?>">
-                                        <?php the_title(); ?>
-                                    </a>
-                                </div>
-                                <div class="sessioncard_user">
-                                    <?php echo '<a href="' . get_author_posts_url(get_the_author_meta('ID')) . '">' . get_the_author_meta('user_nicename') . '</a>'; ?> 
-                                </div>
-                                <div class="sessioncard_useravatar"><?php echo get_avatar( get_the_author_meta('ID'), 48 );    ?><?php  //echo '<img src="http://placeimg.com/48/48/any" />'; ?></div>
-                                <img class="techlash_flag" src="<?php bloginfo('template_url')  ?>/images/techlash_flag.png" />
+                
+                
+                <div class="sessioncard" id="sessioncard<?php the_ID(); ?>">
+
+                        <div class="sessioncard_user track_color_bg_tl">
+        <?php echo '<a href="' . get_author_posts_url(get_the_author_meta('ID')) . '">' . get_the_author_meta('user_nicename') . '</a>'; ?>
+
+                        </div>
+                        <div class="sessioncard_useravatar"><?php echo '<a href="' . get_author_posts_url(get_the_author_meta('ID')) . '">' . get_avatar(get_the_author_meta('ID'), 48) . '</a>'; ?><?php //echo '<img src="http://placeimg.com/48/48/any" />';     ?></div>
+                        <?php if (isset($_COOKIE['bcb_last_visit']) && (get_the_time('U') > ($_COOKIE['bcb_last_visit'] > strtotime("-2 days") ? strtotime("-2 days") : $_COOKIE['bcb_last_visit'] ))) : ?>
+                            <div class="sessioncard_newtag">new</div>     
+                            <?php endif; ?>
+                        <div class="sessioncard_head">
+
+
+                            <div class="sessioncard_title">
+                                <a href="<?php echo get_permalink(); ?>" class="track_color_tl">
+        <?php the_title(); ?>
+                                </a>
                             </div>
+
                             
-                            
-                            
-                            
-                            <div class="sessioncard_user_comments">
-                                <div class="sessioncard_users sessioncard_meta">
-                                    <img class="sessioncard_meta_image" src="<?php bloginfo('template_url')  ?>/images/users_icon.jpg" />
-                                    <span class="sessioncard_meta_text"><?php echo attending_users_count(get_the_ID()) ?> Attending</span>
-                                </div>
-                                <div class="sessioncard_comments sessioncard_meta">
-                                    <img class="sessioncard_meta_image" src="<?php bloginfo('template_url')  ?>/images/comments_icon.jpg" />
-                                    <span class="sessioncard_meta_text"><?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?></span>
-                                </div>
-                                <div style="clear: both" ></div>
-                            </div>
-                            
-                            
-                            
-                            
-                            
+                            <?php if ($is_techlash_session) : ?>
+                                <img class="techlash_flag" src="<?php bloginfo('template_url') ?>/images/techlash_flag.png" />
+        <?php endif; ?>
+
                             
                         </div>
+                        <div class="sessioncard_footer">
+                            <div class="sessioncard_user_comments">
+
+                                <a class="sessioncard_attendees_link" href="<?php echo get_permalink(); ?>#attendees"><img class="sessioncard_meta_image" src="<?php bloginfo('template_url') ?>/images/users_icon.jpg" />
+                                    <span class="sessioncard_meta_text"><?php echo attending_users_count(get_the_ID()) ?></span></a>
+
+                                <a href="<?php echo get_permalink(); ?>#comments"><img class="sessioncard_meta_image" src="<?php bloginfo('template_url') ?>/images/comments_icon.jpg" />
+                                    <span class="sessioncard_meta_text"><?php comments_number('0', '1', '%'); ?></span></a>
+
+
+                            </div>
+
+                            <div class="sessioncard_attend">
+
+        <?php echo get_my_attending_button(get_the_ID()); ?>
+
+                            </div>
+                            <div style="clear: both"></div>
+                        </div>
+
+
+                    </div>
+                
+                
+                
         
         
         <?php endwhile; ?>

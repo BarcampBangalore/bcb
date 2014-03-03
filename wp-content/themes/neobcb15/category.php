@@ -1,4 +1,14 @@
-<?php get_header(); ?>
+<?php 
+
+wp_safe_redirect( get_page_link(1458) );
+die();
+
+get_header(); 
+
+
+
+
+?>
 
 <div id="page_content">
     
@@ -61,7 +71,7 @@
                     // initialize
                     $container.isotope({
                         //columnWidth: 400,
-                        itemSelector: '.sessioncard',
+                        itemSelector: '.cards_track',
                         masonry : {
                             columnWidth : 300,
                             gutterWidth: 20
@@ -115,6 +125,11 @@
             <div id="categorypage_catname">Sessions for <span><?php single_cat_title();  ?></span></div>
 
             <div id="cards_parent">
+                <div id="cards_track_934" class="cards_track">aaaaaaaaa</div>
+                <div id="cards_track_935" class="cards_track">bbbbbbbbb</div>
+                <div id="cards_track_936" class="cards_track">ccccccccc</div>
+                <div id="cards_track_937" class="cards_track">ddddddddd</div>
+                
 
                 <?php if ( have_posts() ) :
                     
