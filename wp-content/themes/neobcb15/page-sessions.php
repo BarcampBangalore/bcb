@@ -134,7 +134,7 @@
 
                 if (!$sessionsloop->have_posts())
                 {
-                    echo '<div class="sessioncard_no_session_message">No Sessions in the track yet :)</div>';
+                    echo '<div class="sessioncard_no_session_message">No sessions in this track yet :)</div>';
                 }
 
                 while ($sessionsloop->have_posts()) : $sessionsloop->the_post();
