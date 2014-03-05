@@ -156,7 +156,14 @@ textarea:focus, input:focus{
 #navbar ul li
 {
     display: inline-block;
-    padding: 5px 20px;
+    margin: 0px 2px;
+    
+}
+
+#navbar ul li:hover
+{
+    background-color: #978356;
+    border-radius: 4px;
 }
 
 #navbar ul a
@@ -165,6 +172,9 @@ textarea:focus, input:focus{
     font-size: 20px;
     font-weight: bold;
     text-decoration: none;
+    padding: 5px 20px;
+    
+    display: block;
 
 }
 
