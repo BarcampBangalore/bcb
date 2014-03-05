@@ -1523,18 +1523,24 @@ SPECIAL CARDS
     box-shadow: 1px 1px 2px 0px #CCCCCC inset;
 }
 
+#normalpage_title
+{
+    background-color: #E4C88C;
+    color: #3F392A;
+    padding: 25px 50px;
+}
 
-.techlash_heading
+.normalpage_heading
 {
     
     font-size: 30px;
-    color: #777777;
+    
 }
 
 #techlash_cardswrapper
 {
     margin-top: 10px;
-    background-color: #041B35;
+    background-color: #3F392A;
     padding: 20px 0px;
 
 }
@@ -1650,7 +1656,7 @@ SPECIAL CARDS
 
 #sponsors_div
 {
-    background-color: #172736;
+    background-color: #3F392A;
     padding: 15px 0px;
     border-top: 1px solid #555555;
     border-bottom: 1px solid #555555;

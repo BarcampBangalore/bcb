@@ -267,8 +267,8 @@ get_header(); ?>
     <div id="sessionpage_content">
 
         <div id="sessionpage_header">
-            <div id="sessionpage_title" class="yellowbg">
-                <h1 class="techlash_heading"><?php the_title(); ?></h1>
+            <div id="normalpage_title" class="yellowbg">
+                <h1 class="normalpage_heading"><?php the_title(); ?></h1>
             </div>
 
         </div>
