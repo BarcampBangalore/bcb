@@ -116,8 +116,33 @@
     <!-- <div id="sessionspage_heading">Sessions for BCB Spring 2014</div>-->
 
     <div id="cards_parent">
+        
+        
+        <?php  
+        
+        /*
+         * 933 Techlash
+934 Design
+935 Mobile & Web
+936 General Technology
+940 Scaling & Infra
+941 Bangalore & Lifestyle
+942 Entrepreneurship
+943 Others
+         * 
+         * 
+Design - #F05353
+Mobile and Web - #5761E4
+Tech - #997A42
+Scaling and Infra -  #7C9244
+Bangalore and lifestyle - #62A4EB
+Entrepreneurship - #E9903E
+Rest of world - #5A4368
+         */  
+        
+        ?>
 
-        <?php foreach (array(934, 935, 936, 937) as $track_id) : ?>
+        <?php foreach (array(934, 935, 936, 940, 941, 942, 943) as $track_id) : ?>
 
 
             <div id="cards_track_934" class="cards_track">
