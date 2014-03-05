@@ -1780,19 +1780,37 @@ SPECIAL CARDS
 
 
 
+.track_color_933
+{
+    color: #8F4545;
+}
 
+.track_color_bg_933
+{
+    background-color: #8F4545;
+}
+
+/*  techlash = 933 */
 .track_color_tl
 {
-    color: #0067C7;
+    color: #8F4545;
 }
 
 .track_color_bg_tl
 {
-    background-color: #0067C7;
+    background-color: #8F4545;
 }
 
 
+.track_color_archive
+{
+    color: #9B1A09;
+}
 
+.track_color_bg_archive
+{
+    background-color: #9B1A09;
+}
 
 
 
