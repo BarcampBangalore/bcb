@@ -331,7 +331,7 @@ get_header(); ?>
                             
                             
 
-                        <div class="sessioncard_user track_color_bg_tl">
+                        <div class="sessioncard_user track_color_bg_archive">
         <?php echo '<a href="' . get_author_posts_url(get_the_author_meta('ID')) . '">' . get_the_author_meta('user_nicename') . '</a>'; ?>
 
                         </div>
@@ -343,7 +343,7 @@ get_header(); ?>
 
 
                             <div class="sessioncard_title">
-                                <a href="<?php echo get_permalink(); ?>" class="track_color_tl">
+                                <a href="<?php echo get_permalink(); ?>" class="track_color_archive">
         <?php the_title(); ?>
                                 </a>
                             </div>

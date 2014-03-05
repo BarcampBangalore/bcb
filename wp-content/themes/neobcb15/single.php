@@ -4,7 +4,7 @@
 <?php 
 $latest_bcb_category = 931;
 $is_latest_bcb_session = false;
-$track_category_list = get_categories(array('child_of' => 932));
+$track_category_list = get_categories(array('child_of' => 931));
 $track_category = 931;
 $post_categories = wp_get_post_categories( get_the_ID() );
 
