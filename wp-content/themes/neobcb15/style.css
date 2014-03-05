@@ -1714,73 +1714,77 @@ SPECIAL CARDS
 
 .track_color_934
 {
-    color: #f52727;
+    color: #F05353;
+}
+.track_color_bg_934
+{
+    background-color: #F05353;
 }
 
 .track_color_935
 {
-    color: #f527de;
+    color: #5761E4;
+}
+.track_color_bg_935
+{
+    background-color: #5761E4;
 }
 
 .track_color_936
 {
-    color: #8e27f5;
+    color: #997A42;
+}
+.track_color_bg_936
+{
+    background-color: #997A42;
 }
 
-.track_color_937
+.track_color_940
 {
-    color: #2771f5;
+    color: #7C9244;
+}
+.track_color_bg_940
+{
+    background-color: #7C9244;
 }
 
-.track_color_938
+.track_color_941
 {
-    color: #27f59d;
+    color: #62A4EB;
+}
+.track_color_bg_941
+{
+    background-color: #62A4EB;
 }
 
-.track_color_939
+.track_color_942
 {
-    color: #f6db18;
+    color: #E9903E;
 }
+.track_color_bg_942
+{
+    background-color: #E9903E;
+}
+
+.track_color_943
+{
+    color: #5A4368;
+}
+.track_color_bg_943
+{
+    background-color: #5A4368;
+}
+
+
+
+
+
 
 
 .track_color_tl
 {
     color: #0067C7;
 }
-
-
-
-
-.track_color_bg_934
-{
-    background-color: #f52727;
-}
-
-.track_color_bg_935
-{
-    background-color: #f527de;
-}
-
-.track_color_bg_936
-{
-    background-color: #8e27f5;
-}
-
-.track_color_bg_937
-{
-    background-color: #2771f5;
-}
-
-.track_color_bg_938
-{
-    background-color: #27f59d;
-}
-
-.track_color_bg_939
-{
-    background-color: #f6db18;
-}
-
 
 .track_color_bg_tl
 {
