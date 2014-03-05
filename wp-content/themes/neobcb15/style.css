@@ -156,7 +156,14 @@ textarea:focus, input:focus{
 #navbar ul li
 {
     display: inline-block;
-    padding: 5px 20px;
+    margin: 0px 2px;
+    
+}
+
+#navbar ul li:hover
+{
+    background-color: #978356;
+    border-radius: 4px;
 }
 
 #navbar ul a
@@ -165,6 +172,9 @@ textarea:focus, input:focus{
     font-size: 20px;
     font-weight: bold;
     text-decoration: none;
+    padding: 5px 20px;
+    
+    display: block;
 
 }
 
@@ -210,7 +220,7 @@ textarea:focus, input:focus{
     box-shadow: 0px 1px 0px #978356 inset;
     padding: 0px 15px;
     margin-left: 50px;
-    color: #FFFFFF;
+    color: #3F392A;
 }
 
 #searchform #searchsubmit
@@ -225,7 +235,7 @@ textarea:focus, input:focus{
 
 #searchform #searchsubmit:hover
 {
-    background-color: #FFB28E;
+    background-color: #3F392A;
 }
 
 #searchform #searchbuttonimage
@@ -1523,7 +1533,7 @@ SPECIAL CARDS
 
 #techlash_cardswrapper
 {
-    margin-top: 50px;
+    margin-top: 10px;
     background-color: #041B35;
     padding: 20px 0px;
 
@@ -1547,29 +1557,41 @@ SPECIAL CARDS
 #archivelinks li
 {
     display: inline-block;
-    background-color: #DDDDDD;
+    background-color: #E4C88C;
     border-radius: 3px;
-    margin: 5px;
-    padding: 10px 20px;
+    
 }
 
 #archivelinks li:hover
 {
-    background-color: #AAAAAA;
+    background-color: #978356;
 }
 
 #archivelinks a
 {
     color: #333333;
     cursor: pointer;
+    padding: 16px 34px;
+    display: block;
 }
 
 
 #archivelinks .archive_selected
 {
-    background-color: #2BBD1E;
+    background-color: #3F392A;
+    
 }
 
+#archivelinks .archive_selected a
+{
+    color: #E4C88C;
+}
+
+
+#archivelinks .archive_selected a:hover
+{
+    color: #333333;
+}
 
 
 
