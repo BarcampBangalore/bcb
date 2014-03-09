@@ -494,7 +494,10 @@ if(preg_match('#' . basename(__FILE__) . '#', $_SERVER['PHP_SELF'])) { die('TDOM
                       $options[$prefix.'char-limit'] = $options['ta-char-limit'];
                       unset($options['ta-char-limit']);
                   }
-                  
+                  if(isset($options['ta-min-char-limit'])) {
+                      $options[$prefix.'min-char-limit'] = $options['ta-min-char-limit'];
+                      unset($options['ta-min-char-limit']);
+                  }
                   if(isset($options['ta-word-limit'])) {
                       $options[$prefix.'word-limit'] = $options['ta-word-limit'];
                       unset($options['ta-word-limit']);

@@ -141,6 +141,7 @@ END;
                                'restrict-tags' => true,
                                'allowable-tags' => "<p><b><em><u><strong><a><img><table><tr><td><blockquote><ul><ol><li><br><sup>",
                                'char-limit' => 0,
+                               'min-char-limit' => 0,
                                'word-limit' => 0 );
           $recaptcha_options = get_option('recaptcha');
           if($recaptcha_options != false) {

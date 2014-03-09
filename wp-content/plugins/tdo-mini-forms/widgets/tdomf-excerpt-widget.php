@@ -126,7 +126,11 @@ if(preg_match('#' . basename(__FILE__) . '#', $_SERVER['PHP_SELF'])) { die('TDOM
               $options['excerpt-char-limit'] = $options['char-limit'];
               unset($options['char-limit']);
           }
-          
+
+          if(isset($options['min-char-limit'])) {
+              $options['excerpt-min-char-limit'] = $options['min-char-limit'];
+              unset($options['min-char-limit']);
+          }
           if(isset($options['word-limit'])) {
               $options['excerpt-word-limit'] = $options['word-limit'];
               unset($options['word-limit']);
