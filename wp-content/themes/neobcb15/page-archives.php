@@ -267,8 +267,8 @@ get_header(); ?>
     <div id="sessionpage_content">
 
         <div id="sessionpage_header">
-            <div id="sessionpage_title" class="yellowbg">
-                <h1 class="techlash_heading"><?php the_title(); ?></h1>
+            <div id="normalpage_title" class="yellowbg">
+                <h1 class="normalpage_heading"><?php the_title(); ?></h1>
             </div>
 
         </div>
@@ -293,7 +293,7 @@ get_header(); ?>
             <div style="clear: both"></div>
         </div>
         <?php
-        $techlash_categories = array(787, 639);
+        $techlash_categories = array(639, 787, 933);
         $archive_categories = array(785 => 'bcb14', 636 => 'bcb13', 479 => 'bcb12', 399 => 'bcb11', 324 => 'bcb10', 220 => 'bcb9', 3 => 'bcb8' );
         foreach ($archive_categories as $archive_cat => $archive_catname):
             ?>
@@ -318,7 +318,7 @@ get_header(); ?>
                     $post_categories = wp_get_post_categories( get_the_ID() );
 
                     foreach($post_categories as $c){
-                        if (array_search($c, $techlash_categories))
+                        if (array_search($c, $techlash_categories) !== FALSE)
                         {
                             $is_techlash_session = true;
                         }
@@ -349,9 +349,13 @@ get_header(); ?>
                             </div>
 
                             
-                            <?php if ($is_techlash_session) : ?>
-                                <img class="techlash_flag" src="<?php bloginfo('template_url') ?>/images/techlash_flag.png" />
-        <?php endif; ?>
+                            
+                            <div class="sessioncard_tagparent">
+                                <?php if ($is_techlash_session) : ?>
+                                    <div class="sessioncard_techlashtag">Techlash</div> 
+                                <?php endif; ?>
+                            </div>
+                        
 
                             
                         </div>

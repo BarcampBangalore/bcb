@@ -111,8 +111,8 @@
 
         <div id="sessionpage_header">
             
-            <div id="sessionpage_title" class="yellowbg">
-                <h1 class="techlash_heading"><?php the_title(); ?></h1>
+            <div id="normalpage_title" class="yellowbg">
+                <h1 class="normalpage_heading"><?php the_title(); ?></h1>
             </div>
             
             
@@ -167,9 +167,18 @@
                             </div>
 
                             
-                            <?php if ($is_techlash_session) : ?>
-                                <img class="techlash_flag" src="<?php bloginfo('template_url') ?>/images/techlash_flag.png" />
-        <?php endif; ?>
+                            
+                                <div class="sessioncard_tagparent">
+                                
+                                    
+                                    <?php if ( get_the_time('U') > strtotime("-4 days")): ?>
+                            <div class="sessioncard_newtag">new</div>     
+                            <?php endif; ?>
+                            <div class="sessioncard_techlashtag">Techlash</div>
+                                     
+                            </div>
+                            
+        
 
                             
                         </div>
