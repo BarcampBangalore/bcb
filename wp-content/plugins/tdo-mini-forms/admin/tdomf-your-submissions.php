@@ -247,7 +247,7 @@ function tdomf_show_your_submissions_menu() {
      .tdomf_form {
      }
      .tdomf_form fieldset legend {
-       #border-bottom: 1px dotted black;
+       border-bottom: 1px dotted black;
        font-weight: bold;
        padding: 0px;
        margin: 0px;
