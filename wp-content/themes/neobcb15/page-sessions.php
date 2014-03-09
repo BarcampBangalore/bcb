@@ -171,9 +171,7 @@ Rest of world - #5A4368
 
                         </div>
                         <div class="sessioncard_useravatar"><?php echo '<a href="' . get_author_posts_url(get_the_author_meta('ID')) . '">' . get_avatar(get_the_author_meta('ID'), 48) . '</a>'; ?><?php //echo '<img src="http://placeimg.com/48/48/any" />';     ?></div>
-                        <?php if (isset($_COOKIE['bcb_last_visit']) && (get_the_time('U') > ($_COOKIE['bcb_last_visit'] > strtotime("-2 days") ? strtotime("-2 days") : $_COOKIE['bcb_last_visit'] ))) : ?>
-                            <div class="sessioncard_newtag">new</div>     
-                            <?php endif; ?>
+                        
                         <div class="sessioncard_head">
 
 
@@ -184,19 +182,24 @@ Rest of world - #5A4368
                             </div>
 
                             
-                            <?php if ($is_techlash_session) : ?>
-                                <img class="techlash_flag" src="<?php bloginfo('template_url') ?>/images/techlash_flag.png" />
-        <?php endif; ?>
+                            <div class="sessioncard_tagparent">
+                                
+                                <?php if ( get_the_time('U') > strtotime("-4 days")) : ?>
+                                    <div class="sessioncard_newtag">new</div>     
+                                <?php endif; ?>
+                            </div>
+                            
+                            
 
                             
                         </div>
                         <div class="sessioncard_footer">
                             <div class="sessioncard_user_comments">
 
-                                <a class="sessioncard_attendees_link" href="<?php echo get_permalink(); ?>#attendees"><img class="sessioncard_meta_image" src="<?php bloginfo('template_url') ?>/images/users_icon.jpg" />
+                                <a class="sessioncard_attendees_link" href="<?php echo get_permalink(); ?>#attendees"  title="Attendees" ><img class="sessioncard_meta_image" src="<?php bloginfo('template_url') ?>/images/users_icon.jpg" alt="Attendees" title="Attendees" />
                                     <span class="sessioncard_meta_text"><?php echo attending_users_count(get_the_ID()) ?></span></a>
 
-                                <a href="<?php echo get_permalink(); ?>#comments"><img class="sessioncard_meta_image" src="<?php bloginfo('template_url') ?>/images/comments_icon.jpg" />
+                                <a href="<?php echo get_permalink(); ?>#comments" title="http://localhost/bcb15/?page_id=1458" ><img class="sessioncard_meta_image" src="<?php bloginfo('template_url') ?>/images/comments_icon.jpg" alt="Comments" title="Comments" />
                                     <span class="sessioncard_meta_text"><?php comments_number('0', '1', '%'); ?></span></a>
 
 

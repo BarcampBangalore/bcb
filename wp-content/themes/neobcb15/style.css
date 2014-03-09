@@ -82,8 +82,8 @@ body {
 
 
     /*background-image: url(images/background_pattern.jpg); */
-    background-color: #e4e4e4;
-
+    /*background-color: #e4e4e4;*/
+    background-color: #7C704F;
 
 }
 
@@ -390,9 +390,10 @@ Color classes
 
     font-size: 28px;
     padding: 14px;
-    color: #3F8300;
+    color: #7E6E46;
 
-    border-bottom: 2px solid #3F8300;
+    border-bottom: 1px solid #7E6E46;
+    box-shadow: 0px 2px 2px 0px #DFDFDF;
 }
 
 .homecard_content
@@ -538,7 +539,7 @@ SPECIAL CARDS
 
 #tagcard
 {
-    background-color: #BD3636;
+    background-color: #D8BE86;
     text-align: center;
 }
 
@@ -546,13 +547,13 @@ SPECIAL CARDS
 {
     font-size: 50px;
     padding: 20px;
-    color: #FFFFFF;
+    color: #3F392A;
 }
 
 #tagcard p
 {
     padding: 0px 20px 20px 20px;
-    color: #FFFFFF;
+    color: #3F392A;
     font-size: 20px;
 }
 
@@ -623,12 +624,12 @@ SPECIAL CARDS
 
 .sessioncard
 {
-    width: 335px;
+    width: 346px;
     position: relative;
     margin-bottom: 20px;
     margin-top: 50px;
 
-    box-shadow: 0px 1px 1px #CCCCCC;
+    box-shadow: 2px 2px 1px #CCCCCC;
     border-radius: 3px;
     /*    display: inline-block;*/
 
@@ -689,7 +690,7 @@ SPECIAL CARDS
     display: inline-block;
 
     color: #FFFFFF;
-    opacity: 0.7;
+    opacity: 0.8;
     text-align: left;
     padding: 5px 20px 7px 40px;
     font-size: 14px;
@@ -715,35 +716,62 @@ SPECIAL CARDS
 .sessioncard_useravatar 
 {
     position: absolute;
-    left: -12px;
-    top: -35px;
-    border-radius: 24px;
+    left: -10px;
+    top: -40px;
+    border-radius: 6px;
     overflow: hidden;
     /*box-shadow: 0px 0px 0px 3px #FFFFFF, 0px 0px 0px 6px #FED904;*/
-    width: 48px;
-    height: 48px;
+    width: 60px;
+    height: 60px;
     z-index: 5;
 }
 
 .sessioncard_useravatar img
 {
-    border-radius: 24px;
+    border-radius: 6px;
+    position: relative;
+    top: 5px;
+    left: 5px;
+    box-shadow: 1px 1px 3px #AAAAAA;
 }
 
 
-.sessioncard_newtag
+.sessioncard_tagparent
 {
     position: absolute;
+    top: 0px;
     right: 0px;
+    
+}
+
+.sessioncard_newtag
+{
+    
     color: #FFFFFF;
     height: 17px;
     width: 50px;
     background-color: #616161;
-    top: 0px;
+    margin-left: 3px;
     text-align: center;
     border-bottom-left-radius: 3px;
-    
+    float: right;
     z-index: 2;
+}
+
+.sessioncard_techlashtag
+{
+    
+    
+    color: #FFFFFF;
+    height: 17px;
+    width: 62px;
+    background-color: #6E80C9;
+    margin-left: 3px;
+    text-align: center;
+    border-bottom-left-radius: 3px;
+    z-index: 2;
+    float: right;
+    border-bottom-right-radius: 3px;
 }
 
 .sessioncard_excerpt
@@ -873,7 +901,7 @@ SPECIAL CARDS
     font-size: 17px;
     font-weight: bold;
     cursor: pointer;
-    width: 158px;
+    width: 169px;
 
 }
 
@@ -907,7 +935,7 @@ SPECIAL CARDS
     margin-left: auto;
     margin-right: auto;
     background-color: #F8F8F8;
-    padding-top: 50px;
+    padding-top: 0px;
 
 }
 
@@ -946,8 +974,8 @@ SPECIAL CARDS
     position: relative;
     font-weight: bold;
     color: #FFFFFF;
-    border-bottom-right-radius: 20px;
-    border-top-right-radius: 20px;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
 
 }
 
@@ -972,7 +1000,7 @@ SPECIAL CARDS
 
 #sessionpage_useravatar img
 {
-    border-radius: 48px;
+    border-radius: 12px;
 }
 
 #sessionpage_midsection
@@ -1300,7 +1328,7 @@ SPECIAL CARDS
 
 #authorpage_username
 {
-    color: #DA6833;
+    color: #978356;
     font-size: 30px;
     word-break: break-all;
 }
@@ -1310,7 +1338,7 @@ SPECIAL CARDS
     position: absolute;
     right: -58px;
     top: 10px;
-    border-radius: 48px;
+    border-radius: 12px;
     height: 96px;
     width: 96px;
     background-color: #FFFFFF;
@@ -1351,13 +1379,15 @@ SPECIAL CARDS
 #authorpage_sessions .authorpage_sessiontype
 {
     display: block;
-    background-color: #DA6833;
+    background-color: #D8BE86;
     color: #FFFFFF;
     padding: 20px 40px;
     font-size: 26px;
     margin-top: 30px;
     margin-right: 30px;
     box-shadow: 2px 2px 3px #AAAAAA;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 
 }
 
@@ -1525,9 +1555,10 @@ SPECIAL CARDS
 
 #normalpage_title
 {
-    background-color: #E4C88C;
-    color: #3F392A;
+    background-color: #FFFFFF;;
+    color: #8F4545;
     padding: 25px 50px;
+    box-shadow: 0px 2px 2px #BBBBBB;
 }
 
 .normalpage_heading
@@ -1540,7 +1571,7 @@ SPECIAL CARDS
 #techlash_cardswrapper
 {
     margin-top: 10px;
-    background-color: #3F392A;
+    /*background-color: #3F392A;*/
     padding: 20px 0px;
 
 }
@@ -1549,7 +1580,10 @@ SPECIAL CARDS
 {
     color: #FFFFFF;
     font-size: 20px;
-    margin: 20px 0px 20px 30px;
+    margin: 20px;
+    background-color: #B66B61;
+    padding: 13px;
+    border-radius: 8px;
 }
 
 #archivelinks
@@ -1579,12 +1613,13 @@ SPECIAL CARDS
     cursor: pointer;
     padding: 16px 34px;
     display: block;
+    font-weight: bold;
 }
 
 
 #archivelinks .archive_selected
 {
-    background-color: #3F392A;
+    background-color: #7C6D47;
     
 }
 
@@ -1720,65 +1755,65 @@ SPECIAL CARDS
 
 .track_color_934
 {
-    color: #F05353;
+    color: #D35D5D;
 }
 .track_color_bg_934
 {
-    background-color: #F05353;
+    background-color: #D35D5D;
 }
 
 .track_color_935
 {
-    color: #5761E4;
+    color: #777DD1;
 }
 .track_color_bg_935
 {
-    background-color: #5761E4;
+    background-color: #777DD1;
 }
 
 .track_color_936
 {
-    color: #997A42;
+    color: #AA8E5D;
 }
 .track_color_bg_936
 {
-    background-color: #997A42;
+    background-color: #AA8E5D;
 }
 
 .track_color_940
 {
-    color: #7C9244;
+    color: #879958;
 }
 .track_color_bg_940
 {
-    background-color: #7C9244;
+    background-color: #879958;
 }
 
 .track_color_941
 {
-    color: #62A4EB;
+    color: #7CB4F1;
 }
 .track_color_bg_941
 {
-    background-color: #62A4EB;
+    background-color: #7CB4F1;
 }
 
 .track_color_942
 {
-    color: #E9903E;
+    color: #EB9E58;
 }
 .track_color_bg_942
 {
-    background-color: #E9903E;
+    background-color: #EB9E58;
 }
 
 .track_color_943
 {
-    color: #5A4368;
+    color: #756480;
 }
 .track_color_bg_943
 {
-    background-color: #5A4368;
+    background-color: #756480;
 }
 
 
@@ -1788,34 +1823,34 @@ SPECIAL CARDS
 
 .track_color_933
 {
-    color: #8F4545;
+    color: #B66B61;
 }
 
 .track_color_bg_933
 {
-    background-color: #8F4545;
+    background-color: #B66B61;
 }
 
 /*  techlash = 933 */
 .track_color_tl
 {
-    color: #8F4545;
+    color: #B66B61;
 }
 
 .track_color_bg_tl
 {
-    background-color: #8F4545;
+    background-color: #B66B61;
 }
 
 
 .track_color_archive
 {
-    color: #9B1A09;
+    color: #B66B61;
 }
 
 .track_color_bg_archive
 {
-    background-color: #9B1A09;
+    background-color: #B66B61;
 }
 
 

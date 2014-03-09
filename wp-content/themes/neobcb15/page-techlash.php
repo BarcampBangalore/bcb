@@ -167,9 +167,18 @@
                             </div>
 
                             
-                            <?php if ($is_techlash_session) : ?>
-                                <img class="techlash_flag" src="<?php bloginfo('template_url') ?>/images/techlash_flag.png" />
-        <?php endif; ?>
+                            
+                                <div class="sessioncard_tagparent">
+                                
+                                    
+                                    <?php if ( get_the_time('U') > strtotime("-4 days")): ?>
+                            <div class="sessioncard_newtag">new</div>     
+                            <?php endif; ?>
+                            <div class="sessioncard_techlashtag">Techlash</div>
+                                     
+                            </div>
+                            
+        
 
                             
                         </div>
