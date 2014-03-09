@@ -1446,6 +1446,7 @@ class TDOMF_WidgetFieldTextField extends TDOMF_WidgetField {
                        $this->prefix.'restrict-tags' => false,
                        $this->prefix.'allowable-tags' => "<p><b><em><u><strong><a><img><table><tr><td><blockquote><ul><ol><li><br><sup>",
                        $this->prefix.'char-limit' => 0,
+                       $this->prefix.'min-char-limit' => 0,
                        $this->prefix.'word-limit' => 0,                      
                        $this->prefix.'use-filter' => false, #true, 'preview', 'post'
                        $this->prefix.'filter' => 'the_title',
@@ -1485,6 +1486,9 @@ class TDOMF_WidgetFieldTextField extends TDOMF_WidgetField {
             }
             if($opts[$this->prefix.'char-limit'] > 0) {
                 $output .= sprintf(__("<small>Max Character Limit: %d</small>","tdomf"),$opts[$this->prefix.'char-limit'])."<br/>";
+            }
+            if($opts[$this->prefix.'min-char-limit'] > 0) {
+                $output .= sprintf(__("<small>Min Character Limit: %d</small>","tdomf"),$opts[$this->prefix.'min-char-limit'])."<br/>";
             }
         
         } else if($opts[$this->prefix.'restrict-type'] == 'number') {
@@ -1610,6 +1614,9 @@ class TDOMF_WidgetFieldTextField extends TDOMF_WidgetField {
             }
             if($opts[$this->prefix.'char-limit'] > 0) {
               $output .= "\t\t".sprintf(__("<small>Max Character Limit: %d</small>","tdomf"),$opts[$this->prefix.'char-limit'])."\n\t\t<br/>\n";
+            }
+            if($opts[$this->prefix.'min-char-limit'] > 0) {
+              $output .= "\t\t".sprintf(__("<small>Min Character Limit: %d</small>","tdomf"),$opts[$this->prefix.'min-char-limit'])."\n\t\t<br/>\n";
             }
         
         } else if($opts[$this->prefix.'restrict-type'] == 'number') {
@@ -1778,6 +1785,7 @@ class TDOMF_WidgetFieldTextField extends TDOMF_WidgetField {
             $retOptions = $this->updateOptsBoolean($retOptions,$this->prefix.'restrict-tags',$show,$hide);
             $retOptions = $this->updateOptsString($retOptions,$this->prefix.'allowable-tags',$show,$hide);
             $retOptions = $this->updateOptsInt($retOptions,$this->prefix.'char-limit',$show,$hide);
+            $retOptions = $this->updateOptsInt($retOptions,$this->prefix.'min-char-limit',$show,$hide);
             $retOptions = $this->updateOptsInt($retOptions,$this->prefix.'word-limit',$show,$hide);
             /*$retOptions = $this->updateOptsBoolean($retOptions,$this->prefix.'use-filter',$show,$hide);
             $retOptions = $this->updateOptsString($retOptions,$this->prefix.'filter',$show,$hide);*/
@@ -1819,6 +1827,11 @@ class TDOMF_WidgetFieldTextField extends TDOMF_WidgetField {
         if($this->useOpts($this->prefix.'char-limit',$show,$hide)) { ?> 
 <label for="<?php echo $this->prefix; ?>char-limit" style="line-height:35px;"><?php _e("Character Limit <i>(0 indicates no limit)</i>","tdomf"); ?></label>
 <input type="textfield" name="<?php echo $this->prefix; ?>char-limit" id="<?php echo $this->prefix; ?>char-limit" value="<?php echo htmlentities($options[$this->prefix.'char-limit'],ENT_QUOTES,get_bloginfo('charset')); ?>" size="3" />
+<br/>
+  <?php }
+        if($this->useOpts($this->prefix.'min-char-limit',$show,$hide)) { ?> 
+<label for="<?php echo $this->prefix; ?>min-char-limit" style="line-height:35px;"><?php _e("Minimum character Limit <i>(0 indicates no limit)</i>","tdomf"); ?></label>
+<input type="textfield" name="<?php echo $this->prefix; ?>min-char-limit" id="<?php echo $this->prefix; ?>min-char-limit" value="<?php echo htmlentities($options[$this->prefix.'min-char-limit'],ENT_QUOTES,get_bloginfo('charset')); ?>" size="3" />
 <br/>
   <?php }
         if($this->useOpts($this->prefix.'word-limit',$show,$hide)) { ?>
@@ -2025,12 +2038,15 @@ class TDOMF_WidgetFieldTextField extends TDOMF_WidgetField {
         // does it fit the counts?
         
         if(empty($output) && $opts[$this->prefix.'restrict-type'] == 'text' &&
-            ($opts[$this->prefix.'word-limit'] > 0 || $opts[$this->prefix.'char-limit']) > 0) {
+            ($opts[$this->prefix.'word-limit'] > 0 || $opts[$this->prefix.'char-limit']) > 0 || $opts[$this->prefix.'min-char-limit'] > 0) {
             if($opts[$this->prefix.'allowable-tags'] != "" && $opts[$this->prefix.'restrict-tags']) {
               $text = strip_tags($text,$opts[$this->prefix.'allowable-tags']);
             }
             
             $len = strlen($text);
+          if($opts[$this->prefix.'min-char-limit'] > 0 && $len < $opts[$this->prefix.'min-char-limit']) {
+                $output .= sprintf(__("Session description requires minimum of %d characters, you have entered %d.","tdomf"),($opts[$this->prefix.'min-char-limit']),($len));
+            }
           if($opts[$this->prefix.'char-limit'] > 0 && $len > $opts[$this->prefix.'char-limit']) {
             if(!empty($opts[$this->prefix.'title'])) {
                 $output .= sprintf(__("You have exceeded the max character length by %d characters for %s.","tdomf"),($len - $opts[$this->prefix.'char-limit']),$opts[$this->prefix.'title']);
@@ -2143,6 +2159,7 @@ class TDOMF_WidgetFieldTextArea extends TDOMF_WidgetField {
                        $this->prefix.'restrict-tags' => true,
                        $this->prefix.'allowable-tags' => "<p><b><em><u><strong><a><img><table><tr><td><blockquote><ul><ol><li><br><sup>",
                        $this->prefix.'char-limit' => 0,
+                       $this->prefix.'min-char-limit' => 0,
                        $this->prefix.'word-limit' => 0,
                        $this->prefix.'required' => true,
                        $this->prefix.'use-filter' => false, # 'preview', 'post', true/enabled, false/disabled
@@ -2181,6 +2198,9 @@ class TDOMF_WidgetFieldTextArea extends TDOMF_WidgetField {
         }
         if($opts[$this->prefix.'char-limit'] > 0) {
             $output .= sprintf(__("<small>Max Character Limit: %d</small>","tdomf"),$opts[$this->prefix.'char-limit'])."<br/>";
+        }
+        if($opts[$this->prefix.'min-char-limit'] > 0) {
+            $output .= sprintf(__("<small>Min Character Limit: %d</small>","tdomf"),$opts[$this->prefix.'min-char-limit'])."<br/>";
         }
         if($opts[$this->prefix.'quicktags']) {
             $qt_path = TDOMF_URLPATH."tdomf-quicktags.js.php?postfix=".$this->prepJSCode($this->prefix).'ta';
@@ -2221,6 +2241,9 @@ class TDOMF_WidgetFieldTextArea extends TDOMF_WidgetField {
         }
         if($opts[$this->prefix.'char-limit'] > 0) {
           $output .= "\t\t".sprintf(__("<small>Max Character Limit: %d</small>","tdomf"),$opts[$this->prefix.'char-limit'])."\n\t\t<br/>\n";
+        }
+        if($opts[$this->prefix.'min-char-limit'] > 0) {
+          $output .= "\t\t".sprintf(__("<small>Min Character Limit: %d</small>","tdomf"),$opts[$this->prefix.'min-char-limit'])."\n\t\t<br/>\n";
         }
         if($opts[$this->prefix.'quicktags'] == true) {
           $qt_path = TDOMF_URLPATH."tdomf-quicktags.js.php?postfix=".$this->prepJSCode($this->prefix).'ta';
@@ -2343,6 +2366,7 @@ class TDOMF_WidgetFieldTextArea extends TDOMF_WidgetField {
             $retOptions = $this->updateOptsBoolean($retOptions,$this->prefix.'restrict-tags',$show,$hide);
             $retOptions = $this->updateOptsString($retOptions,$this->prefix.'allowable-tags',$show,$hide);
             $retOptions = $this->updateOptsInt($retOptions,$this->prefix.'char-limit',$show,$hide);
+            $retOptions = $this->updateOptsInt($retOptions,$this->prefix.'min-char-limit',$show,$hide);
             $retOptions = $this->updateOptsInt($retOptions,$this->prefix.'word-limit',$show,$hide);
             $retOptions = $this->updateOptsBoolean($retOptions,$this->prefix.'required',$show,$hide);
             /*$retOptions = $this->updateOptsBoolean($retOptions,$this->prefix.'use-filter',$show,$hide);
@@ -2371,6 +2395,11 @@ class TDOMF_WidgetFieldTextArea extends TDOMF_WidgetField {
         if($this->useOpts($this->prefix.'char-limit',$show,$hide)) { ?> 
 <label for="<?php echo $this->prefix; ?>char-limit" style="line-height:35px;"><?php _e("Character Limit <i>(0 indicates no limit)</i>","tdomf"); ?></label>
 <input type="textfield" name="<?php echo $this->prefix; ?>char-limit" id="<?php echo $this->prefix; ?>char-limit" value="<?php echo htmlentities($options[$this->prefix.'char-limit'],ENT_QUOTES,get_bloginfo('charset')); ?>" size="3" />
+<br/>
+ <?php } 
+        if($this->useOpts($this->prefix.'min-char-limit',$show,$hide)) { ?> 
+<label for="<?php echo $this->prefix; ?>min-char-limit" style="line-height:35px;"><?php _e("Minimum character Limit <i>(0 indicates no limit)</i>","tdomf"); ?></label>
+<input type="textfield" name="<?php echo $this->prefix; ?>min-char-limit" id="<?php echo $this->prefix; ?>min-char-limit" value="<?php echo htmlentities($options[$this->prefix.'min-char-limit'],ENT_QUOTES,get_bloginfo('charset')); ?>" size="3" />
 <br/>
   <?php }
         if($this->useOpts($this->prefix.'word-limit',$show,$hide)) { ?>
@@ -2454,7 +2483,7 @@ class TDOMF_WidgetFieldTextArea extends TDOMF_WidgetField {
         
         // does it fit the counts?
         
-        if(empty($output) && ($opts[$this->prefix.'word-limit'] > 0 || $opts[$this->prefix.'char-limit'] > 0)) {
+        if(empty($output) && ($opts[$this->prefix.'word-limit'] > 0 || $opts[$this->prefix.'char-limit'] > 0 || $opts[$this->prefix.'min-char-limit'] > 0)) {
                          
           // prefitler the text so it's as close to the end result as possible
 
@@ -2476,6 +2505,9 @@ class TDOMF_WidgetFieldTextArea extends TDOMF_WidgetField {
           /*$output .= "Stripped output: <pre>".htmlentities($text)."</pre><br/>";*/
           
           $len = strlen($text);
+           if($opts[$this->prefix.'min-char-limit'] > 0 && $len < $opts[$this->prefix.'min-char-limit']) {
+                $output .= sprintf(__("Session description requires minimum of %d characters, you have entered %d.","tdomf"),($opts[$this->prefix.'min-char-limit']),($len));
+          }
           if($opts[$this->prefix.'char-limit'] > 0 && $len > $opts[$this->prefix.'char-limit']) {
             if(!empty($opts[$this->prefix.'title'])) {
                 $output .= sprintf(__("You have exceeded the max character length by %d characters for %s.","tdomf"),($len - $opts[$this->prefix.'char-limit']),$opts[$this->prefix.'title']);
