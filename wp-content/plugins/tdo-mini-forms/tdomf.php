@@ -566,7 +566,7 @@ require_once(TDOMF_FULLPATH.'include'.DIRECTORY_SEPARATOR.'tdomf-hacks.php');
 //////////////////////////////////////////////////////////////////////////
 // A potential fix for WordpressMU (WordpressMU is officially unsupported)
 //
-require_once(ABSPATH . 'wp-includes/pluggable.php');
+// require_once(ABSPATH . 'wp-includes/pluggable.php');
 
 // Is this a Wordpress < 2.5 install?
 //

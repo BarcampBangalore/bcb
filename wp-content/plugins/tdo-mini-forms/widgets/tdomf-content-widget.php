@@ -206,6 +206,11 @@ if(preg_match('#' . basename(__FILE__) . '#', $_SERVER['PHP_SELF'])) { die('TDOM
               unset($options['char-limit']);
           }
           
+          if(isset($options['min-char-limit'])) {
+              $options['content-text-min-char-limit'] = $options['min-char-limit'];
+              unset($options['min-char-limit']);
+          }
+          
           if(isset($options['word-limit'])) {
               $options['content-text-word-limit'] = $options['word-limit'];
               unset($options['word-limit']);
@@ -353,6 +358,7 @@ if(preg_match('#' . basename(__FILE__) . '#', $_SERVER['PHP_SELF'])) { die('TDOM
                               'content-text-restrict-tags',
                               'content-text-allowable-tags',
                               'content-text-char-limit',
+                              'content-text-min-char-limit',
                               'content-text-word-limit',
                               'content-text-required',
                               'content-text-title',
@@ -368,6 +374,7 @@ if(preg_match('#' . basename(__FILE__) . '#', $_SERVER['PHP_SELF'])) { die('TDOM
                               'content-text-restrict-tags',
                               'content-text-allowable-tags',
                               'content-text-char-limit',
+                              'content-text-min-char-limit',
                               'content-text-word-limit',
                               'content-text-required',
                               'content-text-title');
