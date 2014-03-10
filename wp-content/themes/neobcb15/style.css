@@ -751,12 +751,66 @@ SPECIAL CARDS
     height: 17px;
     width: 50px;
     background-color: #616161;
-    margin-left: 3px;
+    margin-left: 2px;
+    margin-right: 2px;
     text-align: center;
     border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
     float: right;
     z-index: 2;
 }
+
+.sessioncard_difficultytag0
+{
+    
+    color: #FFFFFF;
+    height: 17px;
+    width: 95px;
+    background-color: #616161;
+    margin-left: 2px;
+    margin-right: 2px;
+    text-align: center;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    float: right;
+    z-index: 2;
+}
+
+
+.sessioncard_difficultytag1
+{
+    
+    color: #FFFFFF;
+    height: 17px;
+    width: 95px;
+    background-color: #616161;
+    margin-left: 2px;
+    margin-right: 2px;
+    text-align: center;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    float: right;
+    z-index: 2;
+}
+
+
+.sessioncard_difficultytag2
+{
+    
+    color: #FFFFFF;
+    height: 17px;
+    width: 95px;
+    background-color: #616161;
+    margin-left: 2px;
+    margin-right: 2px;
+    text-align: center;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    float: right;
+    z-index: 2;
+}
+
+
 
 .sessioncard_techlashtag
 {
@@ -766,12 +820,14 @@ SPECIAL CARDS
     height: 17px;
     width: 62px;
     background-color: #6E80C9;
-    margin-left: 3px;
+    margin-left: 2px;
+    margin-right: 2px;
     text-align: center;
     border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
     z-index: 2;
     float: right;
-    border-bottom-right-radius: 3px;
+    
 }
 
 .sessioncard_excerpt
