@@ -133,7 +133,7 @@
        
     
         <div id="techlash_cardswrapper">
-            <h2 id="techlash_sessionheading">Techlash sessions for BCB Monsoon 2013</h2>
+            <h2 id="techlash_sessionheading">Techlash sessions for BCB Spring 2014</h2>
             <div id="cards_parent">
         <?php 
         
