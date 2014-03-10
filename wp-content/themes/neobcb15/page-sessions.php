@@ -142,7 +142,12 @@ Rest of world - #5A4368
         
         ?>
 
-        <?php foreach (array(934, 935, 936, 940, 941, 942, 943) as $track_id) : ?>
+        <?php 
+        
+        $difficulty_tags = array(945, 947, 946);
+        
+        
+        foreach (array(934, 935, 936, 940, 941, 942, 943) as $track_id) : ?>
 
 
             <div id="cards_track_934" class="cards_track">
@@ -179,6 +184,7 @@ Rest of world - #5A4368
                                 <a href="<?php echo get_permalink(); ?>" class="track_color_<?php echo $track_id; ?>">
         <?php the_title(); ?>
                                 </a>
+                                
                             </div>
 
                             
@@ -187,6 +193,23 @@ Rest of world - #5A4368
                                 <?php if ( get_the_time('U') > strtotime("-4 days")) : ?>
                                     <div class="sessioncard_newtag">new</div>     
                                 <?php endif; ?>
+                                    
+                                <?php  $tags = get_the_tags(); 
+                                
+                                foreach ($tags as $tagid => $tagobj)
+                                {
+                                    $tagtype = array_search($tagid, $difficulty_tags);
+                                    if ( $tagtype !== FALSE)
+                                    {
+                                        
+                                        echo '<div class="sessioncard_difficultytag'.$tagtype.'">' . $tagobj->name . '</div> ';
+                                        
+                                    }
+                                }
+                                
+                                ?>
+                                    
+                                    
                             </div>
                             
                             
