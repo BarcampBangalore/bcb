@@ -15,6 +15,27 @@ function insertSponsors($bcbname)
                     <h3 class="archive_sponsor_title">Event Partner</h3>
                     <div><img class="archive_sponsor_logo" src="<?php bloginfo('template_url')  ?>/images/sap_logo.png" /></div>
                 </div>
+                <div class="archive_sponsor">
+                    <h3 class="archive_sponsor_title">Silver Sponsor</h3>
+                    <div><img class="archive_sponsor_logo" src="<?php bloginfo('template_url')  ?>/images/sponz_logos/intuit_blue.gif" /></div>
+                </div>
+                <div class="archive_sponsor">
+                    <h3 class="archive_sponsor_title">Community Partner</h3>
+                    <div><img class="archive_sponsor_logo" src="<?php bloginfo('template_url')  ?>/images/sponz_logos/mozilla-firefox.png" /></div>
+                </div>
+                <div class="archive_sponsor">
+                    <h3 class="archive_sponsor_title">Community Partner</h3>
+                    <div><img class="archive_sponsor_logo" src="<?php bloginfo('template_url')  ?>/images/sponz_logos/Ola_Cabs_Logo.png" /></div>
+                </div>
+                
+                <div class="archive_sponsor">
+                    <h3 class="archive_sponsor_title">Supported by</h3>
+                    <div><img class="archive_sponsor_logo" src="<?php bloginfo('template_url')  ?>/images/sponz_logos/janastu_logo.gif" /></div>
+                </div>
+                
+                
+                
+                
                 
             </div>
 
