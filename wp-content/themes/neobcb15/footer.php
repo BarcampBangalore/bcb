@@ -24,12 +24,13 @@
                         <div class="sponsor_logo_wrapper" ><a href="http://www.olacabs.com/"><img class="sponsor_logo event_partner_logo" src="<?php bloginfo('template_url')  ?>/images/sponz_logos/Ola_Cabs_Logo.png" /></a></div>
 
                     </div>
+                -->
                     <div class="sponsor_wrapper">
                         <h3 class="sponsor_heading">Supported by</h3>
                         <div class="sponsor_logo_wrapper" ><a href="http://janastu.org/main.html"><img class="sponsor_logo" src="<?php bloginfo('template_url')  ?>/images/sponz_logos/janastu_logo.gif" /></a></div>
 
                     </div>
-                      -->
+                   
                 </div>
 
             </div>
