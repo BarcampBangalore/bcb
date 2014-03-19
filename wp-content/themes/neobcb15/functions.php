@@ -35,7 +35,7 @@ add_action('init', function(){
     
 });
 
-remove_action('wp_head','jetpack_og_tags');
+add_filter( 'jetpack_enable_opengraph', '__return_false', 99 );
 
 
 
