@@ -5,6 +5,24 @@
         <meta property="og:title" content="Barcamp Bangalore Spring 2014" />
         <meta property="og:description" content="Barcamp Bangalore is an open event focused around people, ideas and collaboration. You don't want to miss this confluence of amazing minds. It's the largest unconference in India and there are talks on variety of topics like Technology, Design, Startups & Entrepreneurship, Business & Management, Photography, User Experience, Your life learnings, and a lot more... " />
         <meta property="og:image" content="<?php bloginfo('template_url'); ?>/images/barcamp-logo_fbog.png" />
+        <!-- twitter cards meta -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@barcampbng">
+        <meta name="twitter:title" content="BarCamp Bangalore Spring Edition 2014">
+        <meta name="twitter:description" content="Barcamp Bangalore is an open event focused around people, ideas and collaboration. There is no fixed format and agenda. If you have an interesting topic to share or want to collaborate with folks with a variety of experience, Barcamp is the place for you.">
+        <meta name="twitter:creator" content="">
+        <meta name="twitter:image:src" content="https://pbs.twimg.com/media/BjLVbl3CAAAcgiD.png">
+        <meta name="twitter:domain" content="barcampbangalore.org">
+        <meta name="twitter:app:name:iphone" content="">
+        <meta name="twitter:app:name:ipad" content="">
+        <meta name="twitter:app:name:googleplay" content="">
+        <meta name="twitter:app:url:iphone" content="">
+        <meta name="twitter:app:url:ipad" content="">
+        <meta name="twitter:app:url:googleplay" content="https://play.google.com/store/apps/details?id=com.bangalore.barcamp">
+        <meta name="twitter:app:id:iphone" content="">
+        <meta name="twitter:app:id:ipad" content="">
+        <meta name="twitter:app:id:googleplay" content="com.bangalore.barcamp‎">
+        <!-- done with twitter cards --> 
         <title>Barcamp Bangalore Spring 2014<?php
 if (!is_home())
 {
