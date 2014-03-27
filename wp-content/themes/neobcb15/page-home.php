@@ -212,10 +212,8 @@
             </div>
             <div class="homecard_content">
                 
-            Registrations are now closed. We will open registrations at a later point in time. Check our <a href="http://twitter.com/barcampbng">Twitter</a> account or <a href="http://groups.yahoo.com/neo/groups/bangalore_barcamp/conversations/topics">Mailing List</a>
-            to keep track of changes.
-            <!-- However, if you are eager to attend, please enter your details <a href="https://docs.google.com/a/sathyasays.com/spreadsheet/viewform?formkey=dGlkSEN3QnlBbUQyM243MTVYQU5FbFE6MQ#gid=0">in the waitlist form</a> and we'll keep you informed if you can make it.
-             -->
+            Registrations are now closed. However, if you are eager to attend, please enter your details <a href="https://docs.google.com/forms/d/1_VidLzk-9zANk8Tf3wBOpWIrV294tc6AXU7mI0KrLQo/viewform">in the waitlist form</a> and we'll keep you informed if you can make it.
+            
             </div>
         </div>
 
