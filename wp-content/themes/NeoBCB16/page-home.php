@@ -90,7 +90,7 @@
     
     
     
-    <div id="plaza">
+<!--    <div id="plaza">
         <ul>
             <li>
                 <div id="plaza_slide_ideas" class="plaza_slide">
@@ -123,7 +123,7 @@
         </ul>
             
     </div>
-        
+        -->
 
     <div id="cards_parent">
 
@@ -161,7 +161,7 @@
                 <span class="venue_text_small">It's Happening <br>at</span> 
                 <span class="venue_text_big">SAP Labs</span><br><span class="venue_text_mid">Whitefield, Bangalore</span> <br>
                 <span class="venue_text_small">at</span> <span class="venue_text_big">8:00 AM</span><br>
-                <span class="venue_text_small">on</span> <span class="venue_text_big">29th March, 2014</span>
+                <span class="venue_text_small">on</span> <span class="venue_text_big">11th October, 2014</span>
             </div>
             <div id="map_div" >
 

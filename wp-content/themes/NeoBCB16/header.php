@@ -30,7 +30,8 @@ if (!is_home())
 }
 ?>
         </title>
-        <link href='http://fonts.googleapis.com/css?family=Questrial|Dosis|News+Cycle:400,700|PT+Sans|Pontano+Sans|Oxygen|Quattrocento+Sans' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        
         <link type="text/css" rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" >
         <link type="text/css" rel="stylesheet" href="<?php bloginfo('template_url'); ?>/libs/edtalmadge-Agile-Carousel-6bbb5fd/agile_carousel.css" >
         <link rel="shortcut icon" href="favicon.ico">
@@ -64,25 +65,25 @@ if (!is_home())
 
 
         <div id="header">
-            <div>
-                <div id="user_login_div">
-                    <?php
-                    global $current_user;
-                    get_currentuserinfo();
+            
+            <div id="user_login_div">
+                <?php
+                global $current_user;
+                get_currentuserinfo();
 
-                    if (is_user_logged_in())
-                    {
-                        echo '<a href="'.admin_url('profile.php').'">Hi '.$current_user->user_login.'</a> | ';
+                if (is_user_logged_in())
+                {
+                    echo '<a href="'.admin_url('profile.php').'">Hi '.$current_user->user_login.'</a> | ';
 
-                    }
-                    wp_loginout(get_permalink());
-                    ?>
-                    <?php if(is_user_logged_in()) : ?>
-                    | <a id="my_sessions_link" href="<?php echo get_author_posts_url($current_user->ID); ?>">My Sessions</a>
+                }
+                wp_loginout(get_permalink());
+                ?>
+                <?php if(is_user_logged_in()) : ?>
+                | <a id="my_sessions_link" href="<?php echo get_author_posts_url($current_user->ID); ?>">My Sessions</a>
 
-                    <?php endif; ?>
-                </div>
+                <?php endif; ?>
             </div>
+            
             <img id="logo" src="<?php bloginfo('template_url'); ?>/images/barcamp-logo.png" />
         </div>
         <div id="navbar">
