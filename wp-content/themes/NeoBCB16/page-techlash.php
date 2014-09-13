@@ -137,7 +137,7 @@
                 <h2 id="techlash_sessionheading">Techlash sessions for BCB Spring 2014</h2>
                 <div id="cards_parent">
                     <?php
-                    $args = 'cat=933';
+                    $args = 'cat=1065';
 
 
                     query_posts($args);

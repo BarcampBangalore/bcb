@@ -5,6 +5,7 @@ $curauth = (get_query_var('author_name')) ? get_user_by('slug', get_query_var('a
 
 
 $cat_buckets = array(
+    "1057" => array(), 
     "931" => array(), 
     "785" => array(), 
     "636" => array(),
@@ -17,14 +18,15 @@ $cat_buckets = array(
     );
 
 $cat_names = array(
-    0 => array("931", "BCB Spring 2014"), 
-    1 => array("785", "BCB Monsoon 2013"), 
-    2 => array("636", "BCB13"),
-    3 => array("479", "BCB12"),
-    4 => array("399", "BCB11"),
-    5 => array("324", "BCB10"),
-    6 => array("220", "BCB9"),
-    7 => array("3", "BCB8")
+    0 => array("1057", "BCB Monsoon 2014"), 
+    1 => array("931", "BCB Spring 2014"), 
+    2 => array("785", "BCB Monsoon 2013"), 
+    3 => array("636", "BCB13"),
+    4 => array("479", "BCB12"),
+    5 => array("399", "BCB11"),
+    6 => array("324", "BCB10"),
+    7 => array("220", "BCB9"),
+    8 => array("3", "BCB8")
 );
 
 
@@ -118,6 +120,7 @@ $cat_names = array(
                 
                 
                 $cat_buckets = array(
+                    "1057" => array(), 
                     "931" => array(), 
                     "785" => array(), 
                     "636" => array(),
