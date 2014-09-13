@@ -41,6 +41,12 @@ if (!is_home())
         <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/libs/edtalmadge-Agile-Carousel-6bbb5fd/agile_carousel.alpha.js" ></script>
         <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/libs/jquery.isotope.js" ></script>
         <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/libs/unslider.js"></script>
+        
+        <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/libs/jssor.slider.mini.js"></script>
+        
+        
+        
+        
         <?php if (is_singular()) wp_enqueue_script('comment-reply'); ?>
 
 <script type="text/javascript">

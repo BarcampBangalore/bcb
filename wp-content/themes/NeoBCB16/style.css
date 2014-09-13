@@ -260,7 +260,7 @@ textarea:focus, input:focus{
 
 #page_content
 {
-    width: 95%;
+    width: 100%;
     padding-top: 20px;
     margin: 0px auto;
 }
@@ -1002,15 +1002,43 @@ SPECIAL CARDS
     color: #FFFFFF;
 }
 
+#techlash_page_container
+{
+    margin: 0 auto;
+    width: 1200px;
+}
+
+#techlash_right_container
+{
+    background-color: #FFFFFF; 
+    display: inline-block;
+    vertical-align: top;
+    width: 260px;
+    margin: 10px 0px 0px 5px;
+    padding: 15px;
+    
+    
+}
+
+
+#techlash_page_content
+{
+    width: 900px;
+    background-color: #F8F8F8;
+    padding-top: 0px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 #sessionpage_content
 {
     width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
     background-color: #F8F8F8;
     padding-top: 0px;
-
+    
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -1933,5 +1961,17 @@ SPECIAL CARDS
 
 
 
+#video_embed_container
+{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 80px;
+}
 
+.video_heading
+{
+    font-size: 25px;
+    padding: 50px 0px 20px 0px;
+}
 
