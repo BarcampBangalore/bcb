@@ -30,7 +30,7 @@ if (!is_home())
 }
 ?>
         </title>
-        <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
         
         <link type="text/css" rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" >
         <link type="text/css" rel="stylesheet" href="<?php bloginfo('template_url'); ?>/libs/edtalmadge-Agile-Carousel-6bbb5fd/agile_carousel.css" >
@@ -90,7 +90,7 @@ if (!is_home())
                 <?php endif; ?>
             </div>
             
-            <img id="logo" src="<?php bloginfo('template_url'); ?>/images/barcamp-logo.png" />
+            <img id="logo" src="<?php bloginfo('template_url'); ?>/images/barcamp_16_logo.png" />
         </div>
         <div id="navbar">
             <?php wp_nav_menu(array()); ?> 

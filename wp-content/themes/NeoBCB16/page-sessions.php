@@ -227,7 +227,7 @@ Rest of world - #5A4368
                                 <a class="sessioncard_attendees_link" href="<?php echo get_permalink(); ?>#attendees"  title="Attendees" ><img class="sessioncard_meta_image" src="<?php bloginfo('template_url') ?>/images/users_icon.jpg" alt="Attendees" title="Attendees" />
                                     <span class="sessioncard_meta_text"><?php echo attending_users_count(get_the_ID()) ?></span></a>
 
-                                <a href="<?php echo get_permalink(); ?>#comments" title="http://localhost/bcb15/?page_id=1458" ><img class="sessioncard_meta_image" src="<?php bloginfo('template_url') ?>/images/comments_icon.jpg" alt="Comments" title="Comments" />
+                                <a href="<?php echo get_permalink(); ?>#comments" ><img class="sessioncard_meta_image" src="<?php bloginfo('template_url') ?>/images/comments_icon.jpg" alt="Comments" title="Comments" />
                                     <span class="sessioncard_meta_text"><?php comments_number('0', '1', '%'); ?></span></a>
 
 

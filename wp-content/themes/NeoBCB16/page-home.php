@@ -175,14 +175,21 @@
     <!-- Jssor Slider Begin -->
     <!-- You can move inline styles to css file or css block. -->
     <div id="slider1_container" style="position: relative; margin: 0 auto;
-        top: 0px; left: 0px; width: 1000px; height: 302px; overflow: hidden;">
+        top: 0px; left: 0px; width: 2000px; height: 604px; overflow: hidden;">
         
         <!-- Slides Container -->
-        <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1000px;
-            height: 302px; overflow: hidden; text-align: center;">
-            <div style="background-image: url('<?php bloginfo('template_url'); ?>/images/backdrop.jpg'); background-size: cover;
-                 background-position-y: 30%">
-                <div style="font-size: 50px; color: #FFFFFF; text-shadow: 3px 3px 3px #000000; padding-top: 100px;">Where Ideas Meet!</div>
+        <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 2000px;
+            height: 604px; overflow: hidden; text-align: center;">
+            <div style="background-image: url('<?php bloginfo('template_url'); ?>/images/backdrop.jpg'); background-size: cover; background-position-y: 30%">
+                <div style="font-size: 100px; color: #FFFFFF; text-shadow: 3px 3px 3px #000000; padding-top: 140px;">
+                    Where Ideas Meet!
+                </div>
+                <div style="color: #FFFFFF; text-shadow: 3px 3px 3px #000000; font-size: 40px">11th October, 2014 - SAP Labs, Bangalore</div>
+                <a href="<?php echo get_permalink( get_page_by_path( 'add-a-session' ) ) ?>" style="text-decoration: none;"><div id="register_button" style="background-color: #f9a70f; border-radius: 10px; 
+                 box-shadow: 1px 1px 1px #888888; height: 60px; width: 260px; text-align: center;
+                 padding: 10px; margin-top: 40px; color: #FFFFFF; font-size: 40px; margin: 20px auto">
+                    Register Now
+                    </div></a>
             </div>
             <div >
                 <div style="width: 70%; padding: 1%; display: inline-block; text-align: center;">
@@ -199,10 +206,12 @@
                
             </div>
             <div>
-                <div style="width: 500px; margin-left: auto; margin-right: auto; padding: 15px;">
-                    <div style="background-color: #FF0000; width: 200px; height: 230px; display: inline-block; padding-right: 20px;"></div>
-                    <div style="width: 200px; height: 230px; display: inline-block; font-size: 12px; color: #000000;
-                         text-align: left; vertical-align: top; padding: 20px; text-shadow: 1px 1px 1px #777777;">
+                <div style="width: 1000px; margin-left: auto; margin-right: auto; padding: 30px;">
+                    <div style=" width: 400px; height: 460px; display: inline-block; padding-right: 40px;">
+                        <img style="width: 360px;" src="<?php bloginfo('template_url'); ?>/images/nexus5_1up.png" />
+                    </div>
+                    <div style="width: 400px; height: 460px; display: inline-block; font-size: 24px; color: #000000;
+                         text-align: left; vertical-align: top; padding: 40px; text-shadow: 2px 2px 2px #777777;">
                         Get the companion BCB Android App for
                         <ul>
                             <li>Live Updates on the event day!</li>
@@ -214,7 +223,7 @@
                         
                         <a href="https://play.google.com/store/apps/details?id=com.bangalore.barcamp">
                             <img alt="Get it on Google Play"
-                                 src="http://developer.android.com/images/brand/en_app_rgb_wo_45.png" />
+                                 src="https://developer.android.com/images/brand/en_app_rgb_wo_60.png" />
                         </a>
                     </div>
                     
@@ -223,12 +232,13 @@
             </div>
             <div>
                 <div>
-                    <img src="<?php bloginfo('template_url'); ?>/images/stopwatch.png" style="height: 140px;" />
+                    <img src="<?php bloginfo('template_url'); ?>/images/stopwatch.png" style="height: 280px;" />
                 </div>
-                <div style="font-size: 20px;">
+                <div style="font-size: 40px;">
                     TechLash!<br>
                     Your 5 mins in the light<br>
-                    <span style="font-size: 14px; opacity: 0.8;">Techlash is a platform for presenting to the community what new and exciting stuff you are working on</span>
+                    <span style="font-size: 28px; opacity: 0.8;">High Speed talks about what new and exciting you are working on</span>
+                    <br><a style="color: #412d02; font-size: 24px;" href="<?php echo get_permalink( get_page_by_path( 'techlash' ) ) ?>">More about Techlash</a>
                 </div>
             </div>
             
@@ -300,8 +310,6 @@
         <!-- Arrow Right -->
         <span u="arrowright" class="jssora21r" style="width: 55px; height: 55px; top: 123px; right: 8px">
         </span>
-        <!-- Arrow Navigator Skin End -->
-        <a style="display: none" href="http://www.jssor.com">jquery content slider</a>
     </div>
     <!-- Jssor Slider End -->
     
@@ -334,7 +342,7 @@
                 <div id="plaza_slide_unconference" class="plaza_slide">
                     <h1>Techlash</h1>
                     <h2>Concentrated dose of ideas!</h2>
-                    <a href="http://barcampbangalore.org/bcb/techlash">Know more about Techlash</a>
+                    <a href="https://barcampbangalore.org/bcb/techlash">Know more about Techlash</a>
                 </div>
             </li>
         </ul>
@@ -425,12 +433,18 @@
 
         <div class="homecard">
             <div class="homecard_head yellowbg">
-                How do I register
+                <a id="register_card" >How do I register</a>
             </div>
             <div class="homecard_content">
-                
-            Registrations are now closed. However, if you are eager to attend, please enter your details <a href="https://docs.google.com/forms/d/1_VidLzk-9zANk8Tf3wBOpWIrV294tc6AXU7mI0KrLQo/viewform">in the waitlist form</a> and we'll keep you informed if you can make it.
-            
+              Simply
+                <a href="https://barcampbangalore.org/bcb/wp-login.php?redirect_to=https%3A%2F%2Fbarcampbangalore.org%2Fbcb%2F">login</a>
+                to the site using your Facebook, Twitter, Github or existing Barcamp Bangalore account. Once logged in, have a look at the
+                <a href="https://barcampbangalore.org/bcb/sessions">proposed sessions</a>
+                and click on the "I wanna attend" button on any/all of the sessions you are interested in. <br/>
+
+                If your want to take a session, just go ahead and click on <a href="https://barcampbangalore.org/bcb/add-a-session">Add Session</a> Button on top and enter all the details there
+
+
             </div>
         </div>
 
@@ -515,12 +529,12 @@
                 quick <strong>5 minute</strong> time slots.</p>
 
                 <p>If you are a wanna be Techlash speaker, go ahead and 
-                <a title="Add a Session" href="http://barcampbangalore.org/bcb/add-a-session">register
+                <a title="Add a Session" href="https://barcampbangalore.org/bcb/add-a-session">register
                     your session</a> under Techlash category. </p>
                     
 
                 <p>The slots are very limited and usually overbooked. List of currently registered
-                    techlash sessions can be seen <a href="http://barcampbangalore.org/bcb/techlash">here</a>.</p>
+                    techlash sessions can be seen <a href="https://barcampbangalore.org/bcb/techlash">here</a>.</p>
 
             </div>
         </div>

@@ -1,6 +1,6 @@
 /* 
         Theme Name: Neo Barcamp Bangalore Theme 16
-        Theme URL: http://www.barcampbangalore.org/barcampbangalore-theme.htm
+        Theme URL: https://www.barcampbangalore.org/barcampbangalore-theme.htm
         Description: Neo BarcampBangalore theme created for WordPress for the site of Barcamp Bangalore.
         Author: Aman Manglik
         Author URI: http://www.amanmanglik.com
@@ -1481,7 +1481,7 @@ SPECIAL CARDS
 #authorpage_sessions .authorpage_sessiontype
 {
     display: block;
-    background-color: #D8BE86;
+    background-color: #771C0B;
     color: #FFFFFF;
     padding: 20px 40px;
     font-size: 26px;
@@ -1534,7 +1534,7 @@ SPECIAL CARDS
 {
     width: 300px;
     float: right;
-    background-color: #2BBD1E;
+    background-color: #771C0B;
     border-radius: 3px;
     padding: 30px 10px;
     text-align: center;
