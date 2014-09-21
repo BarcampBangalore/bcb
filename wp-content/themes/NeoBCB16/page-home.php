@@ -438,7 +438,7 @@
             <div class="homecard_content">
               Simply
                 <a href="https://barcampbangalore.org/bcb/wp-login.php?redirect_to=https%3A%2F%2Fbarcampbangalore.org%2Fbcb%2F">login</a>
-                to the site using your Facebook, Twitter, Github or existing Barcamp Bangalore account. Once logged in, have a look at the
+                to the site using your existing Barcamp Bangalore or WordPress.com account. Once logged in, have a look at the
                 <a href="https://barcampbangalore.org/bcb/sessions">proposed sessions</a>
                 and click on the "I wanna attend" button on any/all of the sessions you are interested in. <br/>
 
@@ -600,5 +600,6 @@
 </div>
 <?php get_footer(); ?>
 <?php wp_footer(); ?>
+<script>window.scrollback = {room:"barcamp-bangalore",form:"toast",theme:"dark",minimize:true};(function(d,s,h,e){e=d.createElement(s);e.async=1;e.src=(location.protocol === "https:" ? "https:" : "http:") + "//scrollback.io/client.min.js";d.getElementsByTagName(s)[0].parentNode.appendChild(e);}(document,"script"));</script>
 </body>
 </html>
