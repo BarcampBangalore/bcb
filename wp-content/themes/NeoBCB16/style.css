@@ -1938,12 +1938,12 @@ SPECIAL CARDS
 }
 
 /*  techlash = 933 */
-.track_color_tl
+.track_color_tl 
 {
     color: #9E2B1C;
 }
 
-.track_color_bg_tl
+.track_color_bg_tl, .track_color_bg_1065
 {
     background-color: #9E2B1C;
 }
@@ -1954,7 +1954,7 @@ SPECIAL CARDS
     color: #9E2B1C;
 }
 
-.track_color_bg_archive
+.track_color_bg_archive,  .track_color_bg_1057
 {
     background-color: #9E2B1C;
 }
