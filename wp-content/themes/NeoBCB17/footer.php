@@ -3,12 +3,12 @@
             <div id="sponsors_div">
                 <h2>Sponsors</h2>
                 <div>
+                    <!--  TODO: update with new sponsors
                     <div id="event_partner_wrapper" class="sponsor_wrapper">
                         <h3 class="sponsor_heading">Event Partner</h3>
                         <div class="sponsor_logo_wrapper" ><a href="http://www.sap.com/india/index.epx"><img class="sponsor_logo event_partner_logo" src="<?php bloginfo('template_url')  ?>/images/sap_logo.png" /></a></div>
 
                     </div>
-                    <!--  TODO: update with new sponsors
                     <div id="event_partner_wrapper" class="sponsor_wrapper">
                         <h3 class="sponsor_heading">Silver Sponsor</h3>
                         <div class="sponsor_logo_wrapper" ><a href="http://www.intuit.com/"><img class="sponsor_logo event_partner_logo" src="<?php bloginfo('template_url')  ?>/images/sponz_logos/intuit_blue.gif" /></a></div>

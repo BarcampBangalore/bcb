@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta property="og:title" content="Barcamp Bangalore Monsoon 2014" />
+        <meta property="og:title" content="Barcamp Bangalore Spring 2015" />
         <meta property="og:description" content="Barcamp Bangalore is an open event focused around people, ideas and collaboration. You don't want to miss this confluence of amazing minds. It's the largest unconference in India and there are talks on variety of topics like Technology, Design, Startups & Entrepreneurship, Business & Management, Photography, User Experience, Your life learnings, and a lot more... " />
         <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Bubblegum+Sans:400,600,700' rel='stylesheet' type='text/css'>
@@ -11,7 +11,7 @@
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:site" content="@barcampbng">
         <meta name="viewport" content="width=510, user-scalable=no">
-        <meta name="twitter:title" content="BarCamp Bangalore Monsoon 2014">
+        <meta name="twitter:title" content="Barcamp Bangalore Spring 2015">
         <meta name="twitter:description" content="Barcamp Bangalore is an open event focused around people, ideas and collaboration. There is no fixed format and agenda. If you have an interesting topic to share or want to collaborate with folks with a variety of experience, Barcamp is the place for you.">
         <meta name="twitter:creator" content="">
         <meta name="twitter:image:src" content="https://barcampbangalore.org/bcb/wp-content/themes/NeoBCB16/images/barcamp-logo_fbog.png">
@@ -27,7 +27,7 @@
         <meta name="twitter:app:id:ipad" content="">
         <meta name="twitter:app:id:googleplay" content="com.bangalore.barcamp‎">
         <!-- done with twitter cards --> 
-        <title>Barcamp Bangalore Monsoon 2014<?php
+        <title>Barcamp Bangalore Spring 2015<?php
 if (!is_home())
 {
     wp_title('|');

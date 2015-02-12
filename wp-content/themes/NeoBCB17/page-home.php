@@ -184,7 +184,7 @@
                 <div style="font-size: 100px; color: #FFFFFF; text-shadow: 3px 3px 3px #000000; padding-top: 140px;">
                     Where Ideas Meet!
                 </div>
-                <div style="color: #FFFFFF; text-shadow: 3px 3px 3px #000000; font-size: 40px">11th October, 2014 - SAP Labs, Bangalore</div>
+                <div style="color: #FFFFFF; text-shadow: 3px 3px 3px #000000; font-size: 40px">Soon!</div>
                 <a href="<?php echo get_permalink( get_page_by_path( 'add-a-session' ) ) ?>" style="text-decoration: none;"><div id="register_button" style="background-color: #f9a70f; border-radius: 10px; 
                  box-shadow: 1px 1px 1px #888888; height: 60px; width: 260px; text-align: center;
                  padding: 10px; margin-top: 40px; color: #FFFFFF; font-size: 40px; margin: 20px auto">
@@ -383,28 +383,19 @@
                 When & where?
             </div>
             <div id="venue_card_text">
-                <span class="venue_text_small">It's Happening <br>at</span> 
-                <span class="venue_text_big">SAP Labs</span><br><span class="venue_text_mid">Whitefield, Bangalore</span> <br>
+                <span class="venue_text_small">It will</span> 
+                <!-- <span class="venue_text_big">SAP Labs</span><br><span class="venue_text_mid">Whitefield, Bangalore</span> <br>
                 <span class="venue_text_small">at</span> <span class="venue_text_big">8:00 AM</span><br>
-                <span class="venue_text_small">on</span> <span class="venue_text_big">11th October, 2014</span>
+                <span class="venue_text_small">on</span> <span class="venue_text_big">11th October, 2014</span> -->
+                <span class="venue_text_small">be happening</span> <span class="venue_text_big">soon!</span>
             </div>
             <div id="map_div" >
 
-                <iframe style="border-top: 1px solid #AAAAAA; border-bottom: 1px solid #AAAAAA;" width="395" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=SAP+Labs+India+Pvt+Ltd,+No.+138,+EPIP+Zone,+Whitefield,+Bangalore,+Karnataka,+India&amp;aq=0&amp;oq=sap+&amp;sll=12.953997,77.63094&amp;sspn=1.109467,2.113495&amp;ie=UTF8&amp;hq=SAP+Labs+India+Pvt+Ltd,+No.&amp;hnear=EPIP+Zone,+Brookefield,+Bangalore,+Bangalore+Urban,+Karnataka,+India&amp;t=m&amp;ll=12.979217,77.71574&amp;spn=0.025091,0.033817&amp;z=14&amp;output=embed&iwloc=near"></iframe><br /><small style="background-color: #EEEEEE; display: block; padding: 15px; text-align: center; margin-top: 10px;  border-top: 1px solid #CCCCCC; border-bottom: 1px solid #CCCCCC;"><a target="_blank" href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=SAP+Labs+India+Pvt+Ltd,+No.+138,+EPIP+Zone,+Whitefield,+Bangalore,+Karnataka,+India&amp;aq=0&amp;oq=sap+&amp;sll=12.953997,77.63094&amp;sspn=1.109467,2.113495&amp;ie=UTF8&amp;hq=SAP+Labs+India+Pvt+Ltd,+No.&amp;hnear=EPIP+Zone,+Brookefield,+Bangalore,+Bangalore+Urban,+Karnataka,+India&amp;t=m&amp;ll=12.979217,77.71574&amp;spn=0.025091,0.033817&amp;z=14" style="color:#BD3636;  text-align:left; font-weight: bold;">View Larger Map</a></small>
+                <iframe style="border-top: 1px solid #AAAAAA; border-bottom: 1px solid #AAAAAA;" width="395" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248849.84916296526!2d77.63093950000001!3d12.953997399999992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C+Karnataka!5e0!3m2!1sen!2sin!4v1423758743154&iwloc=near"></iframe><br /><small style="background-color: #EEEEEE; display: block; padding: 15px; text-align: center; margin-top: 10px;  border-top: 1px solid #CCCCCC; border-bottom: 1px solid #CCCCCC;"><a target="_blank" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248849.84916296526!2d77.63093950000001!3d12.953997399999992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C+Karnataka!5e0!3m2!1sen!2sin!4v1423758743154" style="color:#BD3636;  text-align:left; font-weight: bold;">View Larger Map</a></small>
 
             </div>
         </div>
         
-        <!-- no Ola yet..
-        <div id="serverbluescard" class="homecard">
-            <h2>Come to BCB in style with Ola Cabs</h2>
-            <p>Ola Cabs is collaborating with Barcamp Bangalore to provide you convenient rides for the event. Contact Ola support for more info.</p>
-<p> P.S. - One lucky Participant will go home after the event in a luxury ride like a Merc or Jaguar! There might be a few free cabs too for drop.
-    More Details at the event.
-            </p>
-            
-        </div>
-        --> 
         <div class="homecard">
             <div class="homecard_head yellowbg">
                 Who should attend Barcamp?
