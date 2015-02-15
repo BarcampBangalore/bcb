@@ -1,7 +1,6 @@
 <?php get_header(); ?>
 
 <div id="page_content">
-    <script src="libs/unslider.min.js"></script>
     <script type="text/javascript">
             
             
@@ -184,12 +183,15 @@
                 <div style="font-size: 100px; color: #FFFFFF; text-shadow: 3px 3px 3px #000000; padding-top: 140px;">
                     Where Ideas Meet!
                 </div>
-                <div style="color: #FFFFFF; text-shadow: 3px 3px 3px #000000; font-size: 40px">Soon!</div>
-                <a href="<?php echo get_permalink( get_page_by_path( 'add-a-session' ) ) ?>" style="text-decoration: none;"><div id="register_button" style="background-color: #f9a70f; border-radius: 10px; 
+                <div style="color: #FFFFFF; text-shadow: 3px 3px 3px #000000; font-size: 40px">18th April, 2015!</div>
+                
+                <!-- TODO
+
+                 <a href="<?php echo get_permalink( get_page_by_path( 'add-a-session' ) ) ?>" style="text-decoration: none;"><div id="register_button" style="background-color: #f9a70f; border-radius: 10px; 
                  box-shadow: 1px 1px 1px #888888; height: 60px; width: 260px; text-align: center;
                  padding: 10px; margin-top: 40px; color: #FFFFFF; font-size: 40px; margin: 20px auto">
                     Register Now
-                    </div></a>
+                    </div></a> -->
             </div>
             <div >
                 <div style="width: 70%; padding: 1%; display: inline-block; text-align: center;">
@@ -383,15 +385,14 @@
                 When & where?
             </div>
             <div id="venue_card_text">
-                <span class="venue_text_small">It will</span> 
-                <!-- <span class="venue_text_big">SAP Labs</span><br><span class="venue_text_mid">Whitefield, Bangalore</span> <br>
+                <span class="venue_text_small">It' happening <br>at</span> 
+                <span class="venue_text_big">CMR Institute of Technology</span><br><span class="venue_text_mid">ITPL Main Road, Bangalore</span> <br>
                 <span class="venue_text_small">at</span> <span class="venue_text_big">8:00 AM</span><br>
-                <span class="venue_text_small">on</span> <span class="venue_text_big">11th October, 2014</span> -->
-                <span class="venue_text_small">be happening</span> <span class="venue_text_big">soon!</span>
+                <span class="venue_text_small">on</span> <span class="venue_text_big">18th April, 2015</span>
             </div>
             <div id="map_div" >
 
-                <iframe style="border-top: 1px solid #AAAAAA; border-bottom: 1px solid #AAAAAA;" width="395" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248849.84916296526!2d77.63093950000001!3d12.953997399999992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C+Karnataka!5e0!3m2!1sen!2sin!4v1423758743154&iwloc=near"></iframe><br /><small style="background-color: #EEEEEE; display: block; padding: 15px; text-align: center; margin-top: 10px;  border-top: 1px solid #CCCCCC; border-bottom: 1px solid #CCCCCC;"><a target="_blank" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248849.84916296526!2d77.63093950000001!3d12.953997399999992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C+Karnataka!5e0!3m2!1sen!2sin!4v1423758743154" style="color:#BD3636;  text-align:left; font-weight: bold;">View Larger Map</a></small>
+                <iframe style="border-top: 1px solid #AAAAAA; border-bottom: 1px solid #AAAAAA;" width="395" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.081774525459!2d77.71176299999998!3d12.966618999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1225e87bd8f5%3A0x7896436c100b0272!2sCMR+Institute+of+Technology!5e0!3m2!1sen!2sin!4v1424003836150&iwloc=near"></iframe><br /><small style="background-color: #EEEEEE; display: block; padding: 15px; text-align: center; margin-top: 10px;  border-top: 1px solid #CCCCCC; border-bottom: 1px solid #CCCCCC;"><a target="_blank" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.081774525459!2d77.71176299999998!3d12.966618999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1225e87bd8f5%3A0x7896436c100b0272!2sCMR+Institute+of+Technology!5e0!3m2!1sen!2sin!4v1424003836150" style="color:#BD3636;  text-align:left; font-weight: bold;">View Larger Map</a></small>
 
             </div>
         </div>
@@ -558,16 +559,16 @@
                     <li><img class="teammember" src="<?php bloginfo('template_url')  ?>/images/team/saurabh.jpg" alt="Saurabh Minni" title="Saurabh Minni" /></li>
                     <li><img class="teammember" src="<?php bloginfo('template_url')  ?>/images/team/aman.jpg" alt="Aman Manglik" title="Aman Manglik"  /></li>
                     <li><img class="teammember" src="<?php bloginfo('template_url')  ?>/images/team/sathya.jpg" alt="Sathyajith Bhat" title="Sathyajith Bhat"  /></li>
-                    <li><img class="teammember" src="<?php bloginfo('template_url')  ?>/images/team/rahul.jpg" alt="Rahul Aurora" title="Rahul Aurora"  /></li>
                     <li><img class="teammember" src="<?php bloginfo('template_url')  ?>/images/team/arun.jpg" alt="Arun Vijayan" title="Arun Vijayan"  /></li>
                     <li><img class="teammember" src="<?php bloginfo('template_url')  ?>/images/team/daaku.jpg" alt="Amit Khare" title="Amit Khare"  /></li>
                     <li><img class="teammember" src="<?php bloginfo('template_url')  ?>/images/team/vivek.jpg" alt="Vivek K" title="Vivek K"  /></li>
                 </ul>
-                
+                <!-- TODO: Update planners
                 <a href="http://barcampbangalore.org/planning/meet-the-team/">
                     <div id="teamlink">
                         Meet the humble planners &nbsp;&nbsp;&nbsp; &gt; 
                     </div>
+                --> 
                 </a>
                 
                 
