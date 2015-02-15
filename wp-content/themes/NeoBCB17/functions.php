@@ -39,6 +39,15 @@ add_filter( 'jetpack_enable_opengraph', '__return_false', 99 );
 
 
 
+function the_login_message( $message ) {
+    if ( empty($message) ){
+        return "<p class='message register' style=''>To RSVP, you need to login using the form below. If you don't have a login ID, <a href='".wp_registration_url()."'>click here</a> to create one</p>";
+    } else {
+        return $message;
+    }
+}
+add_filter( 'login_message', 'the_login_message' );
+
 
 
 add_action('init', 'theme_widgets_init');
