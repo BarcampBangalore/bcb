@@ -4,8 +4,8 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta property="og:title" content="Barcamp Bangalore Monsoon 2014" />
         <meta property="og:description" content="Barcamp Bangalore is an open event focused around people, ideas and collaboration. You don't want to miss this confluence of amazing minds. It's the largest unconference in India and there are talks on variety of topics like Technology, Design, Startups & Entrepreneurship, Business & Management, Photography, User Experience, Your life learnings, and a lot more... " />
-        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Bubblegum+Sans:400,600,700' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Bubblegum+Sans:400,600,700' rel='stylesheet' type='text/css'>
         <meta property="og:image" content="<?php bloginfo('template_url'); ?>/images/barcamp-logo_fbog.png" />
         <!-- twitter cards meta -->
         <meta name="twitter:card" content="summary_large_image">
