@@ -100,7 +100,7 @@ textarea:focus, input:focus{
 
 #header
 {
-    background-color: #771C0B; 
+    background-color: #fff; 
     position: relative;
     text-align: center;
 }
@@ -140,15 +140,8 @@ textarea:focus, input:focus{
 #navbar
 {
     /*background-color: #F78342;*/
-    background-color: #FFFFFF;
-    /*background-image: url(images/navbar.jpg);
-    background-repeat: repeat-x;
-    background-size: 5px 100%;*/
+    background-color: rgb(228, 70, 11);
     text-align: center;
-    
-    box-shadow: 0px 2px 10px #888888;
-    /*border-bottom: 3px solid #AAAAAA;*/
-
     padding: 13px 0px;
 }
 
@@ -174,7 +167,7 @@ textarea:focus, input:focus{
 
 #navbar ul a
 {
-    color: #3F392A;
+    color: #fff;
     font-size: 20px;
     font-weight: bold;
     text-decoration: none;
@@ -190,18 +183,19 @@ textarea:focus, input:focus{
 }
 
 
-#navbar .current_page_item 
+#navbar .current_page_item,
+#navbar ul li.current_page_item:hover
 {
-    background-color: #771C0B;
-    /*    border-bottom: 1px solid #DA5A5A;
-    box-shadow: 1px 1px 1px #530000 inset;*/
+    color: rgb(228, 70, 11);
+    background-color: white;
     border-radius: 4px;
 }
 
-#navbar .current_page_item a
-{
-    color: #FFFFFF;
 
+#navbar .current_page_item a,
+#navbar ul li.current_page_item a
+{
+    color: inherit;
 }
 
 #navbar div
@@ -224,16 +218,15 @@ textarea:focus, input:focus{
 {
     width: 130px;
     height: 25px;
-
     border-radius: 3px;
     background-color: #FFFFFF;
-    border: 1px solid #AAAAAA;
-    box-shadow: 0px 10px 15px #F5F5F5 inset;
     padding: 0px 15px;
     margin-left: 50px;
     vertical-align: top;
     margin-top: -2px;
     color: #3F392A;
+    border: 0px;
+    box-shadow: none;
 }
 
 #searchform #searchsubmit
@@ -393,30 +386,32 @@ Color classes
     margin-bottom: 20px;
     box-shadow: 2px 2px 8px #888888;
     background-color: #ffffff;
-    color: #5A542E;
-
+    color: #555;
+    font-size: 125%;
+    line-height: 150%;
 }
 
 .homecard_head
 {
-
-
-
-
     font-size: 28px;
     padding: 14px;
     text-align: right;
     background-color: #FFFFFF;
     color: #771C0B;
     border-bottom: 2px solid #771C0B;
-    /*box-shadow: 0px 2px 2px 0px #DFDFDF;*/
+    line-height: normal;
 }
 
 .homecard_content
 {
     margin: 25px 25px;
     text-align: justify;
-    
+    font-size: 1.1em;   
+}
+
+.homecard_content a
+{
+    text-decoration: none;
 }
 
 .homecard_content li
@@ -445,6 +440,7 @@ Color classes
 {
     text-align: right;
     margin: 35px 25px;
+    line-height: normal;
 }
 
 .venue_text_small
@@ -472,13 +468,34 @@ Color classes
     list-style: none;
     margin: 0px;
     padding: 0px;
+    letter-spacing: -4px;
 }
 
 #contact_card li
 {
+    letter-spacing: 0;
+    width: 18%;
     display: inline-block;
     text-align: center;
-    padding: 3px;
+    padding: 1%;
+    vertical-align: top;
+    opacity: .6;
+}
+#contact_card li:hover
+{
+    opacity: 1;
+}
+#contact_card li a
+{
+    text-decoration: none;
+    font-size: 13px;
+}
+#contact_card li img
+{
+    max-width: 80%;
+    width: 49px;
+    height: 49px;
+    border-radius: 100px;
 }
 
 
@@ -562,8 +579,9 @@ SPECIAL CARDS
 #tagcard h2
 {
     font-size: 50px;
-    padding: 20px;
-    color: #EBE1A3;
+    padding: 60px 20px;
+    color: #fff;
+    text-shadow: 1px -1px 0px #3878E9;
 }
 
 #tagcard p
@@ -1778,21 +1796,6 @@ SPECIAL CARDS
 }
 
 
-#footer
-{
-    background-color: #EBE6C7;
-    color: #3F392A;
-    text-align: center;
-
-}
-
-#footer a
-{
-    color: #3F392A;
-    font-weight: bold;
-}
-
-
 #sponsors_div
 {
 
@@ -1831,7 +1834,6 @@ SPECIAL CARDS
 #sponsors_div .sponsor_heading
 {
     margin: 5px;
-    color: #AAAAAA;
     font-size: 16px;
 }
 
@@ -1985,20 +1987,14 @@ SPECIAL CARDS
     color: rgb(228, 70, 11);
     text-shadow: none;
     border-bottom-color: rgb(228, 70, 11);
-    font-family: 'Bubblegum Sans','Helvetica';
-}
-#navbar .current_page_item,
-#navbar ul li:hover,
-#searchform #searchsubmit
-{
-    background-color: rgb(228, 70, 11);
+    font-family: 'Ubuntu';
 }
 #searchform #s
 {
     padding: 0 10px;
     font-size: 12px;
     box-shadow: none;
-    border: 1px solid #aaa;
+    border: 0px;
     font-family: "Helvetica", Arial;
 }
 #cards_parent
@@ -2012,7 +2008,7 @@ SPECIAL CARDS
 .homecard_content p,
 .homecard_content li
 {
-    font-size: 15px;
+    font-size: inherit;
 }
 .homecard_content ul
 {
@@ -2021,11 +2017,9 @@ SPECIAL CARDS
 .homecard,
 .cards_track
 {
-    box-shadow: 1px 1px 4px #888;
-    border-radius: 3px;
+    box-shadow: 1px 1px 4px #999;
     overflow: hidden;
     margin-bottom: 25px;
-    color: #444;
 }
 #video_embed_container,
 #video_embed_container iframe
@@ -2083,12 +2077,14 @@ SPECIAL CARDS
 }
 #footer
 {
-    background-color: #2F3741;
-    color: #eee;
+    background-color: #E4460B;
+    color: #fff;
+    text-align: center;
 }
+
 #footer a
 {
-    color: white;
+    color: #fff;
     font-weight: bold;
 }
 #sponsors_div
@@ -2111,5 +2107,4 @@ body
 {
     z-index: 101;
     position: relative;
-    box-shadow: 0px 1px 3px #666;
 }

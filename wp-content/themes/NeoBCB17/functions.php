@@ -24,6 +24,33 @@ function theme_widgets_init()
 //  ) );
 }
 
+
+
+
+function barcamp_login_logo() { ?>
+    <style type="text/css">
+        body.login div#login h1 a {
+            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/barcamp_17_logo.png);
+            padding-bottom: 30px;
+            width: 100%;
+            background-size: 100%;
+        }
+        #wp-submit
+        {
+            background: rgb(228, 70, 11);
+            border: 1px solid rgb(228, 70, 11);
+            box-shadow: none;
+        }
+        #wp-submit:hover
+        {
+            background: rgb(228, 70, 11);
+            border: 1px solid rgb(228, 70, 11);
+            box-shadow: 0px 0px 50px rgba(0,0,0,.1) inset;
+        }
+    </style>
+<?php }
+add_action( 'login_enqueue_scripts', 'barcamp_login_logo' );
+
 // end theme_widgets_init
 
 // set the login cookie

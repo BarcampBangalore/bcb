@@ -1,4 +1,42 @@
 <?php get_header(); ?>
+<Style>
+.steps li
+{
+    position: relative;
+    padding-left: 12px;
+}
+.steps li:before
+{
+    content: '';
+    border-radius: 100px;
+    width: 40px;
+    height: 40px;
+    background: rgb(228, 70, 11);
+    top: -2px;
+    left: -37px;
+    opacity: .3;
+    position: absolute;
+}
+p.big
+{
+    color: rgb(228, 70, 11);
+    display: block;
+    text-align: center;
+    font-size: 36px;
+    opacity: .5;
+    font-weight: bold;
+}
+#teamlist li
+{
+    border-radius: 100px;
+}
+#teamlist .teammember
+{
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+}
+</Style>
 
 <div id="page_content">
     <script type="text/javascript">
@@ -364,6 +402,7 @@
                     There is no fixed format and agenda. If you have an interesting topic to share 
                     or want to collaborate with folks with a variety of experience, Barcamp 
                     is the place for you.</p>
+                <!--
                 <p>Since its inception in Bangalore in 2006, BCB has been a place for awesome 
                     people with ideas in their heads to talk and share or just hang out with 
                     their peers and friends.You can 
@@ -377,6 +416,7 @@
                     &nbsp; &bull; &nbsp;  User Experience<br>
                     &nbsp; &bull; &nbsp;  Your life learnings<br>
                     &nbsp; &bull; &nbsp;  and a lot more...</p>
+                    -->
             </div>
         </div>
         
@@ -386,7 +426,7 @@
             </div>
             <div id="venue_card_text">
                 <span class="venue_text_small">It' happening <br>at</span> 
-                <span class="venue_text_big">CMR Institute of Technology</span><br><span class="venue_text_mid">ITPL Main Road, Bangalore</span> <br>
+                <span class="venue_text_big">CMR Institute of Technology</span><br><span class="venue_text_mid">ITPL Main Road, Bangalore</span> <br><Br>
                 <span class="venue_text_small">at</span> <span class="venue_text_big">8:00 AM</span><br>
                 <span class="venue_text_small">on</span> <span class="venue_text_big">18th April, 2015</span>
             </div>
@@ -397,18 +437,8 @@
             </div>
         </div>
         
-        <div class="homecard">
-            <div class="homecard_head yellowbg">
-                Who should attend Barcamp?
-            </div>
-            <div class="homecard_content">
-                <p><span class="highlight" >Everyone!</span> Barcamp is about sharing your passions 
-                    with your peers without any boundaries. Got any life hacks to show off, have 
-                    anything to demo or ideas to share and brainstorm, wanna techjam, learn from
-                    your peers, well you are welcome.</p>
-            </div>
-        </div>
 
+        <!--
         <div class="homecard">
             <div class="homecard_head yellowbg">
                 But I have never been to one
@@ -420,6 +450,7 @@
                     new ways of thinking</p>
             </div>
         </div>
+        -->
         
         
 
@@ -428,27 +459,32 @@
                 <a id="register_card" >How do I register</a>
             </div>
             <div class="homecard_content">
-              Simply
-                <a href="https://barcampbangalore.org/bcb/wp-login.php?redirect_to=https%3A%2F%2Fbarcampbangalore.org%2Fbcb%2F">login</a>
-                to the site using your existing Barcamp Bangalore or WordPress.com account. Once logged in, have a look at the
-                <a href="https://barcampbangalore.org/bcb/sessions">proposed sessions</a>
-                and click on the "I wanna attend" button on any/all of the sessions you are interested in. <br/>
-
-                If your want to take a session, just go ahead and click on <a href="https://barcampbangalore.org/bcb/add-a-session">Add Session</a> Button on top and enter all the details there
-
-
+            <ol class='steps'>
+            <li>You need to <a href='<?php echo wp_login_url( ); ?>'>login</a> (click <a href='<?php echo wp_registration_url( ); ?>'>here</a> to create a free account if you don't have one)</li>
+            <li>Visit our <a href='https://barcampbangalore.org/bcb/sessions'>sessions</a> page, and RSVP to at least one session by clicking on I'm attending</li>
+            <li>Turn up at the venue @ 8 am</li>
+            </ol>
             </div>
         </div>
 
-        <div id="tagcard" class="homecard">
-            <h2>#barcampblr</h2>
-            <p>One tag to rule them all!</p>
-            
-        </div>
-        
         <div class="homecard">
             <div class="homecard_head yellowbg">
-                Who presents the sessions?
+                Who should attend Barcamp?
+            </div>
+            <div class="homecard_content">
+                <p><span class="highlight" >Everyone!</span> Barcamp is about sharing your passions 
+                    with your peers without any boundaries. Got any life hacks to show off, have 
+                    anything to demo or ideas to share and brainstorm, wanna techjam, learn from
+                    your peers, well you are welcome.</p>
+            </div>
+        </div>
+        <div id="tagcard" class="homecard" style='background: cornflowerblue'>
+            <h2>#barcampblr</h2>            
+        </div>
+        
+        <!--<div class="homecard">
+            <div class="homecard_head yellowbg">
+                Who can present a sessions?
             </div>
             <div class="homecard_content">
                 
@@ -472,8 +508,19 @@
                     <li>And don't forget, <a href="https://twitter.com/intent/tweet?text=%23barcampblr">tweet about BCB</a> with tag #barcampblr</li>
                 </ul>
             </div>
+        </div>-->
+
+        <div class="homecard">
+            <div class="homecard_head yellowbg">
+                Who can present a sessions?
+            </div>
+            <div class="homecard_content">
+                <p class='big'>You</p>
+                <p>Barcamp is an open platform. Anyone can present a session at the event. Click here (add link to page) to submit your session.</p>
+            </div>
         </div>
 
+        <!--
         <div class="homecard">
             <div class="homecard_head yellowbg">
                 What to bring?
@@ -490,24 +537,7 @@
                 </ul>
             </div>
         </div>
-        
-        
-        <div class="homecard">
-            <div class="homecard_head yellowbg">
-                What will be there?
-            </div>
-            <div class="homecard_content">
-                <ul>
-                    <li>Peers with similar interests, hobbies and passions.</li>
-                    <li>Space - 6 parallel session rooms and loads of space outside the session rooms to have your
-                        impromptu sessions with smaller audiences.</li>
-                    <li>Uninterrupted Wifi, for live tweeting and updates - what will we do without it??!!?? </li>
-                    <li>Projectors, for those who insist on structured formats of presentation. </li>
-
-                    
-                </ul>
-            </div>
-        </div>
+        -->
         
         
         
@@ -516,6 +546,11 @@
                 Techlash
             </div>
             <div class="homecard_content">
+
+            <p>Techlash is a series of 5-minute raipidfire idea presentations.</p>
+            <p>If you are a wanna be Techlash speaker, go ahead and  <a title="Add a Session" href="https://barcampbangalore.org/bcb/add-a-session">register your session</a> under Techlash category. </p>
+
+            <!--
                 <p>Techlash is a tech rapidfire round at BCB. At Techlash, our speakers
                 present their smart ideas or demo their creations through a series of 
                 quick <strong>5 minute</strong> time slots.</p>
@@ -528,6 +563,8 @@
                 <p>The slots are very limited and usually overbooked. List of currently registered
                     techlash sessions can be seen <a href="https://barcampbangalore.org/bcb/techlash">here</a>.</p>
 
+                    -->
+
             </div>
         </div>
         
@@ -539,9 +576,10 @@
                 <p>We are all over the place. Just buzz us on any of these</p>
                 <ul>
                     <li><a href="https://twitter.com/barcampbng"><img src="<?php bloginfo('template_url')  ?>/images/twitter.png"  /><br>Twitter</a></li>
-                    <li><a href="http://groups.yahoo.com/group/bangalore_barcamp/"><img src="<?php bloginfo('template_url')  ?>/images/mailinglist.png"  /><br>Mailing list</a></li>
+                    <li><a href="http://groups.yahoo.com/group/bangalore_barcamp/"><img src="<?php bloginfo('template_url')  ?>/images/mailinglist.png"  /><br>Mail List</a></li>
                     <li><a href="https://www.facebook.com/barcampbng"><img src="<?php bloginfo('template_url')  ?>/images/facebook.png"  /><br>Facebook</a></li>
-                    <li><a href="https://plus.google.com/106980602201931313067/posts"><img src="<?php bloginfo('template_url')  ?>/images/google-plus.png"  /><br>Google Plus</a></li>
+                    <li><a href="https://plus.google.com/106980602201931313067/posts"><img src="<?php bloginfo('template_url')  ?>/images/google-plus.png"  /><br>Google+</a></li>
+                    <li><a href="https://barcampbangalore.org/planning/"><img src="<?php bloginfo('template_url')  ?>/images/blog.png"  /><br>Blog</a></li>
                 </ul>
                 
                 
