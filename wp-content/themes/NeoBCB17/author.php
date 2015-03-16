@@ -45,7 +45,6 @@ $cat_names = array(
 
             </div>
             <div id="authorpage_profiledesc">
-
                 <?php echo $curauth->user_description; ?>
             </div>
 

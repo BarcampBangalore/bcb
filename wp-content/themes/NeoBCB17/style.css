@@ -107,31 +107,42 @@ textarea:focus, input:focus{
 
 #logo
 {
-    padding: 15px 0px;
-
-    height: 120px;
-
+    padding: 25px 0px;
+    height: 110px;
+    transition: transform .15s;
+    -webkit-transition: -webkit-transform .15s;
 }
-
+#logo:hover
+{
+    transform: rotate(3deg) scale(1.05);
+    -webkit-transform: rotate(3deg) scale(1.05);
+}
 
 #user_login_div
 {
-    background-color: rgba(0,0,0, 0.4);
-    padding: 10px;
-    display: inline-block;
-    /*margin-left: 600px;*/
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    
-    position: absolute;
-    top: 0px;
-    right: 30px;
+background-color: rgb(228, 70, 11);
+  padding: 10px 15px;
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 3px;
+  font-weight: bold;
+  color: white;
 }
 
 #user_login_div a
 {
+    opacity: .9;
+    text-decoration: none;
     color: #FFFFFF;
-    font-size: 14px;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 0 4px;
+}
+#user_login_div a:hover
+{
+    opacity: 1;
 }
 
 
@@ -235,7 +246,7 @@ textarea:focus, input:focus{
     border: 0px solid #BBBBBB;
     border-radius: 4px;
     cursor: pointer;
-    background-color: #771C0B;
+    background-color: #E4460B;
     margin-top: -2px;
 
 }
@@ -397,8 +408,8 @@ Color classes
     padding: 14px;
     text-align: right;
     background-color: #FFFFFF;
-    color: #771C0B;
-    border-bottom: 2px solid #771C0B;
+    color: #E4460B;
+    border-bottom: 2px solid #E4460B;
     line-height: normal;
 }
 
@@ -538,7 +549,10 @@ Color classes
     border-radius: 5px;
 
 }
-
+img.avatar
+{
+    background-color: white;
+}
 
 
 
@@ -1499,7 +1513,7 @@ SPECIAL CARDS
 #authorpage_sessions .authorpage_sessiontype
 {
     display: block;
-    background-color: #771C0B;
+    background-color: #E4460B;
     color: #FFFFFF;
     padding: 20px 40px;
     font-size: 26px;
@@ -1552,7 +1566,7 @@ SPECIAL CARDS
 {
     width: 300px;
     float: right;
-    background-color: #771C0B;
+    background-color: #E4460B;
     border-radius: 3px;
     padding: 30px 10px;
     text-align: center;
@@ -1712,26 +1726,42 @@ SPECIAL CARDS
     margin: 0px;
     padding: 0px;
     text-align: center;
+    letter-spacing: -4px;
+    border-radius: 3px;
+    overflow: hidden;
+    padding: 0;
 }
 
 #archivelinks li
 {
     display: inline-block;
-    background-color: #E4C88C;
-    border-radius: 3px;
-    
+    letter-spacing: 0;
+    background-color: #E4460B;
+    border-radius: 0px;
+    opacity: .8;
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+#archivelinks li:first-child
+{
+    border-radius: 4px 0 0 4px;
+}
+#archivelinks li:last-child
+{
+    border-radius: 0px 4px 4px 0px;
 }
 
 #archivelinks li:hover
 {
-    background-color: #978356;
+    background-color: #CA4514;
 }
 
 #archivelinks a
 {
-    color: #333333;
+    color: #fff;
     cursor: pointer;
-    padding: 16px 34px;
+    padding: 15px 22px;
     display: block;
     font-weight: bold;
 }
@@ -1739,19 +1769,13 @@ SPECIAL CARDS
 
 #archivelinks .archive_selected
 {
-    background-color: #7C6D47;
-    
+    background-color: #CA4514;
+    opacity: 1;
 }
 
 #archivelinks .archive_selected a
 {
-    color: #E4C88C;
-}
-
-
-#archivelinks .archive_selected a:hover
-{
-    color: #333333;
+    color: #fff;
 }
 
 
@@ -1872,20 +1896,20 @@ SPECIAL CARDS
 
 .track_color_1059
 {
-    color: #0B5477;
+    color: #E4460B;
 }
 .track_color_bg_1059
 {
-    background-color: #0B5477;
+    background-color: #E4460B;
 }
 
 .track_color_1060
 {
-    color: #211B6D;
+    color: #0B83E4;
 }
 .track_color_bg_1060
 {
-    background-color: #211B6D;
+    background-color: #0B83E4;
 }
 
 .track_color_1061

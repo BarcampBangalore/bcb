@@ -11,7 +11,7 @@
     border-radius: 100px;
     width: 40px;
     height: 40px;
-    background: rgb(228, 70, 11);
+    border-right: 2px solid #C33804;
     top: -2px;
     left: -37px;
     opacity: .3;
@@ -28,13 +28,13 @@ p.big
 }
 #teamlist li
 {
-    border-radius: 100px;
+    border-radius: 3px;
 }
 #teamlist .teammember
 {
     width: 60px;
     height: 60px;
-    border-radius: 100px;
+    border-radius: 3px;
 }
 </Style>
 
@@ -593,14 +593,15 @@ p.big
             </div>
             <div class="homecard_content">
                 
-                <ul id="teamlist">
+                <a href="http://barcampbangalore.org/planning/meet-the-team/"><ul id="teamlist">
                     <li><img class="teammember" src="<?php bloginfo('template_url')  ?>/images/team/saurabh.jpg" alt="Saurabh Minni" title="Saurabh Minni" /></li>
                     <li><img class="teammember" src="<?php bloginfo('template_url')  ?>/images/team/aman.jpg" alt="Aman Manglik" title="Aman Manglik"  /></li>
                     <li><img class="teammember" src="<?php bloginfo('template_url')  ?>/images/team/sathya.jpg" alt="Sathyajith Bhat" title="Sathyajith Bhat"  /></li>
                     <li><img class="teammember" src="<?php bloginfo('template_url')  ?>/images/team/arun.jpg" alt="Arun Vijayan" title="Arun Vijayan"  /></li>
                     <li><img class="teammember" src="<?php bloginfo('template_url')  ?>/images/team/daaku.jpg" alt="Amit Khare" title="Amit Khare"  /></li>
                     <li><img class="teammember" src="<?php bloginfo('template_url')  ?>/images/team/vivek.jpg" alt="Vivek K" title="Vivek K"  /></li>
-                </ul>
+                    <li><img class="teammember" src="<?php bloginfo('template_url')  ?>/images/team/nishant.png" alt="Nishant" title="Nishant"  /></li>
+                </ul></a>
                 <!-- TODO: Update planners
                 <a href="http://barcampbangalore.org/planning/meet-the-team/">
                     <div id="teamlink">
@@ -613,14 +614,6 @@ p.big
                 
             </div>
         </div>
-
-
-        
-
-        
-
-
-
 
 
 
