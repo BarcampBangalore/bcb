@@ -121,14 +121,14 @@
         <?php  
         
         /*
-         * 933 Techlash
-934 Design
-935 Mobile & Web
-936 General Technology
-940 Scaling & Infra
-941 Bangalore & Lifestyle
-942 Entrepreneurship
-943 Others
+* 1232 Techlash
+1226 Design
+1229 Mobile & Web
+1233 General Technology
+1231 Scaling & Infra
+1225 Bangalore & Lifestyle
+1227 Entrepreneurship
+1230  Rest of the World
          * 
          * 
 Design - #F05353
@@ -149,7 +149,7 @@ Rest of world - #5A4368
         
         
         //foreach (array(934, 935, 936, 940, 941, 942, 943) as $track_id) : 
-        foreach (array(1058, 1059, 1060, 1061, 1062, 1063, 1064) as $track_id) : 
+        foreach (array(1226, 1229, 1233, 1231, 1225, 1227, 1230) as $track_id) : 
             
             
             ?>
