@@ -429,7 +429,7 @@ p.big
             <span class="venue_text_big">CMR Institute of Technology</span><br><span class="venue_text_mid">ITPL Main Road, Bangalore</span> <br>
             <span class="venue_text_small">at</span> <span class="venue_text_big">8:00 AM</span><br>
             <span class="venue_text_small">on</span> <span class="venue_text_big">18th April, 2015</span><br>
-            <span class="venue_text_small">Add to your calendar:</span><span class="venue_cal"><a href="<?php bloginfo('template_url'); ?>/barcamp-spring-2015.ics">ICS</a></span>
+            <span class="venue_text_small">Add to your calendar: </span><span class="venue_cal"><a href="<?php bloginfo('template_url'); ?>/barcamp-spring-2015.ics">ICS</a></span>
             <span class="venue_text_small"> | </span>
             <span class="venue_cal"><a href="https://www.google.com/calendar/event?action=TEMPLATE&tmeid=Z3NtNWJmazhtY25mYm1iamtmOWJqbGQxNzggb2RmMjI1dDRoMjVsZzV2amVjYjMzbHJwbWNAZw&tmsrc=odf225t4h25lg5vjecb33lrpmc%40group.calendar.google.com">Google Calendar</a></span>
             </div>
@@ -463,7 +463,7 @@ p.big
             </div>
 
             <div class="homecard_content">
-            <strong>We will open for registrations soon!</strong>. Keep an eye out for further announcements on the mailing list/planner's blog etc.
+            <strong>We will open for registrations soon!</strong> Keep an eye out for further announcements on the mailing list/planner's blog etc.
             <!-- 
             <ol class='steps'>
             <li>You need to <a href='<?php echo wp_login_url( ); ?>'>login</a> (click <a href='<?php echo wp_registration_url( ); ?>'>here</a> to create a free account if you don't have one)</li>
