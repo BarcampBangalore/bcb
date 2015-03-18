@@ -466,6 +466,14 @@ Color classes
     color: #AAAAAA;
 }
 
+.venue_cal
+{
+    font-size: 21px;
+    color: #BD3636;
+    text-shadow: 1px 1px 0px #CCCCCC;
+}
+
+
 .venue_text_big
 {
     font-size: 35px;
@@ -2007,6 +2015,7 @@ SPECIAL CARDS
 /* New CSS (Jan 2015) */
 .homecard_head,
 .venue_text_big
+.venue_cal
 {
     color: rgb(228, 70, 11);
     text-shadow: none;

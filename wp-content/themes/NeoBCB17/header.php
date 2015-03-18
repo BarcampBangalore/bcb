@@ -6,7 +6,7 @@
         <meta property="og:description" content="Barcamp Bangalore is an open event focused around people, ideas and collaboration. You don't want to miss this confluence of amazing minds. It's the largest unconference in India and there are talks on variety of topics like Technology, Design, Startups & Entrepreneurship, Business & Management, Photography, User Experience, Your life learnings, and a lot more... " />
         <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,600,700' rel='stylesheet' type='text/css'>
-        <meta property="og:image" content="<?php bloginfo('template_url'); ?>/images/barcamp-logo_fbog.png" />
+        <meta property="og:image" content="<?php bloginfo('template_url'); ?>/images/bcbfbog.png" />
         <!-- twitter cards meta -->
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:site" content="@barcampbng">
@@ -14,7 +14,7 @@
         <meta name="twitter:title" content="Barcamp Bangalore Spring 2015">
         <meta name="twitter:description" content="Barcamp Bangalore is an open event focused around people, ideas and collaboration. There is no fixed format and agenda. If you have an interesting topic to share or want to collaborate with folks with a variety of experience, Barcamp is the place for you.">
         <meta name="twitter:creator" content="">
-        <meta name="twitter:image:src" content="https://barcampbangalore.org/bcb/wp-content/themes/NeoBCB16/images/barcamp-logo_fbog.png">
+        <meta name="twitter:image:src" content="<?php bloginfo('template_url'); ?>/images/bcbfbog.png">
         <meta name="twitter:domain" content="barcampbangalore.org">
         <meta name="twitter:app:name:iphone" content="">
         <meta name="twitter:app:name:ipad" content="">
