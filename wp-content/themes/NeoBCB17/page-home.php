@@ -425,7 +425,7 @@ p.big
                 When & where?
             </div>
             <div id="venue_card_text">
-            <span class="venue_text_small">It' happening <br>at</span>
+            <span class="venue_text_small">It's happening <br>at</span>
             <span class="venue_text_big">CMR Institute of Technology</span><br><span class="venue_text_mid">ITPL Main Road, Bangalore</span> <br>
             <span class="venue_text_small">at</span> <span class="venue_text_big">8:00 AM</span><br>
             <span class="venue_text_small">on</span> <span class="venue_text_big">18th April, 2015</span><br>
@@ -461,12 +461,16 @@ p.big
             <div class="homecard_head yellowbg">
                 <a id="register_card" >How do I register</a>
             </div>
+
             <div class="homecard_content">
+            <strong>We will open for registrations soon!</strong>. Keep an eye out for further announcements on the mailing list/planner's blog etc.
+            <!-- 
             <ol class='steps'>
             <li>You need to <a href='<?php echo wp_login_url( ); ?>'>login</a> (click <a href='<?php echo wp_registration_url( ); ?>'>here</a> to create a free account if you don't have one)</li>
             <li>Visit our <a href='https://barcampbangalore.org/bcb/sessions'>sessions</a> page, and RSVP to at least one session by clicking on I'm attending</li>
             <li>Turn up at the venue @ 8 am</li>
             </ol>
+            -->
             </div>
         </div>
 
