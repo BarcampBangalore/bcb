@@ -92,13 +92,18 @@ an awesome chart of where people converge at the venue from.
         	window['isMapInit']  = 0;
         	window['showMap']  = 0;
         	window['neverask'] = <?php 
-        	$data = get_user_meta($current_user->ID, 'neverAskLoc', true);
-        	
-        	if($data === "1"){
-        		echo "1;";
-        	}
+        	if (is_user_logged_in()){
+				$data = get_user_meta($current_user->ID, 'neverAskLoc', true);
+				
+				if($data === "1"){
+					echo "1;";
+				}
+				else{
+					echo "0;";
+				}
+			}
         	else{
-        		echo "0;";
+        		echo "1;";
         	}
         	?>
 
