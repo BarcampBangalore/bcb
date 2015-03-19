@@ -66,9 +66,53 @@ if (!is_home())
   })();
 
 </script>
+<!-- include this stylesheet in your <head> -->
+<link href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" rel="stylesheet" />
+ 
+<!-- And the oldIE version of course. Just think, one day we'll no longer have to do this! -->
+<!--[if lte IE 8]>
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" />
+<![endif]-->
+ 
+<!-- then include the script file. if you're not sure where to include it, just before the </body> is probably a good choice -->
+<script type="text/javascript" src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
 
-
-
+ <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<link rel="stylesheet" href="/resources/demos/style.css">
+<script>
+$(function() {
+$( "#dialog-message" ).dialog({
+modal: true,
+minWidth: 350,
+width: 350,
+autoOpen: false,
+ buttons: [
+    {
+        text: 'OK',
+        open: function() { $(this).addClass('b') }, //will append a class called 'b' to the created 'OK' button.
+        click: function() {
+        	var latlng = window['marker'].getLatLng();
+        	console.log(latlng);
+        	window['showMap']  = 1;
+        	
+         $.post("<?php echo admin_url('admin-ajax.php?' . http_build_query(array("action" => "set_user_location"))); ?>&location=" + latlng.lat + "%2c" + latlng.lng
+         	 , {"location": this.loc }, function(data){
+                 console.log(data);   
+                   
+                }, 'json'); 
+         
+         $( this ).dialog( "close" );
+        }
+    },
+    {
+        text: "Cancel",
+        click: function() {$( this ).dialog( "close" );}
+    }
+  ]
+});
+});
+</script>
     </head>
     <body>
 

@@ -35,15 +35,50 @@ foreach($post_categories as $c)
 
 
 ?>
-
+<div id="dialog-message" title="Marked as Attending">
+<p>Hi you have been marked as attending Bangalore Bangalore. Would you like to share your location so that we can have
+an awesome chart of where people converge at the venue from. 
+</p>
+<div id="leafletmap"></div>
+<i class="fa fa-map-marker"></i>
+</div>
 <div id="sessionpage_wrapper" class="centered_background">
-    
     <script type="text/javascript">
+    
         $(function(){
-            
+				function onLocationFound(e) {
+					window['marker'].setLatLng(e.latlng);
+					//window['marker'] = L.marker(e.latlng,{draggable:'true'}).addTo(mymap);
+					this.loc = e.latlng.lat + "," + e.latlng.lng;
+					console.log(this.loc);
+				}
+				var mymap = 0;
+        	window['isMapInit']  = 0;
+        	window['showMap'] = 0;
+        	
             $("#sessionpage_rightmeta").on("click", ".neo_attend_button", function(){
-                
                 var card = $(this);
+                $( "#dialog-message" ).dialog("open");
+                if(window['isMapInit'] == 0){
+					mymap = L.map('leafletmap');
+					window['layer'] = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+						attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
+						maxZoom: 15,
+						minZoom:8
+					}).addTo(mymap);
+					
+					mymap.on('locationfound', onLocationFound);      
+					window['marker'] = L.marker({lat: 12.9658274, lng: 77.7118487}, {draggable: 'true'}).addTo(mymap);	
+					
+					mymap.setView([ 12.9658274, 77.7118487], 15);
+					window['mymap'] = mymap;
+				}
+				window['isMapInit'] = 1;
+                if( window['showMap'] == 0){
+					mymap.locate({setView: true, maxZoom: 15});
+					
+					
+				}
                 card.html('<img src="<?php bloginfo('template_url') ?>/images/ajaxloader.gif" />');
                 
                 $.post("<?php echo admin_url('admin-ajax.php?' . http_build_query(array("action" => "toggle_attend"))); ?>", {post_id: <?php the_ID(); ?> }, function(data){

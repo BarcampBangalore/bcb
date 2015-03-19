@@ -1,5 +1,12 @@
 <?php get_header(); ?>
-
+<div id="dialog-message" title="Marked as Attending">
+<p>
+Hi you have been marked as attending Bangalore Bangalore. Would you like to share your location so that we can have
+an awesome chart of where people converge at the venue from. 
+</p>
+<div id="leafletmap"></div>
+<i class="fa fa-map-marker"></i>
+</div>
 <div id="page_content">
 
 
@@ -76,12 +83,37 @@
             });
 
 
-
+            function onLocationFound(e) {
+					window['marker'] = L.marker(e.latlng,{draggable:'true'}).addTo(mymap);
+					this.loc = e.latlng.lat + "," + e.latlng.lng;
+					console.log(this.loc);
+					
+				}
+				var mymap = 0;
+        	var isMapInit = 0;
+        	window['showMap']  = 0;
 
 
             $(".sessioncard_footer").on("click", ".neo_attend_button", function() {
-                
-
+                $( "#dialog-message" ).dialog("open");
+            	if(isMapInit == 0){
+					mymap = L.map('leafletmap');
+					L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+						attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
+						maxZoom: 15
+					}).addTo(mymap);
+					
+					mymap.setView([ 12.9658274, 77.7118487], 15);      
+					window['marker'] = L.marker({lat: 12.9658274, lng: 77.7118487}, {draggable: 'true'}).addTo(mymap);
+					mymap.on('locationfound', onLocationFound);  
+					
+				}
+				isMapInit = 1;
+				if( window['showMap']  == 0){
+					mymap.locate({setView: true, maxZoom: 15});
+					
+					
+				}
                 var card = $(this);
                 card.html('<img src="<?php bloginfo('template_url') ?>/images/ajaxloader.gif" />');
 
@@ -144,13 +176,11 @@ Rest of world - #5A4368
 
         <?php 
         
-        $difficulty_tags = array(945, 947, 946); // prod mapping
-//        $difficulty_tags = array(939, 940, 941); // local mapping
-        
-        
-        //foreach (array(934, 935, 936, 940, 941, 942, 943) as $track_id) : 
-        foreach (array(1226, 1229, 1233, 1231, 1225, 1227, 1230) as $track_id) : 
-            
+   
+$difficulty_tags = array(945, 947, 946); // prod mapping
+// $difficulty_tags = array(939, 940, 941); // local mapping
+//foreach (array(934, 935, 936, 940, 941, 942, 943) as $track_id) :
+foreach (array(1058, 1059, 1060, 1061, 1062, 1063, 1064) as $track_id) : 
             
             ?>
 
