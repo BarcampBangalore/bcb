@@ -67,7 +67,7 @@ if (!is_home())
 
 </script>
 <!-- include this stylesheet in your <head> -->
-<link href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" rel="stylesheet" />
+<link href="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" rel="stylesheet" />
  
 <!-- And the oldIE version of course. Just think, one day we'll no longer have to do this! -->
 <!--[if lte IE 8]>
@@ -75,7 +75,7 @@ if (!is_home())
 <![endif]-->
  
 <!-- then include the script file. if you're not sure where to include it, just before the </body> is probably a good choice -->
-<script type="text/javascript" src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
 
  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
