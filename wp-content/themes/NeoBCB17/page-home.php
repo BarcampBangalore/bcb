@@ -523,7 +523,7 @@ p.big
             </div>
             <div class="homecard_content">
                 <p class='big'>You</p>
-                <p>Barcamp is an open platform. Anyone can present a session at the event. Click <a title="Add a Session" href="<?php bloginfo('template_url'); ?>/add-a-session">here</a> to submit your session.</p>
+                <p>Barcamp is an open platform. Anyone can present a session at the event. Click <a title="Add a Session" href="https://barcampbangalore.org/bcb/add-a-session">here</a> to submit your session.</p>
             </div>
         </div>
 
