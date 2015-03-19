@@ -74,11 +74,20 @@ function set_user_location(){
 		if(isset($_REQUEST['location'])){
 			$loc = $_REQUEST['location'];
 			update_user_meta( $current_user->ID, "userLoc", $loc, false );
+			update_user_meta( $current_user->ID, "neverAskLoc", 1, false );
 			 
 		}
 		 
     }
 
+}
+add_action( 'wp_ajax_neverask', 'neverask' );
+function neverask(){
+	global $current_user;
+	if (is_user_logged_in()){
+		 $current_user = wp_get_current_user();
+		 update_user_meta( $current_user->ID, "neverAskLoc", 1, false );
+    }
 }
 
 function the_login_message( $message ) {
