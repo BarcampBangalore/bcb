@@ -2132,3 +2132,9 @@ body
     z-index: 101;
     position: relative;
 }
+
+#leafletmap{
+  width: 300px;
+  height: 300px;
+  border: 1px solid #ccc;
+}

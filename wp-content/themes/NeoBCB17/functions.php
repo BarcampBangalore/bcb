@@ -51,6 +51,7 @@ function barcamp_login_logo() { ?>
 <?php }
 add_action( 'login_enqueue_scripts', 'barcamp_login_logo' );
 
+
 // end theme_widgets_init
 
 // set the login cookie
@@ -64,7 +65,21 @@ add_action('init', function(){
 
 add_filter( 'jetpack_enable_opengraph', '__return_false', 99 );
 
+add_action( 'wp_ajax_set_user_location', 'set_user_location' );
+function set_user_location(){
+	 global $current_user;
+	if (is_user_logged_in()){
+		 $current_user = wp_get_current_user();
+		 var_dump($_REQUEST);
+		if(isset($_REQUEST['location'])){
+			$loc = $_REQUEST['location'];
+			update_user_meta( $current_user->ID, "userLoc", $loc, false );
+			 
+		}
+		 
+    }
 
+}
 
 function the_login_message( $message ) {
     if ( empty($message) ){
@@ -188,8 +203,6 @@ function mytheme_comment($comment, $args, $depth)
 //        if ( !wp_verify_nonce( $_REQUEST['nonce'], "neo_attend_nonce")) {
 //        exit("No naughty business please");
 //     }
-        
-        
         if (is_user_logged_in())
         {
             $attendingusers = attending_users($_REQUEST['post_id']);
