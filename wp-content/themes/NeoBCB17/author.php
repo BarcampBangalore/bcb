@@ -80,7 +80,7 @@ an awesome chart of where people converge at the venue from.
 						echo "mymap.setView([ ".$latlng[0].", ".$latlng[1]."], 15);";
 						
 						echo "});</script>";
-						echo '<a class="loc_button" style="text-decoration: none;"><div style="background-color: #f9a70f; border-radius: 5px; 
+						echo '<a class="loc_button" style="text-decoration: none;cursor: pointer;"><div style="background-color: #f9a70f; border-radius: 5px; 
                  box-shadow: 1px 1px 1px #888888; height: 44px; text-align: center;
                  padding: 5px; margin-top: 20px; color: #FFFFFF; font-size: 30px;">Update your Location</div></a>';
                  
