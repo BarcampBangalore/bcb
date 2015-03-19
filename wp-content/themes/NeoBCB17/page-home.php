@@ -459,7 +459,7 @@ p.big
 
         <div class="homecard">
             <div class="homecard_head yellowbg">
-                <a id="register_card" >How do I register</a>
+                <a id="register_card">How do I register?</a>
             </div>
 
             <div class="homecard_content">
@@ -519,11 +519,11 @@ p.big
 
         <div class="homecard">
             <div class="homecard_head yellowbg">
-                Who can present a sessions?
+                Who can present a session?
             </div>
             <div class="homecard_content">
                 <p class='big'>You</p>
-                <p>Barcamp is an open platform. Anyone can present a session at the event. Click here (add link to page) to submit your session.</p>
+                <p>Barcamp is an open platform. Anyone can present a session at the event. Click <a title="Add a Session" href="<?php bloginfo('template_url'); ?>/add-a-session">here</a> to submit your session.</p>
             </div>
         </div>
 
@@ -555,7 +555,7 @@ p.big
             <div class="homecard_content">
 
             <p>Techlash is a series of 5-minute raipidfire idea presentations.</p>
-            <p>If you are a wanna be Techlash speaker, go ahead and  <a title="Add a Session" href="https://barcampbangalore.org/bcb/add-a-session">register your session</a> under Techlash category. </p>
+            <p>If you want to be Techlash speaker, go ahead and  <a title="Add a Session" href="https://barcampbangalore.org/bcb/add-a-session">register your session</a> under Techlash category. </p>
 
             <!--
                 <p>Techlash is a tech rapidfire round at BCB. At Techlash, our speakers
