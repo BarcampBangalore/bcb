@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div id="dialog-message" title="Share your Location">
+<div id="dialog-message" title="Update your Location">
 <div id="leafletmap"></div>
 <i class="fa fa-map-marker"></i>
 <p>Please share your location so that we can have
@@ -107,7 +107,7 @@ an awesome chart of where people converge at the venue from.
 					$( "#dialog-message" ).dialog("open");
 					if(window['isMapInit'] == 0){
 						mymap = L.map('leafletmap');
-						window['layer'] = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+						window['layer'] = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 							attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
 							maxZoom: 15,
 							minZoom:8

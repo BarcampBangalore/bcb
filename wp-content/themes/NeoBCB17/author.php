@@ -33,7 +33,13 @@ $cat_names = array(
 
 ?>
 
-
+<div id="dialog-message" title="Share your Location">
+<div id="leafletmap"></div>
+<i class="fa fa-map-marker"></i>
+<p>Please share your location so that we can have
+an awesome chart of where people converge at the venue from. 
+</p>
+</div>
 <div id="authorpage_wrapper" class="centered_background">
 
     <div id="authorpage_content">
@@ -47,9 +53,91 @@ $cat_names = array(
             <div id="authorpage_profiledesc">
                 <?php echo $curauth->user_description; ?>
             </div>
-
-
-        </div>
+            <?php
+           if (is_user_logged_in() && $curauth->ID == $current_user->ID){
+           	   
+				$userLoc = get_user_meta($current_user->ID, 'userLoc', true);
+				if($userLoc !== false ){
+					if( $userLoc == ''){
+						$latlng = array(12.9658274, 77.7118487);
+					}
+					else{
+						$latlng = split(',',$userLoc);
+					}
+					echo '<div id="leafletmap2"></div>';
+					echo '<i class="fa fa-map-marker"></i>';
+					echo "<script type=\"text/javascript\">
+    
+        $(function(){";
+					echo "mymap = L.map('leafletmap2');";
+					echo "	L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+							attribution: 'Map data &copy; <a href=\"http://openstreetmap.org\">OpenStreetMap</a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA</a>',
+							maxZoom: 15,
+							minZoom:8
+						}).addTo(mymap);
+						";
+						echo"L.marker({lat: ".$latlng[0].", lng: ".$latlng[1]."}).addTo(mymap);";	
+						echo "mymap.setView([ ".$latlng[0].", ".$latlng[1]."], 15);";
+						
+						echo "});</script>";
+						echo '<a class="loc_button" style="text-decoration: none;"><div style="background-color: #f9a70f; border-radius: 5px; 
+                 box-shadow: 1px 1px 1px #888888; height: 44px; text-align: center;
+                 padding: 5px; margin-top: 20px; color: #FFFFFF; font-size: 30px;">Update your Location</div></a>';
+                 
+                 echo "<script type=\"text/javascript\">
+    
+        $(function(){
+				function onLocationFound(e) {
+					window['marker'].setLatLng(e.latlng);
+					//window['marker'] = L.marker(e.latlng,{draggable:'true'}).addTo(mymap);
+					this.loc = e.latlng.lat + "," + e.latlng.lng;
+					console.log(this.loc);
+				}
+        	window['isMapInit']  = 0;
+        	window['showMap'] = 0;
+        	
+        	
+            $(\"#authorpage_content\").on(\"click\", \".loc_button\", function(){
+               
+               
+					$( \"#dialog-message\" ).dialog(\"open\");
+					if(window['isMapInit'] == 0){
+						mymap2 = L.map('leafletmap');
+						window['layer'] = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+							attribution: 'Map data &copy; <a href=\"http://openstreetmap.org\">OpenStreetMap</a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA</a>',
+							maxZoom: 15,
+							minZoom:8
+						}).addTo(mymap2);
+						
+						mymap2.on('locationfound', onLocationFound);      
+						window['marker'] = L.marker({lat: ".$latlng[0].", lng: ".$latlng[1]."}, {draggable: 'true'}).addTo(mymap2);	
+						
+						mymap2.setView([ ".$latlng[0].", ".$latlng[1]."], 15);
+						window['mymap'] = mymap2;
+					}
+					window['isMapInit'] = 1;
+					if( window['showMap'] == 0){
+						window['mymap'].locate({setView: true, maxZoom: 15});
+						
+						
+					
+					}	
+                
+            });
+            
+            
+        });
+        
+    </script>";
+				}
+				
+           }?>
+           
+        
+                 
+       
+        
+       </div>
 
         <div id="authorpage_sessions">
             
