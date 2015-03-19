@@ -89,7 +89,7 @@ width: 350,
 autoOpen: false,
  buttons: [
     {
-        text: 'OK',
+        text: 'Save My Location',
         open: function() { $(this).addClass('b') }, //will append a class called 'b' to the created 'OK' button.
         click: function() {
         	var latlng = window['marker'].getLatLng();
@@ -101,13 +101,25 @@ autoOpen: false,
                  console.log(data);   
                    
                 }, 'json'); 
-         
+         window['neverask'] = 1;
          $( this ).dialog( "close" );
+         
         }
     },
     {
-        text: "Cancel",
+        text: "Later",
         click: function() {$( this ).dialog( "close" );}
+    },
+    {
+    	text: "Never Ask",
+        click: function() {$( this ).dialog( "close" );
+        	window['neverask'] = 1;
+        	$.post("<?php echo admin_url('admin-ajax.php?' . http_build_query(array("action" => "neverask"))); ?>"
+         	 , {"sd": 0 }, function(data){
+                 console.log(data);   
+                   
+                }, 'json'); 
+        }
     }
   ]
 });
