@@ -197,7 +197,7 @@ Rest of world - #5A4368
 $difficulty_tags = array(945, 947, 946); // prod mapping
 // $difficulty_tags = array(939, 940, 941); // local mapping
 //foreach (array(934, 935, 936, 940, 941, 942, 943) as $track_id) :
-foreach (array(1058, 1059, 1060, 1061, 1062, 1063, 1064) as $track_id) : 
+foreach (array(1226, 1229, 1233, 1231, 1225, 1227, 1230) as $track_id) : 
             
             ?>
 
