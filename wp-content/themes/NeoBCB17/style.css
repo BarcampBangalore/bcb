@@ -20,15 +20,92 @@
 
  /**** Isotope Filtering ****/
 
+
+    @-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0,0,0) scale(.95);
+        transform: translate3d(0,0,0) scale(.95);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translate3d(0,0,0) scale(1);
+        transform: translate3d(0,0,0) scale(1);
+    }
+   } 
+   @keyframes fadeIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0,0,0) scale(.95);
+        transform: translate3d(0,0,0) scale(.95);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translate3d(0,0,0) scale(1);
+        transform: translate3d(0,0,0) scale(1);
+    }
+   }
+
+    @-webkit-keyframes fillRight {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0,0,0) scaleX(0);
+        transform: translate3d(0,0,0) scaleX(0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translate3d(0,0,0) scale(1);
+        transform: translate3d(0,0,0) scale(1);
+    }
+   } 
+   @keyframes fillRight {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0,0,0) scaleX(0);
+        transform: translate3d(0,0,0) scaleX(0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translate3d(0,0,0) scale(1);
+        transform: translate3d(0,0,0) scale(1);
+    }
+   }   
+
  .isotope-item {
     z-index: 2;
 }
+
+
 .ui-button
 {
-    background-color: rgb(211, 100, 59);
-    color: white;
+    background: rgb(228, 70, 11) !important;
+    color: white !important;
+    border-radius: 3px !important;
+    box-shadow: 0px 2px 0px #BA451A !important;
+    border: 0px !important;
+    font-size: 13px !important;
+    padding: 3px !important;
+    outline: none !important;
+}
+.ui-dialog
+{
+    -webkit-animation: fadeIn .4s;
+   animation: fadeIn .4s;
+}
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset
+{
+    float: none !important;
+    text-align: center !important;
+}
+.ui-dialog-titlebar-close
+{
+    box-shadow: none !important;
+    background: none !important;
+}
+.ui-draggable .ui-dialog-titlebar
+{
+    background: none;
     border: 0px;
-    padding: 3px;
 }
 
 .isotope-hidden.isotope-item {
@@ -2163,4 +2240,61 @@ body
   width: 300px;
   height: 300px;
   border: 1px solid #ccc;
+position: relative;
+  border-radius: 3px;
+  overflow: hidden;
+  margin: 4px;
+  width: auto;
 }
+
+
+#techlash_page_content h3
+{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 30px;
+}
+#techlash_page_content h3 > span
+{
+    -webkit-animation: fadeIn 3s;
+   animation: fadeIn 3s;
+   font-size: 36px;
+  color: white;
+  display: inline-block;
+  margin-right: 8px;
+  font-weight: 500;
+  border-radius: 100px;
+  border: 2px solid #E4460B;
+  width: 47px;
+  position: relative;
+  top: 20px;
+  padding: 6px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+#techlash_page_content h3 span span
+{
+    position: relative;
+    z-index: 101;
+}
+#techlash_page_content h3 > span:before
+{
+    content: '';
+    position: absolute;
+    left: 0; right: 0; top: 0; bottom: 0;
+    background-color: #E4460B;
+    -webkit-animation: fillRight 3s;
+   animation: fillRight 3s;
+   -webkit-transform-origin: 0% 0%;
+   transform-origin: 0% 0%;
+}
+#techlash_page_content p
+{
+    font-size: 17px;
+    line-height: 1.5em;
+}
+
+

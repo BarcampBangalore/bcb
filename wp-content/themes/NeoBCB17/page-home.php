@@ -554,7 +554,7 @@ p.big
             </div>
             <div class="homecard_content">
 
-            <p>Techlash is a series of 5-minute raipidfire idea presentations.</p>
+            <p>Techlash is a series of 6-minute raipidfire idea presentations.</p>
             <p>If you want to be Techlash speaker, go ahead and  <a title="Add a Session" href="https://barcampbangalore.org/bcb/add-a-session">register your session</a> under Techlash category. </p>
 
             <!--

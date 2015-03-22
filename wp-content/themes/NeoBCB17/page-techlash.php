@@ -215,12 +215,8 @@
 
         </div>
         <div id="techlash_right_container" >
-            <div style="font-size: 22px; text-align: center; padding-top: 10px; padding-bottom: 20px;">Your 5 mins of fame.<br></div>
-            
+            <div style="margin: 0 -18px 20px -18px; box-shadow: 0px 4px 3px -2px #aaa;font-size: 22px; color: #666; font-weight: bold; text-align: center; padding-top: 10px; padding-bottom: 31px;">Showcase<br></div>
             <iframe width="260" height="195" src="//www.youtube.com/embed/4je2tRkfIF0" frameborder="0" allowfullscreen></iframe>
-            <a href="<?php echo get_permalink( get_page_by_path( 'add-a-session' ) ) ?>" style="text-decoration: none;"><div style="background-color: #f9a70f; border-radius: 5px; 
-                 box-shadow: 1px 1px 1px #888888; height: 44px; text-align: center;
-                 padding: 5px; margin-top: 20px; color: #FFFFFF; font-size: 30px;">Register</div></a>
         </div>
         
 

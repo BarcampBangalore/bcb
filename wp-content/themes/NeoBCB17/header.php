@@ -107,19 +107,18 @@ autoOpen: false,
         }
     },
     {
-        text: "Later",
-        click: function() {$( this ).dialog( "close" );}
-    },
-    {
-    	text: "Never Ask",
+        text: "Never Ask",
         click: function() {$( this ).dialog( "close" );
-        	window['neverask'] = 1;
-        	$.post("<?php echo admin_url('admin-ajax.php?' . http_build_query(array("action" => "neverask"))); ?>"
-         	 , {"sd": 0 }, function(data){
-                 console.log(data);   
+            window['neverask'] = 1;
+            $.post("<?php echo admin_url('admin-ajax.php?' . http_build_query(array("action" => "neverask"))); ?>"
+             , {"sd": 0 }, function(data){
                    
                 }, 'json'); 
         }
+    },    
+    {
+        text: "Later",
+        click: function() {$( this ).dialog( "close" );}
     }
   ]
 });
