@@ -137,14 +137,6 @@ autoOpen: false,
    }
 }
 </script>
-<div itemscope itemtype="http://schema.org/WebSite">
-  <meta itemprop="url" content="https://barcampbangalore.org/"/>
-  <form itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction">
-    <meta itemprop="target" content="https://barcampbangalore.org/bcb/?s={search_term_string}"/>
-    <input itemprop="query-input" type="text" name="search_term_string" required/>
-    <input type="submit"/>
-  </form>
-</div>
     </head>
     <body>
 
