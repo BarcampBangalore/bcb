@@ -23,6 +23,13 @@
  .isotope-item {
     z-index: 2;
 }
+.ui-button
+{
+    background-color: rgb(211, 100, 59);
+    color: white;
+    border: 0px;
+    padding: 3px;
+}
 
 .isotope-hidden.isotope-item {
     pointer-events: none;
