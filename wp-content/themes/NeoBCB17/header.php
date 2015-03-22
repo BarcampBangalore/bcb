@@ -68,6 +68,7 @@ if (!is_home())
 </script>
 <!-- include this stylesheet in your <head> -->
 <link href="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" rel="stylesheet" />
+
  
 <!-- And the oldIE version of course. Just think, one day we'll no longer have to do this! -->
 <!--[if lte IE 8]>
@@ -124,6 +125,26 @@ autoOpen: false,
 });
 });
 </script>
+<script type="application/ld+json">
+{
+   "@context": "http://schema.org",
+   "@type": "WebSite",
+   "url": "https://barcampbangalore.org/",
+   "potentialAction": {
+     "@type": "SearchAction",
+     "target": "https://barcampbangalore.org/bcb/?s={search_term_string}",
+     "query-input": "required name=search_term_string"
+   }
+}
+</script>
+<div itemscope itemtype="http://schema.org/WebSite">
+  <meta itemprop="url" content="https://barcampbangalore.org/"/>
+  <form itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction">
+    <meta itemprop="target" content="https://barcampbangalore.org/bcb/?s={search_term_string}"/>
+    <input itemprop="query-input" type="text" name="search_term_string" required/>
+    <input type="submit"/>
+  </form>
+</div>
     </head>
     <body>
 
