@@ -221,7 +221,7 @@ p.big
                 <div style="font-size: 100px; color: #FFFFFF; text-shadow: 3px 3px 3px #000000; padding-top: 140px;">
                     Where Ideas Meet!
                 </div>
-                <div style="color: #FFFFFF; text-shadow: 3px 3px 3px #000000; font-size: 40px">18th April, 2015!</div>
+                <div style="color: #FFFFFF; text-shadow: 3px 3px 3px #000000; font-size: 40px">31st October, 2015!</div>
                 
                 <!-- TODO
 
