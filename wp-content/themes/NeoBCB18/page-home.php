@@ -428,10 +428,10 @@ p.big
             <span class="venue_text_small">It's happening <br>at</span>
             <span class="venue_text_big">CMR Institute of Technology</span><br><span class="venue_text_mid">ITPL Main Road, Bangalore</span> <br>
             <span class="venue_text_small">at</span> <span class="venue_text_big">8:00 AM</span><br>
-            <span class="venue_text_small">on</span> <span class="venue_text_big">18th April, 2015</span><br>
-            <span class="venue_text_small">Add to your calendar: </span><span class="venue_cal"><a href="<?php bloginfo('template_url'); ?>/barcamp-spring-2015.ics">ICS</a></span>
+            <span class="venue_text_small">on</span> <span class="venue_text_big">31st October, 2015</span><br>
+            <span class="venue_text_small">Add to your calendar: </span><span class="venue_cal"><a href="<?php bloginfo('template_url'); ?>/barcamp-monsoon-2015.ics">ICS</a></span>
             <span class="venue_text_small"> | </span>
-            <span class="venue_cal"><a href="https://www.google.com/calendar/event?action=TEMPLATE&tmeid=Z3NtNWJmazhtY25mYm1iamtmOWJqbGQxNzggb2RmMjI1dDRoMjVsZzV2amVjYjMzbHJwbWNAZw&tmsrc=odf225t4h25lg5vjecb33lrpmc%40group.calendar.google.com">Google Calendar</a></span>
+            <span class="venue_cal"><a href="https://www.google.com/calendar/event?action=TEMPLATE&tmeid=Z3YwcG04c3J2Z2IyN3MxaG41c2tudDYxanMgdTY1OGYxam83cmI2MXBmcGdhYjdlZnRyaHNAZw&tmsrc=u658f1jo7rb61pfpgab7eftrhs%40group.calendar.google.com">Google Calendar</a></span>
             </div>
             <div id="map_div" >
 
@@ -463,7 +463,7 @@ p.big
             </div>
 
             <div class="homecard_content">
-            <strong>We will open for registrations soon!</strong> Keep an eye out for further announcements on the mailing list/planner's blog etc.
+            <strong>We will open for registrations soon!</strong> Keep an eye out for further announcements on the mailing list/planner's blog etc. In the meantime, join our <a href="http://slack.barcampbangalore.org">Slack Group</a>.
             <!-- 
             <ol class='steps'>
             <li>You need to <a href='<?php echo wp_login_url( ); ?>'>login</a> (click <a href='<?php echo wp_registration_url( ); ?>'>here</a> to create a free account if you don't have one)</li>
@@ -607,7 +607,6 @@ p.big
                     <li><img class="teammember" src="<?php bloginfo('template_url')  ?>/images/team/arun.jpg" alt="Arun Vijayan" title="Arun Vijayan"  /></li>
                     <li><img class="teammember" src="<?php bloginfo('template_url')  ?>/images/team/daaku.jpg" alt="Amit Khare" title="Amit Khare"  /></li>
                     <li><img class="teammember" src="<?php bloginfo('template_url')  ?>/images/team/vivek.jpg" alt="Vivek K" title="Vivek K"  /></li>
-                    <li><img class="teammember" src="<?php bloginfo('template_url')  ?>/images/team/nishant.png" alt="Nishant" title="Nishant"  /></li>
                 </ul></a>
                 <!-- TODO: Update planners
                 <a href="http://barcampbangalore.org/planning/meet-the-team/">
