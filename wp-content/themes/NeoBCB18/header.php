@@ -14,7 +14,7 @@
         <meta name="twitter:title" content="Barcamp Bangalore Monsoon 2015">
         <meta name="twitter:description" content="Barcamp Bangalore is an open event focused around people, ideas and collaboration. There is no fixed format and agenda. If you have an interesting topic to share or want to collaborate with folks with a variety of experience, Barcamp is the place for you.">
         <meta name="twitter:creator" content="">
-        <meta name="twitter:image:src" content="<?php bloginfo('template_url'); ?>/images/bcbfbog.png">
+        <meta name="twitter:image:src" content="<?php bloginfo('template_url'); ?>/images/bcbog.png">
         <meta name="twitter:domain" content="barcampbangalore.org">
         <meta name="twitter:app:name:iphone" content="">
         <meta name="twitter:app:name:ipad" content="">
@@ -161,7 +161,7 @@ autoOpen: false,
                 <?php endif; ?>
             </div>
             
-            <a href='<?php echo get_site_url(); ?>'><img id="logo" src="<?php bloginfo('template_url'); ?>/images/barcamp_17_logo.png" /></a>
+            <a href='<?php echo get_site_url(); ?>'><img id="logo" src="<?php bloginfo('template_url'); ?>/images/barcamp-logo.png" /></a>
         </div>
         <div id="navbar">
             <?php wp_nav_menu(array()); ?> 

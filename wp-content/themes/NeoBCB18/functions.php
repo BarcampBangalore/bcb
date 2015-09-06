@@ -30,7 +30,7 @@ function theme_widgets_init()
 function barcamp_login_logo() { ?>
     <style type="text/css">
         body.login div#login h1 a {
-            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/barcamp_17_logo.png);
+            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/barcamp-logo.png);
             padding-bottom: 30px;
             width: 100%;
             background-size: 100%;
