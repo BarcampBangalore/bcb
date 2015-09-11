@@ -608,12 +608,6 @@ p.big
                     <li><img class="teammember" src="<?php bloginfo('template_url')  ?>/images/team/daaku.jpg" alt="Amit Khare" title="Amit Khare"  /></li>
                     <li><img class="teammember" src="<?php bloginfo('template_url')  ?>/images/team/vivek.jpg" alt="Vivek K" title="Vivek K"  /></li>
                 </ul></a>
-                <!-- TODO: Update planners
-                <a href="http://barcampbangalore.org/planning/meet-the-team/">
-                    <div id="teamlink">
-                        Meet the humble planners &nbsp;&nbsp;&nbsp; &gt; 
-                    </div>
-                --> 
                 </a>
                 
                 
@@ -629,6 +623,5 @@ p.big
 </div>
 <?php get_footer(); ?>
 <?php wp_footer(); ?>
-<script>window.scrollback = {room:"barcamp-bangalore",form:"toast",theme:"dark",minimize:true};(function(d,s,h,e){e=d.createElement(s);e.async=1;e.src=(location.protocol === "https:" ? "https:" : "http:") + "//scrollback.io/client.min.js";d.getElementsByTagName(s)[0].parentNode.appendChild(e);}(document,"script"));</script>
 </body>
 </html>
