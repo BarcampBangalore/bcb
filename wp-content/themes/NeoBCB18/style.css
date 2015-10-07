@@ -359,95 +359,6 @@ background-color: rgb(228, 70, 11);
 
 
 
-#plaza
-{
-    margin: 0px auto 25px auto;
-    width: 80%;
-
-
-    border-radius: 13px;
-    border-top: 1px solid #999459;
-    border-bottom: 1px solid #252400;
-    background-image: url(images/backdrop.jpg);
-    background-position: center;
-    background-size: cover;
-
-    box-shadow: 1px 1px 5px #020101;
-    position: relative; 
-    overflow: auto;
-
-
-}
-
-#plaza ul
-{
-    list-style: none;
-    margin: 0px;
-    padding: 0px;
-}
-
-#plaza li
-{
-    display: inline-block;
-    float: left;
-}
-
-.plaza_slide
-{
-    text-align: center;
-    color: #FFFFFF;
-
-    display: inline-block;
-    height: 200px;
-    width: 100%;
-}
-
-
-.plaza_slide h1
-{
-    padding-top: 50px;
-    font-size: 50px;
-    text-shadow: 3px 3px 3px #000000;
-    color: #FFFFFF;
-}
-
-.plaza_slide h2
-{
-    font-size: 30px;
-}
-
-.plaza_slide a
-{
-    color: #FFFFFF;
-}
-
-#plaza_slide_ideas  h1
-{
-    color: #FFFFFF;
-    text-shadow: 0px 0px 40px #FFFFFF, 2px 2px 2px #000000;
-}
-
-#plaza_slide_unconference h1
-{
-    color: #FED904;
-    text-shadow: 0px 0px 40px #FED904, 2px 2px 2px #000000;
-}
-
-#plaza_slide_unconference h2
-{
-    color: #FFFFFF;
-    text-shadow: 0px 0px 20px #FFFFFF, 2px 2px 2px #000000;
-
-}
-
-#plaza_slide_android h1
-{
-    color: #35DFFF;
-    text-shadow: 0px 0px 20px #35DFFF, 2px 2px 2px #000000;
-}
-
-
-
 
 
 #cards_parent
@@ -457,6 +368,189 @@ background-color: rgb(228, 70, 11);
 
 }
 
+#homepage_cb1 {
+    background-size: cover;
+    background-position: 0px -363px;
+}
+
+#homepage_ct1 {
+    
+    /*height: 500px;*/
+    
+}
+
+#homepage_ct1_r1 {
+    padding: 100px 0px;
+    
+}
+
+#homepage_big_title {
+    text-align: center;
+    font-size: 50px;
+    color: #FFFFFF;
+}
+
+#homepage_big_title_tagline {
+    text-align: center;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+.homepage_location_card {
+    background-color: #35aadc;
+    height: 80px;
+    border-radius: 7px;
+    padding: 10px 10px 10px 20px;;
+    
+    box-shadow: 2px 2px 2px #000000;
+    color: #FFFFFF;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.homepage_location_card img {
+    float: right;
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+}
+
+#homepage_ct1_r3 {
+    padding: 50px 0px;
+}
+
+.homepage_register_card {
+    background-color: #E4460B;
+    
+    border-radius: 7px;
+    padding: 10px;
+    box-shadow: 2px 2px 2px #000000;
+    color: #FFFFFF;
+    font-size: 28px;
+    text-align: center;
+}
+
+
+#homepage_about_bcb_title {
+    padding: 50px 0px 5px 0px;
+    font-size: 28px;
+    border-bottom: 3px solid #35AADC;
+}
+
+#homepage_about_bcb_description {
+    padding-top: 30px;
+    color: #666666;
+    padding-bottom: 60px;
+}
+
+#homepage_cb3 {
+    background-color: #35AADC;
+}
+
+#homepage_how_to_register_title {
+    padding: 50px 0px 5px 0px;
+    font-size: 28px;
+    border-bottom: 3px solid #BCEBFF;
+    color: #FFFFFF;
+   
+}
+
+#homepage_how_to_register_description {
+    padding-top: 30px;
+    color: #FFFFFF;
+    padding-bottom: 60px;
+}
+
+#homepage_cb4 {
+    background-color: #E4460B;
+}
+
+#homepage_techlash_title {
+    padding: 50px 0px 5px 0px;
+    font-size: 28px;
+    border-bottom: 3px solid #333333;
+    color: #FFFFFF;
+}
+
+#homepage_techlash_description {
+    padding-top: 30px;
+    color: #FFFFFF;
+    padding-bottom: 60px;
+}
+
+
+#homepage_cb5 {
+    background-color: #3B3B3B;
+}
+
+#homepage_planners_title {
+    padding: 50px 0px 5px 0px;
+    font-size: 28px;
+    border-bottom: 3px solid #E4460B;
+    color: #CCCCCC;
+    
+}
+
+#homepage_planners_description {
+    padding-top: 30px;
+    color: #AAAAAA;
+    padding-bottom: 60px;
+    
+}
+
+.homepage_planner_card {
+    margin-top: 50px;
+    margin-bottom: 60px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.homepage_planner_pic {
+    
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    border: 2px solid #FFFFFF;
+    margin-bottom: 10px
+}
+
+
+
+#homepage_cb6 {
+    
+}
+
+#homepage_sponsors_title {
+    padding: 50px 0px 5px 0px;
+    font-size: 28px;
+    border-bottom: 3px solid #333333;
+    color: #E4460B;
+}
+
+#homepage_sponsors_description {
+    padding-top: 30px;
+    color: #AAAAAA;
+    padding-bottom: 60px;
+}
+
+.homepage_sponsor_card {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.homepage_sponsor_heading {
+    font-weight: bold;
+    padding: 20px;
+}
+
+.homepage_sponsor_logo_wrapper {
+
+}
+
+.homepage_sponsor_logo {
+    height: 70px;
+}
 
 
 /*

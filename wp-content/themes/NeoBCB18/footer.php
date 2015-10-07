@@ -1,5 +1,9 @@
 
+
+
         <div id="footer">
+            
+            <?php /*
             <div id="sponsors_div">
                 <h2>Sponsors</h2>
                 <div>
@@ -34,6 +38,10 @@
                 </div>
 
             </div>
+            
+             
+             */
+            ?>
         
             <div id="footer_copyright">
             <!--[if lte IE 8]><span style="filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2); display: inline-block;"><![endif]-->
