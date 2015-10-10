@@ -5,6 +5,44 @@ function insertSponsors($bcbname)
 {
     switch ($bcbname)
     {
+
+       case "bcbxah":
+            ?>
+                            
+            <div class="archive_sponsors_wrapper">
+                <h2>Sponsors for BCBXAntHill</h2>
+                <!-- <div class="archive_sponsor">
+                    <h3 class="archive_sponsor_title">Event Partner</h3>
+                    <div><img class="archive_sponsor_logo" src="<?php bloginfo('template_url')  ?>/images/sap_logo.png" /></div>
+                </div>
+                -->
+                <div class="archive_sponsor">
+                    <h3 class="archive_sponsor_title">Supported by</h3>
+                    <div><img class="archive_sponsor_logo" src="<?php bloginfo('template_url')  ?>/images/sponz_logos/janastu_logo.gif" /></div>
+                </div>
+            </div>
+
+            <?php
+            break;
+         case "bcb17":
+            ?>
+                            
+            <div class="archive_sponsors_wrapper">
+                <h2>Sponsors for <?php echo $bcbname; ?></h2>
+                <!-- <div class="archive_sponsor">
+                    <h3 class="archive_sponsor_title">Event Partner</h3>
+                    <div><img class="archive_sponsor_logo" src="<?php bloginfo('template_url')  ?>/images/sap_logo.png" /></div>
+                </div>
+                -->
+                <div class="archive_sponsor">
+                    <h3 class="archive_sponsor_title">Supported by</h3>
+                    <div><img class="archive_sponsor_logo" src="<?php bloginfo('template_url')  ?>/images/sponz_logos/janastu_logo.gif" /></div>
+                </div>
+            </div>
+
+            <?php
+            break;
+            
         case "bcb16":
             ?>
                             
@@ -340,15 +378,17 @@ get_header(); ?>
         <div id="sessionpage_midsection">
             <div id="generalpage_posttext">
                 <ul id="archivelinks">
-                    <li class="archive_selected"><a data-contentdiv="archive_bcb16">BCB16</a></li>
-                    <li><a  data-contentdiv="archive_bcb15">BCB15</a></li>
-                    <li><a  data-contentdiv="archive_bcb14">BCB14</a></li>
-                    <li><a  data-contentdiv="archive_bcb13">BCB13</a></li>
-                    <li><a  data-contentdiv="archive_bcb12">BCB12</a></li>
-                    <li><a  data-contentdiv="archive_bcb11">BCB11</a></li>
-                    <li><a  data-contentdiv="archive_bcb10">BCB10</a></li>
-                    <li><a  data-contentdiv="archive_bcb9">BCB9</a></li>
-                    <li><a  data-contentdiv="archive_bcb8">BCB8</a></li>
+                    <li class="archive_selected"><a data-contentdiv="archive_bcbxah">BCBX AntHill</a></li>
+                    <li><a data-contentdiv="archive_bcb17">BCB17</a></li> 
+                    <li><a data-contentdiv="archive_bcb16">BCB16</a></li>
+                    <li><a data-contentdiv="archive_bcb15">BCB15</a></li>
+                    <li><a data-contentdiv="archive_bcb14">BCB14</a></li>
+                    <li><a data-contentdiv="archive_bcb13">BCB13</a></li>
+                    <li><a data-contentdiv="archive_bcb12">BCB12</a></li>
+                    <li><a data-contentdiv="archive_bcb11">BCB11</a></li>
+                    <li><a data-contentdiv="archive_bcb10">BCB10</a></li>
+                    <li><a data-contentdiv="archive_bcb9">BCB9</a></li>
+                    <li><a data-contentdiv="archive_bcb8">BCB8</a></li>
                 </ul>
 
 
@@ -358,11 +398,11 @@ get_header(); ?>
             <div style="clear: both"></div>
         </div>
         <?php
-        $techlash_categories = array(639, 787, 933, 1065);
-        $archive_categories = array(1057 => 'bcb16', 931 => 'bcb15', 785 => 'bcb14', 636 => 'bcb13', 479 => 'bcb12', 399 => 'bcb11', 324 => 'bcb10', 220 => 'bcb9', 3 => 'bcb8' );
+        $techlash_categories = array(639, 787, 933, 1065, 1232);
+        $archive_categories = array(1366 => 'bcbxah', 1224 => 'bcb17', 1057 => 'bcb16', 931 => 'bcb15', 785 => 'bcb14', 636 => 'bcb13', 479 => 'bcb12', 399 => 'bcb11', 324 => 'bcb10', 220 => 'bcb9', 3 => 'bcb8' );
         foreach ($archive_categories as $archive_cat => $archive_catname):
             ?>
-        <div id="archive_<?php echo $archive_catname; ?>" class="archive_parent" <?php if ($archive_catname != "bcb16")  echo 'style="display: none;"';  ?> >
+        <div id="archive_<?php echo $archive_catname; ?>" class="archive_parent" <?php if ($archive_catname != "bcbxah")  echo 'style="display: none;"';  ?> >
             <a id="archivepage_<?php echo $archive_catname;?>" ></a>
             
             

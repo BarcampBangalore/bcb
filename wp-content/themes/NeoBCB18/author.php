@@ -5,6 +5,9 @@ $curauth = (get_query_var('author_name')) ? get_user_by('slug', get_query_var('a
 
 
 $cat_buckets = array(
+    "1458" => array(),
+    "1366" => array(),
+    "1224" => array(),
     "1057" => array(), 
     "931" => array(), 
     "785" => array(), 
@@ -18,15 +21,18 @@ $cat_buckets = array(
     );
 
 $cat_names = array(
-    0 => array("1057", "BCB Monsoon 2014"), 
-    1 => array("931", "BCB Spring 2014"), 
-    2 => array("785", "BCB Monsoon 2013"), 
-    3 => array("636", "BCB13"),
-    4 => array("479", "BCB12"),
-    5 => array("399", "BCB11"),
-    6 => array("324", "BCB10"),
-    7 => array("220", "BCB9"),
-    8 => array("3", "BCB8")
+    8 => array("1458", "BCB Monsoon 2015"), 
+    9 => array("1366", "BCBX AntHill"), 
+    10 => array("1224", "BCB Spring 2015"), 
+    11 => array("1057", "BCB Monsoon 2014"), 
+    12 => array("931", "BCB Spring 2014"), 
+    13 => array("785", "BCB Monsoon 2013"), 
+    14 => array("636", "BCB13"),
+    15 => array("479", "BCB12"),
+    16 => array("399", "BCB11"),
+    17 => array("324", "BCB10"),
+    18 => array("220", "BCB9"),
+    19 => array("3", "BCB8")
 );
 
 
@@ -207,6 +213,9 @@ an awesome chart of where people converge at the venue from.
                 
                 
                 $cat_buckets = array(
+                    "1458" => array(),
+                    "1366" => array(),
+                    "1224" => array(),
                     "1057" => array(), 
                     "931" => array(), 
                     "785" => array(), 

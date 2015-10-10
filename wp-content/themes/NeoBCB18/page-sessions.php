@@ -187,8 +187,16 @@ Scaling and Infra -  #7C9244
 Bangalore and lifestyle - #62A4EB
 Entrepreneurship - #E9903E
 Rest of world - #5A4368
-         */  
         
+Techlash - 1465
+Design - 1460
+Mobile & Web - 1462
+Technology - 1466
+Scaling & Infra - 1464
+Bangalore & lifestyle - 1459
+Entrepreneurship - 1461
+Rest of the World - 1463
+  */  
         ?>
 
         <?php 
@@ -197,7 +205,7 @@ Rest of world - #5A4368
 $difficulty_tags = array(945, 947, 946); // prod mapping
 // $difficulty_tags = array(939, 940, 941); // local mapping
 //foreach (array(934, 935, 936, 940, 941, 942, 943) as $track_id) :
-foreach (array(1226, 1229, 1233, 1231, 1225, 1227, 1230) as $track_id) : 
+foreach (array(1459, 1460, 1461, 1462, 1463, 1464, 1466) as $track_id) : 
             
             ?>
 
