@@ -93,12 +93,12 @@ autoOpen: false,
         text: 'Save My Location',
         open: function() { $(this).addClass('b') }, //will append a class called 'b' to the created 'OK' button.
         click: function() {
-        	var latlng = window['marker'].getLatLng();
-        	console.log(latlng);
-        	window['showMap']  = 1;
-        	
+            var latlng = window['marker'].getLatLng();
+            console.log(latlng);
+            window['showMap']  = 1;
+            
          $.post("<?php echo admin_url('admin-ajax.php?' . http_build_query(array("action" => "set_user_location"))); ?>&location=" + latlng.lat + "%2c" + latlng.lng
-         	 , {"location": this.loc }, function(data){
+             , {"location": this.loc }, function(data){
                  console.log(data);   
                    
                 }, 'json'); 
@@ -147,12 +147,12 @@ autoOpen: false,
                 <?php
                 global $current_user;
                 get_currentuserinfo();
-
                 if (is_user_logged_in())
                 {
                     echo '<a href="'.admin_url('profile.php').'">Hi '.$current_user->user_login.'</a> | ';
 
                 }
+                wp_register('', '|');
                 wp_loginout(get_permalink());
                 ?>
                 <?php if(is_user_logged_in()) : ?>

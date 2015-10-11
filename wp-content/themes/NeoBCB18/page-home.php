@@ -2,7 +2,7 @@
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
+<link type="text/css" rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" >
 
 <div id="homepage_cb1" style="background-image: url('<?php echo get_bloginfo('template_url').'/images/backdrop_bw.jpg' ?>')">
     <div id="homepage_ct1" class="container" >
@@ -16,19 +16,21 @@
         <div id="homepage_ct1_r2" class="row">
             <div class="col-xs-12 col-sm-6 col-md-5 col-md-offset-1 col-lg-4 col-lg-offset-2">
                 <div class="homepage_location_card">
+                    <a target="_blank" data-toggle="tooltip" title="Add to Google Calendar" href="https://www.google.com/calendar/event?action=TEMPLATE&tmeid=Z3YwcG04c3J2Z2IyN3MxaG41c2tudDYxanMgdTY1OGYxam83cmI2MXBmcGdhYjdlZnRyaHNAZw&trp=false&tmsrc=u658f1jo7rb61pfpgab7eftrhs%40group.calendar.google.com">
                     <img src="<?php echo get_bloginfo('template_url').'/images/calendar-icon_white.png' ?>" />
                     31st October 2015<br>
                     8:00 AM
+                   </a>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4">
                 <div class="homepage_location_card">
                     <a target="_blank" href="https://www.google.co.in/maps/place/CMRIT/@12.9666193,77.7117629,17z/data=!3m1!4b1!4m2!3m1!1s0x3bae1225e87bd8f5:0x7896436c100b0272?hl=en">
                         <img src="<?php echo get_bloginfo('template_url').'/images/map-icon_white.png' ?>" />
-                    </a>
+                    
                     CMR Institute of Technology<br>
                     ITPL Main road, Bangalore
-                    
+                    </a>
                 </div>
             </div>
         </div>
@@ -49,10 +51,16 @@
         About BCB
     </div>
     <div id="homepage_about_bcb_description">
-        Barcamp Bangalore is an open event focused around people, ideas and collaboration. 
-        There is no fixed format and agenda. If you have an interesting topic to share or
-        want to collaborate with folks with a variety of experience, Barcamp is the place 
-        for you.
+        <p>
+        BarCamp is an unconference. There’s no speaker list or fixed schedule until the actual event.  
+        All content comes from the attendees. Anyone can host a session,  participate in discussions, demo a project, talk about code, discuss at lengths about program design.</p>
+
+        <p>Not into tech? No problem. BarCamp's not just about tech. Share your life experiences. Teach us your lifehacks. Tell us about your great outdoors experiment. Sky's the limit and this is the perfect place to share your passion. 
+Anyone with something to contribute or with the desire to learn is  welcome and invited to join. </p>
+
+<p>There are no registration fees or any other  charges for a BarCamp. Your active participation is the fuel and driving force for BarCamp. 
+    
+    You are invited to volunteer for various activities for putting up a successful camp.</p>
     </div>
 </div>
 
@@ -61,21 +69,48 @@
     <span id="howtoregister"></span>
     <div id="homapage_ct3" class="container">
         <div id="homepage_how_to_register_title">
-            How to Register
+            How to register for the event?
         </div>
         <div id="homepage_how_to_register_description">
-            This is how you register
+            
+Registration is a simple, 2 step process
+<ul>
+<li>Click on <a href="https://barcampbangalore.org/bcb/wp-login.php?redirect_to=https%3A%2F%2Fbarcampbangalore.org%2Fbcb%2F">Login</a> to sign into your Barcamp Bangalore account. 
+    If you do not have a Barcamp Bangalore account, click on <a href="https://barcampbangalore.org/bcb/wp-login.php?action=register">Register</a> to create a Barcamp Bangalore account.</li>
+<li>On the <a href="https://barcampbangalore.org/bcb/sessions">Sessions</a> page, click on "I wanna attend" button to express your interest on a session.</li>
+</ul>
         </div>
     </div>
 </div>
 
 <div id="homepage_cb4">
     <div id="homepage_ct4" class="container">
-        <div id="homepage_techlash_title">
-            Techlash
+        <div id="homepage_faq_title">
+            Event FAQs
         </div>
-        <div id="homepage_techlash_description">
-            Techlash description
+        <div id="homepage_faq_description">
+        <h3>Do I have to pay any registration fee?</h3>
+        Zero! Zilch. There are no fees of any kind. Simply register for the event and come on in!
+        
+        <br />
+        <h3>How long are the talks?</h3>
+        Each talk runs for 45 minutes. Ideally, BarCamp sessions are meant to be fully interactive, discussion oriented sessions, but if you wan to do a fullblown talk, we'd prefer if you keep the talk for 30 minutes and have about 15 minutes of Q&A.
+        
+        <br />
+        <h3>Can I get my camera and take pictures? Are laptops allowed?</h3>
+        By all means, yes! Take some interesting pictures, share them with the tag #barcampblr on social network of your choosing! Take down some notes on your laptop, start discussing about the session with the speaker, tweet about the talk, post to Facebook - we'll leave it to you. 
+        
+        <br />
+        <h3>I have submitted my talk - is it finalized? Can I get a slot at a specific time?</h3>
+        In true BarCamp session, the sessions list are not finalized and time slots are not fixed till the day of the event. On the event day, the talks are finalized on first come basis. Our well designed, patent-pending(well, not really) algorithmic session scheduler will assign slots to the speakers with a focus on reducing session clashes. See our post on how the session scheduling works for details.
+        
+        <br />
+        <h3>I was not able to get a slot - can I still talk at BarCamp?</h3>
+        Absolutely. BarCamp thrives on Impromptu(or Birds of a Feather) sessions and we actively encourage these. All you have to do is gather round some people, find some open space and just start talking! If you approach one of the planners, we'll spread the word about the BoF session by broadcasting these over the app and on the session listing.
+        
+        <br />
+        <h3>I want to volunteer for the event. Can I do so?</h3>
+        Any helping hand is more than welcome. Join our <a href="https://slack.barcampbangalore.org">Slack</a> group and give us a shout.
         </div>
     </div>
 </div>
@@ -128,7 +163,7 @@
                 <div class="homepage_sponsor_logo_wrapper" ><a href="http://janastu.org/main.html"><img class="homepage_sponsor_logo" src="<?php bloginfo('template_url')  ?>/images/sponz_logos/janastu_logo.gif" /></a></div>
             </div>
             <div class="homepage_sponsor_card col-xs-6 col-md-4">
-                <div class="homepage_sponsor_heading">Friend of Barcamp</div>
+                <div class="homepage_sponsor_heading">Friends of Barcamp</div>
                 <div class="homepage_sponsor_logo_wrapper" ><a href="http://www.venturesity.com/"><img class="homepage_sponsor_logo" src="<?php bloginfo('template_url')  ?>/images/sponz_logos/venturesity-logo.png" /></a></div>
             </div>
         </div>
