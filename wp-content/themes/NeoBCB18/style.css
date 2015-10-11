@@ -219,6 +219,20 @@ background-color: rgb(228, 70, 11);
   color: white;
 }
 
+#social_network_div
+{
+background-color: #0A0A0A;
+  padding: 50px 0px;
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 3px;
+  font-weight: bold;
+  color: white;
+}
+
+
 #user_login_div a
 {
     opacity: .9;

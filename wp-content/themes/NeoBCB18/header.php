@@ -4,8 +4,6 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta property="og:title" content="Barcamp Bangalore Monsoon 2015" />
         <meta property="og:description" content="Barcamp Bangalore is an open event focused around people, ideas and collaboration. You don't want to miss this confluence of amazing minds. It's the largest unconference in India and there are talks on variety of topics like Technology, Design, Startups & Entrepreneurship, Business & Management, Photography, User Experience, Your life learnings, and a lot more... " />
-        <!-- <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,600,700' rel='stylesheet' type='text/css'> -->
         <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
         <meta property="og:image" content="<?php bloginfo('template_url'); ?>/images/bcbog.png" />
         <!-- twitter cards meta -->
@@ -37,20 +35,12 @@ if (!is_home())
         </title>
         
         <link type="text/css" rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" >
-        <!-- <link type="text/css" rel="stylesheet" href="<?php bloginfo('template_url'); ?>/libs/edtalmadge-Agile-Carousel-6bbb5fd/agile_carousel.css" > -->
         <link rel="shortcut icon" href="favicon.ico">
 
         <?php wp_head(); ?>
         <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/libs/jquery-2.1.0.js" ></script>
         <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/libs/jquery.isotope.js" ></script>
-<!-- 
-        <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/libs/edtalmadge-Agile-Carousel-6bbb5fd/agile_carousel.alpha.js" ></script>
-        <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/libs/unslider.js"></script>
-        <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/libs/jssor.slider.mini.js"></script>
-     -->   
-        
-        
-        
+    
         <?php if (is_singular()) wp_enqueue_script('comment-reply'); ?>
 
 <script type="text/javascript">
@@ -81,7 +71,6 @@ if (!is_home())
 
  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-<!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
 <script>
 $(function() {
 $( "#dialog-message" ).dialog({
@@ -144,6 +133,14 @@ autoOpen: false,
 
         <div id="header">
             
+            <div id="social_network_div">
+                <a href="https://www.facebook.com/barcampbng"><img width=28 src="<?php bloginfo('template_url'); ?>/images/facebook.png" /></a>
+                <a href="https://twitter.com/barcampbng"><img width=28 src="<?php bloginfo('template_url'); ?>/images/twitter.png" /></a>
+                <a href="http://slack.barcampbangalore.org"><img width=28 src="<?php bloginfo('template_url'); ?>/images/slack.png" /></a>
+                <a href="https://www.youtube.com/user/barcampbangalore"><img width=28 src="<?php bloginfo('template_url'); ?>/images/youtube.png" /></a>
+                <a href="https://github.com/barcampbangalore"><img width=28 src="<?php bloginfo('template_url'); ?>/images/github.png" /></a>
+            </div>
+                
             <div id="user_login_div">
                 <?php
                 global $current_user;
@@ -151,9 +148,12 @@ autoOpen: false,
                 if (is_user_logged_in())
                 {
                     echo '<a href="'.admin_url('profile.php').'">Hi '.$current_user->user_login.'</a> | ';
-
                 }
-                wp_register('', '|');
+                else
+                {
+                    wp_register('', '|');
+                }
+
                 wp_loginout(get_permalink());
                 ?>
                 <?php if(is_user_logged_in()) : ?>
