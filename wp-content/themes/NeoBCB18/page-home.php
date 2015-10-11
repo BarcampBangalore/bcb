@@ -126,7 +126,7 @@ Registration is a simple, 2 step process
         
         <br />
         <h3>I want to volunteer for the event. Can I do so?</h3>
-        Any helping hand is more than welcome. Join our <a href="https://slack.barcampbangalore.org">Slack</a> group and give us a shout.
+        Any helping hand is more than welcome. Join our <a href="http://slack.barcampbangalore.org">Slack</a> group and give us a shout.
         </div>
     </div>
 </div>
