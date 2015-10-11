@@ -83,6 +83,22 @@ Registration is a simple, 2 step process
     </div>
 </div>
 
+<div id="homepage_cb7">
+    <div id="homepage_ct7" class="container">
+        <div id="homepage_techlash_title">
+        Techlash
+        </div>
+        <div id="homepage_techlash_description">
+            <p>
+                Techlash is a series of 6 minute rapidfire idea presentation. This is your chance to showcase your tech prowess to the community. Instead of giving a whole 45 minute talk about your cutting edge technology or product which might make your audience feel stretched and walk to another session), zip your demo up in a crisp 6 minute presentation. We give you the undivided attention of 500+ audience who are interested in tech, so this is your chance to get the maximum attention. To add your Techlash session <a href="/bcb/add-a-session">click here.</a> These ideas will undergo a filtering process. Remember to put in your phone number in the right field while you adding your session, we might require some clarifications from you.
+            </p>
+            <p>
+                You can checkout the sessions submitted for Techlash <a href="/bcb/techlash">here.</a>
+            </p>
+        </div>
+    </div>
+</div>
+
 <div id="homepage_cb4">
     <div id="homepage_ct4" class="container">
         <div id="homepage_faq_title">
@@ -98,11 +114,11 @@ Registration is a simple, 2 step process
         
         <br />
         <h3>Can I get my camera and take pictures? Are laptops allowed?</h3>
-        By all means, yes! Take some interesting pictures, share them with the tag #barcampblr on social network of your choosing! Take down some notes on your laptop, start discussing about the session with the speaker, tweet about the talk, post to Facebook - we'll leave it to you. 
+        By all means, yes! Take some interesting pictures, share them with the tag #barcampblr on social network of your choosing! Take down some notes on your laptop, start discussing about the session with the speaker, <a href="https://twitter.com/intent/tweet?text=at%20%23barcampblr%2C%20participating%20in">tweet</a> about the talk, post to Facebook - we'll leave it to you. 
         
         <br />
         <h3>I have submitted my talk - is it finalized? Can I get a slot at a specific time?</h3>
-        In true BarCamp session, the sessions list are not finalized and time slots are not fixed till the day of the event. On the event day, the talks are finalized on first come basis. Our well designed, patent-pending(well, not really) algorithmic session scheduler will assign slots to the speakers with a focus on reducing session clashes. See our post on how the session scheduling works for details.
+        In true BarCamp session, the sessions list are not finalized and time slots are not fixed till the day of the event. On the event day, the talks are finalized on first come basis. Our well designed, patent-pending(well, not really) algorithmic session scheduler will assign slots to the speakers with a focus on reducing session clashes. See <a href="https://barcampbangalore.org/planning/session-schedules-barcamp-and-you/">our post</a> on how the session scheduling works for details.
         
         <br />
         <h3>I was not able to get a slot - can I still talk at BarCamp?</h3>
@@ -128,7 +144,7 @@ Registration is a simple, 2 step process
             </div>
             <div class="homepage_planner_card col-xs-4 col-md-2">
                 <img class="homepage_planner_pic" src="<?php echo get_bloginfo('template_url').'/images/team/sathya.jpg' ?>" />
-                <div class="homepage_planner_name">Sathyajit Bhat</div>
+                <div class="homepage_planner_name">Sathyajith Bhat</div>
                 <div><a href="https://twitter.com/SathyaBhat">@SathyaBhat</a></div>
             </div>
             <div class="homepage_planner_card col-xs-4 col-md-2">
@@ -159,12 +175,16 @@ Registration is a simple, 2 step process
         </div>
         <div id="homepage_sponsors_description row">
             <div class="homepage_sponsor_card col-xs-6 col-md-4">
+                <div class="homepage_sponsor_heading">Venue Sponsor</div>
+                <div class="homepage_sponsor_logo_wrapper" ><a href="http://www.cmrit.ac.in/"><img alt="CMR Institute of Technology" title="CMR Institute of Technology" class="homepage_sponsor_logo" src="<?php bloginfo('template_url')  ?>/images/sponz_logos/cmrit_logo.jpg" /></a></div>
+            </div>
+            <div class="homepage_sponsor_card col-xs-6 col-md-4">
                 <div class="homepage_sponsor_heading">Supported by</div>
-                <div class="homepage_sponsor_logo_wrapper" ><a href="http://janastu.org/main.html"><img class="homepage_sponsor_logo" src="<?php bloginfo('template_url')  ?>/images/sponz_logos/janastu_logo.gif" /></a></div>
+                <div class="homepage_sponsor_logo_wrapper" ><a href="http://janastu.org/main.html"><img alt="Janastu" title="Janastu" class="homepage_sponsor_logo" src="<?php bloginfo('template_url')  ?>/images/sponz_logos/janastu_logo.gif" /></a></div>
             </div>
             <div class="homepage_sponsor_card col-xs-6 col-md-4">
                 <div class="homepage_sponsor_heading">Friends of Barcamp</div>
-                <div class="homepage_sponsor_logo_wrapper" ><a href="http://www.venturesity.com/"><img class="homepage_sponsor_logo" src="<?php bloginfo('template_url')  ?>/images/sponz_logos/venturesity-logo.png" /></a></div>
+                <div class="homepage_sponsor_logo_wrapper" ><a href="http://www.venturesity.com/"><img alt="Venturesity" title="Venturesity" class="homepage_sponsor_logo" src="<?php bloginfo('template_url')  ?>/images/sponz_logos/venturesity-logo.png" /></a></div>
             </div>
         </div>
     </div>

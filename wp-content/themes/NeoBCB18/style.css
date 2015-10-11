@@ -493,17 +493,27 @@ background-color: #0A0A0A;
     background-color: #E4460B;
 }
 
+#homepage_cb7 {
+    background-color: #333;
+}
+
 #homepage_techlash_title {
     padding: 50px 0px 5px 0px;
     font-size: 28px;
-    border-bottom: 3px solid #333333;
+    border-bottom: 3px solid #CCC;
     color: #FFFFFF;
 }
 
 #homepage_techlash_description {
     padding-top: 30px;
     color: #FFFFFF;
+    font-size: 20px;
+    background-color:#333;
     padding-bottom: 60px;
+}
+
+#homepage_techlash_description a {
+    color: rgb(210, 105, 30);
 }
 
 #homepage_faq_title {
