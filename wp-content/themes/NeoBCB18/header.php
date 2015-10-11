@@ -4,8 +4,9 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta property="og:title" content="Barcamp Bangalore Monsoon 2015" />
         <meta property="og:description" content="Barcamp Bangalore is an open event focused around people, ideas and collaboration. You don't want to miss this confluence of amazing minds. It's the largest unconference in India and there are talks on variety of topics like Technology, Design, Startups & Entrepreneurship, Business & Management, Photography, User Experience, Your life learnings, and a lot more... " />
-        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,600,700' rel='stylesheet' type='text/css'>
+        <!-- <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,600,700' rel='stylesheet' type='text/css'> -->
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
         <meta property="og:image" content="<?php bloginfo('template_url'); ?>/images/bcbog.png" />
         <!-- twitter cards meta -->
         <meta name="twitter:card" content="summary_large_image">
@@ -36,17 +37,17 @@ if (!is_home())
         </title>
         
         <link type="text/css" rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" >
-        <link type="text/css" rel="stylesheet" href="<?php bloginfo('template_url'); ?>/libs/edtalmadge-Agile-Carousel-6bbb5fd/agile_carousel.css" >
+        <!-- <link type="text/css" rel="stylesheet" href="<?php bloginfo('template_url'); ?>/libs/edtalmadge-Agile-Carousel-6bbb5fd/agile_carousel.css" > -->
         <link rel="shortcut icon" href="favicon.ico">
 
         <?php wp_head(); ?>
         <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/libs/jquery-2.1.0.js" ></script>
-        <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/libs/edtalmadge-Agile-Carousel-6bbb5fd/agile_carousel.alpha.js" ></script>
         <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/libs/jquery.isotope.js" ></script>
+<!-- 
+        <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/libs/edtalmadge-Agile-Carousel-6bbb5fd/agile_carousel.alpha.js" ></script>
         <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/libs/unslider.js"></script>
-        
         <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/libs/jssor.slider.mini.js"></script>
-        
+     -->   
         
         
         
@@ -80,7 +81,7 @@ if (!is_home())
 
  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-<link rel="stylesheet" href="/resources/demos/style.css">
+<!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
 <script>
 $(function() {
 $( "#dialog-message" ).dialog({
