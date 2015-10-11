@@ -48,12 +48,12 @@
 
 <div id="homepage_ct2" class="container">
     <div id="homepage_about_bcb_title">
-        About BCB
+        About BarCamp Bangalore
     </div>
     <div id="homepage_about_bcb_description">
         <p>
         BarCamp is an unconference. There’s no speaker list or fixed schedule until the actual event.  
-        All content comes from the attendees. Anyone can host a session,  participate in discussions, demo a project, talk about code, discuss at lengths about program design.</p>
+        All content comes from the attendees. Anyone can host a session, participate in discussions, demo a project, talk about code, discuss at lengths about program design.</p>
 
         <p>Not into tech? No problem. BarCamp's not just about tech. Share your life experiences. Teach us your lifehacks. Tell us about your great outdoors experiment. Sky's the limit and this is the perfect place to share your passion. 
 Anyone with something to contribute or with the desire to learn is  welcome and invited to join. </p>
@@ -173,6 +173,10 @@ Registration is a simple, 2 step process
         <div id="homepage_sponsors_title">
             Sponsors
         </div>
+        <div class="homepage_sponsor_card col-xs-6 col-md-4">
+            <div class="homepage_sponsor_heading">Friends of Barcamp</div>
+            <div class="homepage_sponsor_logo_wrapper" ><a href="http://www.venturesity.com/"><img alt="Venturesity" title="Venturesity" class="homepage_sponsor_logo" src="<?php bloginfo('template_url')  ?>/images/sponz_logos/venturesity-logo.png" /></a></div>
+        </div>
         <div id="homepage_sponsors_description row">
             <div class="homepage_sponsor_card col-xs-6 col-md-4">
                 <div class="homepage_sponsor_heading">Venue Sponsor</div>
@@ -181,10 +185,6 @@ Registration is a simple, 2 step process
             <div class="homepage_sponsor_card col-xs-6 col-md-4">
                 <div class="homepage_sponsor_heading">Supported by</div>
                 <div class="homepage_sponsor_logo_wrapper" ><a href="http://janastu.org/main.html"><img alt="Janastu" title="Janastu" class="homepage_sponsor_logo" src="<?php bloginfo('template_url')  ?>/images/sponz_logos/janastu_logo.gif" /></a></div>
-            </div>
-            <div class="homepage_sponsor_card col-xs-6 col-md-4">
-                <div class="homepage_sponsor_heading">Friends of Barcamp</div>
-                <div class="homepage_sponsor_logo_wrapper" ><a href="http://www.venturesity.com/"><img alt="Venturesity" title="Venturesity" class="homepage_sponsor_logo" src="<?php bloginfo('template_url')  ?>/images/sponz_logos/venturesity-logo.png" /></a></div>
             </div>
         </div>
     </div>
