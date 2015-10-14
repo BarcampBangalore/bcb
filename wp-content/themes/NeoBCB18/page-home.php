@@ -175,7 +175,7 @@ Registration is a simple, 2 step process
         </div>
         <div class="homepage_sponsor_card col-xs-6 col-md-4">
             <div class="homepage_sponsor_heading">Friends of Barcamp</div>
-            <div class="homepage_sponsor_logo_wrapper" ><a href="http://www.venturesity.com/"><img alt="Venturesity" title="Venturesity" class="homepage_sponsor_logo" src="<?php bloginfo('template_url')  ?>/images/sponz_logos/venturesity-logo.png" /></a></div>
+            <div class="homepage_sponsor_logo_wrapper" ><a href="https://barcampbangalore.org/bcb/about-venturesity"><img alt="Venturesity" title="Venturesity" class="homepage_sponsor_logo" src="<?php bloginfo('template_url')  ?>/images/sponz_logos/venturesity-logo.png" /></a></div>
         </div>
         <div id="homepage_sponsors_description row">
             <div class="homepage_sponsor_card col-xs-6 col-md-4">
@@ -191,4 +191,3 @@ Registration is a simple, 2 step process
 </div>
 
 <?php get_footer(); ?>
-
