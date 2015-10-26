@@ -18,7 +18,7 @@
                 <div class="homepage_location_card">
                     <a target="_blank" data-toggle="tooltip" title="Add to Google Calendar" href="https://www.google.com/calendar/event?action=TEMPLATE&tmeid=Z3YwcG04c3J2Z2IyN3MxaG41c2tudDYxanMgdTY1OGYxam83cmI2MXBmcGdhYjdlZnRyaHNAZw&trp=false&tmsrc=u658f1jo7rb61pfpgab7eftrhs%40group.calendar.google.com">
                     <img src="<?php echo get_bloginfo('template_url').'/images/calendar-icon_white.png' ?>" />
-                    31st October 2015<br>
+                    1st November 2015<br>
                     8:00 AM
                    </a>
                 </div>
@@ -173,14 +173,22 @@ Registration is a simple, 2 step process
         <div id="homepage_sponsors_title">
             Sponsors
         </div>
-        <div class="homepage_sponsor_card col-xs-6 col-md-4">
-            <div class="homepage_sponsor_heading">Friends of Barcamp</div>
-            <div class="homepage_sponsor_logo_wrapper" ><a href="https://barcampbangalore.org/bcb/about-venturesity"><img alt="Venturesity" title="Venturesity" class="homepage_sponsor_logo" src="<?php bloginfo('template_url')  ?>/images/sponz_logos/venturesity-logo.png" /></a></div>
-        </div>
         <div id="homepage_sponsors_description row">
             <div class="homepage_sponsor_card col-xs-6 col-md-4">
                 <div class="homepage_sponsor_heading">Venue Sponsor</div>
                 <div class="homepage_sponsor_logo_wrapper" ><a href="http://www.cmrit.ac.in/"><img alt="CMR Institute of Technology" title="CMR Institute of Technology" class="homepage_sponsor_logo" src="<?php bloginfo('template_url')  ?>/images/sponz_logos/cmrit_logo.jpg" /></a></div>
+            </div>
+            <div class="homepage_sponsor_card col-xs-6 col-md-4">
+                <div class="homepage_sponsor_heading">Gold Sponsor</div>
+                <div class="homepage_sponsor_logo_wrapper" ><a href="https://barcampbangalore.org/bcb/about-intuit"><img alt="Intuit" title="Intuit" class="homepage_sponsor_logo" src="<?php bloginfo('template_url')  ?>/images/sponz_logos/intuit_logo.png" /></a></div>
+            </div>
+            <div class="homepage_sponsor_card col-xs-6 col-md-4">
+                <div class="homepage_sponsor_heading">Silver Sponsor</div>
+                <div class="homepage_sponsor_logo_wrapper" ><a href="https://barcampbangalore.org/bcb/about-mediaiq"><img alt="Media iQ" title="Media iQ" class="homepage_sponsor_logo" src="<?php bloginfo('template_url')  ?>/images/sponz_logos/mediaiq_logo.png" /></a></div>
+            </div>
+            <div class="homepage_sponsor_card col-xs-6 col-md-4">
+                <div class="homepage_sponsor_heading">Friends of Barcamp</div>
+                <div class="homepage_sponsor_logo_wrapper" ><a href="https://barcampbangalore.org/bcb/about-venturesity"><img alt="Venturesity" title="Venturesity" class="homepage_sponsor_logo" src="<?php bloginfo('template_url')  ?>/images/sponz_logos/venturesity-logo.png" /></a></div>
             </div>
             <div class="homepage_sponsor_card col-xs-6 col-md-4">
                 <div class="homepage_sponsor_heading">Supported by</div>
@@ -191,3 +199,4 @@ Registration is a simple, 2 step process
 </div>
 
 <?php get_footer(); ?>
+
