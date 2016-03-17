@@ -25,7 +25,7 @@
         <meta name="twitter:app:id:iphone" content="">
         <meta name="twitter:app:id:ipad" content="">
         <meta name="twitter:app:id:googleplay" content="com.bangalore.barcamp‎">
-        <!-- done with twitter cards --> 
+        <!-- done with twitter cards -->
         <title>Barcamp Bangalore Monsoon 2015<?php
 if (!is_home())
 {
@@ -33,14 +33,14 @@ if (!is_home())
 }
 ?>
         </title>
-        
+
         <link type="text/css" rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" >
         <link rel="shortcut icon" href="favicon.ico">
 
         <?php wp_head(); ?>
         <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/libs/jquery-2.1.0.js" ></script>
         <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/libs/jquery.isotope.js" ></script>
-    
+
         <?php if (is_singular()) wp_enqueue_script('comment-reply'); ?>
 
 <script type="text/javascript">
@@ -60,12 +60,12 @@ if (!is_home())
 <!-- include this stylesheet in your <head> -->
 <link href="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" rel="stylesheet" />
 
- 
+
 <!-- And the oldIE version of course. Just think, one day we'll no longer have to do this! -->
 <!--[if lte IE 8]>
 <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" />
 <![endif]-->
- 
+
 <!-- then include the script file. if you're not sure where to include it, just before the </body> is probably a good choice -->
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
 
@@ -86,15 +86,15 @@ autoOpen: false,
             var latlng = window['marker'].getLatLng();
             console.log(latlng);
             window['showMap']  = 1;
-            
+
          $.post("<?php echo admin_url('admin-ajax.php?' . http_build_query(array("action" => "set_user_location"))); ?>&location=" + latlng.lat + "%2c" + latlng.lng
              , {"location": this.loc }, function(data){
-                 console.log(data);   
-                   
-                }, 'json'); 
+                 console.log(data);
+
+                }, 'json');
          window['neverask'] = 1;
          $( this ).dialog( "close" );
-         
+
         }
     },
     {
@@ -103,10 +103,10 @@ autoOpen: false,
             window['neverask'] = 1;
             $.post("<?php echo admin_url('admin-ajax.php?' . http_build_query(array("action" => "neverask"))); ?>"
              , {"sd": 0 }, function(data){
-                   
-                }, 'json'); 
+
+                }, 'json');
         }
-    },    
+    },
     {
         text: "Later",
         click: function() {$( this ).dialog( "close" );}
@@ -129,10 +129,26 @@ autoOpen: false,
 </script>
     </head>
     <body>
+<div id="header">
+    <a href="https://barcampbangalore.org/planning"> Our Story</a>
+    <a href="https://barcampbangalore.org/planning"> Proposed Sessions</a>
+    <a href="https://barcampbangalore.org/planning"> Add a Session</a>
+    <a href="https://barcampbangalore.org/planning"> Schedule</a>
 
+    <img height=125 src="<?php bloginfo('template_url'); ?>/images/header-05-logo.png">
+    <a href="https://barcampbangalore.org/planning"> Techlash&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+    <a href="https://barcampbangalore.org/planning"> Videos &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+    <a href="https://barcampbangalore.org/planning"> Become a Partner</a>
+    <a href="https://barcampbangalore.org/planning"> Archives &nbsp;&nbsp;&nbsp;</a>
+</div>
+<div id="logins">
+    REGISTER  | LOGIN
+</div>
+<div style="height: 80px;">
+</div>
 
-        <div id="header">
-            
+        <!-- <div id="header">
+
             <div id="social_network_div">
                 <a href="https://www.facebook.com/barcampbng"><img width=28 src="<?php bloginfo('template_url'); ?>/images/facebook.png" /></a>
                 <a href="https://twitter.com/barcampbng"><img width=28 src="<?php bloginfo('template_url'); ?>/images/twitter.png" /></a>
@@ -140,7 +156,7 @@ autoOpen: false,
                 <a href="https://www.youtube.com/user/barcampbangalore"><img width=28 src="<?php bloginfo('template_url'); ?>/images/youtube.png" /></a>
                 <a href="https://github.com/barcampbangalore"><img width=28 src="<?php bloginfo('template_url'); ?>/images/github.png" /></a>
             </div>
-                
+
             <div id="user_login_div">
                 <?php
                 global $current_user;
@@ -161,10 +177,10 @@ autoOpen: false,
 
                 <?php endif; ?>
             </div>
-            
+
             <a href='<?php echo get_site_url(); ?>'><img id="logo" src="<?php bloginfo('template_url'); ?>/images/barcamp-logo.png" /></a>
         </div>
         <div id="navbar">
-            <?php wp_nav_menu(array()); ?> 
+            <?php wp_nav_menu(array()); ?>
             <?php get_search_form(true);  ?>
-        </div>
+        </div> -->

@@ -1,14 +1,14 @@
-/* 
+/*
         Theme Name: Neo Barcamp Bangalore Theme 18
         Theme URL: https://github.com/BarcampBangalore/bcb/tree/master/wp-content/themes
         Description: Neo BarcampBangalore theme created for WordPress for the site of Barcamp Bangalore.
         Author: Aman Manglik
         Author URI: http://www.amanmanglik.com
         Version: 17.0
-                
+
         The CSS, XHTML and design is released under GPL:
         http://www.opensource.org/licenses/gpl-license.php
-        
+
         Changelog:
 */
 
@@ -32,7 +32,7 @@
         -webkit-transform: translate3d(0,0,0) scale(1);
         transform: translate3d(0,0,0) scale(1);
     }
-   } 
+   }
    @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -57,7 +57,7 @@
         -webkit-transform: translate3d(0,0,0) scale(1);
         transform: translate3d(0,0,0) scale(1);
     }
-   } 
+   }
    @keyframes fillRight {
     0% {
         opacity: 0;
@@ -69,7 +69,7 @@
         -webkit-transform: translate3d(0,0,0) scale(1);
         transform: translate3d(0,0,0) scale(1);
     }
-   }   
+   }
 
  .isotope-item {
     z-index: 2;
@@ -152,7 +152,7 @@
     transition-duration: 0s;
 }
 
-root { 
+root {
     display: block;
 }
 
@@ -188,10 +188,37 @@ a {
 
 #header
 {
-    background-color: #0A0A0A; 
+    background-color: #E6E6E6;
     position: relative;
     text-align: center;
+    height: 80px;
+    width: 100%;
+    float: left;
 }
+
+#header a
+{
+    padding-bottom: 50px !important;
+    margin-left: 15px;
+    margin-right: 15px;
+    vertical-align: middle;
+    width: 150px;
+}
+
+#logins
+{
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+    padding-top: 50px;
+    width: 100%;
+    float: left;
+    color: white;
+}
+/*#header
+    background-color: #0A0A0A;
+    position: relative;
+    text-align: center;
+}*/
 
 #logo
 {
@@ -268,7 +295,7 @@ background-color: #0A0A0A;
 {
     display: inline-block;
     margin: 0px 2px;
-    
+
 }
 
 #navbar ul li:hover
@@ -285,7 +312,7 @@ background-color: #0A0A0A;
     font-weight: bold;
     text-decoration: none;
     padding: 5px 20px;
-    
+
     display: block;
 
 }
@@ -384,18 +411,41 @@ background-color: #0A0A0A;
 
 #homepage_cb1 {
     background-size: cover;
-    background-position: 0px -363px;
+    background-position: 0px 0px;
 }
 
+.homepage_cards{
+    background-color: #fff;
+    height: 80px;
+    border-radius: 7px;
+    padding: 20px 10px 10px 10px;
+    line-height: 1;
+    box-shadow: 2px 2px 2px #000000;
+    color: #000;
+    font-size: 8px;
+    margin-bottom: 10px;
+    width: 160px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.homepage_cards #top{
+    font-size: 32px;
+}
+
+
+.homepage_cards #bottom{
+    font-size: 10px;
+}
 #homepage_ct1 {
-    
+
     /*height: 500px;*/
-    
+
 }
 
 #homepage_ct1_r1 {
-    padding: 100px 0px;
-    
+    margin-top: 140px;
+    padding: 10px 0px;
+
 }
 
 #homepage_big_title {
@@ -415,7 +465,7 @@ background-color: #0A0A0A;
     height: 80px;
     border-radius: 7px;
     padding: 10px 10px 10px 20px;;
-    
+
     box-shadow: 2px 2px 2px #000000;
     color: #FFFFFF;
     font-size: 20px;
@@ -438,17 +488,31 @@ background-color: #0A0A0A;
 }
 
 #homepage_ct1_r3 {
-    padding: 50px 0px;
+    padding: 10px 0px;
+}
+
+#homepage_ct1_r4{
+    padding: 0px;
+    background-color: rgb(0,0,0);
+    font-size: 12px;
+    text-transform: uppercase;
+    width: 100%;
+    color: #fff;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    vertical-align: bottom;
+}
+#homepage_ct1_r4 img{
+    width: 20px;
+    height: 20px;
 }
 
 .homepage_register_card {
-    background-color: #E4460B;
-    
-    border-radius: 7px;
+    background-color: rgba(0,0,0,0);
     padding: 10px;
-    box-shadow: 2px 2px 2px #000000;
     color: #FFFFFF;
-    font-size: 28px;
+    font-size: 18px;
     text-align: center;
 }
 
@@ -476,7 +540,7 @@ background-color: #0A0A0A;
     font-size: 28px;
     border-bottom: 3px solid #BCEBFF;
     color: #FFFFFF;
-   
+
 }
 
 #homepage_how_to_register_description {
@@ -549,14 +613,14 @@ background-color: #0A0A0A;
     font-size: 28px;
     border-bottom: 3px solid #E4460B;
     color: #CCCCCC;
-    
+
 }
 
 #homepage_planners_description {
     padding-top: 30px;
     color: #AAAAAA;
     padding-bottom: 60px;
-    
+
 }
 
 .homepage_planner_card {
@@ -567,7 +631,7 @@ background-color: #0A0A0A;
 }
 
 .homepage_planner_pic {
-    
+
     width: 100px;
     height: 100px;
     border-radius: 100px;
@@ -578,7 +642,7 @@ background-color: #0A0A0A;
 
 
 #homepage_cb6 {
-    
+
 }
 
 #homepage_sponsors_title {
@@ -660,7 +724,7 @@ Color classes
 {
     margin: 25px 25px;
     text-align: justify;
-    font-size: 1.1em;   
+    font-size: 1.1em;
 }
 
 .homecard_content a
@@ -899,7 +963,7 @@ SPECIAL CARDS
     width: 350px;
     margin: 0px auto 15px auto;
     box-shadow: 2px 2px 7px #B1AFAF;
-    
+
 }
 
 
@@ -1014,7 +1078,7 @@ SPECIAL CARDS
 }
 
 
-.sessioncard_useravatar 
+.sessioncard_useravatar
 {
     position: absolute;
     left: -10px;
@@ -1042,7 +1106,7 @@ SPECIAL CARDS
     position: absolute;
     top: 0px;
     right: 0px;
-    
+
 }
 
 .sessioncard_newtag
@@ -1128,7 +1192,7 @@ SPECIAL CARDS
     border-bottom-right-radius: 3px;
     z-index: 2;
     float: right;
-    
+
 }
 
 .sessioncard_excerpt
@@ -1150,7 +1214,7 @@ SPECIAL CARDS
 {
     background-color: #FFFFFF;
     border-top: 1px solid #EEEEEE;
-    
+
 }
 
 
@@ -1163,8 +1227,8 @@ SPECIAL CARDS
     padding-top: 3px;
     width: 166px;
     border-right: 1px solid #EEEEEE;
-    
-    
+
+
 }
 
 .sessioncard_users
@@ -1293,14 +1357,14 @@ SPECIAL CARDS
 
 #techlash_right_container
 {
-    background-color: #FFFFFF; 
+    background-color: #FFFFFF;
     display: inline-block;
     vertical-align: top;
     width: 260px;
     margin: 10px 0px 0px 5px;
     padding: 15px;
-    
-    
+
+
 }
 
 
@@ -1319,7 +1383,7 @@ SPECIAL CARDS
     width: 1000px;
     background-color: #F8F8F8;
     padding-top: 0px;
-    
+
     margin-left: auto;
     margin-right: auto;
 }
@@ -1350,9 +1414,9 @@ SPECIAL CARDS
 #sessionpage_user
 {
     /* background-color: #1EBD51; */
-    
+
     margin: 10px 410px 10px 50px;
-    
+
     text-align: left;
     padding: 4px 10px 4px 110px;
     font-size: 16px;
@@ -1376,10 +1440,10 @@ SPECIAL CARDS
     position: absolute;
     bottom: -15px;
     left: 35px;
-    
+
     width: 96px;
     height: 96px;
-    
+
 
 }
 
@@ -1398,7 +1462,7 @@ SPECIAL CARDS
     float: left;
     width: 500px;
     text-align: justify;
-    
+
     color: #666666;
     padding: 0px 40px 0px 50px;
 
@@ -1950,7 +2014,7 @@ SPECIAL CARDS
 {
 
     font-size: 30px;
-    
+
 }
 
 #techlash_cardswrapper
@@ -2215,7 +2279,7 @@ SPECIAL CARDS
 }
 
 /*  techlash = 933 */
-.track_color_tl 
+.track_color_tl
 {
     color: #9E2B1C;
 }
@@ -2389,7 +2453,7 @@ body
   width: 300px;
   height: 300px;
   border: 1px solid #ccc;
-}          
+}
 
 #leafletmap2{
   width: 300px;
