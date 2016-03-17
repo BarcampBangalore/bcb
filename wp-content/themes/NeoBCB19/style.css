@@ -198,11 +198,11 @@ a {
 
 #header a
 {
-    padding-bottom: 50px !important;
+    margin-bottom: 50px !important;
     margin-left: 15px;
     margin-right: 15px;
     vertical-align: middle;
-    width: 150px;
+    background-color: #E6E6E6;
 }
 
 #logins
@@ -213,6 +213,7 @@ a {
     width: 100%;
     float: left;
     color: white;
+    font-weight: bold
 }
 /*#header
     background-color: #0A0A0A;
@@ -532,29 +533,29 @@ background-color: #0A0A0A;
 
 
 #homepage_cb3 {
-    background-color: #35AADC;
+    background-color: #99C3DB;
 }
 
 #homepage_how_to_register_title {
     padding: 50px 0px 5px 0px;
     font-size: 28px;
-    border-bottom: 3px solid #BCEBFF;
-    color: #FFFFFF;
+    border-bottom: 3px solid #89A0A6;
+    color: #475B66;
 
 }
 
 #homepage_how_to_register_description {
     padding-top: 30px;
-    color: #FFFFFF;
+    color: #475B66;
     padding-bottom: 60px;
     font-size: 20px;
 }
 
 #homepage_how_to_register_description a{
-    color: #A6F6FF;
+    color: #fff;
 }
 #homepage_cb4 {
-    background-color: #E4460B;
+    background-color: #F7921C;
 }
 
 #homepage_cb7 {
@@ -577,7 +578,7 @@ background-color: #0A0A0A;
 }
 
 #homepage_techlash_description a {
-    color: rgb(210, 105, 30);
+    color: #F7921C;
 }
 
 #homepage_faq_title {
@@ -611,7 +612,7 @@ background-color: #0A0A0A;
 #homepage_planners_title {
     padding: 50px 0px 5px 0px;
     font-size: 28px;
-    border-bottom: 3px solid #E4460B;
+    border-bottom: 3px solid #F7921C;
     color: #CCCCCC;
 
 }
@@ -649,7 +650,7 @@ background-color: #0A0A0A;
     padding: 50px 0px 5px 0px;
     font-size: 28px;
     border-bottom: 3px solid #333333;
-    color: #E4460B;
+    color: #F7921C;
 }
 
 #homepage_sponsors_description {
@@ -2417,7 +2418,7 @@ SPECIAL CARDS
 }
 #footer
 {
-    background-color: #E4460B;
+    background-color: #F7921C;
     color: #fff;
     text-align: center;
 }

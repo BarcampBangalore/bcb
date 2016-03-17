@@ -53,7 +53,7 @@
                 </div>
                 </a>
         </div>
-        <div style="padding-bottom: 100px"></div>
+        <div style="padding-bottom: 80px"></div>
         <div id="homepage_ct1_r4" class="row">
             <span><img src="<?php echo get_bloginfo('template_url').'/images/icon-01.png' ?>" />  Sponsorship Pdf
             </span>
