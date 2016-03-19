@@ -163,6 +163,22 @@ autoOpen: false,
                     document.getElementById('overlay').style.visibility = 'hidden';
                 }
             };
+            enable();
+        }
+
+        function enable(){
+            var overlay = document.getElementById('overlay');
+
+            overlay.onclick = function(e){
+                var overlay = document.getElementById('overlay');
+                console.log(e);
+                var target = (e && e.target) || (event && event.srcElement);
+                var display = 'none';
+                if(target == overlay){
+                    overlay.style.visibility = 'hidden';
+
+                }
+            }
         }
         </script>
         <div id="header_container" class="header_container">
@@ -182,7 +198,7 @@ autoOpen: false,
 <a href="#" onclick="javascript:searchEnable();">
     <img src="<?php bloginfo('template_url'); ?>/images/search.png" id="search" height=80  onclick="searchEnable();"></a>
 </div>
-<div class="overlay" id="overlay"><?php get_search_form(true);  ?></div>
+<div class="overlay" id="overlay" ><?php get_search_form(true);  ?></div>
 
 <div id="logins">
     <?php
