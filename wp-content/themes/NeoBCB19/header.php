@@ -165,7 +165,7 @@ autoOpen: false,
             };
         }
         </script>
-        <div id="header_container" class="header_container header_fixed">
+        <div id="header_container" class="header_container">
 <div id="header">
 
     <a href="https://barcampbangalore.org/planning"> Our Story</a>
