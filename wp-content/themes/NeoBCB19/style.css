@@ -186,6 +186,42 @@ a {
     color: inherit;
 }
 
+
+.header_container{
+display: block;
+transition-property: all;
+transition-duration: 2s;
+transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}
+
+#search{
+    float: right;
+    display: flex;
+
+}
+
+.header_fixed{
+  position: fixed;
+  z-index: 10;
+  right: 0;
+  left: 0;
+  top: 0;
+
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: rgba(0,0,0,0.7); /*dim the background*/
+  visibility: hidden;
+}
+
+
+
 #header
 {
     background-color: #E6E6E6;
@@ -194,6 +230,8 @@ a {
     height: 80px;
     width: 100%;
     float: left;
+    border-bottom-style: dashed;
+    border-bottom-width: thin;
 }
 
 #header a
@@ -347,6 +385,7 @@ background-color: #0A0A0A;
 #searchform
 {
     display: inline-block;
+    width: 100%;
 
 }
 
@@ -357,27 +396,34 @@ background-color: #0A0A0A;
 
 #searchform #s
 {
-    width: 130px;
-    height: 25px;
+    padding: 0 10px;
+    box-shadow: none;
+    border: 0px;
+    font-family: "Helvetica", Arial;
+    width: 80%;
+    height: 40px;
     border-radius: 3px;
     background-color: #FFFFFF;
     padding: 0px 15px;
     margin-left: 50px;
     vertical-align: top;
-    margin-top: -2px;
+    margin: 30px;
     color: #3F392A;
     border: 0px;
     box-shadow: none;
+    opacity: .7;
+    font-size: 18px;
 }
 
 #searchform #searchsubmit
 {
-    height: 26px;
+    height: 40px;
     border: 0px solid #BBBBBB;
     border-radius: 4px;
     cursor: pointer;
-    background-color: #E4460B;
-    margin-top: -2px;
+    background-color: #F7931E;
+    margin-top: 30px;
+    width: 50px;
 
 }
 
@@ -516,7 +562,6 @@ background-color: #0A0A0A;
     font-size: 18px;
     text-align: center;
 }
-
 
 #homepage_about_bcb_title {
     padding: 50px 0px 5px 0px;
@@ -2329,14 +2374,6 @@ SPECIAL CARDS
     text-shadow: none;
     border-bottom-color: rgb(228, 70, 11);
     font-family: 'Ubuntu';
-}
-#searchform #s
-{
-    padding: 0 10px;
-    font-size: 12px;
-    box-shadow: none;
-    border: 0px;
-    font-family: "Helvetica", Arial;
 }
 #cards_parent
 {

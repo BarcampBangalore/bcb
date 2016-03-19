@@ -26,7 +26,7 @@
         <meta name="twitter:app:id:ipad" content="">
         <meta name="twitter:app:id:googleplay" content="com.bangalore.barcamp‎">
         <!-- done with twitter cards -->
-        <title>Barcamp Bangalore Monsoon 2015<?php
+        <title>Barcamp Bangalore Spring 2016<?php
 if (!is_home())
 {
     wp_title('|');
@@ -127,24 +127,86 @@ autoOpen: false,
    }
 }
 </script>
+
     </head>
     <body>
+        <script>
+
+        document.scroll_pos = 0;
+        window.addEventListener('scroll', function(e){
+            scrolldiff=  document.scroll_pos - window.pageYOffset;
+            console.log("Scrolled = "+scrolldiff);
+            console.log("window.pageYOffset = "+window.pageYOffset);
+            if(scrolldiff < 20 && scrolldiff > -20 )
+                return;
+            document.scroll_pos = window.pageYOffset;
+
+            element = document.getElementById("header_container");
+            if( scrolldiff > 0 && window.pageYOffset > 80) // scrolled to the very top; element sticks to the top
+                element.className = 'header_container header_fixed';
+
+            else if( scrolldiff < 0 || window.pageYOffset < 80) // scrolled down
+            {
+            //    if( wScrollCurrent + wHeight >= dHeight && hasElementClass( element, elClassHidden ) ) // scrolled to the very bottom; element slides in
+               element.className = 'header_container';
+            //    else // scrolled down; element slides out
+            //    element.className = 'header_container';
+            }
+            //...
+        });
+
+        function searchEnable(){
+            document.getElementById('overlay').style.visibility = 'visible';
+            document.onkeydown = function(evt) {
+                evt = evt || window.event;
+                if (evt.keyCode == 27) {
+                    document.getElementById('overlay').style.visibility = 'hidden';
+                }
+            };
+        }
+        </script>
+        <div id="header_container" class="header_container header_fixed">
 <div id="header">
+
     <a href="https://barcampbangalore.org/planning"> Our Story</a>
-    <a href="https://barcampbangalore.org/planning"> Proposed Sessions</a>
-    <a href="https://barcampbangalore.org/planning"> Add a Session</a>
-    <a href="https://barcampbangalore.org/planning"> Schedule</a>
+    <a href="https://barcampbangalore.org/bcb/sessions"> Proposed Sessions</a>
+    <a href="https://barcampbangalore.org/bcb/add-a-session"> Add a Session</a>
+    <a href="http://barcampbangalore.org/bcb/live/schedule"> Schedule</a>
 
     <img height=125 src="<?php bloginfo('template_url'); ?>/images/header-05-logo.png">
-    <a href="https://barcampbangalore.org/planning"> Techlash&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-    <a href="https://barcampbangalore.org/planning"> Videos &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-    <a href="https://barcampbangalore.org/planning"> Become a Partner</a>
-    <a href="https://barcampbangalore.org/planning"> Archives &nbsp;&nbsp;&nbsp;</a>
+    <a href="https://barcampbangalore.org/bcb/techlash"> Techlash&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+    <a href="https://barcampbangalore.org/bcb/videos"> Videos &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+    <a href="https://barcampbangalore.org/planning/sponsorship-prospectus-and-call-for-sponsors-for-barcamp-bangalore-spring-2016/"> Become a Partner</a>
+    <a href="https://barcampbangalore.org/bcb/archives"> Archives &nbsp;&nbsp;&nbsp;</a>
+
+<a href="#" onclick="javascript:searchEnable();">
+    <img src="<?php bloginfo('template_url'); ?>/images/search.png" id="search" height=80  onclick="searchEnable();"></a>
 </div>
+<div class="overlay" id="overlay"><?php get_search_form(true);  ?></div>
+
 <div id="logins">
-    REGISTER  | LOGIN
+    <?php
+    global $current_user;
+    get_currentuserinfo();
+    if (is_user_logged_in())
+    {
+        echo '<a href="'.admin_url('profile.php').'">Hi '.$current_user->user_login.'</a> | ';
+    }
+    else
+    {
+        echo "<a href=\"". wp_registration_url()."\" title=\"Sign Up\"> SIGN-UP </a> | ";
+
+        echo "<a href=\"". wp_login_url(get_permalink())."\" title=\"Login\"> LOGIN </a>";
+
+    }
+
+    ?>
+    <?php if(is_user_logged_in()) :     wp_loginout(get_permalink());?>
+    | <a id="my_sessions_link" href="<?php echo get_author_posts_url($current_user->ID); ?>">My Sessions</a>
+<?php endif; ?>
 </div>
 <div style="height: 80px;">
+</div>
 </div>
 
         <!-- <div id="header">
