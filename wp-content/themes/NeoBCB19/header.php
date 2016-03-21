@@ -178,6 +178,7 @@ autoOpen: false,
                     overlay.style.visibility = 'hidden';
 
                 }
+
             }
         }
         </script>
