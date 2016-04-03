@@ -1,8 +1,6 @@
 <?php get_header(); ?>
 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-<link type="text/css" rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" >
+
 
 <div id="homepage_cb1" style="background-image: url('<?php echo get_bloginfo('template_url').'/images/coffee.jpg' ?>'); background-color: #fff ">
     <div id="homepage_ct1" class="container" >

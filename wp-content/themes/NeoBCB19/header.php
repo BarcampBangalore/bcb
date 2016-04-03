@@ -34,6 +34,8 @@ if (!is_home())
 ?>
         </title>
 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
         <link type="text/css" rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" >
         <link rel="shortcut icon" href="favicon.ico">
 
@@ -185,19 +187,19 @@ autoOpen: false,
         <div id="header_container" class="header_container">
 <div id="header">
 
-    <a href="https://barcampbangalore.org/planning"> Our Story</a>
-    <a href="https://barcampbangalore.org/bcb/sessions"> Proposed Sessions</a>
-    <a href="https://barcampbangalore.org/bcb/add-a-session"> Add a Session</a>
-    <a href="http://barcampbangalore.org/bcb/live/schedule"> Schedule</a>
+    <a href="https://barcampbangalore.org/planning">Our Story</a>
+    <a href="https://barcampbangalore.org/bcb/sessions">Proposed Sessions</a>
+    <a href="https://barcampbangalore.org/bcb/add-a-session">Add a Session</a>
+    <a href="http://barcampbangalore.org/bcb/live/schedule">Schedule</a>
 
     <img height=125 src="<?php bloginfo('template_url'); ?>/images/header-05-logo.png">
-    <a href="https://barcampbangalore.org/bcb/techlash"> Techlash&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-    <a href="https://barcampbangalore.org/bcb/videos"> Videos &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-    <a href="https://barcampbangalore.org/planning/sponsorship-prospectus-and-call-for-sponsors-for-barcamp-bangalore-spring-2016/"> Become a Partner</a>
-    <a href="https://barcampbangalore.org/bcb/archives"> Archives &nbsp;&nbsp;&nbsp;</a>
+    <a href="https://barcampbangalore.org/bcb/techlash">Techlash</a>
+    <a href="https://barcampbangalore.org/bcb/videos">Videos</a>
+    <a href="https://barcampbangalore.org/planning/sponsorship-prospectus-and-call-for-sponsors-for-barcamp-bangalore-spring-2016/">Become a Partner</a>
+    <a href="https://barcampbangalore.org/bcb/archives">Archives</a>
 
 <a href="#" onclick="javascript:searchEnable();">
-    <img src="<?php bloginfo('template_url'); ?>/images/search.png" id="search" height=80  onclick="searchEnable();"></a>
+    <img src="<?php bloginfo('template_url'); ?>/images/search.png" id="search_icon"></a>
 </div>
 <div class="overlay" id="overlay" ><?php get_search_form(true);  ?></div>
 
