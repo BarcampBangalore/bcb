@@ -481,6 +481,17 @@ background-color: #0A0A0A;
 .homepage_cards #bottom{
     font-size: 10px;
 }
+
+#techlash_ct1 {
+
+margin: 0 0 0 0;
+padding: 0 0 0 0px;
+width: 100%;
+    /*height: 500px;*/
+
+}
+
+
 #homepage_ct1 {
 
     /*height: 500px;*/
@@ -490,6 +501,12 @@ background-color: #0A0A0A;
 #homepage_ct1_r1 {
     margin-top: 140px;
     padding: 10px 0px;
+
+}
+
+#techlash_ct1_r1 {
+    margin-top: 20px;
+    padding: 20px;
 
 }
 
@@ -549,6 +566,25 @@ background-color: #0A0A0A;
     vertical-align: bottom;
 }
 #homepage_ct1_r4 img{
+    width: 20px;
+    height: 20px;
+}
+
+#techlash_ct1_r4{
+    padding: 0px;
+    background-color: rgb(0,0,0);
+    font-size: 12px;
+    text-transform: uppercase;
+    width: 100%;
+    color: #fff;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    vertical-align: bottom;
+    margin-left:0px;
+    margin-right:0px;
+}
+#techlash_ct1_r4 img{
     width: 20px;
     height: 20px;
 }
@@ -1393,34 +1429,6 @@ SPECIAL CARDS
     color: #FFFFFF;
 }
 
-#techlash_page_container
-{
-    margin: 0 auto;
-    width: 1200px;
-}
-
-#techlash_right_container
-{
-    background-color: #FFFFFF;
-    display: inline-block;
-    vertical-align: top;
-    width: 260px;
-    margin: 10px 0px 0px 5px;
-    padding: 15px;
-
-
-}
-
-
-#techlash_page_content
-{
-    width: 900px;
-    background-color: #F8F8F8;
-    padding-top: 0px;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 #sessionpage_content
 {
@@ -2061,24 +2069,6 @@ SPECIAL CARDS
 
 }
 
-#techlash_cardswrapper
-{
-    margin-top: 10px;
-    /*background-color: #3F392A;*/
-    padding: 20px 0px;
-
-}
-
-#techlash_sessionheading
-{
-    color: #FFFFFF;
-    font-size: 20px;
-    margin: 20px;
-    background-color: #9E2B1C;
-    padding: 13px;
-    border-radius: 8px;
-}
-
 #archivelinks
 {
     list-style: none;
@@ -2402,8 +2392,6 @@ SPECIAL CARDS
 {
     max-width: 100%;
 }
-#techlash_page_content,
-#techlash_right_container,
 #sessionpage_content
 {
     box-shadow: 0px 0px 5px #999;
@@ -2411,14 +2399,7 @@ SPECIAL CARDS
     border-radius: 3px;
     text-align: left;
 }
-#techlash_page_container
-{
-    width: auto;
-    text-align: center;
-}
-#sessionpage_content,
-#techlash_page_content
-{
+#sessionpage_content{
     max-width: 95%;
 }
 #sessionpage_header
@@ -2433,9 +2414,6 @@ SPECIAL CARDS
     font-family: "Bubblegum Sans", Arial;
 }
 
-#techlash_right_container
-{
-}
 .sessioncard
 {
     box-shadow: 1px 1px 4px #888;
@@ -2503,51 +2481,22 @@ position: relative;
 }
 
 
-#techlash_page_content h3
-{
-    font-size: 24px;
+#techlash_sessionheading{
+    color: white;
+    font-size: 16px;
+    font-family: roboto;
     font-weight: bold;
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
-    margin-bottom: 30px;
 }
-#techlash_page_content h3 > span
-{
-    -webkit-animation: fadeIn 3s;
-   animation: fadeIn 3s;
-   font-size: 36px;
-  color: white;
-  display: inline-block;
-  margin-right: 8px;
-  font-weight: 500;
-  border-radius: 100px;
-  border: 2px solid #E4460B;
-  width: 47px;
-  position: relative;
-  top: 20px;
-  padding: 6px;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
+
+.techlash_postname{
+    color: white;
+    font-size: 14px;
+    font-family: roboto;
+    font-weight: 400;
 }
-#techlash_page_content h3 span span
-{
-    position: relative;
-    z-index: 101;
-}
-#techlash_page_content h3 > span:before
-{
-    content: '';
-    position: absolute;
-    left: 0; right: 0; top: 0; bottom: 0;
-    background-color: #E4460B;
-    -webkit-animation: fillRight 3s;
-   animation: fillRight 3s;
-   -webkit-transform-origin: 0% 0%;
-   transform-origin: 0% 0%;
-}
-#techlash_page_content p
-{
-    font-size: 17px;
-    line-height: 1.5em;
+.techlash_author{
+    color: white;
+    font-size: 12px;
+    font-family: roboto;
+    font-weight: 100;
 }

@@ -1,225 +1,71 @@
 <?php get_header(); ?>
-
-<div id="sessionpage_wrapper" class="centered_background" style="position: relative">
-
-    <script type="text/javascript">
-
-
-
-        $(function() {
-
-
-            $.Isotope.prototype._getMasonryGutterColumns = function() {
-                var gutter = this.options.masonry.gutterWidth || 0;
-                containerWidth = this.element.parent().width();
-                this.masonry.columnWidth = this.options && this.options.masonry.columnWidth ||
-                        this.$filteredAtoms.outerWidth(true) ||
-                        containerWidth;
-                this.masonry.columnWidth += gutter;
-                this.masonry.cols = Math.floor(containerWidth / this.masonry.columnWidth);
-                this.masonry.cols = Math.max(this.masonry.cols, 1);
-            };
-
-            $.Isotope.prototype._masonryReset = function() {
-                this.masonry = {};
-                this._getMasonryGutterColumns();
-                var i = this.masonry.cols;
-                this.masonry.colYs = [];
-                while (i--) {
-                    this.masonry.colYs.push(0);
-                }
-            };
-
-            $.Isotope.prototype._masonryResizeChanged = function() {
-                var prevColCount = this.masonry.cols;
-                this._getMasonryGutterColumns();
-                return (this.masonry.cols !== prevColCount);
-            };
-
-            $.Isotope.prototype._masonryGetContainerSize = function() {
-                var gutter = this.options.masonry.gutterWidth || 0;
-                var unusedCols = 0,
-                        i = this.masonry.cols;
-                while (--i) {
-                    if (this.masonry.colYs[i] !== 0) {
-                        break;
-                    }
-                    unusedCols++;
-                }
-                return {
-                    height: Math.max.apply(Math, this.masonry.colYs),
-                    width: ((this.masonry.cols - unusedCols) * this.masonry.columnWidth) - gutter
-                };
-            };
-
-
-
-
-
-            var $container = $('#cards_parent');
-            // initialize
-            $container.isotope({
-                //columnWidth: 400,
-                itemSelector: '.sessioncard',
-                masonry: {
-                    columnWidth: 380,
-                    gutterWidth: 20
-
-                }
-                //gutterWidth: 10
-            });
-
-            $container.imagesLoaded(function() {
-
-                $container.isotope('reLayout');
-            });
-
-            $(".sessioncard_footer").on("click", ".neo_attend_button", function() {
-
-
-                var card = $(this);
-                card.html('<img src="<?php bloginfo('template_url') ?>/images/ajaxloader.gif" />');
-
-                $.post("<?php echo admin_url('admin-ajax.php?' . http_build_query(array("action" => "toggle_attend"))); ?>", {post_id: $(this).data("postid")}, function(data) {
-
-                    if (data.status != 'OK')
-                    {
-                        var r = confirm(data.status);
-                        if (r == true)
-                        {
-                            window.location.href = "<?php echo wp_login_url(get_permalink()); ?>";
-                        }
-                        card.parent().html(data.button_text);
-                    }
-                    else
-                    {
-
-                        $("#sessioncard" + card.data("postid") + " .sessioncard_attendees_link .sessioncard_meta_text").html(data.attendees_count);
-                        card.parent().html(data.button_text);
-                    }
-                }, 'json');
-            });
-
-
-        });
-
-    </script>
-
-
-    <div id="techlash_page_container">
-        <div id="techlash_page_content">
-
-
-            <div id="sessionpage_header">
-
-                <div id="normalpage_title" class="yellowbg">
-                    <h1 class="normalpage_heading"><?php the_title(); ?></h1>
-                </div>
-
-
+<div id="homepage_cb1" style="background-image: url('<?php echo get_bloginfo('template_url').'/images/techlash_brew.jpg' ?>'); background-color: #fff ">
+    <div id="techlash_ct1" class="container" >
+        <div id="techlash_ct1_r1" class="row">
+            <div class="col-xs-2 col-md-2"></div>
+            <div class="col-xs-3 col-md-3" style="color: white;">
+                <?php the_post(); ?>
+                <?php the_content(); ?>
             </div>
-            <div style="clear: both"></div>
+            <div class="col-xs-4 col-md-4"></div>
 
-            <div id="sessionpage_midsection">
-                <div id="generalpage_posttext">
-                    <?php the_post(); ?>
-                    <?php the_content(); ?>
+            <div class="col-xs-3 col-md-3" style="padding: 20px;">
 
-
-
-                </div>
-
-                <div style="clear: both"></div>
-            </div>
-
-
-            <div id="techlash_cardswrapper">
-                <h2 id="techlash_sessionheading">Techlash sessions for BCB Monsoon 2015</h2>
-                <div id="cards_parent">
-                    <?php
-                    $args = 'cat=1465';
-
-
-                    query_posts($args);
-
-                    while (have_posts()) : the_post();
-                        ?>
-
-
-                        <div class="sessioncard" id="sessioncard<?php the_ID(); ?>">
-
-                            <div class="sessioncard_user track_color_bg_tl">
-    <?php echo '<a href="' . get_author_posts_url(get_the_author_meta('ID')) . '">' . get_the_author_meta('user_nicename') . '</a>'; ?>
-
-                            </div>
-                            <div class="sessioncard_useravatar"><?php echo '<a href="' . get_author_posts_url(get_the_author_meta('ID')) . '">' . get_avatar(get_the_author_meta('ID'), 48) . '</a>'; ?><?php //echo '<img src="http://placeimg.com/48/48/any" />';      ?></div>
-    <?php if (isset($_COOKIE['bcb_last_visit']) && (get_the_time('U') > ($_COOKIE['bcb_last_visit'] > strtotime("-2 days") ? strtotime("-2 days") : $_COOKIE['bcb_last_visit'] ))) : ?>
-                                <div class="sessioncard_newtag">new</div>     
-                            <?php endif; ?>
-                            <div class="sessioncard_head">
-
-
-                                <div class="sessioncard_title">
-                                    <a href="<?php echo get_permalink(); ?>" class="track_color_tl">
-    <?php the_title(); ?>
-                                    </a>
-                                </div>
-
-
-
-                                <div class="sessioncard_tagparent">
-
-
-    <?php if (get_the_time('U') > strtotime("-4 days")): ?>
-                                        <div class="sessioncard_newtag">new</div>     
-                                    <?php endif; ?>
-                                    <div class="sessioncard_techlashtag">Techlash</div>
-
-                                </div>
-
-
-
-
-                            </div>
-                            <div class="sessioncard_footer">
-                                <div class="sessioncard_user_comments">
-
-                                    <a class="sessioncard_attendees_link" href="<?php echo get_permalink(); ?>#attendees"><img class="sessioncard_meta_image" src="<?php bloginfo('template_url') ?>/images/users_icon.jpg" />
-                                        <span class="sessioncard_meta_text"><?php echo attending_users_count(get_the_ID()) ?></span></a>
-
-                                    <a href="<?php echo get_permalink(); ?>#comments"><img class="sessioncard_meta_image" src="<?php bloginfo('template_url') ?>/images/comments_icon.jpg" />
-                                        <span class="sessioncard_meta_text"><?php comments_number('0', '1', '%'); ?></span></a>
-
-
-                                </div>
-
-                                <div class="sessioncard_attend">
-
-    <?php echo get_my_attending_button(get_the_ID()); ?>
-
-                                </div>
-                                <div style="clear: both"></div>
-                            </div>
-
-
-                        </div>
-
-
-
+                <h2 id="techlash_sessionheading">Techlash sessions for BCB Spring 2016</h2>
+                <div id"techlash_post_parent">
+                  <?php
+                   $args = 'cat=933';
+                   query_posts($args);
+                   while (have_posts()) : the_post();
+                       ?>
+                       <hr/>
+                       <div class="techlash_postname">
+                       <a href="<?php echo get_permalink(); ?>">
+                       <?php the_title(); ?>
+                       </a>
+                   </div>
+                   <div class="techlash_author">
+                       <?php echo '<a href="' . get_author_posts_url(get_the_author_meta('ID')) . '">' . get_the_author_meta('user_nicename') . '</a>'; ?>
+                   </div>
 
 
 <?php endwhile; ?>
 
-                </div>
-            </div>
 
-        </div>
-        <div id="techlash_right_container" >
-            <div style="margin: 0 -18px 20px -18px; box-shadow: 0px 4px 3px -2px #aaa;font-size: 22px; color: #666; font-weight: bold; text-align: center; padding-top: 10px; padding-bottom: 31px;">Showcase<br></div>
-            <iframe width="260" height="195" src="//www.youtube.com/embed/4je2tRkfIF0" frameborder="0" allowfullscreen></iframe>
-        </div>
-        
 
+
+
+
+
+
+    </div>
+</div>
+
+
+        <div style="padding-bottom: 80px"></div>
+        <div id="techlash_ct1_r4" class="row">
+            <span>
+                <a href="<?php echo get_bloginfo('template_url') . '/docs/Barcamp_Bangalore_Spring_2016_Sponsorship_Doc.pdf' ?>"><img src="<?php echo get_bloginfo('template_url') . '/images/icon-01.png' ?>" />  Sponsorship Pdf</a>
+            </span>
+            <span>
+                <a href="https://twitter.com/barcampbng"><img src="<?php echo get_bloginfo('template_url') . '/images/icon-02.png' ?>" />  Follow us on twitter</a>
+            </span>
+            <span>
+                <a href="https://www.facebook.com/barcampbng"><img src="<?php echo get_bloginfo('template_url') . '/images/icon-03.png' ?>" />  like us on facebook</a>
+            </span>
+            <span>
+                <a href="mailto:bangalore_barcamp-subscribe@yahoogroups.com"><img src="<?php echo get_bloginfo('template_url') . '/images/icon-04.png' ?>" />  join the group</a>
+            </span>
+            <span>
+                <a href="https://www.youtube.com/user/barcampbangalore"><img src="<?php echo get_bloginfo('template_url') . '/images/icon-05.png' ?>" />  subscribe</a>
+            </span>
+            <span>
+                <a href="http://slack.barcampbangalore.org/"><img src="<?php echo get_bloginfo('template_url') . '/images/icon-06.png' ?>" />  join us on slack</a>
+            </span>
+            <span>
+                <a href="https://github.com/barcampbangalore"><img src="<?php echo get_bloginfo('template_url') . '/images/Git-hub-icon-07.png' ?>" />  fork us</a>
+            </span>
+        </div>
     </div>
 </div>
 
