@@ -4,8 +4,18 @@
         <div id="techlash_ct1_r1" class="row">
             <div class="col-xs-2 col-md-2"></div>
             <div class="col-xs-3 col-md-3" style="color: white;">
-                <?php the_post(); ?>
-                <?php the_content(); ?>
+
+                <img src="http://localhost/bcb/wp-content/themes/NeoBCB19/images/six-min-brew.png" style="height: 200px; margin-bottom: 20px;">
+                <br>
+                                <p><font size="3">Represent your company in the latest edition of Barcamp Bangalore Techlash.</font></p><font size="3">
+<p>
+Talk about your latest tech smartness in front of 500+ techies.</p>
+<p style="font-weight: bold; font-size: 20px;">6 Min per session and a total of 10 speakers.</p>
+<p>To add your techlash session <a href="https://barcampbangalore.org/bcb/add-a-session"> click here.</a></p><br><br>
+
+</font><p><font size="3">
+PS: These ideas will undergo a filtering process. Remember to put in your phone number in the right field while you adding your session, we might require some clarifications from you.</font></p>
+
             </div>
             <div class="col-xs-4 col-md-4"></div>
 
