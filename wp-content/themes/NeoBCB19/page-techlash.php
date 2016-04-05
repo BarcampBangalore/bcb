@@ -24,7 +24,7 @@ PS: These ideas will undergo a filtering process. Remember to put in your phone 
                 <h2 id="techlash_sessionheading">Techlash sessions for BCB Spring 2016</h2>
                 <div id"techlash_post_parent">
                   <?php
-                   $args = 'cat=933';
+                   $args = 'cat=1562';
                    query_posts($args);
                    while (have_posts()) : the_post();
                        ?>
@@ -40,13 +40,6 @@ PS: These ideas will undergo a filtering process. Remember to put in your phone 
 
 
 <?php endwhile; ?>
-
-
-
-
-
-
-
 
     </div>
 </div>
