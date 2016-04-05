@@ -5,7 +5,7 @@
             <div class="col-xs-2 col-md-2"></div>
             <div class="col-xs-3 col-md-3" style="color: white;">
 
-                <img src="http://localhost/bcb/wp-content/themes/NeoBCB19/images/six-min-brew.png" style="height: 200px; margin-bottom: 20px;">
+                <img src="//barcampbangalore.org/bcb/wp-content/themes/NeoBCB19/images/six-min-brew.png" style="height: 200px; margin-bottom: 20px;">
                 <br>
                                 <p><font size="3">Represent your company in the latest edition of Barcamp Bangalore Techlash.</font></p><font size="3">
 <p>
