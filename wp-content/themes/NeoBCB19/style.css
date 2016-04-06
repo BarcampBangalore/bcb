@@ -443,6 +443,141 @@ background-color: #0A0A0A;
     margin: 0px auto;
 }
 
+#sessions_page_content {
+    background-color: #222222;
+}
+
+#sessions_page_track_buttons_container {
+    
+    
+}
+
+.sessions_page_track_button {
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+}
+
+.sessions_page_track_button img {
+    height: 50px;
+}
+
+
+
+#sessions_page_list_container {
+   
+}
+
+.sessions_page_card_content {
+    background-color: #E6E6E6;
+    border-width: 4px;
+    margin-bottom: 15px;
+}
+
+.sessions_page_card_avatar {
+    padding: 0px;
+}
+
+.sessions_page_card_avatar a img {
+    margin: 25px 5px;
+    background-color: #E6E6E6;
+    border-radius: 5px;
+}
+
+.sessions_page_card_right_column {
+    margin: 5px 0px;
+    border: 0px;
+    border-left-width: 1px;
+    height: 92px;
+}
+
+.sessions_page_card_title {
+    font-size: 17px;
+    height: 50px;
+}
+
+.sessions_page_card_author {
+    color: #666666;
+}
+
+.sessions_page_card_comments_stats {
+    float: right;
+    display: inline-block;
+}
+
+.sessions_page_card_comments_icon {
+    height: 20px;
+    position: relative;
+}
+
+.sessions_page_card_comments_icon img {
+    height: 25px;
+    position: relative;
+    top: -5px;
+}
+
+.sessions_page_card_comments_count {
+    font-size: 8px;
+    position: relative;
+    top: -5px;
+    text-align: center;
+}
+
+
+.sessions_page_card_attendees_stats {
+    float: right;
+    display: inline-block;
+}
+
+.sessions_page_card_attendees_icon {
+    height: 20px;
+    position: relative;
+}
+
+.sessions_page_card_attendees_icon img {
+    height: 25px;
+    position: relative;
+    top: -5px;
+}
+
+.sessions_page_card_attendees_count {
+    font-size: 8px;
+    position: relative;
+    top: -5px;
+    text-align: center;
+}
+
+
+.sessions_page_card_attend_button .neo_attend_button
+{
+    float: right;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.sessions_page_card_attend_button
+{
+    height: 20px;
+    position: relative;
+}
+
+.sessions_page_card_attend_button img {
+    height: 25px;
+    position: relative;
+    top: -5px;
+}
+
+/*.sessions_page_card_attend_button .neo_button_attending:hover
+{
+    background-color: #6DCF18;
+}
+
+
+.sessions_page_card_attend_button .neo_button_wanna_attend:hover
+{
+    background-color: #A9EC6F;
+    color: #FFFFFF;
+}*/
 
 
 
@@ -1393,39 +1528,6 @@ SPECIAL CARDS
     width: 235px;
 }
 
-.sessioncard .neo_attend_button
-{
-    text-align: center;
-    padding: 5px;
-    font-size: 17px;
-    font-weight: bold;
-    cursor: pointer;
-    width: 169px;
-
-}
-
-.sessioncard .neo_button_attending
-{
-    background-color: #60B615;
-    color: #FFFFFF;
-}
-
-.sessioncard .neo_button_attending:hover
-{
-    background-color: #6DCF18;
-}
-
-.sessioncard .neo_button_wanna_attend
-{
-    background-color: #FFFFFF;
-    color: #BBBBBB;
-}
-
-.sessioncard .neo_button_wanna_attend:hover
-{
-    background-color: #A9EC6F;
-    color: #FFFFFF;
-}
 
 
 #sessionpage_content
@@ -2295,6 +2397,42 @@ SPECIAL CARDS
     background-color: #701E7F;
 }
 
+
+.track_color_border_1459 {
+    border-color: #2D88EC;
+    border-style: solid;
+}
+
+.track_color_border_1460 {
+    border-color: #770B47;
+    border-style: solid;
+}
+
+.track_color_border_1461 {
+    border-color: #E28815;
+    border-style: solid;
+}
+
+
+.track_color_border_1462 {
+    border-color: #E4460B;
+    border-style: solid;
+}
+
+.track_color_border_1463 {
+    border-color: #701E7F;
+    border-style: solid;
+}
+
+.track_color_border_1464 {
+    border-color: #789C18;
+    border-style: solid;
+}
+
+.track_color_border_1466 {
+    border-color: #0B83E4;
+    border-style: solid;
+}
 
 
 

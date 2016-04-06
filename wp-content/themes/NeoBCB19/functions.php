@@ -312,11 +312,13 @@ function mytheme_comment($comment, $args, $depth)
         
         if (array_search($current_user->user_login, $attendingusers) !== false)
         {
-            $result.= '<div class="neo_attend_button neo_button_attending" data-postid="'.$postid.'" >I am Attending</div>';
+            $result.= '<div class="neo_attend_button neo_button_attending" data-postid="'.$postid.'" >'
+                    .'<img src="'.get_bloginfo('template_url').'/images/icons-19.png" /></div>';
         }
         else
         {
-            $result.= '<div class="neo_attend_button neo_button_wanna_attend" data-postid="'.$postid.'" >I wanna Attend</div>';
+            $result.= '<div class="neo_attend_button neo_button_wanna_attend" data-postid="'.$postid.'" >'
+                    .'<img src="'.get_bloginfo('template_url').'/images/icons-18.png" title="I wanna Attend" /></div>';
         }
         return $result;
     }
