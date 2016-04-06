@@ -224,7 +224,7 @@ an awesome chart of where people converge at the venue from.
 
                         ?>
 
-                        <div class="sessions_page_card col-md-4">
+                        <div class="sessions_page_card col-md-4" data-track-id="<?php echo $track_id; ?>">
                             <div class="sessions_page_card_content container-fluid track_color_border_<?php echo $track_id; ?>">
                                 <div class="row">
                                     <div class="sessions_page_card_avatar col-xs-2">
@@ -295,7 +295,7 @@ an awesome chart of where people converge at the venue from.
 
 
 
-        <div id="cards_parent">
+      
 
 
             <?php  
@@ -330,121 +330,6 @@ an awesome chart of where people converge at the venue from.
       */  
             ?>
 
-            <?php 
-
-
-    $difficulty_tags = array(945, 947, 946); // prod mapping
-    // $difficulty_tags = array(939, 940, 941); // local mapping
-    //foreach (array(934, 935, 936, 940, 941, 942, 943) as $track_id) :
-    foreach (array(1459, 1460, 1461, 1462, 1463, 1464, 1466) as $track_id) : 
-
-                ?>
-
-
-                <div id="cards_track_934" class="cards_track">
-                    <div class="track_header track_color_bg_<?php echo $track_id; ?>" >
-                        <?php
-                        $catobj = get_category($track_id);
-                        echo $catobj->name;
-                        ?>
-                    </div>
-
-
-                    <?php
-                    $sessionsloop = new WP_Query('cat=' . $track_id);
-
-                    if (!$sessionsloop->have_posts())
-                    {
-                        echo '<div class="sessioncard_no_session_message">No sessions in this track yet :)</div>';
-                    }
-
-                    while ($sessionsloop->have_posts()) : $sessionsloop->the_post();
-                        ?>
-                        <div class="sessioncard" id="sessioncard<?php the_ID(); ?>">
-
-                            <div class="sessioncard_user track_color_bg_<?php echo $track_id ?>">
-            <?php echo '<a href="' . get_author_posts_url(get_the_author_meta('ID')) . '">' . get_the_author_meta('user_nicename') . '</a>'; ?>
-
-                            </div>
-                            <div class="sessioncard_useravatar"><?php echo '<a href="' . get_author_posts_url(get_the_author_meta('ID')) . '">' . get_avatar(get_the_author_meta('ID'), 48) . '</a>'; ?><?php //echo '<img src="http://placeimg.com/48/48/any" />';     ?></div>
-
-                            <div class="sessioncard_head">
-
-
-                                <div class="sessioncard_title">
-                                    <a href="<?php echo get_permalink(); ?>" class="track_color_<?php echo $track_id; ?>">
-            <?php the_title(); ?>
-                                    </a>
-
-                                </div>
-
-
-                                <div class="sessioncard_tagparent">
-
-                                    <?php if ( get_the_time('U') > strtotime("-4 days")) : ?>
-                                        <div class="sessioncard_newtag">new</div>     
-                                    <?php endif; ?>
-
-                                    <?php  $tags = get_the_tags(); 
-
-                                    foreach ($tags as $tagid => $tagobj)
-                                    {
-                                        $tagtype = array_search($tagid, $difficulty_tags);
-                                        if ( $tagtype !== FALSE)
-                                        {
-
-                                            echo '<div class="sessioncard_difficultytag'.$tagtype.'">' . $tagobj->name . '</div> ';
-
-                                        }
-                                    }
-
-                                    ?>
-
-
-                                </div>
-
-
-
-
-                            </div>
-                            <div class="sessioncard_footer">
-                                <div class="sessioncard_user_comments">
-
-                                    <a class="sessioncard_attendees_link" href="<?php echo get_permalink(); ?>#attendees"  title="Attendees" ><img class="sessioncard_meta_image" src="<?php bloginfo('template_url') ?>/images/users_icon.jpg" alt="Attendees" title="Attendees" />
-                                        <span class="sessioncard_meta_text"><?php echo attending_users_count(get_the_ID()) ?></span></a>
-
-                                    <a href="<?php echo get_permalink(); ?>#comments" ><img class="sessioncard_meta_image" src="<?php bloginfo('template_url') ?>/images/comments_icon.jpg" alt="Comments" title="Comments" />
-                                        <span class="sessioncard_meta_text"><?php comments_number('0', '1', '%'); ?></span></a>
-
-
-                                </div>
-
-                                <div class="sessioncard_attend">
-
-            <?php echo get_my_attending_button(get_the_ID()); ?>
-
-                                </div>
-                                <div style="clear: both"></div>
-                            </div>
-
-
-                        </div>
-
-                        <?php
-                    endwhile;
-
-                    wp_reset_postdata();
-                    ?>
-
-
-
-
-
-                </div>
-
-    <?php endforeach; ?>
-
-        </div> <!-- cards parent-->
 
 
 

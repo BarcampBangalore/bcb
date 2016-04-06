@@ -582,6 +582,71 @@ background-color: #0A0A0A;
 
 
 
+#single_page_content {
+    background-color: #222222;
+}
+
+.single_page_box {
+    background-color: #E6E6E6;
+    margin-bottom: 15px;
+    padding: 20px
+}
+
+#single_page_avatar {
+    
+}
+
+#single_page_author {
+    
+}
+
+#single_page_avatar img {
+    width: 100%;
+    height: auto;
+}
+
+#single_page_title {
+    
+    font-size: 28px;
+}
+
+#single_page_description {
+    
+}
+
+#single_page_attendees_header {
+    font-size: 20px;
+}
+
+#single_page_attendees_icon {
+    width: 50px;
+    height: auto;
+}
+
+#single_page_attendees_list {
+    margin-left: 52px;
+}
+
+#single_page_tags_header {
+    font-size: 20px;
+}
+
+#single_page_tags_icon {
+    width: 50px;
+    height: auto;
+}
+
+#single_page_tags_list {
+    margin-left: 52px;
+    color: #999999;
+}
+
+#single_page_tags_list a {
+    padding: 0px 10px;
+    color: #333333;
+}
+
+
 #cards_parent
 {
     padding: 10px 15px;
@@ -1784,7 +1849,7 @@ SPECIAL CARDS
 #sessionpage_commentsarea
 {
     position: relative;
-    margin-top: 60px;
+    margin-top: 20px;
 }
 
 
