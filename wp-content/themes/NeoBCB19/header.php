@@ -134,29 +134,6 @@ autoOpen: false,
     <body>
         <script>
 
-        document.scroll_pos = 0;
-        window.addEventListener('scroll', function(e){
-            scrolldiff=  document.scroll_pos - window.pageYOffset;
-            console.log("Scrolled = "+scrolldiff);
-            console.log("window.pageYOffset = "+window.pageYOffset);
-            if(scrolldiff < 20 && scrolldiff > -20 )
-                return;
-            document.scroll_pos = window.pageYOffset;
-
-            element = document.getElementById("header_container");
-            if( scrolldiff > 0 && window.pageYOffset > 80) // scrolled to the very top; element sticks to the top
-                element.className = 'header_container header_fixed';
-
-            else if( scrolldiff < 0 || window.pageYOffset < 80) // scrolled down
-            {
-            //    if( wScrollCurrent + wHeight >= dHeight && hasElementClass( element, elClassHidden ) ) // scrolled to the very bottom; element slides in
-               element.className = 'header_container';
-            //    else // scrolled down; element slides out
-            //    element.className = 'header_container';
-            }
-            //...
-        });
-
         function searchEnable(){
             document.getElementById('overlay').style.visibility = 'visible';
             document.onkeydown = function(evt) {
