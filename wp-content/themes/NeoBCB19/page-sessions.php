@@ -172,36 +172,76 @@ an awesome chart of where people converge at the venue from.
                 else{
                     document.lastselected = trackid;
                 }
+                var showCards = new Array();
                 for (var i = 0; i < allSessionCards.length; i++) {
                     var sessionCard = allSessionCards[i];
                     //console.log(sessionCard.getAttribute("data-track-id"));
                     if(lastSelected == true){
-                        sessionCard.style.display='' ;
+                        //  setTimeout(function(sessionCard){$(sessionCard).fadeIn(1500, function (sessionCard) {
+                        //     $(sessionCard).css({display:""});
+                        // });}, 1000);
+                        showCards.push(sessionCard);
                     }
                     else{
                         if(sessionCard.getAttribute("data-track-id") != trackid){
-                            sessionCard.style.display='none' ;
+                            $(sessionCard).fadeOut(800, function () {
+                                $(this).css({display:"none"});
+                            });
+                            // sessionCard.style.display='none' ;
                         }
                         else{
-                            sessionCard.style.display='' ;
+                            // setTimeout(function(sessionCard){$(sessionCard).fadeIn(1500, function (sessionCard) {
+                            //     $(sessionCard).css({display:""});
+                            // });}, 1000);
+                            showCards.push(sessionCard);
                         }
 
                     }
                 }
+                if(showCards.length > 0 ){
+                    setTimeout(function(){
+                            for(var i =0; i < showCards.length; i++){
+                                var sessionCard = showCards[i];
+                                $(sessionCard).fadeIn(1000, function () {
+                                    $(this).css({display:""});});
+
+                            }
+                    }, 500);
+                }
+                var  showButton = new Array();
                 var allButtons = document.getElementsByClassName("sessions_page_track_button");
                 for (var i = 0; i < allButtons.length; i++) {
                     var button = allButtons[i];
                     if(lastSelected == true){
-                        button.style.opacity = 1;
+                        // setTimeout(function(button){$(button).fadeIn(1500, function (button) {
+                        //     $(button).css({opacity:1});
+                        // });}, 1000);
+                        showButton.push(button);
                     }
                     else{
                         if(button.getAttribute("data-track-id") != trackid){
-                            button.style.opacity = 0.3;
+                            $(button).fadeIn(500, function () {
+                                $(this).css({opacity:0.3});
+                            });
                         }
                         else{
-                            button.style.opacity = 1;
+                            // setTimeout(function(button){$(button).fadeIn(1500, function (button) {
+                            //     $(button).css({opacity:1});
+                            // });}, 1000);
+                            showButton.push(button);
                         }
                     }
+                }
+
+                if(showButton.length > 0 ){
+                    setTimeout(function(){
+                            for(var i =0; i < showButton.length; i++){
+                                var button = showButton[i];
+                                $(button).fadeIn(500, function () {
+                                    $(this).css({opacity:1});});
+
+                            }
+                    }, 100);
                 }
 
             }
