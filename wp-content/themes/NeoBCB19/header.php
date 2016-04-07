@@ -191,8 +191,8 @@ autoOpen: false,
     <a href="<?php echo get_permalink( get_page_by_path( 'sessions' ) ) ?>">Proposed Sessions</a>
     <a href="<?php echo get_permalink( get_page_by_path( 'add-a-session' ) ) ?>">Add a Session</a>
     <a href="http://barcampbangalore.org/bcb/live/schedule">Schedule</a>
-
-    <img height=125 src="<?php bloginfo('template_url'); ?>/images/header-05-logo.png">
+    <a href="http://barcampbangalore.org">
+    <img height=125 src="<?php bloginfo('template_url'); ?>/images/header-05-logo.png"></a>
     <a href="<?php echo get_permalink( get_page_by_path( 'techlash' ) ) ?>">Techlash</a>
     <a href="<?php echo get_permalink( get_page_by_path( 'videos' ) ) ?>">Videos</a>
     <a href="https://barcampbangalore.org/planning/sponsorship-prospectus-and-call-for-sponsors-for-barcamp-bangalore-spring-2016/">Become a Partner</a>
