@@ -3,7 +3,7 @@
 <div id="leafletmap"></div>
 <i class="fa fa-map-marker"></i>
 <p>Please share your location so that we can have
-an awesome chart of where people converge at the venue from. 
+an awesome chart of where people converge at the venue from.
 </p>
 </div>
 
@@ -93,7 +93,7 @@ an awesome chart of where people converge at the venue from.
                                     var mymap = 0;
                     window['isMapInit']  = 0;
                     window['showMap']  = 0;
-                    window['neverask'] = <?php 
+                    window['neverask'] = <?php
                     if (is_user_logged_in()){
                                     $data = get_user_meta($current_user->ID, 'neverAskLoc', true);
 
@@ -120,8 +120,8 @@ an awesome chart of where people converge at the venue from.
                                                             minZoom:8
                                                     }).addTo(mymap);
 
-                                                    mymap.on('locationfound', onLocationFound);      
-                                                    window['marker'] = L.marker({lat: 12.9658274, lng: 77.7118487}, {draggable: 'true'}).addTo(mymap);	
+                                                    mymap.on('locationfound', onLocationFound);
+                                                    window['marker'] = L.marker({lat: 12.9658274, lng: 77.7118487}, {draggable: 'true'}).addTo(mymap);
 
                                                     mymap.setView([ 12.9658274, 77.7118487], 15);
                                                     window['mymap'] = mymap;
@@ -161,34 +161,77 @@ an awesome chart of where people converge at the venue from.
 
 
             });
+            function showOnly(trackid){
 
+                var allSessionCards = document.getElementsByClassName("sessions_page_card");
+                var lastSelected = false;
+                if(document.lastselected == trackid){
+                    lastSelected = true;
+                    document.lastselected = 0;
+                }
+                else{
+                    document.lastselected = trackid;
+                }
+                for (var i = 0; i < allSessionCards.length; i++) {
+                    var sessionCard = allSessionCards[i];
+                    //console.log(sessionCard.getAttribute("data-track-id"));
+                    if(lastSelected == true){
+                        sessionCard.style.display='' ;
+                    }
+                    else{
+                        if(sessionCard.getAttribute("data-track-id") != trackid){
+                            sessionCard.style.display='none' ;
+                        }
+                        else{
+                            sessionCard.style.display='' ;
+                        }
+
+                    }
+                }
+                var allButtons = document.getElementsByClassName("sessions_page_track_button");
+                for (var i = 0; i < allButtons.length; i++) {
+                    var button = allButtons[i];
+                    if(lastSelected == true){
+                        button.style.opacity = 1;
+                    }
+                    else{
+                        if(button.getAttribute("data-track-id") != trackid){
+                            button.style.opacity = 0.3;
+                        }
+                        else{
+                            button.style.opacity = 1;
+                        }
+                    }
+                }
+
+            }
         </script>
 
 
         <div id="sessions_page_track_buttons_container"  class="col-md-1">
-            <div class="sessions_page_track_button track_color_bg_1459">
+            <div class="sessions_page_track_button track_color_bg_1459" onclick="showOnly(1062)" data-track-id="1062">
                 <img src="<?php echo get_bloginfo('template_url').'/images/icons-11.png' ?>" />
             </div>
-            <div class="sessions_page_track_button track_color_bg_1460">
+            <div class="sessions_page_track_button track_color_bg_1460" onclick="showOnly(1058)" data-track-id="1058">
                 <img src="<?php echo get_bloginfo('template_url').'/images/icons-12.png' ?>" />
             </div>
-            <div class="sessions_page_track_button track_color_bg_1461">
+            <div class="sessions_page_track_button track_color_bg_1461" onclick="showOnly(1063)" data-track-id="1063">
                 <img src="<?php echo get_bloginfo('template_url').'/images/icons-13.png' ?>" />
             </div>
-            <div class="sessions_page_track_button track_color_bg_1462">
+            <div class="sessions_page_track_button track_color_bg_1462" onclick="showOnly(1059)" data-track-id="1059">
                 <img src="<?php echo get_bloginfo('template_url').'/images/icons-14.png' ?>" />
             </div>
-            <div class="sessions_page_track_button track_color_bg_1463">
+            <div class="sessions_page_track_button track_color_bg_1463" onclick="showOnly(1064)" data-track-id="1064">
                 <img src="<?php echo get_bloginfo('template_url').'/images/icons-15.png' ?>" />
             </div>
-            <div class="sessions_page_track_button track_color_bg_1464">
+            <div class="sessions_page_track_button track_color_bg_1464" onclick="showOnly(1061)" data-track-id="1061">
                 <img src="<?php echo get_bloginfo('template_url').'/images/icons-16.png' ?>" />
             </div>
-            <div class="sessions_page_track_button track_color_bg_1466">
+            <div class="sessions_page_track_button track_color_bg_1466" onclick="showOnly(1060)" data-track-id="1060">
                 <img src="<?php echo get_bloginfo('template_url').'/images/icons-17.png' ?>" />
             </div>
         </div>
-        
+
 
         <div id="sessions_page_list_container" class="col-md-11 ">
             <div class="container">
@@ -196,10 +239,10 @@ an awesome chart of where people converge at the venue from.
 
 
                     <?php
-                    
-                    $tracks = array(1459, 1460, 1461, 1462, 1463, 1464, 1466);
-                    
-                    $sessionsloop = new WP_Query(array('cat' => '1459, 1460, 1461, 1462, 1463, 1464, 1466'));
+
+                    $tracks = array(1062, 1058, 1063, 1059, 1064, 1061, 1060);
+
+                    $sessionsloop = new WP_Query(array('cat' => '1062, 1058, 1063, 1059, 1064, 1061, 1060'));
 
                     if (!$sessionsloop->have_posts()) {
                         echo '<div class="sessioncard_no_session_message">No sessions in this track yet :)</div>';
@@ -207,18 +250,18 @@ an awesome chart of where people converge at the venue from.
 
                     while ($sessionsloop->have_posts()) : $sessionsloop->the_post();
                         ?>
-                    
-                        <?php  
-                        
+
+                        <?php
+
                         $post_cats = get_the_category();
-                        
+
                         foreach (get_the_category() as $c) {
-                            
+
                             if (array_search($c->cat_ID, $tracks) != FALSE) {
                                 $track_id = $c->cat_ID;
                                 break;
                             }
-                            
+
                         }
 
 
@@ -232,9 +275,9 @@ an awesome chart of where people converge at the venue from.
                                     </div>
                                     <div class="sessions_page_card_right_column track_color_border_<?php echo $track_id ?> col-xs-10">
                                         <div class="sessions_page_card_title">
-                                            
+
                                             <?php
-                                                $titlestr = get_the_title(); 
+                                                $titlestr = get_the_title();
                                                 $title_trimmed = false;
                                                 if (strlen($titlestr) > 50) {
                                                     $titlestr = substr($titlestr, 0, 50)."...";
@@ -249,7 +292,7 @@ an awesome chart of where people converge at the venue from.
                                             <?php echo '<a href="' . get_author_posts_url(get_the_author_meta('ID')) . '">' . get_the_author_meta('user_nicename') . '</a>'; ?>
                                         </div>
                                         <div class="sessions_page_card_bottomarea">
-                                            
+
                                             <div class="sessions_page_card_comments_stats">
                                                 <div class="sessions_page_card_comments_icon">
                                                     <img src="<?php echo get_bloginfo('template_url').'/images/icons-21.png' ?>" />
@@ -258,7 +301,7 @@ an awesome chart of where people converge at the venue from.
                                                     <?php comments_number('0', '1', '%'); ?>
                                                 </div>
                                             </div>
-                                            
+
                                             <div class="sessions_page_card_attendees_stats">
                                                 <div class="sessions_page_card_attendees_icon">
                                                     <img src="<?php echo get_bloginfo('template_url').'/images/icons-20.png' ?>" />
@@ -267,7 +310,7 @@ an awesome chart of where people converge at the venue from.
                                                     <?php echo attending_users_count(get_the_ID()) ?>
                                                 </div>
                                             </div>
-                                            
+
                                             <div class="sessions_page_card_attend_button">
                                                 <?php echo get_my_attending_button(get_the_ID()); ?>
                                             </div>
@@ -275,9 +318,9 @@ an awesome chart of where people converge at the venue from.
                                     </div>
                                 </div>
                             </div>
-                            
-                            
-                            
+
+
+
                         </div>
 
                     <?php endwhile; ?>
@@ -295,10 +338,10 @@ an awesome chart of where people converge at the venue from.
 
 
 
-      
 
 
-            <?php  
+
+            <?php
 
             /*
     * 1232 Techlash
@@ -309,8 +352,8 @@ an awesome chart of where people converge at the venue from.
     1225 Bangalore & Lifestyle
     1227 Entrepreneurship
     1230  Rest of the World
-             * 
-             * 
+             *
+             *
     Design - #F05353
     Mobile and Web - #5761E4
     Tech - #997A42
@@ -327,19 +370,18 @@ an awesome chart of where people converge at the venue from.
     Bangalore & lifestyle - 1459
     Entrepreneurship - 1461
     Rest of the World - 1463
-      */  
+      */
             ?>
 
 
 
 
-    
-    
-    
+
+
+
 </div>
 
 
 
 
 <?php get_footer(); ?>
-        

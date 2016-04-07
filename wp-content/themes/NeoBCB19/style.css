@@ -448,8 +448,8 @@ background-color: #0A0A0A;
 }
 
 #sessions_page_track_buttons_container {
-    
-    
+
+
 }
 
 .sessions_page_track_button {
@@ -465,7 +465,7 @@ background-color: #0A0A0A;
 
 
 #sessions_page_list_container {
-   
+
 }
 
 .sessions_page_card_content {
@@ -593,11 +593,11 @@ background-color: #0A0A0A;
 }
 
 #single_page_avatar {
-    
+
 }
 
 #single_page_author {
-    
+
 }
 
 #single_page_avatar img {
@@ -606,12 +606,12 @@ background-color: #0A0A0A;
 }
 
 #single_page_title {
-    
+
     font-size: 28px;
 }
 
 #single_page_description {
-    
+
 }
 
 #single_page_attendees_header {
@@ -2399,102 +2399,102 @@ SPECIAL CARDS
 
 
 
-.track_color_1226, .track_color_1460
+.track_color_1226, .track_color_1460, .track_color_1062
 {
     color: #770B47;
 }
-.track_color_bg_1226, .track_color_bg_1460
+.track_color_bg_1226, .track_color_bg_1460, .track_color_bg_1062
 {
     background-color: #770B47;
 }
 
-.track_color_1229, .track_color_1462
+.track_color_1229, .track_color_1462, .track_color_1058
 {
     color: #E4460B;
 }
-.track_color_bg_1229, .track_color_bg_1462
+.track_color_bg_1229, .track_color_bg_1462, .track_color_bg_1058
 {
     background-color: #E4460B;
 }
 
-.track_color_1233, .track_color_1466
+.track_color_1233, .track_color_1466, .track_color_1063
 {
     color: #0B83E4;
 }
-.track_color_bg_1233, .track_color_bg_1466
+.track_color_bg_1233, .track_color_bg_1466, .track_color_bg_1063
 {
     background-color: #0B83E4;
 }
 
-.track_color_1231, .track_color_1464
+.track_color_1231, .track_color_1464, .track_color_1059
 {
     color: #789C18;
 }
-.track_color_bg_1231, .track_color_bg_1464
+.track_color_bg_1231, .track_color_bg_1464, .track_color_bg_1059
 {
     background-color: #789C18;
 }
 
-.track_color_1225, .track_color_1459
+.track_color_1225, .track_color_1459, .track_color_1064
 {
     color: #2D88EC;
 }
-.track_color_bg_1225, .track_color_bg_1459
+.track_color_bg_1225, .track_color_bg_1459, .track_color_bg_1064
 {
     background-color: #2D88EC;
 }
 
-.track_color_1227, .track_color_1461
+.track_color_1227, .track_color_1461, .track_color_1061
 {
     color: #E28815;
 }
-.track_color_bg_1227, .track_color_bg_1461
+.track_color_bg_1227, .track_color_bg_1461, .track_color_bg_1061
 {
     background-color: #E28815;
 }
 
-.track_color_1230, .track_color_1463
+.track_color_1230, .track_color_1463, .track_color_1060
 {
     color: #701E7F;
 }
-.track_color_bg_1230, .track_color_bg_1463
+.track_color_bg_1230, .track_color_bg_1463, .track_color_bg_1060
 {
     background-color: #701E7F;
 }
 
 
-.track_color_border_1459 {
+.track_color_border_1459,.track_color_border_1062  {
     border-color: #2D88EC;
     border-style: solid;
 }
 
-.track_color_border_1460 {
+.track_color_border_1460,.track_color_border_1058 {
     border-color: #770B47;
     border-style: solid;
 }
 
-.track_color_border_1461 {
+.track_color_border_1461,.track_color_border_1063 {
     border-color: #E28815;
     border-style: solid;
 }
 
 
-.track_color_border_1462 {
+.track_color_border_1462,.track_color_border_1059 {
     border-color: #E4460B;
     border-style: solid;
 }
 
-.track_color_border_1463 {
+.track_color_border_1463,.track_color_border_1064 {
     border-color: #701E7F;
     border-style: solid;
 }
 
-.track_color_border_1464 {
+.track_color_border_1464,.track_color_border_1061 {
     border-color: #789C18;
     border-style: solid;
 }
 
-.track_color_border_1466 {
+.track_color_border_1466,.track_color_border_1060 {
     border-color: #0B83E4;
     border-style: solid;
 }
