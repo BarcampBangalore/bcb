@@ -241,7 +241,7 @@ an awesome chart of where people converge at the venue from.
                                     $(this).css({opacity:1});});
 
                             }
-                    }, 100);
+                    }, 700);
                 }
 
             }
