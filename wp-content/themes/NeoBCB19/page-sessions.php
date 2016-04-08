@@ -186,9 +186,9 @@ an awesome chart of where people converge at the venue from.
                     }
                     else{
                         if(sessionCard.getAttribute("data-track-id") != trackid){
-                            $(sessionCard).fadeOut(500, function () {
-                                $(this).css({display:"none"});
-                            });
+                            // $(sessionCard).fadeOut(500, function () {
+                            //     $(this).css({display:"none"});
+                            // });
                             // sessionCard.style.display='none' ;
                         }
                         else{
@@ -208,7 +208,7 @@ an awesome chart of where people converge at the venue from.
                                     $(this).css({display:""});});
 
                             }
-                    }, 500);
+                    }, 400);
                 }
                 var  showButton = new Array();
                 var allButtons = document.getElementsByClassName("sessions_page_track_button");
@@ -246,7 +246,7 @@ an awesome chart of where people converge at the venue from.
                                     $(this).css({opacity:1});});
 
                             }
-                    }, 700);
+                    }, 400);
                 }
 
             }
