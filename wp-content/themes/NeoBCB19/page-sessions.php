@@ -8,7 +8,7 @@ an awesome chart of where people converge at the venue from.
 </div>
 
 <div class="container-fluid">
-    <div id="sessions_page_content" class="row">
+    <div id="sessions_page_content" class="row" style="padding-top: 100px;">
 
 
         <script type="text/javascript">
@@ -176,6 +176,8 @@ an awesome chart of where people converge at the venue from.
                 for (var i = 0; i < allSessionCards.length; i++) {
                     var sessionCard = allSessionCards[i];
                     //console.log(sessionCard.getAttribute("data-track-id"));
+                    $(sessionCard).fadeOut(500, function () {
+                        $(this).css({display:"none"});});
                     if(lastSelected == true){
                         //  setTimeout(function(sessionCard){$(sessionCard).fadeIn(1500, function (sessionCard) {
                         //     $(sessionCard).css({display:""});
@@ -184,7 +186,7 @@ an awesome chart of where people converge at the venue from.
                     }
                     else{
                         if(sessionCard.getAttribute("data-track-id") != trackid){
-                            $(sessionCard).fadeOut(800, function () {
+                            $(sessionCard).fadeOut(500, function () {
                                 $(this).css({display:"none"});
                             });
                             // sessionCard.style.display='none' ;
@@ -212,6 +214,9 @@ an awesome chart of where people converge at the venue from.
                 var allButtons = document.getElementsByClassName("sessions_page_track_button");
                 for (var i = 0; i < allButtons.length; i++) {
                     var button = allButtons[i];
+                    $(button).fadeIn(500, function () {
+                        $(this).css({opacity:0.3});
+                    });
                     if(lastSelected == true){
                         // setTimeout(function(button){$(button).fadeIn(1500, function (button) {
                         //     $(button).css({opacity:1});
