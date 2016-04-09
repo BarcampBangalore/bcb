@@ -610,6 +610,17 @@ background-color: #0A0A0A;
     font-size: 28px;
 }
 
+#single_page_attend_area {
+    float: right;
+    border-left: 1px solid #888888;
+}
+
+#single_page_attend_area img{
+    width: 60px;
+    margin-left: 10px;
+}
+
+
 #single_page_description {
 
 }
@@ -639,6 +650,7 @@ background-color: #0A0A0A;
 #single_page_tags_list {
     margin-left: 52px;
     color: #999999;
+    padding-top: 10px;
 }
 
 #single_page_tags_list a {
@@ -1952,13 +1964,55 @@ SPECIAL CARDS
 
 #authorpage_content
 {
-    padding: 20px 0px;;
-    width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
+    background-color: #222222;
+}
+
+#authorpage_avatar img {
+    
+    width: 100%;
+    height: auto;
+}
+
+#authorpage_name {
+    font-size: 28px;
+    padding: 10px 20px;
+    margin-bottom: 5px;
+}
+
+#authorpage_sincedate {
+    
+    font-size: 18px;
+    font-style: italic;
+    color: #AAAAAA;
+    padding-left: 20px;
+}
+
+.authorpage_bcb_title {
+    font-size: 20px;
+    border-bottom: 1px solid #AAAAAA;
+    margin-bottom: 10px;
+    
+}
+
+.authorpage_sessions_area {
+    
+}
+
+.authorpage_sesstions_type {
+    font-size: 17px;
+    color: #444444;
+    margin-bottom: 10px;
+}
+
+.authorpage_session_item {
+    padding-bottom: 8px;
 }
 
 
+
+
+
+/*
 #authorpage_profilearea
 {
     background-color: #FFFFFF;
@@ -2084,6 +2138,7 @@ SPECIAL CARDS
     color: #666666;
 }
 
+*/
 
 #tagpage_content
 {
