@@ -170,7 +170,7 @@ an awesome chart of where people converge at the venue from.
                         <div class="col-sm-6">
                             <div class="single_page_box">
                                 <div id="single_page_tags_header">
-                                    <img id="single_page_tags_icon" src="<?php echo get_bloginfo('template_url').'/images/tags_icon.jpg' ?>">
+                                    <img id="single_page_tags_icon" src="<?php echo get_bloginfo('template_url').'/images/icons-23.png' ?>">
                                     Tags
                                 </div>
                                 <div id="single_page_tags_list">
