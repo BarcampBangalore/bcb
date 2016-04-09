@@ -587,6 +587,9 @@ background-color: #0A0A0A;
 
 #single_page_content {
     background-color: #222222;
+    background-image: url('images/indi_session_background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .single_page_box {
