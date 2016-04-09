@@ -445,6 +445,9 @@ background-color: #0A0A0A;
 
 #sessions_page_content {
     background-color: #222222;
+    background-image: url('images/sessions_list_background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 #sessions_page_track_buttons_container {
@@ -469,7 +472,7 @@ background-color: #0A0A0A;
 }
 
 .sessions_page_card_content {
-    background-color: #E6E6E6;
+    background-color: rgba(230,230,230,0.9);
     border-width: 4px;
     margin-bottom: 15px;
 }
@@ -587,9 +590,10 @@ background-color: #0A0A0A;
 }
 
 .single_page_box {
-    background-color: #E6E6E6;
+    background-color: rgba(230,230,230,0.87);
     margin-bottom: 15px;
-    padding: 20px
+    padding: 20px;
+    
 }
 
 #single_page_avatar {
@@ -1965,6 +1969,9 @@ SPECIAL CARDS
 #authorpage_content
 {
     background-color: #222222;
+    background-image: url('images/author_page_background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 #authorpage_avatar img {
@@ -1983,7 +1990,7 @@ SPECIAL CARDS
     
     font-size: 18px;
     font-style: italic;
-    color: #AAAAAA;
+    color: #6D6D6D;
     padding-left: 20px;
 }
 
