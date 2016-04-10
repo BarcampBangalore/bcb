@@ -84,15 +84,16 @@
     </div>
     <div id="homepage_about_bcb_description">
         <p>
-        BarCamp is an unconference. There’s no speaker list or fixed schedule until the actual event.
-        All content comes from the attendees. Anyone can host a session, participate in discussions, demo a project, talk about code, discuss at lengths about program design.</p>
+        Barcamp Bangalore is an open event focused around people, ideas and collaboration. There is no fixed format and agenda. If you have an interesting topic to share or want to collaborate with folks with a variety of experience, BarCamp is the place for you. BarCamp is an one-of-a-kind event. It is unique, it is different and it is not your regular conference. We like to call it an Un-conference. BarCamp thrives on peer-participation. 
 
-        <p>Not into tech? No problem. BarCamp's not just about tech. Share your life experiences. Teach us your lifehacks. Tell us about your great outdoors experiment. Sky's the limit and this is the perfect place to share your passion.
-Anyone with something to contribute or with the desire to learn is  welcome and invited to join. </p>
+        There’s no speaker list or fixed schedule until the actual event. All the content comes from the attendees. You pick the topics, share the agenda and share your interests and expertise. We believe that the sum of wisdom of the room is more than that of any presenter.  </p>
 
-<p>There are no registration fees or any other  charges for a BarCamp. Your active participation is the fuel and driving force for BarCamp.
+<p>Anyone can present a session, participate in discussions, demo a project, talk about code, or discuss at lengths about program design. Not into tech? No problem! BarCamp is not just about tech. Share your life experiences. Teach us your lifehacks. Tell us about your great outdoors experiment. Sky's the limit and this is the perfect place to share your passion. 
 
-    You are invited to volunteer for various activities for putting up a successful camp.</p>
+Anyone with something to contribute or with the desire to learn is welcome and invited to join. Move to something that interests you anytime. Every speaker is a participant, every participant is a speaker. Click here to see the list of proposed sessions.</p>
+
+<p>
+Your active participation is the fuel and driving force for BarCamp and that is the only registration fee. You are invited to volunteer for various activities for putting up a successful camp.</p>
     </div>
 </div>
 
@@ -105,12 +106,25 @@ Anyone with something to contribute or with the desire to learn is  welcome and 
         </div>
         <div id="homepage_how_to_register_description">
 
-Registration is a simple, 2 step process
+Registration is a simple process
 <ul>
-<li>Click on <a href="https://barcampbangalore.org/bcb/wp-login.php?redirect_to=https%3A%2F%2Fbarcampbangalore.org%2Fbcb%2F">Login</a> to sign into your Barcamp Bangalore account.
-    If you do not have a Barcamp Bangalore account, click on <a href="https://barcampbangalore.org/bcb/wp-login.php?action=register">Register</a> to create a Barcamp Bangalore account.</li>
-<li>On the <a href="https://barcampbangalore.org/bcb/sessions">Sessions</a> page, click on "I wanna attend" button to express your interest on a session.</li>
+
+<li>
+Click on <a href="https://barcampbangalore.org/bcb/wp-login.php?action=register">Sign-Up</a> (or <a href="https://barcampbangalore.org/bcb/wp-login.php?redirect_to=https%3A%2F%2Fbarcampbangalore.org%2Fbcb%2F">Login</a> if you already have an existing account) to register.</li>
+<li>
+Head over to the <a href="https://barcampbangalore.org/bcb/sessions">Proposed Sessions</a> page and browse the various sessions. Once you find a session you are interested in, click on “I wanna attend”. </li>
 </ul>
+
+To propose a session:
+<ul>
+<li>Click on <a href="https://barcampbangalore.org/bcb/wp-login.php?action=register">Sign-Up</a> (or <a href="https://barcampbangalore.org/bcb/wp-login.php?redirect_to=https%3A%2F%2Fbarcampbangalore.org%2Fbcb%2F">Login</a> if you already have an existing account) to register.</li>
+<li>Head over to the <a href="https://barcampbangalore.org/bcb/add-a-session">Add a Session</a> page and enter details about what you will be talking about.</li>
+<li>If you intend to present a short demo about your cutting edge technology or revolutionizing product, <a href="https://barcampbangalore.org/bcb/techlash">Techlash</a> might be a better option. Select the category as “Techlash” in this case.</li>
+<li>Only 36 slots are available on first come first serve basis. Please be at the venue by 8:00 AM to ensure that you get a slot.</li>
+</ul>
+To ensure that there’s minimal session overlap, do visit the sessions page daily and click on “I’m attending” on the session proposals which interest you.
+
+
         </div>
     </div>
 </div>
@@ -122,10 +136,12 @@ Registration is a simple, 2 step process
         </div>
         <div id="homepage_techlash_description">
             <p>
-                Techlash is a series of 6 minute rapidfire idea presentation. This is your chance to showcase your tech prowess to the community. Instead of giving a whole 45 minute talk about your cutting edge technology or product which might make your audience feel stretched and walk to another session), zip your demo up in a crisp 6 minute presentation. We give you the undivided attention of 500+ audience who are interested in tech, so this is your chance to get the maximum attention. To add your Techlash session <a href="/bcb/add-a-session">click here.</a> These ideas will undergo a filtering process. Remember to put in your phone number in the right field while you adding your session, we might require some clarifications from you.
+                Techlash is a platform to launch your innovative startups, introduce your cutting edge technologies or discuss revolutionary ideas. Instead of giving a whole 45 minute talk about your cutting edge technology or product, which might make your audience feel stretched and walk to another session, zip your demo up in a crisp six minute rapidfire idea presentation. We give you the undivided attention of the entire BarCamp audience, so this is your chance to get the maximum attention. 
             </p>
             <p>
-                You can checkout the sessions submitted for Techlash <a href="/bcb/techlash">here.</a>
+                To add your Techlash session <a href="https://barcampbangalore.org/bcb/add-a-session">click here</a>. These ideas will undergo a filtering process. Remember to put in your phone number in the right field while you are adding your session, we might require some clarifications from you.
+
+You can checkout the sessions submitted for Techlash <a href="https://barcampbangalore.org/bcb/techlash">here</a>.
             </p>
         </div>
     </div>
