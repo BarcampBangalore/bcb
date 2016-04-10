@@ -181,28 +181,96 @@ You can checkout the sessions submitted for Techlash <a href="https://barcampban
             Event FAQs
         </div>
         <div id="homepage_faq_description">
+        <h3>Is BarCamp about bars and alcohol?</h3>
+        No, it is not. BarCamp is reference to FooBar which is used as a placeholder name in computer programming.
+
+        <br />
+        <h3>Who can attend BarCamp?</h3>
+        Anyone and everyone! BarCamp is open to the community, no matter their age, interests or background.
+
+        <br />
         <h3>Do I have to pay any registration fee?</h3>
-        Zero! Zilch. There are no fees of any kind. Simply register for the event and come on in!
+        Zero! Zilch. There are no fees of any kind at all. Simply register for the event and come on in! 
 
         <br />
-        <h3>How long are the talks?</h3>
-        Each talk runs for 45 minutes. Ideally, BarCamp sessions are meant to be fully interactive, discussion oriented sessions, but if you wan to do a fullblown talk, we'd prefer if you keep the talk for 30 minutes and have about 15 minutes of Q&A.
+        <h3>Who can present sessions?</h3>
+
+        We encourage presentations of all kinds and on any topic. You do not need to be an expert in the field of your topic. Share something you are passionate about, talk about your interests, job or hobby. Click <a href="https://barcampbangalore.org/bcb/add-a-session">here to add</a> your session [add link].
 
         <br />
-        <h3>Can I get my camera and take pictures? Are laptops allowed?</h3>
-        By all means, yes! Take some interesting pictures, share them with the tag #barcampblr on social network of your choosing! Take down some notes on your laptop, start discussing about the session with the speaker, <a href="https://twitter.com/intent/tweet?text=at%20%23barcampblr%2C%20participating%20in">tweet</a> about the talk, post to Facebook - we'll leave it to you.
+        <h3>Is it necessary to present a session?</h3>
+
+        Nope! You are welcome to just attend sessions, participate in discussions, learn something new and meet interesting people. We also encourage impromptu sessions.
 
         <br />
-        <h3>I have submitted my talk - is it finalized? Can I get a slot at a specific time?</h3>
-        In true BarCamp session, the sessions list are not finalized and time slots are not fixed till the day of the event. On the event day, the talks are finalized on first come basis. Our well designed, patent-pending(well, not really) algorithmic session scheduler will assign slots to the speakers with a focus on reducing session clashes. See <a href="https://barcampbangalore.org/planning/session-schedules-barcamp-and-you/">our post</a> on how the session scheduling works for details.
+        <h3>Do I need to register for a session to attend it?</h3>
+
+        We recommend that you select the sessions you are interested in and click “I wanna attend” so we have an idea about which sessions are popular and we can minimise the scheduling clashes.
+
+        <br />
+        <h3>How are sessions chosen? I have submitted my talk - is it finalized? Can I get a slot at a specific time?</h3>
+
+        In true BarCamp fashion, the sessions list is not finalized and time slots are not fixed till the day of the event. On the event day, the talks are finalized on first come basis. Our well designed, patent-pending(well, not really) algorithmic session scheduler will assign slots to the speakers with a focus on reducing session clashes. See our post on how the <a href="https://barcampbangalore.org/planning/session-schedules-barcamp-and-you/">session scheduling works</a> for details [add link to blog post].
+
+        <br />
+        <h3>What are the session topics?</h3>
+
+        You can view the list of proposed sessions here [add link].
+
+        <br />
+        <h3>How should I present a session?</h3>
+
+        You are free to utilize the 45 minutes however you want: lead a discussion, demo a project, teach the participants a skill or even play a fun game! PowerPoint Presentations are not required. However if your presentation is accompanied by some kind of media, you are required to bring your own laptop and required adapters for VGA projectors.
+
+        <br />
+        <h3>How long are the sessions?</h3>
+
+        Each session runs for 45 minutes. Ideally, BarCamp sessions are meant to be fully interactive, discussion oriented sessions, but if you want to do a full blown talk, we would prefer if you keep the talk for 30 minutes and leave about 15 minutes for Q&A. 
+
+        <br />
+        <h3>Can I record the event and sessions? </h3>
+
+        By all means, yes! Take some interesting pictures, share them with the tag #barcampblr on social network of your choosing!
 
         <br />
         <h3>I was not able to get a slot - can I still talk at BarCamp?</h3>
-        Absolutely. BarCamp thrives on Impromptu(or Birds of a Feather) sessions and we actively encourage these. All you have to do is gather round some people, find some open space and just start talking! If you approach one of the planners, we'll spread the word about the BoF session by broadcasting these over the app and on the session listing.
+
+        Absolutely! BarCamp thrives on impromptu (or Birds of a Feather) sessions and we actively encourage these. All you have to do is gather around some people, find an open space and just start talking! If you approach one of the planners, we will spread the word about the BoF session by broadcasting these over the app and on the session listing. 
+        
+        <br />
+        <h3>What do I need to bring?</h3>
+
+        You are not required to bring anything, but we suggest carrying laptop (pen and paper if you are more traditional) or mobile device to take notes, tweet about the event or post to Facebook! The event location is Wi-Fi enabled. 
+
+        <br />
+        <h3>re food and drinks provided?</h3>
+
+        Yes, lunch and water are provided for free. However, kindly bring your own reusable water bottles.
+        
+        <br />
+        <h3>Where and when is BarCamp Bangalore?</h3>
+
+        The event takes place on April 30th, Saturday from 8:00 AM onwards at CMRIT Whitefield, Bangalore [add link to G Maps].
+        
+        <br />
+        <h3>Is there any BarCamp app?</h3>
+
+        Yes! Our star developers have created a brand new app for this edition. We will publish the links soon. 
+        
+        <br />
+        <h3>Who is organizing BarCamp Bangalore?</h3>
+
+        BarCamp Bangalore is a 100% volunteer driven not for profit event. We are regular people from the community who are on a mission to bring a platform for folks from different  walks of life to come together and talk about their unconventional ideas. Learn more about the planners here.
 
         <br />
         <h3>I want to volunteer for the event. Can I do so?</h3>
+
         Any helping hand is more than welcome. Join our <a href="http://slack.barcampbangalore.org">Slack</a> group and give us a shout.
+
+        <br />
+        <h3>What does coffee have to do with BarCamp?</h3>
+
+        Coffee roxxx!!! BarCamp roxxx!!! PERIOD.
         </div>
     </div>
 </div>
