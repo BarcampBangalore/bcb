@@ -35,13 +35,6 @@ $cat_names = array(
 );
 ?>
 
-<div id="dialog-message" title="Share your Location">
-    <div id="leafletmap"></div>
-    <i class="fa fa-map-marker"></i>
-    <p>Please share your location so that we can have
-        an awesome chart of where people converge at the venue from. 
-    </p>
-</div>
 <div id="authorpage_wrapper" class="centered_background">
 
     <div id="authorpage_content">

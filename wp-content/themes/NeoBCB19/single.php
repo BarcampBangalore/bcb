@@ -35,67 +35,16 @@ foreach($post_categories as $c)
 
 
 ?>
-<div id="dialog-message" title="Share your Location">
-<div id="leafletmap"></div>
-<i class="fa fa-map-marker"></i>
-<p>Please share your location so that we can have
-an awesome chart of where people converge at the venue from. 
-</p>
-</div>
+
 <div id="sessionpage_wrapper" class="centered_background">
     <script type="text/javascript">
     
         $(function(){
-				function onLocationFound(e) {
-					window['marker'].setLatLng(e.latlng);
-					//window['marker'] = L.marker(e.latlng,{draggable:'true'}).addTo(mymap);
-					this.loc = e.latlng.lat + "," + e.latlng.lng;
-					console.log(this.loc);
-				}
-				var mymap = 0;
-        	window['isMapInit']  = 0;
-        	window['showMap'] = 0;
-        	window['neverask'] = <?php 
-        	if (is_user_logged_in()){
-				$data = get_user_meta($current_user->ID, 'neverAskLoc', true);
 				
-				if($data === "1"){
-					echo "1;";
-				}
-				else{
-					echo "0;";
-				}
-			}
-        	else{
-        		echo "1;";
-        	}
-        	?>
         	
             $("#sessionpage_rightmeta").on("click", ".neo_attend_button", function(){
                 var card = $(this);
-                if(window['neverask'] == 0){
-					$( "#dialog-message" ).dialog("open");
-					if(window['isMapInit'] == 0){
-						mymap = L.map('leafletmap');
-						window['layer'] = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-							attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
-							maxZoom: 15,
-							minZoom:8
-						}).addTo(mymap);
-						
-						mymap.on('locationfound', onLocationFound);      
-						window['marker'] = L.marker({lat: 12.9658274, lng: 77.7118487}, {draggable: 'true'}).addTo(mymap);	
-						
-						mymap.setView([ 12.9658274, 77.7118487], 15);
-						window['mymap'] = mymap;
-					}
-					window['isMapInit'] = 1;
-					if( window['showMap'] == 0){
-						mymap.locate({setView: true, maxZoom: 15});
-						
-						
-					}
-				}
+                
                 card.html('<img src="<?php bloginfo('template_url') ?>/images/ajaxloader.gif" />');
                 
                 $.post("<?php echo admin_url('admin-ajax.php?' . http_build_query(array("action" => "toggle_attend"))); ?>", {post_id: <?php the_ID(); ?> }, function(data){

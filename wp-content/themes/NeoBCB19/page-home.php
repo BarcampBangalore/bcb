@@ -210,6 +210,7 @@ Registration is a simple, 2 step process
                 <div class="homepage_sponsor_heading">Venue Sponsor</div>
                 <div class="homepage_sponsor_logo_wrapper" ><a href="http://www.cmrit.ac.in/"><img alt="CMR Institute of Technology" title="CMR Institute of Technology" class="homepage_sponsor_logo" src="<?php bloginfo('template_url')  ?>/images/sponz_logos/cmrit_logo.jpg" /></a></div>
             </div>
+            <?php /*
             <!-- <div class="homepage_sponsor_card col-xs-6 col-md-4">
                 <div class="homepage_sponsor_heading">Gold Sponsor</div>
                 <div class="homepage_sponsor_logo_wrapper" ><a href="https://barcampbangalore.org/bcb/about-intuit"><img alt="Intuit" title="Intuit" class="homepage_sponsor_logo" src="<?php bloginfo('template_url')  ?>/images/sponz_logos/intuit_logo.png" /></a></div>
@@ -222,6 +223,10 @@ Registration is a simple, 2 step process
                 <div class="homepage_sponsor_heading">Friends of Barcamp</div>
                 <div class="homepage_sponsor_logo_wrapper" ><a href="https://barcampbangalore.org/bcb/about-venturesity"><img alt="Venturesity" title="Venturesity" class="homepage_sponsor_logo" src="<?php bloginfo('template_url')  ?>/images/sponz_logos/venturesity-logo.png" /></a></div>
             </div> -->
+             
+             */
+            
+            ?>
             <div class="homepage_sponsor_card col-xs-6 col-md-4">
                 <div class="homepage_sponsor_heading">Supported by</div>
                 <div class="homepage_sponsor_logo_wrapper" ><a href="http://janastu.org/main.html"><img alt="Janastu" title="Janastu" class="homepage_sponsor_logo" src="<?php bloginfo('template_url')  ?>/images/sponz_logos/janastu_logo.gif" /></a></div>
