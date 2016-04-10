@@ -7,17 +7,17 @@
         
         $(".homepage_cards").hover(function(){
             
-            $(".homepage_cards_default").fadeOut(50, function(){
-                $(".homepage_cards_hover").fadeIn(50);
+            $(".homepage_cards_default").fadeOut(20, function(){
+                $(".homepage_cards_hover").fadeIn(20);
             });
             
-            $(this).animate({backgroundColor : "#F7921D" }, 100);
+            $(this).animate({backgroundColor : "#F7921D" }, 40);
             
         }, function(){
-            $(".homepage_cards_hover").fadeOut(50, function(){
-                $(".homepage_cards_default").fadeIn(50);
+            $(".homepage_cards_hover").fadeOut(20, function(){
+                $(".homepage_cards_default").fadeIn(20);
             });
-            $(this).animate({backgroundColor : "#FFFFFF" }, 100);
+            $(this).animate({backgroundColor : "#FFFFFF" }, 40);
         });
         
         
@@ -274,6 +274,11 @@ You can checkout the sessions submitted for Techlash <a href="https://barcampban
             <div class="homepage_sponsor_card col-xs-6 col-md-4">
                 <div class="homepage_sponsor_heading">Supported by</div>
                 <div class="homepage_sponsor_logo_wrapper" ><a href="http://janastu.org/main.html"><img alt="Janastu" title="Janastu" class="homepage_sponsor_logo" src="<?php bloginfo('template_url')  ?>/images/sponz_logos/janastu_logo.gif" /></a></div>
+            </div>
+            
+            <div class="homepage_sponsor_card col-xs-6 col-md-4">
+                <div class="homepage_sponsor_heading">Friend of Barcamp</div>
+                <div class="homepage_sponsor_logo_wrapper" ><a href="http://styletag.com"><img alt="Styletag" title="Styletag" class="homepage_sponsor_logo_styletag" src="<?php bloginfo('template_url')  ?>/images/sponz_logos/styletag-logo.png" /></a></div>
             </div>
         </div>
     </div>
