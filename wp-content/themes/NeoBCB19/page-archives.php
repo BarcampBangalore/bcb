@@ -262,7 +262,7 @@ function insertSponsors($bcbname)
 
 get_header(); ?>
 
-<div id="sessionpage_wrapper" class="centered_background">
+<div id="archives_page_wrapper" class="centered_background">
 
     <script type="text/javascript">
             
@@ -363,7 +363,38 @@ get_header(); ?>
             
     </script>
 
-
+    <div id="archives_page_content">
+        
+        <div class="container">
+            <div class="row">
+                <div id="archives_page_header" class="col-xs-12 single_page_box">
+                    <div id="archives_page_title"><?php  the_title(); ?></div>
+                    <div id="archives_page_bcb_selector_buttons">
+                        <ul id="archives_page_bcb_selector">
+                        <li class="archive_selected"><a data-contentdiv="archive_bcbxah">BCBX AntHill</a></li>
+                        <li><a data-contentdiv="archive_bcb17">BCB17</a></li> 
+                        <li><a data-contentdiv="archive_bcb16">BCB16</a></li>
+                        <li><a data-contentdiv="archive_bcb15">BCB15</a></li>
+                        <li><a data-contentdiv="archive_bcb14">BCB14</a></li>
+                        <li><a data-contentdiv="archive_bcb13">BCB13</a></li>
+                        <li><a data-contentdiv="archive_bcb12">BCB12</a></li>
+                        <li><a data-contentdiv="archive_bcb11">BCB11</a></li>
+                        <li><a data-contentdiv="archive_bcb10">BCB10</a></li>
+                        <li><a data-contentdiv="archive_bcb9">BCB9</a></li>
+                        <li><a data-contentdiv="archive_bcb8">BCB8</a></li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+        </div>
+        
+    </div>
+    
+    
+    
 
     <div id="sessionpage_content">
 

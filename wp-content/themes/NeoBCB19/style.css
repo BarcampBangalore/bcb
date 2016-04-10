@@ -1817,7 +1817,7 @@ SPECIAL CARDS
 
 .attending_user
 {
-    color: #888888;
+    color: #545454;
     display: inline-block;
     padding: 1px 5px;
     cursor: pointer;
@@ -2304,6 +2304,38 @@ SPECIAL CARDS
 
 }
 
+
+#archives_page_content {
+    background-color: #222222;
+}
+
+
+
+
+#archives_page_title {
+    font-size: 28px;
+}
+
+#archives_page_bcb_selector {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+#archives_page_bcb_selector li {
+    display: inline-block;
+    background-color: #DEDEDE;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px #999999;
+    margin-right: 2px;
+}
+
+
+
 #archivelinks
 {
     list-style: none;
@@ -2402,6 +2434,7 @@ SPECIAL CARDS
     max-width: 100px;
     max-height: 50px;
 }
+
 
 
 #sponsors_div
