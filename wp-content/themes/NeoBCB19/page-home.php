@@ -7,17 +7,17 @@
         
         $(".homepage_cards").hover(function(){
             
-            $(".homepage_cards_default").fadeOut(20, function(){
-                $(".homepage_cards_hover").fadeIn(20);
+            $(".homepage_cards_default").hide(0, function(){
+                $(".homepage_cards_hover").show(0);
             });
             
-            $(this).animate({backgroundColor : "#F7921D" }, 40);
+            $(this).animate({backgroundColor : "#F7921D" }, 200);
             
         }, function(){
-            $(".homepage_cards_hover").fadeOut(20, function(){
-                $(".homepage_cards_default").fadeIn(20);
+            $(".homepage_cards_hover").hide(0, function(){
+                $(".homepage_cards_default").show(0);
             });
-            $(this).animate({backgroundColor : "#FFFFFF" }, 40);
+            $(this).animate({backgroundColor : "#FFFFFF" }, 200);
         });
         
         
