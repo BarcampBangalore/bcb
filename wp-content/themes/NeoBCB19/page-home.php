@@ -45,31 +45,31 @@
 
         <div id="homepage_ct1_r2" class="row">
             <div class="col-xs-12 col-sm-6 col-md-5 col-md-offset-1 col-lg-2 col-lg-offset-3">
-                <div class="homepage_cards">
-                    <span id="top" class="homepage_cards_default" > APRIL 30</span><br/>
-                   <span id="bottom"  class="homepage_cards_default">TWO THOUSAND AND SIXTEEN</span>
-                   <a href="<?php echo get_bloginfo('template_url') . '/barcamp-spring-2016.ics' ?>">
-                       <img src="<?php echo get_bloginfo('template_url') . '/images/icon-CAL.png' ?>"  class="homepage_cards_hover" />
-                   </a>
-                </div>
+                <a href="<?php echo get_bloginfo('template_url') . '/barcamp-spring-2016.ics' ?>">
+                    <div class="homepage_cards">
+                        <span id="top" class="homepage_cards_default" > APRIL 30</span><br/>
+                        <span id="bottom"  class="homepage_cards_default">TWO THOUSAND AND SIXTEEN</span>
+                        <img src="<?php echo get_bloginfo('template_url') . '/images/icon-CAL.png' ?>"  class="homepage_cards_hover" />
+                    </div>
+                </a>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-5 col-lg-2">
-                <div class="homepage_cards">
-                    <span id="top" class="homepage_cards_default">8am</span><br>
-                    <span id="bottom" class="homepage_cards_default">in the morning</span>
-                    <a href="<?php echo get_bloginfo('template_url') . '/barcamp-spring-2016.ics' ?>">
+                <a href="<?php echo get_bloginfo('template_url') . '/barcamp-spring-2016.ics' ?>">
+                    <div class="homepage_cards">
+                        <span id="top" class="homepage_cards_default">8am</span><br>
+                        <span id="bottom" class="homepage_cards_default">in the morning</span>
                         <img src="<?php echo get_bloginfo('template_url') . '/images/icon-CAL.png' ?>" class="homepage_cards_hover" />
-                    </a>
-                </div>
+                    </div>
+                </a>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-5 col-lg-2">
-                <div class="homepage_cards">
-                    <span id="top" class="homepage_cards_default">CMRIT</span><br>
-                    <span id="bottom" class="homepage_cards_default">Whitefield, Bangalore</span>
-                    <a href="https://goo.gl/sgjNTV" target="_blank">
+                <a href="https://goo.gl/sgjNTV" target="_blank">
+                    <div class="homepage_cards">
+                        <span id="top" class="homepage_cards_default">CMRIT</span><br>
+                        <span id="bottom" class="homepage_cards_default">Whitefield, Bangalore</span>
                         <img src="<?php echo get_bloginfo('template_url') . '/images/icon-MAP.png' ?>" class="homepage_cards_hover" />
-                    </a>
-                </div>
+                    </div>
+                </a>
             </div>
         </div>
         <div id="homepage_ct1_r3" class="row">
