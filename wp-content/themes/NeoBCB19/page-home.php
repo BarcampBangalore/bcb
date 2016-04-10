@@ -281,30 +281,40 @@ You can checkout the sessions submitted for Techlash <a href="https://barcampban
             Meet the Planners
         </div>
         <div id="homepage_planners_description row">
-            <div class="homepage_planner_card col-xs-4 col-md-2 col-md-offset-1">
+            <div class="homepage_planner_card col-xs-4 col-md-3">
                 <img class="homepage_planner_pic" src="<?php echo get_bloginfo('template_url').'/images/team/saurabh.jpg' ?>" />
                 <div class="homepage_planner_name">Saurabh Minni</div>
                 <div><a href="https://twitter.com/the100rabh">@the100rabh</a></div>
             </div>
-            <div class="homepage_planner_card col-xs-4 col-md-2">
+            <div class="homepage_planner_card col-xs-4 col-md-3">
                 <img class="homepage_planner_pic" src="<?php echo get_bloginfo('template_url').'/images/team/sathya.jpg' ?>" />
                 <div class="homepage_planner_name">Sathyajith Bhat</div>
                 <div><a href="https://twitter.com/SathyaBhat">@SathyaBhat</a></div>
             </div>
-            <div class="homepage_planner_card col-xs-4 col-md-2">
+            <div class="homepage_planner_card col-xs-4 col-md-3">
                 <img class="homepage_planner_pic" src="<?php echo get_bloginfo('template_url').'/images/team/aman.jpg' ?>" />
                 <div class="homepage_planner_name">Aman Manglik</div>
                 <div><a href="https://twitter.com/amanmanglik">@amanmanglik</a></div>
             </div>
-            <div class="homepage_planner_card col-xs-4 col-md-2">
+            <div class="homepage_planner_card col-xs-4 col-md-3">
                 <img class="homepage_planner_pic" src="<?php echo get_bloginfo('template_url').'/images/team/daaku.jpg' ?>" />
                 <div class="homepage_planner_name">Amit Khare</div>
                 <div><a href="https://twitter.com/daaku">@daaku</a></div>
             </div>
-            <div class="homepage_planner_card col-xs-4 col-md-2">
+            <div class="homepage_planner_card col-xs-4 col-md-3">
                 <img class="homepage_planner_pic" src="<?php echo get_bloginfo('template_url').'/images/team/vivek.jpg' ?>" />
                 <div class="homepage_planner_name">Vivek</div>
                 <div><a href="https://twitter.com/ivivekkm">@ivivekkm</a></div>
+            </div>
+            <div class="homepage_planner_card col-xs-4 col-md-3">
+                <img class="homepage_planner_pic" src="<?php echo get_bloginfo('template_url').'/images/team/parth.png' ?>" />
+                <div class="homepage_planner_name">Parth</div>
+                <div><a href="https://twitter.com/pslashb">@pslashb</a></div>
+            </div>
+            <div class="homepage_planner_card col-xs-4 col-md-3">
+                <img class="homepage_planner_pic" src="<?php echo get_bloginfo('template_url').'/images/team/arunteja.jpg' ?>" />
+                <div class="homepage_planner_name">Arun Teja</div>
+                <div><a href="https://twitter.com/aruntejagod">@aruntejagod</a></div>
             </div>
         </div>
 
