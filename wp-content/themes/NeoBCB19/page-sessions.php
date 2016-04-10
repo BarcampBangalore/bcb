@@ -164,31 +164,31 @@ an awesome chart of where people converge at the venue from.
 
 
         <div id="sessions_page_track_buttons_container"  class="col-md-1">
-            <div class="sessions_page_track_button track_color_bg_1459" onclick="showOnly(1062)" data-track-id="1062">
+            <div class="sessions_page_track_button track_color_bg_1564" onclick="showOnly(1564)" data-track-id="1564">
                 <img src="<?php echo get_bloginfo('template_url').'/images/icons-11.png' ?>" />
                 <span class="sessions_page_track_icon_name">Bangalore & Lifestyle</span>
             </div>
-            <div class="sessions_page_track_button track_color_bg_1460" onclick="showOnly(1058)" data-track-id="1058">
+            <div class="sessions_page_track_button track_color_bg_1557" onclick="showOnly(1557)" data-track-id="1557">
                 <img src="<?php echo get_bloginfo('template_url').'/images/icons-12.png' ?>" />
                 <span class="sessions_page_track_icon_name">Scaling & Infrastructure</span>
             </div>
-            <div class="sessions_page_track_button track_color_bg_1461" onclick="showOnly(1063)" data-track-id="1063">
+            <div class="sessions_page_track_button track_color_bg_1558" onclick="showOnly(1558)" data-track-id="1558">
                 <img src="<?php echo get_bloginfo('template_url').'/images/icons-13.png' ?>" />
                 <span class="sessions_page_track_icon_name">Design</span>
             </div>
-            <div class="sessions_page_track_button track_color_bg_1462" onclick="showOnly(1059)" data-track-id="1059">
+            <div class="sessions_page_track_button track_color_bg_1559" onclick="showOnly(1559)" data-track-id="1559">
                 <img src="<?php echo get_bloginfo('template_url').'/images/icons-14.png' ?>" />
                 <span class="sessions_page_track_icon_name">Mobile & Web</span>
             </div>
-            <div class="sessions_page_track_button track_color_bg_1463" onclick="showOnly(1064)" data-track-id="1064">
+            <div class="sessions_page_track_button track_color_bg_1560" onclick="showOnly(1560)" data-track-id="1560">
                 <img src="<?php echo get_bloginfo('template_url').'/images/icons-15.png' ?>" />
                 <span class="sessions_page_track_icon_name">Entrepreneurship</span>
             </div>
-            <div class="sessions_page_track_button track_color_bg_1464" onclick="showOnly(1061)" data-track-id="1061">
+            <div class="sessions_page_track_button track_color_bg_1561" onclick="showOnly(1561)" data-track-id="1561">
                 <img src="<?php echo get_bloginfo('template_url').'/images/icons-16.png' ?>" />
                 <span class="sessions_page_track_icon_name">Rest of the world</span>
             </div>
-            <div class="sessions_page_track_button track_color_bg_1466" onclick="showOnly(1060)" data-track-id="1060">
+            <div class="sessions_page_track_button track_color_bg_1563" onclick="showOnly(1563)" data-track-id="1563">
                 <img src="<?php echo get_bloginfo('template_url').'/images/icons-17.png' ?>" />
                 <span class="sessions_page_track_icon_name">Technology</span>
             </div>
@@ -201,10 +201,10 @@ an awesome chart of where people converge at the venue from.
 
 
                     <?php
+                    
+                    $tracks = array(1564, 1557, 1558, 1559, 1560, 1561, 1563);
 
-                    $tracks = array(1062, 1058, 1063, 1059, 1064, 1061, 1060);
-
-                    $sessionsloop = new WP_Query(array('cat' => '1062, 1058, 1063, 1059, 1064, 1061, 1060'));
+                    $sessionsloop = new WP_Query(array('cat' => '1564, 1557, 1558, 1559, 1560, 1561, 1563'));
 
                     if (!$sessionsloop->have_posts()) {
                         echo '<div class="sessioncard_no_session_message">No sessions in this track yet :)</div>';

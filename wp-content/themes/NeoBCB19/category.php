@@ -1,6 +1,6 @@
 <?php 
 
-wp_safe_redirect( get_page_link(1458) );
+wp_safe_redirect( get_page_link(1556) );
 die();
 
 get_header(); 
