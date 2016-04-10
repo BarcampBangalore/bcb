@@ -2804,3 +2804,15 @@ position: relative;
     font-family: roboto;
     font-weight: 100;
 }
+
+#page_title {
+    font-size: 24px;
+}
+
+
+#page_content {
+    background-color: #222222;
+    background-image: url('images/sessions_list_background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
