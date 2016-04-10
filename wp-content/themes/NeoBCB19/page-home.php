@@ -195,7 +195,7 @@ You can checkout the sessions submitted for Techlash <a href="https://barcampban
         <br />
         <h3>Who can present sessions?</h3>
 
-        We encourage presentations of all kinds and on any topic. You do not need to be an expert in the field of your topic. Share something you are passionate about, talk about your interests, job or hobby. Click <a href="https://barcampbangalore.org/bcb/add-a-session">here to add</a> your session [add link].
+        We encourage presentations of all kinds and on any topic. You do not need to be an expert in the field of your topic. Share something you are passionate about, talk about your interests, job or hobby. Click <a href="https://barcampbangalore.org/bcb/add-a-session">here to add</a> your session.
 
         <br />
         <h3>Is it necessary to present a session?</h3>
@@ -210,12 +210,12 @@ You can checkout the sessions submitted for Techlash <a href="https://barcampban
         <br />
         <h3>How are sessions chosen? I have submitted my talk - is it finalized? Can I get a slot at a specific time?</h3>
 
-        In true BarCamp fashion, the sessions list is not finalized and time slots are not fixed till the day of the event. On the event day, the talks are finalized on first come basis. Our well designed, patent-pending(well, not really) algorithmic session scheduler will assign slots to the speakers with a focus on reducing session clashes. See our post on how the <a href="https://barcampbangalore.org/planning/session-schedules-barcamp-and-you/">session scheduling works</a> for details [add link to blog post].
+        In true BarCamp fashion, the sessions list is not finalized and time slots are not fixed till the day of the event. On the event day, the talks are finalized on first come basis. Our well designed, patent-pending(well, not really) algorithmic session scheduler will assign slots to the speakers with a focus on reducing session clashes. See our post on how the <a href="https://barcampbangalore.org/planning/session-schedules-barcamp-and-you/">session scheduling works</a> for details.
 
         <br />
         <h3>What are the session topics?</h3>
 
-        You can view the list of proposed sessions here [add link].
+        You can view the list of <a href="https://barcampbangalore.org/bcb/sessions">proposed sessions here</a>.
 
         <br />
         <h3>How should I present a session?</h3>
@@ -250,7 +250,7 @@ You can checkout the sessions submitted for Techlash <a href="https://barcampban
         <br />
         <h3>Where and when is BarCamp Bangalore?</h3>
 
-        The event takes place on April 30th, Saturday from 8:00 AM onwards at CMRIT Whitefield, Bangalore [add link to G Maps].
+        The event takes place on April 30th, Saturday from 8:00 AM onwards at <a href="https://goo.gl/maps/2DzyjM9h9nJ2">CMRIT Whitefield, Bangalore</a>.
         
         <br />
         <h3>Is there any BarCamp app?</h3>
