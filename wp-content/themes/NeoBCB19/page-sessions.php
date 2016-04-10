@@ -51,7 +51,7 @@ an awesome chart of where people converge at the venue from.
 
                 $(".sessions_page_track_button").hover(function(){
                     
-                    $(this).animate({width: '150px'}, 300);
+                    $(this).animate({width: '200px'}, 300);
                     $(this).find(".sessions_page_track_icon_name").show(300);
                 
                 }, function(){
@@ -166,31 +166,31 @@ an awesome chart of where people converge at the venue from.
         <div id="sessions_page_track_buttons_container"  class="col-md-1">
             <div class="sessions_page_track_button track_color_bg_1459" onclick="showOnly(1062)" data-track-id="1062">
                 <img src="<?php echo get_bloginfo('template_url').'/images/icons-11.png' ?>" />
-                <span class="sessions_page_track_icon_name">Lifestyle</span>
+                <span class="sessions_page_track_icon_name">Bangalore & Lifestyle</span>
             </div>
             <div class="sessions_page_track_button track_color_bg_1460" onclick="showOnly(1058)" data-track-id="1058">
                 <img src="<?php echo get_bloginfo('template_url').'/images/icons-12.png' ?>" />
-                <span class="sessions_page_track_icon_name">Design</span>
+                <span class="sessions_page_track_icon_name">Scaling & Infrastructure</span>
             </div>
             <div class="sessions_page_track_button track_color_bg_1461" onclick="showOnly(1063)" data-track-id="1063">
                 <img src="<?php echo get_bloginfo('template_url').'/images/icons-13.png' ?>" />
-                <span class="sessions_page_track_icon_name">Web</span>
+                <span class="sessions_page_track_icon_name">Design</span>
             </div>
             <div class="sessions_page_track_button track_color_bg_1462" onclick="showOnly(1059)" data-track-id="1059">
                 <img src="<?php echo get_bloginfo('template_url').'/images/icons-14.png' ?>" />
-                <span class="sessions_page_track_icon_name">Technology</span>
+                <span class="sessions_page_track_icon_name">Mobile & Web</span>
             </div>
             <div class="sessions_page_track_button track_color_bg_1463" onclick="showOnly(1064)" data-track-id="1064">
                 <img src="<?php echo get_bloginfo('template_url').'/images/icons-15.png' ?>" />
-                <span class="sessions_page_track_icon_name">Lifestyle</span>
+                <span class="sessions_page_track_icon_name">Entrepreneurship</span>
             </div>
             <div class="sessions_page_track_button track_color_bg_1464" onclick="showOnly(1061)" data-track-id="1061">
                 <img src="<?php echo get_bloginfo('template_url').'/images/icons-16.png' ?>" />
-                <span class="sessions_page_track_icon_name">Lifestyle</span>
+                <span class="sessions_page_track_icon_name">Rest of the world</span>
             </div>
             <div class="sessions_page_track_button track_color_bg_1466" onclick="showOnly(1060)" data-track-id="1060">
                 <img src="<?php echo get_bloginfo('template_url').'/images/icons-17.png' ?>" />
-                <span class="sessions_page_track_icon_name">Lifestyle</span>
+                <span class="sessions_page_track_icon_name">Technology</span>
             </div>
         </div>
 
