@@ -696,6 +696,7 @@ background-color: #0A0A0A;
     width: 160px;
     text-align: center;
     text-transform: uppercase;
+    position: relative;
 }
 .homepage_cards #top{
     font-size: 32px;
@@ -704,6 +705,18 @@ background-color: #0A0A0A;
 
 .homepage_cards #bottom{
     font-size: 10px;
+}
+
+.homepage_cards_default {
+    /*display: none;*/
+}
+
+.homepage_cards_hover {
+    width: 75px;
+    position: relative;
+    top: -26px;
+    display: none;
+    
 }
 
 #techlash_ct1 {

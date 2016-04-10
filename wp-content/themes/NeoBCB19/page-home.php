@@ -1,5 +1,37 @@
 <?php get_header(); ?>
 
+<script type="text/javascript">
+
+    $(function(){
+        
+        
+        $(".homepage_cards").hover(function(){
+            
+            $(".homepage_cards_default").fadeOut(50, function(){
+                $(".homepage_cards_hover").fadeIn(50);
+            });
+            
+            $(this).animate({backgroundColor : "#F7921D" }, 100);
+            
+        }, function(){
+            $(".homepage_cards_hover").fadeOut(50, function(){
+                $(".homepage_cards_default").fadeIn(50);
+            });
+            $(this).animate({backgroundColor : "#FFFFFF" }, 100);
+        });
+        
+        
+        
+        
+        
+        
+    });
+
+
+
+
+
+</script>
 
 
 <div id="homepage_cb1" style="background-image: url('<?php echo get_bloginfo('template_url').'/images/coffee.jpg' ?>'); background-color: #fff ">
@@ -14,32 +46,28 @@
         <div id="homepage_ct1_r2" class="row">
             <div class="col-xs-12 col-sm-6 col-md-5 col-md-offset-1 col-lg-2 col-lg-offset-3">
                 <div class="homepage_cards">
-                    <!-- <a target="_blank" data-toggle="tooltip" title="Add to Google Calendar" href="https://www.google.com/calendar/event?action=TEMPLATE&tmeid=Z3YwcG04c3J2Z2IyN3MxaG41c2tudDYxanMgdTY1OGYxam83cmI2MXBmcGdhYjdlZnRyaHNAZw&trp=false&tmsrc=u658f1jo7rb61pfpgab7eftrhs%40group.calendar.google.com">
-                    <img src="<?php echo get_bloginfo('template_url').'/images/calendar-icon_white.png' ?>" />
-                    1st November 2015<br>
-                    8:00 AM
-                   </a> -->
-                   <span id="top" > APRIL 30</span><br/>
-                   <span id="bottom">TWO THOUSAND AND SIXTEEN</span>
+                    <span id="top" class="homepage_cards_default" > APRIL 30</span><br/>
+                   <span id="bottom"  class="homepage_cards_default">TWO THOUSAND AND SIXTEEN</span>
+                   <a href="<?php echo get_bloginfo('template_url') . '/barcamp-spring-2016.ics' ?>">
+                       <img src="<?php echo get_bloginfo('template_url') . '/images/icon-CAL.png' ?>"  class="homepage_cards_hover" />
+                   </a>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-5 col-lg-2">
                 <div class="homepage_cards">
-                    <!-- <a target="_blank" href="https://www.google.co.in/maps/place/CMRIT/@12.9666193,77.7117629,17z/data=!3m1!4b1!4m2!3m1!1s0x3bae1225e87bd8f5:0x7896436c100b0272?hl=en">
-                        <img src="<?php echo get_bloginfo('template_url').'/images/map-icon_white.png' ?>" /> -->
-
-                    <span id="top">8am</span><br>
-                    <span id="bottom">in the the morning</span>
+                    <span id="top" class="homepage_cards_default">8am</span><br>
+                    <span id="bottom" class="homepage_cards_default">in the morning</span>
+                    <a href="<?php echo get_bloginfo('template_url') . '/barcamp-spring-2016.ics' ?>">
+                        <img src="<?php echo get_bloginfo('template_url') . '/images/icon-CAL.png' ?>" class="homepage_cards_hover" />
                     </a>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-5 col-lg-2">
                 <div class="homepage_cards">
-                    <!-- <a target="_blank" href="https://www.google.co.in/maps/place/CMRIT/@12.9666193,77.7117629,17z/data=!3m1!4b1!4m2!3m1!1s0x3bae1225e87bd8f5:0x7896436c100b0272?hl=en">
-                        <img src="<?php echo get_bloginfo('template_url').'/images/map-icon_white.png' ?>" /> -->
-
-                    <span id="top">CMRIT</span><br>
-                    <span id="bottom">Whitefield, Bangalore</span>
+                    <span id="top" class="homepage_cards_default">CMRIT</span><br>
+                    <span id="bottom" class="homepage_cards_default">Whitefield, Bangalore</span>
+                    <a href="https://goo.gl/sgjNTV" target="_blank">
+                        <img src="<?php echo get_bloginfo('template_url') . '/images/icon-MAP.png' ?>" class="homepage_cards_hover" />
                     </a>
                 </div>
             </div>
