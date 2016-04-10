@@ -42,7 +42,7 @@ foreach($post_categories as $c)
         $(function(){
 				
         	
-            $("#sessionpage_rightmeta").on("click", ".neo_attend_button", function(){
+            $("#single_page_attend_area").on("click", ".neo_attend_button", function(){
                 var card = $(this);
                 
                 card.html('<img src="<?php bloginfo('template_url') ?>/images/ajaxloader.gif" />');
@@ -61,8 +61,8 @@ foreach($post_categories as $c)
                     else
                     {
                         
-                        $("#sessionpage_attending_count").html(data.attendees_count + " Attending");
-                        $("#sessionpage_userlist").html(data.attendees_list);
+                        $("#single_page_attendees_count").html(data.attendees_count + " Attending");
+                        $("#single_page_attendees_list").html(data.attendees_list);
                         card.parent().html(data.button_text); 
                     }
                 }, 'json'); 
@@ -108,7 +108,7 @@ foreach($post_categories as $c)
 
                                 <div id="single_page_attendees_header">
                                     <img id="single_page_attendees_icon" src="<?php echo get_bloginfo('template_url').'/images/icons-20.png' ?>">
-                                    <?php echo attending_users_count(get_the_ID()) ?> Attending
+                                    <span id="single_page_attendees_count"><?php echo attending_users_count(get_the_ID()) ?> Attending</span>
                                 </div>
                                 <div id="single_page_attendees_list">
                                     <?php   echo get_attending_users_links(get_the_ID(), "", "&bull;");  ?>

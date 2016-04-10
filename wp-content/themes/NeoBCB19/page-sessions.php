@@ -21,7 +21,7 @@ an awesome chart of where people converge at the venue from.
 
   
 
-                $(".sessioncard_footer").on("click", ".neo_attend_button", function() {
+                $(".sessions_page_card_attend_button").on("click", ".neo_attend_button", function() {
                     
                     var card = $(this);
                     card.html('<img src="<?php bloginfo('template_url') ?>/images/ajaxloader.gif" />');
@@ -40,7 +40,7 @@ an awesome chart of where people converge at the venue from.
                         else
                         {
 
-                            $("#sessioncard" + card.data("postid") + " .sessioncard_attendees_link .sessioncard_meta_text").html(data.attendees_count );
+                            $("#sessions_page_card_attendees_count_" + card.data("postid")).html(data.attendees_count );
                             card.parent().html(data.button_text);
                         }
                     }, 'json');
@@ -268,12 +268,12 @@ an awesome chart of where people converge at the venue from.
                                                 <div class="sessions_page_card_attendees_icon">
                                                     <img src="<?php echo get_bloginfo('template_url').'/images/icons-20.png' ?>" />
                                                 </div>
-                                                <div class="sessions_page_card_attendees_count">
+                                                <div id="sessions_page_card_attendees_count_<?php echo get_the_ID();  ?>" class="sessions_page_card_attendees_count">
                                                     <?php echo attending_users_count(get_the_ID()) ?>
                                                 </div>
                                             </div>
 
-                                            <div class="sessions_page_card_attend_button">
+                                            <div class="sessions_page_card_attend_button" data-postid="<?php echo get_the_ID(); ?>">
                                                 <?php echo get_my_attending_button(get_the_ID()); ?>
                                             </div>
                                         </div>

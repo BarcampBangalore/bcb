@@ -625,6 +625,7 @@ background-color: #0A0A0A;
 #single_page_attend_area {
     float: right;
     border-left: 1px solid #888888;
+    cursor: pointer;
 }
 
 #single_page_attend_area img{
