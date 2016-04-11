@@ -2351,69 +2351,27 @@ SPECIAL CARDS
 
 #archives_page_bcb_selector li {
     display: inline-block;
-    background-color: #DEDEDE;
+    background-color: #EAEAEA;
     padding: 5px 10px;
     border-radius: 5px;
     box-shadow: 1px 1px 2px #999999;
     margin-right: 2px;
 }
 
-
-
-#archivelinks
-{
-    list-style: none;
-    margin: 0px;
-    padding: 0px;
-    text-align: center;
-    letter-spacing: -4px;
-    border-radius: 3px;
-    overflow: hidden;
-    padding: 0;
-}
-
-#archivelinks li
-{
-    display: inline-block;
-    letter-spacing: 0;
-    background-color: #E4460B;
-    border-radius: 0px;
-    opacity: .8;
-    border-left: 1px solid white;
-    border-bottom: 1px solid white;
-}
-
-#archivelinks li:first-child
-{
-    border-radius: 4px 0 0 4px;
-}
-#archivelinks li:last-child
-{
-    border-radius: 0px 4px 4px 0px;
-}
-
-#archivelinks li:hover
-{
-    background-color: #CA4514;
-}
-
-#archivelinks a
-{
-    color: #fff;
+#archives_page_bcb_selector a {
     cursor: pointer;
-    padding: 15px 22px;
-    display: block;
-    font-weight: bold;
 }
 
 
-#archivelinks .archive_selected
+
+
+#archives_page_bcb_selector .archive_selected
 {
     background-color: #CA4514;
     opacity: 1;
 }
 
-#archivelinks .archive_selected a
+#archives_page_bcb_selector .archive_selected a
 {
     color: #fff;
 }
@@ -2662,6 +2620,10 @@ SPECIAL CARDS
     background-color: #9E2B1C;
 }
 
+.track_color_border_archive {
+    border-color: #9E2B1C;
+    border-style: solid;
+}
 
 
 #video_embed_container
