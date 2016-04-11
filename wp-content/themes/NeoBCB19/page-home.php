@@ -140,7 +140,9 @@ Registration is a simple process
 <li>
 Click on <a href="https://barcampbangalore.org/bcb/wp-login.php?action=register">Sign-Up</a> (or <a href="https://barcampbangalore.org/bcb/wp-login.php?redirect_to=https%3A%2F%2Fbarcampbangalore.org%2Fbcb%2F">Login</a> if you already have an existing account) to register.</li>
 <li>
-Head over to the <a href="https://barcampbangalore.org/bcb/sessions">Proposed Sessions</a> page and browse the various sessions. Once you find a session you are interested in, click on “I wanna attend”. </li>
+Head over to the <a href="https://barcampbangalore.org/bcb/sessions">Proposed Sessions</a> page 
+and browse the various sessions. Once you find a session you are interested in, 
+click on "I wanna attend" <span class="homepage_wanna_attend_icon"><img src="<?php echo get_bloginfo('template_url')?>/images/icons-18.png" title="I wanna attend" alt="I wanna attend" /></span>. </li>
 </ul>
 
 To propose a session:
@@ -150,8 +152,8 @@ To propose a session:
 <li>If you intend to present a short demo about your cutting edge technology or revolutionizing product, <a href="https://barcampbangalore.org/bcb/techlash">Techlash</a> might be a better option. Select the category as “Techlash” in this case.</li>
 <li>Only 36 slots are available on first come first serve basis. Please be at the venue by 8:00 AM to ensure that you get a slot.</li>
 </ul>
-To ensure that there’s minimal session overlap, do visit the sessions page daily and click on 
-<span class="homepage_wanna_attend_icon"><img src="<?php echo get_bloginfo('template_url')?>/images/icons-18.png" /></span>
+To ensure that there’s minimal session overlap, do visit the sessions page daily and click on "I wanna attend" 
+<span class="homepage_wanna_attend_icon"><img src="<?php echo get_bloginfo('template_url')?>/images/icons-18.png" title="I wanna attend" alt="I wanna attend" /></span>
 on the session proposals which interest you.
 
 
@@ -207,8 +209,8 @@ You can checkout the sessions submitted for Techlash <a href="https://barcampban
         <br />
         <h3>Do I need to register for a session to attend it?</h3>
 
-        We recommend that you select the sessions you are interested in and click 
-        <span class="homepage_wanna_attend_icon"><img src="<?php echo get_bloginfo('template_url')?>/images/icons-18.png" /></span>
+        We recommend that you select the sessions you are interested in and click on "I wanna attend" 
+        <span class="homepage_wanna_attend_icon"><img src="<?php echo get_bloginfo('template_url')?>/images/icons-18.png" title="I wanna attend" alt="I wanna attend" /></span>
             so we have an idea about which sessions are popular and we can minimise the scheduling clashes.
 
         <br />
