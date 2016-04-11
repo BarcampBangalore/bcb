@@ -452,8 +452,7 @@ background-color: #0A0A0A;
 }
 
 #sessions_page_track_buttons_container {
-
-
+    z-index: 5000;
 }
 
 .sessions_page_track_button {
@@ -473,7 +472,7 @@ background-color: #0A0A0A;
 
 
 #sessions_page_list_container {
-
+    
 }
 
 .sessions_page_card_content {
@@ -484,6 +483,7 @@ background-color: #0A0A0A;
 
 .sessions_page_card_avatar {
     padding: 0px;
+    text-align: center;
 }
 
 .sessions_page_card_avatar a img {

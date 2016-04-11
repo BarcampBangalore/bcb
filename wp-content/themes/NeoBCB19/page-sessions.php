@@ -163,7 +163,7 @@ an awesome chart of where people converge at the venue from.
         </script>
 
 
-        <div id="sessions_page_track_buttons_container"  class="col-md-1">
+        <div id="sessions_page_track_buttons_container"  class="col-xs-12 col-sm-1">
             <div class="sessions_page_track_button track_color_bg_1564" onclick="showOnly(1564)" data-track-id="1564">
                 <img src="<?php echo get_bloginfo('template_url').'/images/icons-11.png' ?>" />
                 <span class="sessions_page_track_icon_name">Bangalore & Lifestyle</span>
@@ -195,7 +195,7 @@ an awesome chart of where people converge at the venue from.
         </div>
 
 
-        <div id="sessions_page_list_container" class="col-md-11 ">
+        <div id="sessions_page_list_container" class="col-xs-11 ">
             <div class="container">
                 <div class="row">
 
@@ -229,7 +229,7 @@ an awesome chart of where people converge at the venue from.
 
                         ?>
 
-                        <div class="sessions_page_card col-md-4" data-track-id="<?php echo $track_id; ?>">
+                        <div class="sessions_page_card col-xs-12 col-sm-6 col-md-6 col-lg-4" data-track-id="<?php echo $track_id; ?>">
                             <div class="sessions_page_card_content container-fluid track_color_border_<?php echo $track_id; ?>">
                                 <div class="row">
                                     <div class="sessions_page_card_avatar col-xs-2">
