@@ -869,6 +869,11 @@ width: 100%;
 #homepage_how_to_register_description a{
     color: #fff;
 }
+
+.homepage_wanna_attend_icon img {
+    width: 30px;
+}
+
 #homepage_cb4 {
     background-color: #F7921C;
 }

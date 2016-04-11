@@ -150,7 +150,9 @@ To propose a session:
 <li>If you intend to present a short demo about your cutting edge technology or revolutionizing product, <a href="https://barcampbangalore.org/bcb/techlash">Techlash</a> might be a better option. Select the category as “Techlash” in this case.</li>
 <li>Only 36 slots are available on first come first serve basis. Please be at the venue by 8:00 AM to ensure that you get a slot.</li>
 </ul>
-To ensure that there’s minimal session overlap, do visit the sessions page daily and click on “I’m attending” on the session proposals which interest you.
+To ensure that there’s minimal session overlap, do visit the sessions page daily and click on 
+<span class="homepage_wanna_attend_icon"><img src="<?php echo get_bloginfo('template_url')?>/images/icons-18.png" /></span>
+on the session proposals which interest you.
 
 
         </div>
@@ -205,7 +207,9 @@ You can checkout the sessions submitted for Techlash <a href="https://barcampban
         <br />
         <h3>Do I need to register for a session to attend it?</h3>
 
-        We recommend that you select the sessions you are interested in and click “I wanna attend” so we have an idea about which sessions are popular and we can minimise the scheduling clashes.
+        We recommend that you select the sessions you are interested in and click 
+        <span class="homepage_wanna_attend_icon"><img src="<?php echo get_bloginfo('template_url')?>/images/icons-18.png" /></span>
+            so we have an idea about which sessions are popular and we can minimise the scheduling clashes.
 
         <br />
         <h3>How are sessions chosen? I have submitted my talk - is it finalized? Can I get a slot at a specific time?</h3>
@@ -324,7 +328,7 @@ You can checkout the sessions submitted for Techlash <a href="https://barcampban
             <div class="homepage_planner_card col-xs-4 col-md-2">
                 <img class="homepage_planner_pic" src="<?php echo get_bloginfo('template_url').'/images/team/eswar.jpg' ?>" />
                 <div class="homepage_planner_name">Eswar</div>
-                <!--<div><a href="https://twitter.com/aruntejagod">@aruntejagod</a></div>-->
+                <div><a href="https://twitter.com/eswar_001">@eswar_001</a></div>
             </div>
         </div>
 
