@@ -164,15 +164,15 @@ autoOpen: false,
         <div id="header_container" class="header_container">
 <div id="header">
 
-    <a href="https://barcampbangalore.org/planning">Our Story</a>
+    <a href="https://barcampbangalore.org/planning" target="_blank">Our Story</a>
     <a href="<?php echo get_permalink( get_page_by_path( 'sessions' ) ) ?>">Proposed Sessions</a>
     <a href="<?php echo get_permalink( get_page_by_path( 'add-a-session' ) ) ?>">Add a Session</a>
-    <a href="http://barcampbangalore.org/bcb/live/schedule">Schedule</a>
+    <a href="http://barcampbangalore.org/bcb/live/schedule" target="_blank">Schedule</a>
     <a href="<?php echo home_url(); ?>">
     <img height=125 src="<?php bloginfo('template_url'); ?>/images/header-05-logo.png"></a>
     <a href="<?php echo get_permalink( get_page_by_path( 'techlash' ) ) ?>">Techlash</a>
     <a href="<?php echo get_permalink( get_page_by_path( 'videos' ) ) ?>">Videos</a>
-    <a href="https://barcampbangalore.org/planning/sponsorship-prospectus-and-call-for-sponsors-for-barcamp-bangalore-spring-2016/">Become a Partner</a>
+    <a href="https://barcampbangalore.org/planning/sponsorship-prospectus-and-call-for-sponsors-for-barcamp-bangalore-spring-2016/" target="_blank">Become a Partner</a>
     <a href="<?php echo get_permalink( get_page_by_path( 'archives' ) ) ?>">Archives</a>
 
 <a href="#" onclick="javascript:searchEnable();">
