@@ -243,7 +243,7 @@ You can checkout the sessions submitted for Techlash <a href="https://barcampban
         You are not required to bring anything, but we suggest carrying laptop (pen and paper if you are more traditional) or mobile device to take notes, tweet about the event or post to Facebook! The event location is Wi-Fi enabled. 
 
         <br />
-        <h3>re food and drinks provided?</h3>
+        <h3>Are food and drinks provided?</h3>
 
         Yes, lunch and water are provided for free. However, kindly bring your own reusable water bottles.
         
