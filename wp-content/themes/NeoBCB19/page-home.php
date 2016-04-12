@@ -44,7 +44,7 @@
         </div>
 
         <div id="homepage_ct1_r2" class="row">
-            <div class="col-xs-12 col-sm-6 col-md-5 col-md-offset-1 col-lg-2 col-lg-offset-3">
+            <div class="col-xs-12 col-sm-12 col-md-2 col-md-offset-3 col-lg-2 col-lg-offset-3">
                 <a href="<?php echo get_bloginfo('template_url') . '/barcamp-spring-2016.ics' ?>">
                     <div class="homepage_cards">
                         <span id="top" class="homepage_cards_default" > APRIL 30</span><br/>
@@ -53,7 +53,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-5 col-lg-2">
+            <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
                 <a href="<?php echo get_bloginfo('template_url') . '/barcamp-spring-2016.ics' ?>">
                     <div class="homepage_cards">
                         <span id="top" class="homepage_cards_default">8am</span><br>
@@ -62,7 +62,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-5 col-lg-2">
+            <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
                 <a href="https://goo.gl/sgjNTV" target="_blank">
                     <div class="homepage_cards">
                         <span id="top" class="homepage_cards_default">CMRIT</span><br>
@@ -80,28 +80,30 @@
                 </a>
         </div>
         <div style="padding-bottom: 80px"></div>
-        <div id="homepage_ct1_r4" class="row">
-            <span>
-                <a href="<?php echo get_bloginfo('template_url') . '/docs/Barcamp_Bangalore_Spring_2016_Sponsorship_Doc.pdf' ?>"><img src="<?php echo get_bloginfo('template_url') . '/images/icon-01.png' ?>" />  Sponsorship Pdf</a>
-            </span>
-            <span>
-                <a href="https://twitter.com/barcampbng"><img src="<?php echo get_bloginfo('template_url') . '/images/icon-02.png' ?>" />  Follow us on twitter</a>
-            </span>
-            <span>
-                <a href="https://www.facebook.com/barcampbng"><img src="<?php echo get_bloginfo('template_url') . '/images/icon-03.png' ?>" />  like us on facebook</a>
-            </span>
-            <span>
-                <a href="mailto:bangalore_barcamp-subscribe@yahoogroups.com"><img src="<?php echo get_bloginfo('template_url') . '/images/icon-04.png' ?>" />  join the group</a>
-            </span>
-            <span>
-                <a href="https://www.youtube.com/user/barcampbangalore"><img src="<?php echo get_bloginfo('template_url') . '/images/icon-05.png' ?>" />  subscribe</a>
-            </span>
-            <span>
-                <a href="http://slack.barcampbangalore.org/"><img src="<?php echo get_bloginfo('template_url') . '/images/icon-06.png' ?>" />  join us on slack</a>
-            </span>
-            <span>
-                <a href="https://github.com/barcampbangalore"><img src="<?php echo get_bloginfo('template_url') . '/images/Git-hub-icon-07.png' ?>" />  fork us</a>
-            </span>
+        <div id="homepage_ct1_r4">
+            <div id="homepage_social_bar">
+                <div>
+                    <a href="<?php echo get_bloginfo('template_url') . '/docs/Barcamp_Bangalore_Spring_2016_Sponsorship_Doc.pdf' ?>"><img src="<?php echo get_bloginfo('template_url') . '/images/icon-01.png' ?>" />  Sponsorship Pdf</a>
+                </div>
+                <div>
+                    <a href="https://twitter.com/barcampbng"><img src="<?php echo get_bloginfo('template_url') . '/images/icon-02.png' ?>" />  Follow us on twitter</a>
+                </div>
+                <div>
+                    <a href="https://www.facebook.com/barcampbng"><img src="<?php echo get_bloginfo('template_url') . '/images/icon-03.png' ?>" />  like us on facebook</a>
+                </div>
+                <div>
+                    <a href="mailto:bangalore_barcamp-subscribe@yahoogroups.com"><img src="<?php echo get_bloginfo('template_url') . '/images/icon-04.png' ?>" />  join the group</a>
+                </div>
+                <div>
+                    <a href="https://www.youtube.com/user/barcampbangalore"><img src="<?php echo get_bloginfo('template_url') . '/images/icon-05.png' ?>" />  subscribe</a>
+                </div>
+                <div>
+                    <a href="http://slack.barcampbangalore.org/"><img src="<?php echo get_bloginfo('template_url') . '/images/icon-06.png' ?>" />  join us on slack</a>
+                </div>
+                <div>
+                    <a href="https://github.com/barcampbangalore"><img src="<?php echo get_bloginfo('template_url') . '/images/Git-hub-icon-07.png' ?>" />  fork us</a>
+                </div>
+            </div>
         </div>
     </div>
 </div>

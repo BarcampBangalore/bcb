@@ -698,6 +698,8 @@ background-color: #0A0A0A;
     text-align: center;
     text-transform: uppercase;
     position: relative;
+    margin-left: auto;
+    margin-right: auto;
 }
 .homepage_cards #top{
     font-size: 32px;
@@ -797,13 +799,23 @@ width: 100%;
     width: 100%;
     color: #fff;
     margin-bottom: 15px;
-    display: flex;
-    justify-content: space-between;
+    text-align: center;
     vertical-align: bottom;
 }
 #homepage_ct1_r4 img{
     width: 20px;
     height: 20px;
+}
+
+#homepage_social_bar {
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+}
+
+#homepage_social_bar div {
+   display: inline-block;
+   margin: 0px 16px;
 }
 
 #techlash_ct1_r4{
