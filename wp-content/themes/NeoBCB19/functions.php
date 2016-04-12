@@ -313,7 +313,7 @@ function mytheme_comment($comment, $args, $depth)
         if (array_search($current_user->user_login, $attendingusers) !== false)
         {
             $result.= '<div class="neo_attend_button neo_button_attending" data-postid="'.$postid.'" >'
-                    .'<img src="'.get_bloginfo('template_url').'/images/icons-19.png" /></div>';
+                    .'<img src="'.get_bloginfo('template_url').'/images/icons-19.png" title="I am Attending" /></div>';
         }
         else
         {
