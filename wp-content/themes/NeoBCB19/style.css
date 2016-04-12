@@ -188,16 +188,18 @@ a {
 
 
 .header_container{
-display: block;
-transition-property: all;
-transition-duration: 2s;
-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+    position: relative;
 }
 
 #search_icon{
-    float: right;
-    display: flex;
-    height: 80px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+#search_icon img {
+    width: 19px;
+    border-bottom-left-radius: 10px;
 }
 
 .header_fixed{
@@ -227,19 +229,52 @@ transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
     background-color: #E6E6E6;
     position: relative;
     text-align: center;
-    height: 80px;
+    
     width: 100%;
-    float: left;
+    
 }
 
-#header a
+#header .nav_item 
 {
-    margin-bottom: 50px;
+    margin-bottom: 12px;
     margin-left: 15px;
     margin-right: 15px;
-    vertical-align: middle;
+    vertical-align: top;
     background-color: #E6E6E6;
+    display: inline-block;
+    padding-top: 30px;
 }
+
+
+#logo_large_screen {
+    position: relative;
+    width: 359px;
+    display: inline-block;
+    top: -5px;
+}
+
+#logo_large_screen img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+
+#logo_small_screen {
+    position: relative;
+    width: 359px;
+    display: inline-block;
+    top: 0px;
+    height: 54px;
+}
+
+#logo_small_screen img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+
 
 #logins
 {

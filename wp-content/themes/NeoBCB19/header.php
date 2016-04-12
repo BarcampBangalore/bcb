@@ -162,45 +162,49 @@ autoOpen: false,
         }
         </script>
         <div id="header_container" class="header_container">
-<div id="header">
+            
+            <div id="header">
 
-    <a href="https://barcampbangalore.org/planning" target="_blank">Our Story</a>
-    <a href="<?php echo get_permalink( get_page_by_path( 'sessions' ) ) ?>">Proposed Sessions</a>
-    <a href="<?php echo get_permalink( get_page_by_path( 'add-a-session' ) ) ?>">Add a Session</a>
-    <a href="http://barcampbangalore.org/bcb/live/schedule" target="_blank">Schedule</a>
-    <a href="<?php echo home_url(); ?>">
-    <img height=125 src="<?php bloginfo('template_url'); ?>/images/header-05-logo.png"></a>
-    <a href="<?php echo get_permalink( get_page_by_path( 'techlash' ) ) ?>">Techlash</a>
-    <a href="<?php echo get_permalink( get_page_by_path( 'videos' ) ) ?>">Videos</a>
-    <a href="https://barcampbangalore.org/planning/sponsorship-prospectus-and-call-for-sponsors-for-barcamp-bangalore-spring-2016/" target="_blank">Become a Partner</a>
-    <a href="<?php echo get_permalink( get_page_by_path( 'archives' ) ) ?>">Archives</a>
+                <a href="#" onclick="javascript:searchEnable();" id="search_icon">
+                    <img src="<?php bloginfo('template_url'); ?>/images/search.png" >
+                </a>
+                <a class="nav_item" href="https://barcampbangalore.org/planning" target="_blank">Our Story</a>
+                <a class="nav_item" href="<?php echo get_permalink(get_page_by_path('sessions')) ?>">Proposed Sessions</a>
+                <a class="nav_item" href="<?php echo get_permalink(get_page_by_path('add-a-session')) ?>">Add a Session</a>
+                <a class="nav_item" href="http://barcampbangalore.org/bcb/live/schedule" target="_blank">Schedule</a>
+                <a id="logo_large_screen" href="<?php echo home_url(); ?>" class="visible-lg-inline">
+                    <div id="logo_large_screen">
+                        <img height=107 src="<?php bloginfo('template_url'); ?>/images/header-05-logo.png">
+                    </div>
+                </a>
+                <a class="nav_item" href="<?php echo get_permalink(get_page_by_path('techlash')) ?>">Techlash</a>
+                <a class="nav_item" href="<?php echo get_permalink(get_page_by_path('videos')) ?>">Videos</a>
+                <a class="nav_item" href="https://barcampbangalore.org/planning/sponsorship-prospectus-and-call-for-sponsors-for-barcamp-bangalore-spring-2016/" target="_blank">Become a Partner</a>
+                <a class="nav_item" href="<?php echo get_permalink(get_page_by_path('archives')) ?>">Archives</a>
+                <br>
+                <a href="<?php echo home_url(); ?>" class="hidden-lg">
+                    <div id="logo_small_screen">
+                        <img height=107 src="<?php bloginfo('template_url'); ?>/images/header-05-logo.png">
+                    </div>
+                </a>
+            </div>
+            <div class="overlay" id="overlay" ><?php get_search_form(true); ?></div>
 
-<a href="#" onclick="javascript:searchEnable();">
-    <img src="<?php bloginfo('template_url'); ?>/images/search.png" id="search_icon"></a>
-</div>
-<div class="overlay" id="overlay" ><?php get_search_form(true);  ?></div>
+            <div id="logins">
+                <?php
+                global $current_user;
+                get_currentuserinfo();
+                if (is_user_logged_in()) {
+                    echo '<a href="' . admin_url('profile.php') . '">Hi ' . $current_user->user_login . '</a>&nbsp; |&nbsp; ';
+                } else {
+                    echo "<a href=\"" . wp_registration_url() . "\" title=\"Sign Up\"> SIGN-UP </a>&nbsp; |&nbsp;";
 
-<div id="logins">
-    <?php
-    global $current_user;
-    get_currentuserinfo();
-    if (is_user_logged_in())
-    {
-        echo '<a href="'.admin_url('profile.php').'">Hi '.$current_user->user_login.'</a> | ';
-    }
-    else
-    {
-        echo "<a href=\"". wp_registration_url()."\" title=\"Sign Up\"> SIGN-UP </a> | ";
-
-        echo "<a href=\"". wp_login_url(get_permalink())."\" title=\"Login\"> LOGIN </a>";
-
-    }
-
-    ?>
-    <?php if(is_user_logged_in()) :     wp_loginout(get_permalink());?>
-    | <a id="my_sessions_link" href="<?php echo get_author_posts_url($current_user->ID); ?>">My Sessions</a>
-<?php endif; ?>
-</div>
-<div style="height: 80px;">
-</div>
-</div>
+                    echo "<a href=\"" . wp_login_url(get_permalink()) . "\" title=\"Login\"> LOGIN </a>";
+                }
+                ?>
+                <?php if (is_user_logged_in()) : wp_loginout(get_permalink()); ?>
+                    | <a id="my_sessions_link" href="<?php echo get_author_posts_url($current_user->ID); ?>">My Sessions</a>
+                <?php endif; ?>
+            </div>
+            
+        </div>
