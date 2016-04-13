@@ -421,8 +421,7 @@ background-color: #0A0A0A;
 
 #searchform
 {
-    display: inline-block;
-    width: 100%;
+    background-color: rgba(64, 64, 64, 0.85);
 
 }
 
@@ -434,17 +433,13 @@ background-color: #0A0A0A;
 #searchform #s
 {
     padding: 0 10px;
-    box-shadow: none;
     border: 0px;
-    font-family: "Helvetica", Arial;
-    width: 80%;
     height: 40px;
     border-radius: 3px;
     background-color: #FFFFFF;
-    padding: 0px 15px;
-    margin-left: 50px;
+    width: 100%;
+    margin-top: 30px;
     vertical-align: top;
-    margin: 30px;
     color: #3F392A;
     border: 0px;
     box-shadow: none;
@@ -460,7 +455,8 @@ background-color: #0A0A0A;
     cursor: pointer;
     background-color: #F7931E;
     margin-top: 30px;
-    width: 50px;
+    width: 100%;
+    margin-bottom: 30px;
 
 }
 
