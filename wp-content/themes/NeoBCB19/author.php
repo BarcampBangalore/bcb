@@ -43,11 +43,11 @@ $cat_names = array(
 
         <div class="container">
             <div class="row">
-                <div class="col-sm-2">
+                <div class="col-xs-12 col-sm-2">
                     <div id="authorpage_avatar" class="single_page_box"><?php echo get_avatar(get_the_author_meta('ID'), 150); ?></div>
                 </div>
 
-                <div class="col-sm-10">
+                <div class="col-xs-12 col-sm-10">
                     <div class="single_page_box">
                         <div id="authorpage_name" class="single_page_box"><?php echo '<a href="' . get_author_posts_url(get_the_author_meta('ID')) . '">' . get_the_author_meta('user_nicename') . '</a>'; ?></div>
                         <div id="authorpage_sincedate">Camper since <?php echo date("F, Y", strtotime($curauth->user_registered)); ?></div>
