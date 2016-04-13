@@ -882,7 +882,7 @@ width: 100%;
 
 #homepage_about_bcb_title {
     padding: 50px 0px 5px 0px;
-    font-size: 28px;
+    font-size: 24px;
     border-bottom: 3px solid #35AADC;
 }
 
@@ -890,7 +890,7 @@ width: 100%;
     padding-top: 30px;
     color: #666666;
     padding-bottom: 60px;
-    font-size: 20px;
+    font-size: 14px;
 }
 
 
@@ -900,7 +900,7 @@ width: 100%;
 
 #homepage_how_to_register_title {
     padding: 50px 0px 5px 0px;
-    font-size: 28px;
+    font-size: 24px;
     border-bottom: 3px solid #89A0A6;
     color: #475B66;
 
@@ -910,7 +910,7 @@ width: 100%;
     padding-top: 30px;
     color: #475B66;
     padding-bottom: 60px;
-    font-size: 20px;
+    font-size: 14px;
 }
 
 #homepage_how_to_register_description a{
@@ -931,7 +931,7 @@ width: 100%;
 
 #homepage_techlash_title {
     padding: 50px 0px 5px 0px;
-    font-size: 28px;
+    font-size: 24px;
     border-bottom: 3px solid #CCC;
     color: #FFFFFF;
 }
@@ -939,7 +939,7 @@ width: 100%;
 #homepage_techlash_description {
     padding-top: 30px;
     color: #FFFFFF;
-    font-size: 20px;
+    font-size: 14px;
     background-color:#333;
     padding-bottom: 60px;
 }
@@ -950,7 +950,7 @@ width: 100%;
 
 #homepage_faq_title {
     padding: 50px 0px 5px 0px;
-    font-size: 28px;
+    font-size: 24px;
     border-bottom: 3px solid #333333;
     color: #FFFFFF;
 }
@@ -959,7 +959,7 @@ width: 100%;
     padding-top: 30px;
     color: #FFFFFF;
     padding-bottom: 60px;
-    font-size: 19px;
+    font-size: 14px;
 }
 
 
@@ -979,7 +979,7 @@ width: 100%;
 
 #homepage_planners_title {
     padding: 50px 0px 5px 0px;
-    font-size: 28px;
+    font-size: 24px;
     border-bottom: 3px solid #F7921C;
     color: #CCCCCC;
 
@@ -1016,7 +1016,7 @@ width: 100%;
 
 #homepage_sponsors_title {
     padding: 50px 0px 5px 0px;
-    font-size: 28px;
+    font-size: 24px;
     border-bottom: 3px solid #333333;
     color: #F7921C;
 }
