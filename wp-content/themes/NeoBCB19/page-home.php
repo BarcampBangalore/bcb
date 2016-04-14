@@ -120,7 +120,7 @@
 
 <p>Anyone can present a session, participate in discussions, demo a project, talk about code, or discuss at lengths about program design. Not into tech? No problem! BarCamp is not just about tech. Share your life experiences. Teach us your lifehacks. Tell us about your great outdoors experiment. Sky's the limit and this is the perfect place to share your passion. 
 
-Anyone with something to contribute or with the desire to learn is welcome and invited to join. Move to something that interests you anytime. Every speaker is a participant, every participant is a speaker. Click here to see the list of proposed sessions.</p>
+Anyone with something to contribute or with the desire to learn is welcome and invited to join. Move to something that interests you anytime. Every speaker is a participant, every participant is a speaker. <a href="<?php echo get_permalink(get_page_by_path('sessions')) ?>">Click here</a> to see the list of proposed sessions.</p>
 
 <p>
 Your active participation is the fuel and driving force for BarCamp and that is the only registration fee. You are invited to volunteer for various activities for putting up a successful camp.</p>
