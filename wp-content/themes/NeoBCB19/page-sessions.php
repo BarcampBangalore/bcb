@@ -168,11 +168,11 @@ an awesome chart of where people converge at the venue from.
                 <img src="<?php echo get_bloginfo('template_url').'/images/icons-11.png' ?>" />
                 <span class="sessions_page_track_icon_name">Bangalore & Lifestyle</span>
             </div>
-            <div class="sessions_page_track_button track_color_bg_1557" onclick="showOnly(1557)" data-track-id="1557">
+            <div class="sessions_page_track_button track_color_bg_1561" onclick="showOnly(1561)" data-track-id="1561">
                 <img src="<?php echo get_bloginfo('template_url').'/images/icons-12.png' ?>" />
                 <span class="sessions_page_track_icon_name">Scaling & Infrastructure</span>
             </div>
-            <div class="sessions_page_track_button track_color_bg_1558" onclick="showOnly(1558)" data-track-id="1558">
+            <div class="sessions_page_track_button track_color_bg_1557" onclick="showOnly(1557)" data-track-id="1557">
                 <img src="<?php echo get_bloginfo('template_url').'/images/icons-13.png' ?>" />
                 <span class="sessions_page_track_icon_name">Design</span>
             </div>
@@ -180,11 +180,11 @@ an awesome chart of where people converge at the venue from.
                 <img src="<?php echo get_bloginfo('template_url').'/images/icons-14.png' ?>" />
                 <span class="sessions_page_track_icon_name">Mobile & Web</span>
             </div>
-            <div class="sessions_page_track_button track_color_bg_1560" onclick="showOnly(1560)" data-track-id="1560">
+            <div class="sessions_page_track_button track_color_bg_1558" onclick="showOnly(1558)" data-track-id="1558">
                 <img src="<?php echo get_bloginfo('template_url').'/images/icons-15.png' ?>" />
                 <span class="sessions_page_track_icon_name">Entrepreneurship</span>
             </div>
-            <div class="sessions_page_track_button track_color_bg_1561" onclick="showOnly(1561)" data-track-id="1561">
+            <div class="sessions_page_track_button track_color_bg_1560" onclick="showOnly(1560)" data-track-id="1560">
                 <img src="<?php echo get_bloginfo('template_url').'/images/icons-16.png' ?>" />
                 <span class="sessions_page_track_icon_name">Rest of the world</span>
             </div>
