@@ -37,7 +37,7 @@ if (!is_home())
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
         <link type="text/css" rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" >
-        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="shortcut icon" href="/bcb/favicon.ico">
 
         <?php wp_head(); ?>
         <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/libs/jquery-2.1.0.js" ></script>
