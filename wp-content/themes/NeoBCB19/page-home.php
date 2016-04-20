@@ -379,7 +379,7 @@ You can checkout the sessions submitted for Techlash <a href="https://barcampban
             
             <div class="homepage_sponsor_card col-xs-6 col-md-3">
                 <div class="homepage_sponsor_heading">Friend of Barcamp</div>
-                <div class="homepage_sponsor_logo_wrapper" ><a href="http://tinkerform.com"><img alt="Tinkerform" title="Tinkerform" class="homepage_sponsor_logo_tinkerform" src="<?php bloginfo('template_url')  ?>/images/sponz_logos/Tinkerform_Logo_small.png" /></a></div>
+                <div class="homepage_sponsor_logo_wrapper" ><a href="http://tinkerform.com"><img alt="Tinkerform" title="Tinkerform" class="homepage_sponsor_logo_tinkerform" src="<?php bloginfo('template_url')  ?>/images/sponz_logos/Tinkerform-logo.png" /></a></div>
             </div>
         </div>
     </div>
