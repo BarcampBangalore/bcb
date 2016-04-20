@@ -346,7 +346,7 @@ You can checkout the sessions submitted for Techlash <a href="https://barcampban
             Sponsors
         </div>
         <div id="homepage_sponsors_description row">
-            <div class="homepage_sponsor_card col-xs-6 col-md-4">
+            <div class="homepage_sponsor_card col-xs-6 col-md-3">
                 <div class="homepage_sponsor_heading">Venue Sponsor</div>
                 <div class="homepage_sponsor_logo_wrapper" ><a href="http://www.cmrit.ac.in/"><img alt="CMR Institute of Technology" title="CMR Institute of Technology" class="homepage_sponsor_logo" src="<?php bloginfo('template_url')  ?>/images/sponz_logos/cmrit_logo.jpg" /></a></div>
             </div>
@@ -367,14 +367,19 @@ You can checkout the sessions submitted for Techlash <a href="https://barcampban
              */
             
             ?>
-            <div class="homepage_sponsor_card col-xs-6 col-md-4">
+            <div class="homepage_sponsor_card col-xs-6 col-md-3">
                 <div class="homepage_sponsor_heading">Supported by</div>
                 <div class="homepage_sponsor_logo_wrapper" ><a href="http://janastu.org/main.html"><img alt="Janastu" title="Janastu" class="homepage_sponsor_logo" src="<?php bloginfo('template_url')  ?>/images/sponz_logos/janastu_logo.gif" /></a></div>
             </div>
             
-            <div class="homepage_sponsor_card col-xs-6 col-md-4">
+            <div class="homepage_sponsor_card col-xs-6 col-md-3">
                 <div class="homepage_sponsor_heading">Friend of Barcamp</div>
                 <div class="homepage_sponsor_logo_wrapper" ><a href="http://styletag.com"><img alt="Styletag" title="Styletag" class="homepage_sponsor_logo_styletag" src="<?php bloginfo('template_url')  ?>/images/sponz_logos/styletag-logo.png" /></a></div>
+            </div>
+            
+            <div class="homepage_sponsor_card col-xs-6 col-md-3">
+                <div class="homepage_sponsor_heading">Friend of Barcamp</div>
+                <div class="homepage_sponsor_logo_wrapper" ><a href="http://tinkerform.com"><img alt="Tinkerform" title="Tinkerform" class="homepage_sponsor_logo_tinkerform" src="<?php bloginfo('template_url')  ?>/images/sponz_logos/Tinkerform_Logo_small.png" /></a></div>
             </div>
         </div>
     </div>
