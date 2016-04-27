@@ -82,6 +82,9 @@
         <div style="padding-bottom: 80px"></div>
         <div id="homepage_ct1_r4">
             <div id="homepage_social_bar">
+                <div class="visible-xs-inline-block">
+                    <a href="whatsapp://send?text=Hey! Did you hear about Barcamp Bangalore? It's happening on 30th April at CMRIT. Checkout https://barcampbangalore.org for more info" data-action="share/whatsapp/share"><img src="<?php echo get_bloginfo('template_url') . '/images/whatsapp_icon-35.png' ?>" />   Share via Whatsapp</a>
+                </div>
                 <div>
                     <a href="<?php echo get_bloginfo('template_url') . '/docs/Barcamp_Bangalore_Spring_2016_Sponsorship_Doc.pdf' ?>"><img src="<?php echo get_bloginfo('template_url') . '/images/icon-01.png' ?>" />  Sponsorship Pdf</a>
                 </div>
