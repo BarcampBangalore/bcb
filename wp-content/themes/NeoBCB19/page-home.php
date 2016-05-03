@@ -74,8 +74,10 @@
         </div>
         <div id="homepage_ct1_r3" class="row">
                 <a href="#howtoregister">
-                <div class="homepage_register_card">
-                    | REGISTER NOW |
+              <div class="homepage_register_card">
+               
+                 Thank you for being part of Barcamp Bangalore. Registrations are now closed.
+               
                 </div>
                 </a>
         </div>
@@ -138,30 +140,9 @@ Your active participation is the fuel and driving force for BarCamp and that is 
             How to register for the event?
         </div>
         <div id="homepage_how_to_register_description">
-
-Registration is a simple process
-<ul>
-
-<li>
-Click on <a href="https://barcampbangalore.org/bcb/wp-login.php?action=register">Sign-Up</a> (or <a href="https://barcampbangalore.org/bcb/wp-login.php?redirect_to=https%3A%2F%2Fbarcampbangalore.org%2Fbcb%2F">Login</a> if you already have an existing account) to register.</li>
-<li>
-Head over to the <a href="https://barcampbangalore.org/bcb/sessions">Proposed Sessions</a> page 
-and browse the various sessions. Once you find a session you are interested in, 
-click on "I wanna attend" <span class="homepage_wanna_attend_icon"><img src="<?php echo get_bloginfo('template_url')?>/images/icons-18.png" title="I wanna attend" alt="I wanna attend" /></span>. </li>
-</ul>
-
-To propose a session:
-<ul>
-<li>Click on <a href="https://barcampbangalore.org/bcb/wp-login.php?action=register">Sign-Up</a> (or <a href="https://barcampbangalore.org/bcb/wp-login.php?redirect_to=https%3A%2F%2Fbarcampbangalore.org%2Fbcb%2F">Login</a> if you already have an existing account) to register.</li>
-<li>Head over to the <a href="https://barcampbangalore.org/bcb/add-a-session">Add a Session</a> page and enter details about what you will be talking about.</li>
-<li>If you intend to present a short demo about your cutting edge technology or revolutionizing product, <a href="https://barcampbangalore.org/bcb/techlash">Techlash</a> might be a better option. Select the category as “Techlash” in this case.</li>
-<li>Only 36 slots are available on first come first serve basis. Please be at the venue by 8:00 AM to ensure that you get a slot.</li>
-</ul>
-To ensure that there’s minimal session overlap, do visit the sessions page daily and click on "I wanna attend" 
-<span class="homepage_wanna_attend_icon"><img src="<?php echo get_bloginfo('template_url')?>/images/icons-18.png" title="I wanna attend" alt="I wanna attend" /></span>
-on the session proposals which interest you.
-
-
+ 
+                 Thank you for being part of Barcamp Bangalore. Registrations are now closed. The next edition of Barcamp Bangalore will be announced soon.
+               
         </div>
     </div>
 </div>
@@ -353,23 +334,6 @@ You can checkout the sessions submitted for Techlash <a href="https://barcampban
                 <div class="homepage_sponsor_heading">Venue Sponsor</div>
                 <div class="homepage_sponsor_logo_wrapper" ><a href="http://www.cmrit.ac.in/"><img alt="CMR Institute of Technology" title="CMR Institute of Technology" class="homepage_sponsor_logo" src="<?php bloginfo('template_url')  ?>/images/sponz_logos/cmrit_logo.jpg" /></a></div>
             </div>
-            <?php /*
-            <!-- <div class="homepage_sponsor_card col-xs-6 col-md-4">
-                <div class="homepage_sponsor_heading">Gold Sponsor</div>
-                <div class="homepage_sponsor_logo_wrapper" ><a href="https://barcampbangalore.org/bcb/about-intuit"><img alt="Intuit" title="Intuit" class="homepage_sponsor_logo" src="<?php bloginfo('template_url')  ?>/images/sponz_logos/intuit_logo.png" /></a></div>
-            </div>
-            <div class="homepage_sponsor_card col-xs-6 col-md-4">
-                <div class="homepage_sponsor_heading">Silver Sponsor</div>
-                <div class="homepage_sponsor_logo_wrapper" ><a href="https://barcampbangalore.org/bcb/about-mediaiq"><img alt="Media iQ" title="Media iQ" class="homepage_sponsor_logo" src="<?php bloginfo('template_url')  ?>/images/sponz_logos/mediaiq_logo.png" /></a></div>
-            </div>
-            <div class="homepage_sponsor_card col-xs-6 col-md-4">
-                <div class="homepage_sponsor_heading">Friends of Barcamp</div>
-                <div class="homepage_sponsor_logo_wrapper" ><a href="https://barcampbangalore.org/bcb/about-venturesity"><img alt="Venturesity" title="Venturesity" class="homepage_sponsor_logo" src="<?php bloginfo('template_url')  ?>/images/sponz_logos/venturesity-logo.png" /></a></div>
-            </div> -->
-             
-             */
-            
-            ?>
             <div class="homepage_sponsor_card col-xs-6 col-md-3">
                 <div class="homepage_sponsor_heading">Supported by</div>
                 <div class="homepage_sponsor_logo_wrapper" ><a href="http://janastu.org/main.html"><img alt="Janastu" title="Janastu" class="homepage_sponsor_logo" src="<?php bloginfo('template_url')  ?>/images/sponz_logos/janastu_logo.gif" /></a></div>
