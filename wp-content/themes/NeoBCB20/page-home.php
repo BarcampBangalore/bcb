@@ -21,7 +21,7 @@
 </script>
 
 
-<div id="homepage_cb1" style="background-image: url('<?php echo get_bloginfo('template_url').'/images/rain.jpg' ?>'); background-color: #fff ">
+<div id="homepage_cb1" style="background-image: url('<?php echo get_bloginfo('template_url').'/images/rain.jpgF' ?>'); background-color: #fff ">
     <div id="homepage_ct1" class="container" >
         <div id="homepage_ct1_r1" class="row">
             <div class="col-xs-12">
@@ -316,11 +316,16 @@ You can checkout the sessions submitted for Techlash <a href="https://barcampban
             Sponsors
         </div>
         <div id="homepage_sponsors_description row">
-        Interested in being featured here? Checkout our <a href="<?php echo get_bloginfo('template_url') . '/docs/bcb-sponsorship.pdf' ?>">Sponsorship document</a> to find out the details.
-        <!--
+            <div class="homepage_sponsor_heading .col-xs-12 .col-md-8"> 
+            Interested in being featured here? Checkout our <a href="https://barcampbangalore.org/staging/wp-content/themes/NeoBCB20/docs/bcb-sponsorship.pdf">Sponsorship document</a> to find out the details.
+            </div>
+        </div>
+         <!--
             <div class="homepage_sponsor_card col-xs-6 col-md-3">
+               
                 <div class="homepage_sponsor_heading">Venue Sponsor</div>
                 <div class="homepage_sponsor_logo_wrapper" ><a href="http://www.cmrit.ac.in/"><img alt="CMR Institute of Technology" title="CMR Institute of Technology" class="homepage_sponsor_logo" src="<?php bloginfo('template_url')  ?>/images/sponz_logos/cmrit_logo.jpg" /></a></div>
+               
             </div>
             <div class="homepage_sponsor_card col-xs-6 col-md-3">
                 <div class="homepage_sponsor_heading">Supported by</div>
