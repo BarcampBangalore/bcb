@@ -21,7 +21,7 @@
 </script>
 
 
-<div id="homepage_cb1" style="background-image: url('<?php echo get_bloginfo('template_url').'/images/coffee.jpg' ?>'); background-color: #fff ">
+<div id="homepage_cb1" style="background-image: url('<?php echo get_bloginfo('template_url').'/images/rain.jpg' ?>'); background-color: #fff ">
     <div id="homepage_ct1" class="container" >
         <div id="homepage_ct1_r1" class="row">
             <div class="col-xs-12">
@@ -62,12 +62,10 @@
             -->
         </div>
         <div id="homepage_ct1_r3" class="row">
-                <a href="#howtoregister">
               <div class="homepage_register_card">
                
                  BCB is returning soon! Subscribe to our <a href="https://groups.yahoo.com/neo/groups/bangalore_barcamp/info">mailing list</a> or the <a href="https://www.meetup.com/Barcamp-Bangalore/">Meetup group</a> to know when.
                 </div>
-                </a>
         </div>
         <div style="padding-bottom: 80px"></div>
         <div id="homepage_ct1_r4">
