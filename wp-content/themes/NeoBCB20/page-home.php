@@ -29,7 +29,7 @@
                 <div id="homepage_big_title">of Barcamp Bangalore</div>
             </div>
         </div>
-
+<!-- 
         <div id="homepage_ct1_r2" class="row">
             <div class="col-xs-12 col-sm-12 col-md-2 col-md-offset-3 col-lg-2 col-lg-offset-3">
                 <a href="<?php echo get_bloginfo('template_url') . '/barcamp-spring-2016.ics' ?>">
@@ -41,9 +41,6 @@
                 </a>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
-                
-                 <span id="top">BCB is returning soon! Subscribe to our <a href="https://groups.yahoo.com/neo/groups/bangalore_barcamp/info">mailing list</a> or the <a href="https://www.meetup.com/Barcamp-Bangalore/">Meetup group</a> to know when. </span>
-                 <!-- 
                     <a href="<?php echo get_bloginfo('template_url') . '/barcamp-spring-2016.ics' ?>">
                     <div class="homepage_cards">
                         <span id="top" class="homepage_cards_default">8am</span><br>
@@ -51,9 +48,8 @@
                         <img src="<?php echo get_bloginfo('template_url') . '/images/icon-CAL.png' ?>" class="homepage_cards_hover" />
                     </div>
                 </a>
-            -->
             </div>
-            <!-- 
+            
             <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
                 <a href="https://goo.gl/sgjNTV" target="_blank">
                     <div class="homepage_cards">
@@ -69,8 +65,7 @@
                 <a href="#howtoregister">
               <div class="homepage_register_card">
                
-                 Thank you for being part of Barcamp Bangalore. Registrations are now closed.
-               
+                 BCB is returning soon! Subscribe to our <a href="https://groups.yahoo.com/neo/groups/bangalore_barcamp/info">mailing list</a> or the <a href="https://www.meetup.com/Barcamp-Bangalore/">Meetup group</a> to know when.
                 </div>
                 </a>
         </div>

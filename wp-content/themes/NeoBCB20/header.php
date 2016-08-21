@@ -169,11 +169,11 @@ autoOpen: false,
                     <img src="<?php bloginfo('template_url'); ?>/images/search.png" >
                 </a>
                 <a class="nav_item" href="https://barcampbangalore.org/planning" target="_blank">Our Story</a>
-                <!-- 
+                 
                 <a class="nav_item" href="<?php echo get_permalink(get_page_by_path('sessions')) ?>">Proposed Sessions</a>
                 <a class="nav_item" href="<?php echo get_permalink(get_page_by_path('add-a-session')) ?>">Add a Session</a>
                 <a class="nav_item" href="http://barcampbangalore.org/bcb/live/schedule" target="_blank">Schedule</a>
-                -->
+                 
                 <a id="logo_large_screen" href="<?php echo home_url(); ?>" class="visible-lg-inline">
                     <div id="logo_large_screen">
                         <img height=107 src="<?php bloginfo('template_url'); ?>/images/bcb-monsoon-2016-logo.png">
