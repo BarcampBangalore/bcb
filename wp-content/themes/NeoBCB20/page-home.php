@@ -21,7 +21,7 @@
 </script>
 
 
-<div id="homepage_cb1" style="background-image: url('<?php echo get_bloginfo('template_url').'/images/rain.jpgF' ?>'); background-color: #fff ">
+<div id="homepage_cb1" style="background-image: url('<?php echo get_bloginfo('template_url').'/images/rain.jpg' ?>'); background-color: #fff ">
     <div id="homepage_ct1" class="container" >
         <div id="homepage_ct1_r1" class="row">
             <div class="col-xs-12">
