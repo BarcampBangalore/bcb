@@ -28,12 +28,6 @@ foreach($post_categories as $c)
 
 }
 
-
-
-
-
-
-
 ?>
 
 <div id="sessionpage_wrapper" class="centered_background">
@@ -151,12 +145,6 @@ foreach($post_categories as $c)
             </div>
         </div>
     </div>
-    
-    
-    
-    
-       
-                
     
 </div>
 

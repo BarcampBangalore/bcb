@@ -18,14 +18,14 @@ DTSTAMP:20160430T141407Z
 UID:20160430T141407Z-432337817@marudot.com
 DTSTART;TZID="Asia/Calcutta":20151031T080000
 DTEND;TZID="Asia/Calcutta":20151031T180000
-SUMMARY:Barcamp Bangalore Spring 2016
+SUMMARY:Barcamp Bangalore Monsoon 2016
 ORGANIZER:MAILTO:contact@barcampbangalore.org
 URL:https%3A%2F%2Fbarcampbangalore.org
 DESCRIPTION:Barcamp Bangalore is an open event focused around people\, ideas and collaboration. There is no fixed format and agenda. If you have an interesting topic to share or want to collaborate with folks with a variety of experience\, Barcamp is the place for you.
 LOCATION:CMRIT\, ITPL Main Road\, Bangalore
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Barcamp Bangalore Spring 2016
+DESCRIPTION:Barcamp Bangalore Monsoon 2016
 TRIGGER:-P1D
 END:VALARM
 END:VEVENT

@@ -11,8 +11,9 @@
 <p>
 Talk about your latest tech smartness in front of 500+ techies.</p>
 <p style="font-weight: bold; font-size: 20px;">6 Min per session and a total of 10 speakers.</p>
+<!-- 
 <p>To add your techlash session <a href="https://barcampbangalore.org/bcb/add-a-session"> click here.</a></p><br><br>
-
+-->
 </font><p><font size="3">
 PS: These ideas will undergo a filtering process. Remember to put in your phone number in the right field while you adding your session, we might require some clarifications from you.</font></p>
 
@@ -21,7 +22,7 @@ PS: These ideas will undergo a filtering process. Remember to put in your phone 
 
             <div class="col-xs-3 col-md-3" style="padding: 20px;">
 
-                <h2 id="techlash_sessionheading">Techlash sessions for BCB Spring 2016</h2>
+                <h2 id="techlash_sessionheading">Techlash sessions for BCB Monsoon 2016</h2>
                 <div id"techlash_post_parent">
                   <?php
                    $args = 'cat=1562';
@@ -48,7 +49,7 @@ PS: These ideas will undergo a filtering process. Remember to put in your phone 
         <div style="padding-bottom: 80px"></div>
         <div id="techlash_ct1_r4" class="row">
             <span>
-                <a href="<?php echo get_bloginfo('template_url') . '/docs/Barcamp_Bangalore_Spring_2016_Sponsorship_Doc.pdf' ?>"><img src="<?php echo get_bloginfo('template_url') . '/images/icon-01.png' ?>" />  Sponsorship Pdf</a>
+                <a href="<?php echo get_bloginfo('template_url') . '/docs/bcb-sponsorship.pdf' ?>"><img src="<?php echo get_bloginfo('template_url') . '/images/icon-01.png' ?>" />  Sponsorship Pdf</a>
             </span>
             <span>
                 <a href="https://twitter.com/barcampbng"><img src="<?php echo get_bloginfo('template_url') . '/images/icon-02.png' ?>" />  Follow us on twitter</a>

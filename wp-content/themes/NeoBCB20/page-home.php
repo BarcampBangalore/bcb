@@ -198,11 +198,13 @@ You can checkout the sessions submitted for Techlash <a href="https://barcampban
         In true BarCamp fashion, the sessions list is not finalized and time slots are not fixed till the day of the event. On the event day, the talks are finalized on first come basis. Our well designed, patent-pending(well, not really) algorithmic session scheduler will assign slots to the speakers with a focus on reducing session clashes. See our post on how the <a href="https://barcampbangalore.org/planning/session-schedules-barcamp-and-you/">session scheduling works</a> for details.
 
         <br />
+        <!-- 
         <h3>What are the session topics?</h3>
 
         You can view the list of <a href="https://barcampbangalore.org/bcb/sessions">proposed sessions here</a>.
 
         <br />
+        -->
         <h3>How should I present a session?</h3>
 
         You are free to utilize the 45 minutes however you want: lead a discussion, demo a project, teach the participants a skill or even play a fun game! PowerPoint Presentations are not required. However if your presentation is accompanied by some kind of media, you are required to bring your own laptop and required adapters for VGA projectors.
@@ -233,16 +235,19 @@ You can checkout the sessions submitted for Techlash <a href="https://barcampban
         Yes, lunch and water are provided for free. However, kindly bring your own reusable water bottles.
         
         <br />
+        <!-- 
         <h3>Where and when is BarCamp Bangalore?</h3>
 
         The event takes place on April 30th, Saturday from 8:00 AM onwards at <a href="https://goo.gl/maps/2DzyjM9h9nJ2">CMRIT Whitefield, Bangalore</a>.
         
         <br />
+
         <h3>Is there any BarCamp app?</h3>
 
         Yes! Our star developers have created a brand new app for this edition. We will publish the links soon. 
         
         <br />
+        -->
         <h3>Who is organizing BarCamp Bangalore?</h3>
 
         BarCamp Bangalore is a 100% volunteer driven not for profit event. We are regular people from the community who are on a mission to bring a platform for folks from different  walks of life to come together and talk about their unconventional ideas. Learn more about the planners here.
@@ -318,6 +323,8 @@ You can checkout the sessions submitted for Techlash <a href="https://barcampban
             Sponsors
         </div>
         <div id="homepage_sponsors_description row">
+        Interested in being featured here? Checkout our <a href="<?php echo get_bloginfo('template_url') . '/docs/bcb-sponsorship.pdf' ?>">Sponsorship document</a> to find out the details.
+        <!--
             <div class="homepage_sponsor_card col-xs-6 col-md-3">
                 <div class="homepage_sponsor_heading">Venue Sponsor</div>
                 <div class="homepage_sponsor_logo_wrapper" ><a href="http://www.cmrit.ac.in/"><img alt="CMR Institute of Technology" title="CMR Institute of Technology" class="homepage_sponsor_logo" src="<?php bloginfo('template_url')  ?>/images/sponz_logos/cmrit_logo.jpg" /></a></div>
@@ -338,6 +345,7 @@ You can checkout the sessions submitted for Techlash <a href="https://barcampban
             </div>
         </div>
     </div>
+    -->
 </div>
 
 <?php get_footer(); ?>
