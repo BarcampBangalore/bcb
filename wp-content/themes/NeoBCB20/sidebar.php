@@ -40,7 +40,7 @@
     <li>
         
         <h3>Tell Friends</h3>
-        <a href="https://plus.google.com/share?url=http%3A%2F%2Fbarcampbangalore.org" onclick="javascript:window.open(this.href,
+        <a href="https://plus.google.com/share?url=http%3A%2F%2Fbarcampbangalore.com" onclick="javascript:window.open(this.href,
             '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img id="gplus_main" class="social_icon"  width="48" height="48" src="<?php bloginfo('template_url'); ?>/images/social/64/google_dark.png" /></a>
         <a href="https://www.facebook.com/pages/Barcamp-Bangalore/172593159461976" target="_blank"><img id="fb_main" class="social_icon" width="48" height="48" src="<?php bloginfo('template_url'); ?>/images/social/64/facebook_dark.png" /></a>
         <a href="https://twitter.com/share?text=I+am+attending+Barcamp+Bangalore+12+on+25th+August..+Where+will+you+be+%3F+%23bcb12&related=barcampbng%3ABarcamp+Bangalore+Official+Account" onclick="javascript:window.open(this.href,

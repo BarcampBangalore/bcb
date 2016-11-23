@@ -11,7 +11,7 @@
 <p>
 Talk about your latest tech smartness in front of 500+ techies.</p>
 <p style="font-weight: bold; font-size: 20px;">6 Min per session and a total of 10 speakers.</p>
-<p>To add your techlash session <a href="https://barcampbangalore.org/bcb/add-a-session"> click here.</a></p><br><br>
+<p>To add your techlash session <a href="https://barcampbangalore.com/bcb/add-a-session"> click here.</a></p><br><br>
 
 </font><p><font size="3">
 PS: These ideas will undergo a filtering process. Remember to put in your phone number in the right field while you adding your session, we might require some clarifications from you.</font></p>
@@ -63,7 +63,7 @@ PS: These ideas will undergo a filtering process. Remember to put in your phone 
                 <a href="https://www.youtube.com/user/barcampbangalore"><img src="<?php echo get_bloginfo('template_url') . '/images/icon-05.png' ?>" />  subscribe</a>
             </span>
             <span>
-                <a href="http://slack.barcampbangalore.org/"><img src="<?php echo get_bloginfo('template_url') . '/images/icon-06.png' ?>" />  join us on slack</a>
+                <a href="http://slack.barcampbangalore.com/"><img src="<?php echo get_bloginfo('template_url') . '/images/icon-06.png' ?>" />  join us on slack</a>
             </span>
             <span>
                 <a href="https://github.com/barcampbangalore"><img src="<?php echo get_bloginfo('template_url') . '/images/Git-hub-icon-07.png' ?>" />  fork us</a>

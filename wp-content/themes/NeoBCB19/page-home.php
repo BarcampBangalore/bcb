@@ -85,7 +85,7 @@
         <div id="homepage_ct1_r4">
             <div id="homepage_social_bar">
                 <div class="visible-xs-inline-block">
-                    <a href="whatsapp://send?text=Hey! Did you hear about Barcamp Bangalore? It's happening on 30th April at CMRIT. Checkout https://barcampbangalore.org for more info" data-action="share/whatsapp/share"><img src="<?php echo get_bloginfo('template_url') . '/images/whatsapp_icon-35.png' ?>" />   Share via Whatsapp</a>
+                    <a href="whatsapp://send?text=Hey! Did you hear about Barcamp Bangalore? It's happening on 30th April at CMRIT. Checkout https://barcampbangalore.com for more info" data-action="share/whatsapp/share"><img src="<?php echo get_bloginfo('template_url') . '/images/whatsapp_icon-35.png' ?>" />   Share via Whatsapp</a>
                 </div>
                 <div>
                     <a href="<?php echo get_bloginfo('template_url') . '/docs/Barcamp_Bangalore_Spring_2016_Sponsorship_Doc.pdf' ?>"><img src="<?php echo get_bloginfo('template_url') . '/images/icon-01.png' ?>" />  Sponsorship Pdf</a>
@@ -103,7 +103,7 @@
                     <a href="https://www.youtube.com/user/barcampbangalore"><img src="<?php echo get_bloginfo('template_url') . '/images/icon-05.png' ?>" />  subscribe</a>
                 </div>
                 <div>
-                    <a href="http://slack.barcampbangalore.org/"><img src="<?php echo get_bloginfo('template_url') . '/images/icon-06.png' ?>" />  join us on slack</a>
+                    <a href="http://slack.barcampbangalore.com/"><img src="<?php echo get_bloginfo('template_url') . '/images/icon-06.png' ?>" />  join us on slack</a>
                 </div>
                 <div>
                     <a href="https://github.com/barcampbangalore"><img src="<?php echo get_bloginfo('template_url') . '/images/Git-hub-icon-07.png' ?>" />  fork us</a>
@@ -157,9 +157,9 @@ Your active participation is the fuel and driving force for BarCamp and that is 
                 Techlash is a platform to launch your innovative startups, introduce your cutting edge technologies or discuss revolutionary ideas. Instead of giving a whole 45 minute talk about your cutting edge technology or product, which might make your audience feel stretched and walk to another session, zip your demo up in a crisp six minute rapidfire idea presentation. We give you the undivided attention of the entire BarCamp audience, so this is your chance to get the maximum attention. 
             </p>
             <p>
-                To add your Techlash session <a href="https://barcampbangalore.org/bcb/add-a-session">click here</a>. These ideas will undergo a filtering process. Remember to put in your phone number in the right field while you are adding your session, we might require some clarifications from you.
+                To add your Techlash session <a href="https://barcampbangalore.com/bcb/add-a-session">click here</a>. These ideas will undergo a filtering process. Remember to put in your phone number in the right field while you are adding your session, we might require some clarifications from you.
 
-You can checkout the sessions submitted for Techlash <a href="https://barcampbangalore.org/bcb/techlash">here</a>.
+You can checkout the sessions submitted for Techlash <a href="https://barcampbangalore.com/bcb/techlash">here</a>.
             </p>
         </div>
     </div>
@@ -185,7 +185,7 @@ You can checkout the sessions submitted for Techlash <a href="https://barcampban
         <br />
         <h3>Who can present sessions?</h3>
 
-        We encourage presentations of all kinds and on any topic. You do not need to be an expert in the field of your topic. Share something you are passionate about, talk about your interests, job or hobby. Click <a href="https://barcampbangalore.org/bcb/add-a-session">here to add</a> your session.
+        We encourage presentations of all kinds and on any topic. You do not need to be an expert in the field of your topic. Share something you are passionate about, talk about your interests, job or hobby. Click <a href="https://barcampbangalore.com/bcb/add-a-session">here to add</a> your session.
 
         <br />
         <h3>Is it necessary to present a session?</h3>
@@ -202,12 +202,12 @@ You can checkout the sessions submitted for Techlash <a href="https://barcampban
         <br />
         <h3>How are sessions chosen? I have submitted my talk - is it finalized? Can I get a slot at a specific time?</h3>
 
-        In true BarCamp fashion, the sessions list is not finalized and time slots are not fixed till the day of the event. On the event day, the talks are finalized on first come basis. Our well designed, patent-pending(well, not really) algorithmic session scheduler will assign slots to the speakers with a focus on reducing session clashes. See our post on how the <a href="https://barcampbangalore.org/planning/session-schedules-barcamp-and-you/">session scheduling works</a> for details.
+        In true BarCamp fashion, the sessions list is not finalized and time slots are not fixed till the day of the event. On the event day, the talks are finalized on first come basis. Our well designed, patent-pending(well, not really) algorithmic session scheduler will assign slots to the speakers with a focus on reducing session clashes. See our post on how the <a href="https://barcampbangalore.com/planning/session-schedules-barcamp-and-you/">session scheduling works</a> for details.
 
         <br />
         <h3>What are the session topics?</h3>
 
-        You can view the list of <a href="https://barcampbangalore.org/bcb/sessions">proposed sessions here</a>.
+        You can view the list of <a href="https://barcampbangalore.com/bcb/sessions">proposed sessions here</a>.
 
         <br />
         <h3>How should I present a session?</h3>
@@ -257,7 +257,7 @@ You can checkout the sessions submitted for Techlash <a href="https://barcampban
         <br />
         <h3>I want to volunteer for the event. Can I do so?</h3>
 
-        Any helping hand is more than welcome. Join our <a href="http://slack.barcampbangalore.org">Slack</a> group and give us a shout.
+        Any helping hand is more than welcome. Join our <a href="http://slack.barcampbangalore.com">Slack</a> group and give us a shout.
 
         <br />
         <h3>What does coffee have to do with BarCamp?</h3>

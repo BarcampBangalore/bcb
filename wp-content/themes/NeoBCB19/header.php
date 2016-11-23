@@ -14,7 +14,7 @@
         <meta name="twitter:description" content="Barcamp Bangalore is an open event focused around people, ideas and collaboration. There is no fixed format and agenda. If you have an interesting topic to share or want to collaborate with folks with a variety of experience, Barcamp is the place for you.">
         <meta name="twitter:creator" content="">
         <meta name="twitter:image:src" content="<?php bloginfo('template_url'); ?>/images/bcbog.png">
-        <meta name="twitter:domain" content="barcampbangalore.org">
+        <meta name="twitter:domain" content="barcampbangalore.com">
         <meta name="twitter:app:name:iphone" content="">
         <meta name="twitter:app:name:ipad" content="">
         <meta name="twitter:dnt" content="on">
@@ -49,7 +49,7 @@ if (!is_home())
 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-18321549-1']);
-  _gaq.push(['_setDomainName', 'barcampbangalore.org']);
+  _gaq.push(['_setDomainName', 'barcampbangalore.com']);
   _gaq.push(['_trackPageview']);
 
   (function() {
@@ -121,10 +121,10 @@ autoOpen: false,
 {
    "@context": "http://schema.org",
    "@type": "WebSite",
-   "url": "https://barcampbangalore.org/",
+   "url": "https://barcampbangalore.com/",
    "potentialAction": {
      "@type": "SearchAction",
-     "target": "https://barcampbangalore.org/bcb/?s={search_term_string}",
+     "target": "https://barcampbangalore.com/bcb/?s={search_term_string}",
      "query-input": "required name=search_term_string"
    }
 }
@@ -168,10 +168,10 @@ autoOpen: false,
                 <a href="#" onclick="javascript:searchEnable();" id="search_icon">
                     <img src="<?php bloginfo('template_url'); ?>/images/search.png" >
                 </a>
-                <a class="nav_item" href="https://barcampbangalore.org/planning" target="_blank">Our Story</a>
+                <a class="nav_item" href="https://barcampbangalore.com/planning" target="_blank">Our Story</a>
                 <a class="nav_item" href="<?php echo get_permalink(get_page_by_path('sessions')) ?>">Proposed Sessions</a>
                 <a class="nav_item" href="<?php echo get_permalink(get_page_by_path('add-a-session')) ?>">Add a Session</a>
-                <a class="nav_item" href="http://barcampbangalore.org/bcb/live/schedule" target="_blank">Schedule</a>
+                <a class="nav_item" href="http://barcampbangalore.com/bcb/live/schedule" target="_blank">Schedule</a>
                 <a id="logo_large_screen" href="<?php echo home_url(); ?>" class="visible-lg-inline">
                     <div id="logo_large_screen">
                         <img height=107 src="<?php bloginfo('template_url'); ?>/images/header-05-logo.png">
@@ -179,7 +179,7 @@ autoOpen: false,
                 </a>
                 <a class="nav_item" href="<?php echo get_permalink(get_page_by_path('techlash')) ?>">Techlash</a>
                 <a class="nav_item" href="<?php echo get_permalink(get_page_by_path('videos')) ?>">Videos</a>
-                <a class="nav_item" href="https://barcampbangalore.org/planning/sponsorship-prospectus-and-call-for-sponsors-for-barcamp-bangalore-spring-2016/" target="_blank">Become a Partner</a>
+                <a class="nav_item" href="https://barcampbangalore.com/planning/sponsorship-prospectus-and-call-for-sponsors-for-barcamp-bangalore-spring-2016/" target="_blank">Become a Partner</a>
                 <a class="nav_item" href="<?php echo get_permalink(get_page_by_path('archives')) ?>">Archives</a>
                 <br>
                 <a href="<?php echo home_url(); ?>" class="hidden-lg">
