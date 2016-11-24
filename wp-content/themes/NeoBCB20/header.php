@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta property="og:title" content="Barcamp Bangalore Monsoon 2016" />
+        <meta property="og:title" content="Barcamp Bangalore" />
         <meta property="og:description" content="Barcamp Bangalore is an open event focused around people, ideas and collaboration. You don't want to miss this confluence of amazing minds. It's the largest unconference in India and there are talks on variety of topics like Technology, Design, Startups & Entrepreneurship, Business & Management, Photography, User Experience, Your life learnings, and a lot more... " />
         <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
         <meta property="og:image" content="<?php bloginfo('template_url'); ?>/images/bcbog.png" />
@@ -10,7 +10,7 @@
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:site" content="@barcampbng">
         <meta name="viewport" content="width=510, user-scalable=no">
-        <meta name="twitter:title" content="Barcamp Bangalore Monsoon 2016">
+        <meta name="twitter:title" content="Barcamp Bangalore">
         <meta name="twitter:description" content="Barcamp Bangalore is an open event focused around people, ideas and collaboration. There is no fixed format and agenda. If you have an interesting topic to share or want to collaborate with folks with a variety of experience, Barcamp is the place for you.">
         <meta name="twitter:creator" content="">
         <meta name="twitter:image:src" content="<?php bloginfo('template_url'); ?>/images/bcbog.png">
@@ -172,7 +172,7 @@ autoOpen: false,
                  
                 <a class="nav_item" href="<?php echo get_permalink(get_page_by_path('sessions')) ?>">Proposed Sessions</a>
                 <a class="nav_item" href="<?php echo get_permalink(get_page_by_path('add-a-session')) ?>">Add a Session</a>
-                <a class="nav_item" href="http://barcampbangalore.com/bcb/live/schedule" target="_blank">Schedule</a>
+                <a class="nav_item" href="http://barcampbangalore.com/bcb/schedule" target="_blank">Schedule</a>
                  
                 <a id="logo_large_screen" href="<?php echo home_url(); ?>" class="visible-lg-inline">
                     <div id="logo_large_screen">
@@ -180,7 +180,9 @@ autoOpen: false,
                     </div>
                 </a>
                 <a class="nav_item" href="<?php echo get_permalink(get_page_by_path('techlash')) ?>">Techlash</a>
+                <!-- 
                 <a class="nav_item" href="<?php echo get_permalink(get_page_by_path('videos')) ?>">Videos</a>
+                -->
                 <a class="nav_item" href="https://barcampbangalore.com/planning/sponsorship-prospectus-and-call-for-sponsors-for-barcamp-bangalore-spring-2016/" target="_blank">Become a Partner</a>
                 <a class="nav_item" href="<?php echo get_permalink(get_page_by_path('archives')) ?>">Archives</a>
                 <br>
